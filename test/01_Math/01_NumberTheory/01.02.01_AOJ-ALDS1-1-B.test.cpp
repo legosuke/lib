@@ -2,7 +2,7 @@
 #include "../../../template/template.hpp"
 #include "../../../01_Math/01_NumberTheory/01.02.01_gcd.hpp"
 
-int main() {
+signed main() {
     int x, y;
     cin >> x >> y;
     cout << gcd(x, y) << endl;

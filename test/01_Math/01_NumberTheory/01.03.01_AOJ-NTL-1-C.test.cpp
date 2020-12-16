@@ -2,7 +2,7 @@
 #include "../../../template/template.hpp"
 #include "../../../01_Math/01_NumberTheory/01.03.01_lcm.hpp"
 
-int main() {
+signed main() {
     int n;
     cin >> n;
     int ans = 1;

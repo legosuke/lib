@@ -2,7 +2,7 @@
 #include "../../../template/template.hpp"
 #include "../../../01_Math/01_NumberTheory/01.01.01_divisor.naive.hpp"
 
-int main() {
+signed main() {
     int a, b, c;
     cin >> a >> b >> c;
     int ans = 0;

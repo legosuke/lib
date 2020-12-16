@@ -1,6 +1,5 @@
 #pragma once
 #include "01.01.01_big-mod.hpp"
-#include <cstdint>
 
 std::int64_t mod_pow(std::int64_t a, std::int64_t n, std::int64_t MOD) {
     a = (a % MOD + MOD) % MOD;

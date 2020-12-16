@@ -9,6 +9,10 @@ struct Random {
     Random() { mt.seed(std::chrono::steady_clock::now().time_since_epoch().count()); }
 } rnd;
 
+/**
+ * @brief 乱数 (数)
+ * @note O(1)
+ */
 template <typename T>
 T random_number(const T a, const T b) {
     assert(a < b);
@@ -21,6 +25,9 @@ T random_number(const T a, const T b) {
     }
 }
 
+/**
+ * @note O(1)
+ */
 template <typename T>
 T random_number(const T b) {
     return random_number(T(0), b);

@@ -1,10 +1,13 @@
 #pragma once
 #include "01_random-number.hpp"
-#include <cassert>
 #include <numeric>
 #include <utility>
 #include <vector>
 
+/**
+ * @brief 乱数 (列)
+ * @note O(n)
+ */
 template <typename T>
 std::vector<T> random_vector_number(const std::size_t n, const T a, const T b) {
     std::vector<T> res(n);
@@ -14,6 +17,9 @@ std::vector<T> random_vector_number(const std::size_t n, const T a, const T b) {
     return res;
 }
 
+/**
+ * @note O(|v|)
+ */
 template <typename T>
 void random_shuffle(std::vector<T>& v) {
     const std::size_t n = v.size();
@@ -22,6 +28,9 @@ void random_shuffle(std::vector<T>& v) {
     }
 }
 
+/**
+ * @note O(n)
+ */
 std::vector<std::uint32_t> random_permutation(const std::uint32_t n) {
     std::vector<std::uint32_t> res(n);
     std::iota(res.begin(), res.end(), 1);

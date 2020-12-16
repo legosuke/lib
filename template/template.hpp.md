@@ -20,17 +20,21 @@ data:
 
     #include <bits/stdc++.h>
 
+    #define int int64_t
+
     using namespace std;
 
     '
   code: '#include <bits/stdc++.h>
+
+    #define int int64_t
 
     using namespace std;'
   dependsOn: []
   isVerificationFile: false
   path: template/template.hpp
   requiredBy: []
-  timestamp: '2020-12-16 10:25:37+00:00'
+  timestamp: '2020-12-16 16:02:46+00:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
   - test/01_Math/01_NumberTheory/01.01.01_AOJ-ITP1-3-D.test.cpp

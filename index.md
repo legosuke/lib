@@ -18,6 +18,17 @@ data:
     - icon: ':heavy_check_mark:'
       path: 01_Math/01_NumberTheory/02.01.01_is-prime.naive.hpp
       title: "\u7D20\u6570\u5224\u5B9A (\u7D20\u6734\u306A\u624B\u6CD5)"
+  - name: 06_Others/04_Random
+    pages:
+    - icon: ':warning:'
+      path: 06_Others/04_Random/01_random-number.hpp
+      title: 06_Others/04_Random/01_random-number.hpp
+    - icon: ':warning:'
+      path: 06_Others/04_Random/02_random-string.hpp
+      title: 06_Others/04_Random/02_random-string.hpp
+    - icon: ':warning:'
+      path: 06_Others/04_Random/03_random-vector.hpp
+      title: 06_Others/04_Random/03_random-vector.hpp
   - name: template
     pages:
     - icon: ':heavy_check_mark:'

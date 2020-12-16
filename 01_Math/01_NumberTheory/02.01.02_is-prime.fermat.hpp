@@ -9,7 +9,7 @@
  * @brief 素数判定 (フェルマー)
  * @note O(\sqrt{n})
  */
-bool is_prime(std::uint64_t n, std::uint32_t k = 100) {
+bool is_prime(std::uint64_t n, std::uint32_t k = 50) {
     if (n <= 2) return (n == 2);
     for (std::uint32_t i = 0; i < k; ++i) {
         auto a = random_number(2ul, n - 1);

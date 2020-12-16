@@ -28,10 +28,10 @@ data:
       title: "\u5927\u304D\u306A mod \u4E0A\u306E\u8A08\u7B97"
     - icon: ':warning:'
       path: 01_Math/02_Combinatorics/01.03.01_mod-pow.hpp
-      title: "\u7D2F\u4E57 : $a^n\\pmod{m}$"
+      title: "\u7D2F\u4E57 : $a^n\\mod{m}$"
     - icon: ':warning:'
       path: 01_Math/02_Combinatorics/01.03.02_mod-pow.big-mod.hpp
-      title: "\u7D2F\u4E57 : $a^n\\pmod{m}$ (mod \u304C\u5927\u304D\u3044\u5834\u5408\
+      title: "\u7D2F\u4E57 : $a^n\\mod{m}$ (mod \u304C\u5927\u304D\u3044\u5834\u5408\
         )"
   - name: 06_Others/04_Random
     pages:

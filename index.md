@@ -15,6 +15,9 @@ data:
     - icon: ':heavy_check_mark:'
       path: 01_Math/01_NumberTheory/01.04.01_ext-gcd.hpp
       title: "\u62E1\u5F35\u30E6\u30FC\u30AF\u30EA\u30C3\u30C9\u306E\u4E92\u52A9\u6CD5"
+    - icon: ':heavy_check_mark:'
+      path: 01_Math/01_NumberTheory/02.01.01_is-prime.naive.hpp
+      title: "\u7D20\u6570\u5224\u5B9A (\u7D20\u6734\u306A\u624B\u6CD5)"
   - name: template
     pages:
     - icon: ':heavy_check_mark:'
@@ -35,5 +38,8 @@ data:
     - icon: ':heavy_check_mark:'
       path: test/01_Math/01_NumberTheory/01.04.01_AOJ-NTL-1-E.test.cpp
       title: test/01_Math/01_NumberTheory/01.04.01_AOJ-NTL-1-E.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: test/01_Math/01_NumberTheory/02.01.01_AOJ-ALDS1-1-C.test.cpp
+      title: test/01_Math/01_NumberTheory/02.01.01_AOJ-ALDS1-1-C.test.cpp
 layout: toppage
 ---

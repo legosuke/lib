@@ -2,7 +2,7 @@
 #include <cstdint>
 
 /**
- * @brief 累乗 : $a^n\pmod{m}$
+ * @brief 累乗 : $a^n\mod{m}$
  * @note O(\log{n})
  */
 std::int64_t mod_pow(std::int64_t a, std::int64_t n, std::int32_t m) {

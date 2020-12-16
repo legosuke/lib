@@ -6,6 +6,9 @@ data:
   - icon: ':heavy_check_mark:'
     path: test/01_Math/01_NumberTheory/01.01.01_AOJ-ITP1-3-D.test.cpp
     title: test/01_Math/01_NumberTheory/01.01.01_AOJ-ITP1-3-D.test.cpp
+  - icon: ':heavy_check_mark:'
+    path: test/01_Math/01_NumberTheory/01.02.01_AOJ-ALDS1-1-B.test.cpp
+    title: test/01_Math/01_NumberTheory/01.02.01_AOJ-ALDS1-1-B.test.cpp
   _pathExtension: hpp
   _verificationStatusIcon: ':heavy_check_mark:'
   attributes:
@@ -28,6 +31,7 @@ data:
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
   - test/01_Math/01_NumberTheory/01.01.01_AOJ-ITP1-3-D.test.cpp
+  - test/01_Math/01_NumberTheory/01.02.01_AOJ-ALDS1-1-B.test.cpp
 documentation_of: template/template.hpp
 layout: document
 redirect_from:

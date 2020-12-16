@@ -18,6 +18,20 @@ data:
     - icon: ':heavy_check_mark:'
       path: 01_Math/01_NumberTheory/02.01.01_is-prime.naive.hpp
       title: "\u7D20\u6570\u5224\u5B9A (\u7D20\u6734\u306A\u624B\u6CD5)"
+    - icon: ':warning:'
+      path: 01_Math/01_NumberTheory/02.01.02_is-prime.fermat.hpp
+      title: "\u7D20\u6570\u5224\u5B9A (\u30D5\u30A7\u30EB\u30DE\u30FC)"
+  - name: 01_Math/02_Combinatorics
+    pages:
+    - icon: ':warning:'
+      path: 01_Math/02_Combinatorics/01.01.01_big-mod.hpp
+      title: 01_Math/02_Combinatorics/01.01.01_big-mod.hpp
+    - icon: ':warning:'
+      path: 01_Math/02_Combinatorics/01.03.01_mod-pow.hpp
+      title: 01_Math/02_Combinatorics/01.03.01_mod-pow.hpp
+    - icon: ':warning:'
+      path: 01_Math/02_Combinatorics/01.03.02_mod-pow.big-mod.hpp
+      title: 01_Math/02_Combinatorics/01.03.02_mod-pow.big-mod.hpp
   - name: 06_Others/04_Random
     pages:
     - icon: ':warning:'

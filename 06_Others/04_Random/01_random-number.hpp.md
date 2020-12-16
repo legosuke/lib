@@ -3,6 +3,9 @@ data:
   _extendedDependsOn: []
   _extendedRequiredBy:
   - icon: ':warning:'
+    path: 01_Math/01_NumberTheory/02.01.02_is-prime.fermat.hpp
+    title: "\u7D20\u6570\u5224\u5B9A (\u30D5\u30A7\u30EB\u30DE\u30FC)"
+  - icon: ':warning:'
     path: 06_Others/04_Random/02_random-string.hpp
     title: 06_Others/04_Random/02_random-string.hpp
   - icon: ':warning:'
@@ -35,6 +38,7 @@ data:
   requiredBy:
   - 06_Others/04_Random/02_random-string.hpp
   - 06_Others/04_Random/03_random-vector.hpp
+  - 01_Math/01_NumberTheory/02.01.02_is-prime.fermat.hpp
   timestamp: '2020-12-16 22:28:26+00:00'
   verificationStatus: LIBRARY_NO_TESTS
   verifiedWith: []

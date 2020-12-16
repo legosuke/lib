@@ -9,6 +9,9 @@ data:
     - icon: ':heavy_check_mark:'
       path: 01_Math/01_NumberTheory/01.02.01_gcd.hpp
       title: "\u6700\u5927\u516C\u7D04\u6570"
+    - icon: ':warning:'
+      path: 01_Math/01_NumberTheory/01.03.01_lcm.hpp
+      title: "\u6700\u5C0F\u516C\u500D\u6570"
   - name: template
     pages:
     - icon: ':heavy_check_mark:'

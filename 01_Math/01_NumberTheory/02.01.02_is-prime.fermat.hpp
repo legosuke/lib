@@ -7,7 +7,7 @@
 
 /**
  * @brief 素数判定 (フェルマー)
- * @note O(\sqrt{n})
+ * @note O(k\log^2{n})
  */
 bool is_prime(std::uint64_t n, std::uint32_t k = 50) {
     if (n <= 2) return (n == 2);

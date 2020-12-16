@@ -4,7 +4,8 @@
 #include <vector>
 
 /**
- * @brief 約数列挙 (素朴な手法 $O(\sqrt{n})$)
+ * @brief 約数列挙 (素朴な手法)
+ * @note O(\sqrt{n})
  */
 std::vector<std::uint64_t> divisor(std::uint64_t n) {
     std::vector<std::uint64_t> res;

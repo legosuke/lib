@@ -12,6 +12,9 @@ data:
     - icon: ':heavy_check_mark:'
       path: 01_Math/01_NumberTheory/01.03.01_lcm.hpp
       title: "\u6700\u5C0F\u516C\u500D\u6570"
+    - icon: ':heavy_check_mark:'
+      path: 01_Math/01_NumberTheory/01.04.01_ext-gcd.hpp
+      title: "\u62E1\u5F35\u30E6\u30FC\u30AF\u30EA\u30C3\u30C9\u306E\u4E92\u52A9\u6CD5"
   - name: template
     pages:
     - icon: ':heavy_check_mark:'
@@ -29,5 +32,8 @@ data:
     - icon: ':heavy_check_mark:'
       path: test/01_Math/01_NumberTheory/01.03.01_AOJ-NTL-1-C.test.cpp
       title: test/01_Math/01_NumberTheory/01.03.01_AOJ-NTL-1-C.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: test/01_Math/01_NumberTheory/01.04.01_AOJ-NTL-1-E.test.cpp
+      title: test/01_Math/01_NumberTheory/01.04.01_AOJ-NTL-1-E.test.cpp
 layout: toppage
 ---

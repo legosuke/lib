@@ -1,9 +1,9 @@
 #pragma once
+#include <cstdint>
+#include <random>
 #include "01.02.01_gcd.hpp"
 #include "../02_Combinatorics/01.03.02_mod-pow.big-mod.hpp"
 #include "../../06_Others/04_Random/01_random-number.hpp"
-#include <cstdint>
-#include <random>
 
 /**
  * @brief 素数判定 (フェルマー)

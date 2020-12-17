@@ -1,8 +1,8 @@
 #pragma once
-#include "01_random-number.hpp"
 #include <numeric>
 #include <utility>
 #include <vector>
+#include "01_random-number.hpp"
 
 /**
  * @brief 乱数 (列)

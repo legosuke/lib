@@ -13,7 +13,7 @@ data:
     links: []
   bundledCode: "#line 2 \"06_Others/04_Random/03_random-vector.hpp\"\n#include <numeric>\n\
     #include <utility>\n#include <vector>\n#line 2 \"06_Others/04_Random/01_random-number.hpp\"\
-    \n#include <cassert>\n#include <chrono>\n#include <cstdint>\n#include <random>\n\
+    \n#include <cassert>\n#include <chrono>\n#include <random>\n#include <type_traits>\n\
     \nstruct Random {\n    std::mt19937_64 mt;\n    Random() { mt.seed(std::chrono::steady_clock::now().time_since_epoch().count());\
     \ }\n} rnd;\n\n/**\n * @brief \u4E71\u6570 (\u6570)\n * @note O(1)\n */\ntemplate\
     \ <typename T>\nT random_number(const T a, const T b) {\n    assert(a < b);\n\
@@ -47,7 +47,7 @@ data:
   isVerificationFile: false
   path: 06_Others/04_Random/03_random-vector.hpp
   requiredBy: []
-  timestamp: '2020-12-17 01:04:49+00:00'
+  timestamp: '2020-12-17 01:09:23+00:00'
   verificationStatus: LIBRARY_NO_TESTS
   verifiedWith: []
 documentation_of: 06_Others/04_Random/03_random-vector.hpp

@@ -21,8 +21,8 @@ data:
     document_title: "\u4E71\u6570 (\u6570)"
     links: []
   bundledCode: "#line 2 \"06_Others/04_Random/01_random-number.hpp\"\n#include <cassert>\n\
-    #include <chrono>\n#include <cstdint>\n#include <random>\n\nstruct Random {\n\
-    \    std::mt19937_64 mt;\n    Random() { mt.seed(std::chrono::steady_clock::now().time_since_epoch().count());\
+    #include <chrono>\n#include <random>\n#include <type_traits>\n\nstruct Random\
+    \ {\n    std::mt19937_64 mt;\n    Random() { mt.seed(std::chrono::steady_clock::now().time_since_epoch().count());\
     \ }\n} rnd;\n\n/**\n * @brief \u4E71\u6570 (\u6570)\n * @note O(1)\n */\ntemplate\
     \ <typename T>\nT random_number(const T a, const T b) {\n    assert(a < b);\n\
     \    if (std::is_integral<T>::value) {\n        std::uniform_int_distribution<T>\
@@ -30,10 +30,10 @@ data:
     \ dist(a, b);\n        return dist(rnd.mt);\n    }\n}\n\n/**\n * @note O(1)\n\
     \ */\ntemplate <typename T>\nT random_number(const T b) {\n    return random_number(T(0),\
     \ b);\n}\n"
-  code: "#pragma once\n#include <cassert>\n#include <chrono>\n#include <cstdint>\n\
-    #include <random>\n\nstruct Random {\n    std::mt19937_64 mt;\n    Random() {\
-    \ mt.seed(std::chrono::steady_clock::now().time_since_epoch().count()); }\n} rnd;\n\
-    \n/**\n * @brief \u4E71\u6570 (\u6570)\n * @note O(1)\n */\ntemplate <typename\
+  code: "#pragma once\n#include <cassert>\n#include <chrono>\n#include <random>\n\
+    #include <type_traits>\n\nstruct Random {\n    std::mt19937_64 mt;\n    Random()\
+    \ { mt.seed(std::chrono::steady_clock::now().time_since_epoch().count()); }\n\
+    } rnd;\n\n/**\n * @brief \u4E71\u6570 (\u6570)\n * @note O(1)\n */\ntemplate <typename\
     \ T>\nT random_number(const T a, const T b) {\n    assert(a < b);\n    if (std::is_integral<T>::value)\
     \ {\n        std::uniform_int_distribution<T> dist(a, b - 1);\n        return\
     \ dist(rnd.mt);\n    } else {\n        std::uniform_real_distribution<> dist(a,\
@@ -47,7 +47,7 @@ data:
   - 06_Others/04_Random/02_random-string.hpp
   - 06_Others/04_Random/03_random-vector.hpp
   - 01_Math/01_NumberTheory/02.01.02_is-prime.fermat.hpp
-  timestamp: '2020-12-16 23:31:47+00:00'
+  timestamp: '2020-12-17 01:09:23+00:00'
   verificationStatus: LIBRARY_ALL_WA
   verifiedWith:
   - test/01_Math/01_NumberTheory/02.01.02_AOJ-ALDS1-1-C.test.cpp

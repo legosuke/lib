@@ -1,6 +1,6 @@
 #pragma once
 #include <cstring>
-#include "01_random-number.hpp"
+#include "06_Others/04_Random/01_random-number.hpp"
 
 /**
  * @brief 乱数 (文字列)

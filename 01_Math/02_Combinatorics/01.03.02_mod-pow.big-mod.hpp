@@ -1,5 +1,5 @@
 #pragma once
-#include "01.01.01_big-mod.hpp"
+#include "01_Math/02_Combinatorics/01.01.01_big-mod.hpp"
 
 /**
  * @brief 累乗 : $a^n\bmod{m}$ ($m$ が大きい場合)

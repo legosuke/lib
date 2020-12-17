@@ -33,16 +33,16 @@ data:
       path: 01_Math/02_Combinatorics/01.03.02_mod-pow.big-mod.hpp
       title: "\u7D2F\u4E57 : $a^n\\bmod{m}$ ($m$ \u304C\u5927\u304D\u3044\u5834\u5408\
         )"
-  - name: 06_Others/04_Random
+  - name: 06_Others/04_Rnd
     pages:
     - icon: ':x:'
-      path: 06_Others/04_Random/01_rnd-number.hpp
+      path: 06_Others/04_Rnd/01_rnd-number.hpp
       title: "\u4E71\u6570 (\u6570)"
     - icon: ':warning:'
-      path: 06_Others/04_Random/02_rnd-string.hpp
+      path: 06_Others/04_Rnd/02_rnd-string.hpp
       title: "\u4E71\u6570 (\u6587\u5B57\u5217)"
     - icon: ':warning:'
-      path: 06_Others/04_Random/03_rnd-vector.hpp
+      path: 06_Others/04_Rnd/03_rnd-vector.hpp
       title: "\u4E71\u6570 (\u5217)"
   - name: template
     pages:

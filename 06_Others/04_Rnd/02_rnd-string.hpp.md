@@ -1,7 +1,7 @@
 ---
 data:
   _extendedDependsOn:
-  - icon: ':x:'
+  - icon: ':heavy_check_mark:'
     path: 06_Others/04_Rnd/01_rnd-number.hpp
     title: "\u4E71\u6570 (\u6570)"
   _extendedRequiredBy: []

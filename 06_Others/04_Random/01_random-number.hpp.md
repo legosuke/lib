@@ -2,15 +2,21 @@
 data:
   _extendedDependsOn: []
   _extendedRequiredBy:
+  - icon: ':x:'
+    path: 01_Math/01_NumberTheory/02.01.02_is-prime.fermat.hpp
+    title: "\u7D20\u6570\u5224\u5B9A (\u30D5\u30A7\u30EB\u30DE\u30FC)"
   - icon: ':warning:'
     path: 06_Others/04_Random/02_random-string.hpp
     title: "\u4E71\u6570 (\u6587\u5B57\u5217)"
   - icon: ':warning:'
     path: 06_Others/04_Random/03_random-vector.hpp
     title: "\u4E71\u6570 (\u5217)"
-  _extendedVerifiedWith: []
+  _extendedVerifiedWith:
+  - icon: ':x:'
+    path: test/01_Math/01_NumberTheory/02.01.02_AOJ-ALDS1-1-C.test.cpp
+    title: test/01_Math/01_NumberTheory/02.01.02_AOJ-ALDS1-1-C.test.cpp
   _pathExtension: hpp
-  _verificationStatusIcon: ':warning:'
+  _verificationStatusIcon: ':x:'
   attributes:
     document_title: "\u4E71\u6570 (\u6570)"
     links: []
@@ -40,9 +46,11 @@ data:
   requiredBy:
   - 06_Others/04_Random/02_random-string.hpp
   - 06_Others/04_Random/03_random-vector.hpp
+  - 01_Math/01_NumberTheory/02.01.02_is-prime.fermat.hpp
   timestamp: '2020-12-16 23:31:47+00:00'
-  verificationStatus: LIBRARY_NO_TESTS
-  verifiedWith: []
+  verificationStatus: LIBRARY_ALL_WA
+  verifiedWith:
+  - test/01_Math/01_NumberTheory/02.01.02_AOJ-ALDS1-1-C.test.cpp
 documentation_of: 06_Others/04_Random/01_random-number.hpp
 layout: document
 redirect_from:

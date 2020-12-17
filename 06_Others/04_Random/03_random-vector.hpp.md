@@ -1,7 +1,7 @@
 ---
 data:
   _extendedDependsOn:
-  - icon: ':warning:'
+  - icon: ':x:'
     path: 06_Others/04_Random/01_random-number.hpp
     title: "\u4E71\u6570 (\u6570)"
   _extendedRequiredBy: []
@@ -32,8 +32,8 @@ data:
     \ std::uint32_t n) {\n    std::vector<std::uint32_t> res(n);\n    std::iota(res.begin(),\
     \ res.end(), 1);\n    random_shuffle(res);\n    return res;\n}\n"
   code: "#pragma once\n#include <numeric>\n#include <utility>\n#include <vector>\n\
-    #include \"01_random-number.hpp\"\n\n/**\n * @brief \u4E71\u6570 (\u5217)\n *\
-    \ @note O(n)\n */\ntemplate <typename T>\nstd::vector<T> random_vector_number(const\
+    #include \"06_Others/04_Random/01_random-number.hpp\"\n\n/**\n * @brief \u4E71\
+    \u6570 (\u5217)\n * @note O(n)\n */\ntemplate <typename T>\nstd::vector<T> random_vector_number(const\
     \ std::size_t n, const T a, const T b) {\n    std::vector<T> res(n);\n    for\
     \ (std::size_t i = 0; i < n; ++i) {\n        res[i] = random_number(a, b);\n \
     \   }\n    return res;\n}\n\n/**\n * @note O(|v|)\n */\ntemplate <typename T>\n\
@@ -47,7 +47,7 @@ data:
   isVerificationFile: false
   path: 06_Others/04_Random/03_random-vector.hpp
   requiredBy: []
-  timestamp: '2020-12-17 00:27:59+00:00'
+  timestamp: '2020-12-17 01:04:49+00:00'
   verificationStatus: LIBRARY_NO_TESTS
   verifiedWith: []
 documentation_of: 06_Others/04_Random/03_random-vector.hpp

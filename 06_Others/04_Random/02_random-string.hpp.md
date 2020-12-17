@@ -1,7 +1,7 @@
 ---
 data:
   _extendedDependsOn:
-  - icon: ':warning:'
+  - icon: ':x:'
     path: 06_Others/04_Random/01_random-number.hpp
     title: "\u4E71\u6570 (\u6570)"
   _extendedRequiredBy: []
@@ -35,8 +35,8 @@ data:
     ;\n    return random_string_by_charset(n, cs);\n}\n\n/**\n * @note O(n)\n */\n\
     std::string random_digit(const std::size_t n) {\n    const std::string cs = \"\
     012345689\";\n    return random_string_by_charset(n, cs);\n}\n"
-  code: "#pragma once\n#include <cstring>\n#include \"01_random-number.hpp\"\n\n/**\n\
-    \ * @brief \u4E71\u6570 (\u6587\u5B57\u5217)\n * @note O(n)\n */\nstd::string\
+  code: "#pragma once\n#include <cstring>\n#include \"06_Others/04_Random/01_random-number.hpp\"\
+    \n\n/**\n * @brief \u4E71\u6570 (\u6587\u5B57\u5217)\n * @note O(n)\n */\nstd::string\
     \ random_string_by_charset(const std::size_t n, const std::string cs) {\n    const\
     \ auto sz = cs.size();\n    std::string res;\n    for (std::size_t i = 0; i <\
     \ n; ++i) {\n        res += cs[random_number(sz)];\n    }\n    return res;\n}\n\
@@ -55,7 +55,7 @@ data:
   isVerificationFile: false
   path: 06_Others/04_Random/02_random-string.hpp
   requiredBy: []
-  timestamp: '2020-12-17 00:27:59+00:00'
+  timestamp: '2020-12-17 01:04:49+00:00'
   verificationStatus: LIBRARY_NO_TESTS
   verifiedWith: []
 documentation_of: 06_Others/04_Random/02_random-string.hpp

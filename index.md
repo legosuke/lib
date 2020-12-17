@@ -36,13 +36,13 @@ data:
   - name: 06_Others/04_Random
     pages:
     - icon: ':x:'
-      path: 06_Others/04_Random/01_random-number.hpp
+      path: 06_Others/04_Random/01_rnd-number.hpp
       title: "\u4E71\u6570 (\u6570)"
     - icon: ':warning:'
-      path: 06_Others/04_Random/02_random-string.hpp
+      path: 06_Others/04_Random/02_rnd-string.hpp
       title: "\u4E71\u6570 (\u6587\u5B57\u5217)"
     - icon: ':warning:'
-      path: 06_Others/04_Random/03_random-vector.hpp
+      path: 06_Others/04_Random/03_rnd-vector.hpp
       title: "\u4E71\u6570 (\u5217)"
   - name: template
     pages:

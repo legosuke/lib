@@ -49,6 +49,11 @@ data:
     - icon: ':heavy_check_mark:'
       path: template/template.hpp
       title: template/template.hpp
+  - name: test/01_Math/01_NumberTheory
+    pages:
+    - icon: ':warning:'
+      path: test/01_Math/01_NumberTheory/02.01.02_AOJ-ALDS1-1-C.test copy.cpp
+      title: test/01_Math/01_NumberTheory/02.01.02_AOJ-ALDS1-1-C.test copy.cpp
   verificationCategories:
   - name: test/01_Math/01_NumberTheory
     pages:

@@ -1,7 +1,10 @@
 ---
 data:
   _extendedDependsOn: []
-  _extendedRequiredBy: []
+  _extendedRequiredBy:
+  - icon: ':warning:'
+    path: test/01_Math/01_NumberTheory/02.01.02_AOJ-ALDS1-1-C.test copy.cpp
+    title: test/01_Math/01_NumberTheory/02.01.02_AOJ-ALDS1-1-C.test copy.cpp
   _extendedVerifiedWith:
   - icon: ':heavy_check_mark:'
     path: test/01_Math/01_NumberTheory/01.01.01_AOJ-ITP1-3-D.test.cpp
@@ -39,7 +42,8 @@ data:
   dependsOn: []
   isVerificationFile: false
   path: template/template.hpp
-  requiredBy: []
+  requiredBy:
+  - test/01_Math/01_NumberTheory/02.01.02_AOJ-ALDS1-1-C.test copy.cpp
   timestamp: '2020-12-16 16:02:46+00:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:

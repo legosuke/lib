@@ -11,6 +11,9 @@ data:
   - icon: ':warning:'
     path: 06_Others/04_Random/03_random-vector.hpp
     title: "\u4E71\u6570 (\u5217)"
+  - icon: ':warning:'
+    path: test/01_Math/01_NumberTheory/02.01.02_AOJ-ALDS1-1-C.test copy.cpp
+    title: test/01_Math/01_NumberTheory/02.01.02_AOJ-ALDS1-1-C.test copy.cpp
   _extendedVerifiedWith: []
   _pathExtension: hpp
   _verificationStatusIcon: ':warning:'
@@ -41,6 +44,7 @@ data:
   isVerificationFile: false
   path: 06_Others/04_Random/01_random-number.hpp
   requiredBy:
+  - test/01_Math/01_NumberTheory/02.01.02_AOJ-ALDS1-1-C.test copy.cpp
   - 06_Others/04_Random/02_random-string.hpp
   - 06_Others/04_Random/03_random-vector.hpp
   - 01_Math/01_NumberTheory/02.01.02_is-prime.fermat.hpp

@@ -1,8 +1,8 @@
 #pragma once
 #include <cassert>
 #include <chrono>
-#include <cstdint>
 #include <random>
+#include <type_traits>
 
 struct Random {
     std::mt19937_64 mt;

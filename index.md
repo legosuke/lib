@@ -6,7 +6,7 @@ data:
     - icon: ':heavy_check_mark:'
       path: 01_Math/01_NumberTheory/01.01.01_divisor.naive.hpp
       title: "\u7D04\u6570\u5217\u6319 (\u7D20\u6734\u306A\u624B\u6CD5)"
-    - icon: ':question:'
+    - icon: ':heavy_check_mark:'
       path: 01_Math/01_NumberTheory/01.02.01_gcd.hpp
       title: "\u6700\u5927\u516C\u7D04\u6570"
     - icon: ':heavy_check_mark:'
@@ -18,24 +18,24 @@ data:
     - icon: ':heavy_check_mark:'
       path: 01_Math/01_NumberTheory/02.01.01_is-prime.naive.hpp
       title: "\u7D20\u6570\u5224\u5B9A (\u7D20\u6734\u306A\u624B\u6CD5)"
-    - icon: ':x:'
+    - icon: ':warning:'
       path: 01_Math/01_NumberTheory/02.01.02_is-prime.fermat.hpp
       title: "\u7D20\u6570\u5224\u5B9A (\u30D5\u30A7\u30EB\u30DE\u30FC)"
   - name: 01_Math/02_Combinatorics
     pages:
-    - icon: ':x:'
+    - icon: ':warning:'
       path: 01_Math/02_Combinatorics/01.01.01_big-mod.hpp
       title: "\u5927\u304D\u306A mod \u4E0A\u306E\u8A08\u7B97"
     - icon: ':warning:'
       path: 01_Math/02_Combinatorics/01.03.01_mod-pow.hpp
       title: "\u7D2F\u4E57 : $a^n\\bmod{m}$"
-    - icon: ':x:'
+    - icon: ':warning:'
       path: 01_Math/02_Combinatorics/01.03.02_mod-pow.big-mod.hpp
       title: "\u7D2F\u4E57 : $a^n\\bmod{m}$ ($m$ \u304C\u5927\u304D\u3044\u5834\u5408\
         )"
   - name: 06_Others/04_Random
     pages:
-    - icon: ':x:'
+    - icon: ':warning:'
       path: 06_Others/04_Random/01_random-number.hpp
       title: "\u4E71\u6570 (\u6570)"
     - icon: ':warning:'
@@ -46,7 +46,7 @@ data:
       title: "\u4E71\u6570 (\u5217)"
   - name: template
     pages:
-    - icon: ':question:'
+    - icon: ':heavy_check_mark:'
       path: template/template.hpp
       title: template/template.hpp
   verificationCategories:

@@ -2,7 +2,7 @@
 #include <numeric>
 #include <utility>
 #include <vector>
-#include "06_Others/04_Rnd/01_rnd-number.hpp"
+#include "06_Others/04_Random/01_random-number.hpp"
 
 /**
  * @brief 乱数 (列)

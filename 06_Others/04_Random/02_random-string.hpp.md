@@ -1,7 +1,7 @@
 ---
 data:
   _extendedDependsOn:
-  - icon: ':warning:'
+  - icon: ':x:'
     path: 06_Others/04_Random/01_random-number.hpp
     title: "\u4E71\u6570 (\u6570)"
   _extendedRequiredBy: []

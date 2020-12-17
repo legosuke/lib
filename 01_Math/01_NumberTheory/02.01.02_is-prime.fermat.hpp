@@ -3,7 +3,7 @@
 #include <random>
 #include "01_Math/01_NumberTheory/01.02.01_gcd.hpp"
 #include "01_Math/02_Combinatorics/01.03.02_mod-pow.big-mod.hpp"
-#include "06_Others/04_Random/01_rnd-number.hpp"
+#include "06_Others/04_Rnd/01_rnd-number.hpp"
 
 /**
  * @brief 素数判定 (フェルマー)

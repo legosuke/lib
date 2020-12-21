@@ -1,0 +1,16 @@
+#pragma once
+#include <cstdint>
+#include <cassert>
+
+template <class MatrixClass>
+MatrixClass operator ^ (MatrixClass A, std::uint64_t n) {
+    assert(A.height() == A.width());
+    MatrixClass B(A.height(), A.width(), 0);
+    for (int i = 0; i < A.height(); ++i) B[i][i] = 1;
+    while (n) {
+        if (n & 1) B = B * A;
+        A = A * A;
+        n >>= 1;
+    }
+    return B;
+}

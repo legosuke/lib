@@ -15,6 +15,6 @@ signed main() {
     }
     auto ans = A * B;
     for (int i = 0; i < n; ++i) for (int j = 0; j < l; ++j) {
-        cout << ans[i][j] << endl;
+        cout << ans[i][j] << " \n"[j + 1 == l];
     }
 }

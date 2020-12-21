@@ -37,6 +37,38 @@ data:
       path: 01_Math/02_Combinatorics/01.03.02_mod-pow.big-mod.hpp
       title: "\u7D2F\u4E57 : $a^n\\bmod{m}$ ($m$ \u304C\u5927\u304D\u3044\u5834\u5408\
         )"
+  - name: 01_Math/03_Algebra
+    pages:
+    - icon: ':warning:'
+      path: 01_Math/03_Algebra/01.01.01.01_matrix.vector.hpp
+      title: 01_Math/03_Algebra/01.01.01.01_matrix.vector.hpp
+    - icon: ':warning:'
+      path: 01_Math/03_Algebra/01.01.01.02_matrix.array.hpp
+      title: 01_Math/03_Algebra/01.01.01.02_matrix.array.hpp
+    - icon: ':warning:'
+      path: 01_Math/03_Algebra/01.01.02.01_square-matrix.vector.hpp
+      title: 01_Math/03_Algebra/01.01.02.01_square-matrix.vector.hpp
+    - icon: ':warning:'
+      path: 01_Math/03_Algebra/01.01.02.02_square-matrix.array.hpp
+      title: 01_Math/03_Algebra/01.01.02.02_square-matrix.array.hpp
+    - icon: ':warning:'
+      path: 01_Math/03_Algebra/01.02.01.00_matrix-operation.hpp
+      title: 01_Math/03_Algebra/01.02.01.00_matrix-operation.hpp
+    - icon: ':warning:'
+      path: 01_Math/03_Algebra/01.02.01.01_matrix-operation.add.hpp
+      title: 01_Math/03_Algebra/01.02.01.01_matrix-operation.add.hpp
+    - icon: ':warning:'
+      path: 01_Math/03_Algebra/01.02.01.02_matrix-operation.sub.hpp
+      title: 01_Math/03_Algebra/01.02.01.02_matrix-operation.sub.hpp
+    - icon: ':warning:'
+      path: 01_Math/03_Algebra/01.02.01.03_matrix-operation.mul.hpp
+      title: 01_Math/03_Algebra/01.02.01.03_matrix-operation.mul.hpp
+    - icon: ':warning:'
+      path: 01_Math/03_Algebra/01.02.01.04_matrix-operation.div.hpp
+      title: 01_Math/03_Algebra/01.02.01.04_matrix-operation.div.hpp
+    - icon: ':warning:'
+      path: 01_Math/03_Algebra/01.02.01.05_matrix-operation.pow.hpp
+      title: 01_Math/03_Algebra/01.02.01.05_matrix-operation.pow.hpp
   - name: 06_Others/04_Random
     pages:
     - icon: ':heavy_check_mark:'

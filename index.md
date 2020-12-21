@@ -41,34 +41,34 @@ data:
     pages:
     - icon: ':heavy_check_mark:'
       path: 01_Math/03_Algebra/01.01.01.01_matrix.vector.hpp
-      title: 01_Math/03_Algebra/01.01.01.01_matrix.vector.hpp
+      title: "\u884C\u5217 (vector \u306B\u3088\u308B\u5B9F\u88C5)"
     - icon: ':warning:'
       path: 01_Math/03_Algebra/01.01.01.02_matrix.array.hpp
-      title: 01_Math/03_Algebra/01.01.01.02_matrix.array.hpp
+      title: "\u884C\u5217 (array \u306B\u3088\u308B\u5B9F\u88C5)"
     - icon: ':warning:'
       path: 01_Math/03_Algebra/01.01.02.01_square-matrix.vector.hpp
-      title: 01_Math/03_Algebra/01.01.02.01_square-matrix.vector.hpp
+      title: "\u6B63\u65B9\u884C\u5217 (vector \u306B\u3088\u308B\u5B9F\u88C5)"
     - icon: ':warning:'
       path: 01_Math/03_Algebra/01.01.02.02_square-matrix.array.hpp
-      title: 01_Math/03_Algebra/01.01.02.02_square-matrix.array.hpp
+      title: "\u6B63\u65B9\u884C\u5217 (array \u306B\u3088\u308B\u5B9F\u88C5)"
     - icon: ':heavy_check_mark:'
       path: 01_Math/03_Algebra/01.02.01.00_matrix-operation.hpp
-      title: 01_Math/03_Algebra/01.02.01.00_matrix-operation.hpp
+      title: "\u884C\u5217\u6F14\u7B97 (ALL)"
     - icon: ':heavy_check_mark:'
       path: 01_Math/03_Algebra/01.02.01.01_matrix-operation.add.hpp
-      title: 01_Math/03_Algebra/01.02.01.01_matrix-operation.add.hpp
+      title: "\u884C\u5217\u6F14\u7B97 (\u52A0\u7B97)"
     - icon: ':heavy_check_mark:'
       path: 01_Math/03_Algebra/01.02.01.02_matrix-operation.sub.hpp
-      title: 01_Math/03_Algebra/01.02.01.02_matrix-operation.sub.hpp
+      title: "\u884C\u5217\u6F14\u7B97 (\u6E1B\u7B97)"
     - icon: ':heavy_check_mark:'
       path: 01_Math/03_Algebra/01.02.01.03_matrix-operation.mul.hpp
-      title: 01_Math/03_Algebra/01.02.01.03_matrix-operation.mul.hpp
+      title: "\u884C\u5217\u6F14\u7B97 (\u4E57\u7B97)"
     - icon: ':heavy_check_mark:'
       path: 01_Math/03_Algebra/01.02.01.04_matrix-operation.div.hpp
-      title: 01_Math/03_Algebra/01.02.01.04_matrix-operation.div.hpp
+      title: "\u884C\u5217\u6F14\u7B97 (\u9664\u7B97)"
     - icon: ':heavy_check_mark:'
       path: 01_Math/03_Algebra/01.02.01.05_matrix-operation.pow.hpp
-      title: 01_Math/03_Algebra/01.02.01.05_matrix-operation.pow.hpp
+      title: "\u884C\u5217\u6F14\u7B97 (\u7D2F\u4E57)"
   - name: 06_Others/04_Random
     pages:
     - icon: ':heavy_check_mark:'

@@ -39,7 +39,7 @@ data:
         )"
   - name: 01_Math/03_Algebra
     pages:
-    - icon: ':warning:'
+    - icon: ':heavy_check_mark:'
       path: 01_Math/03_Algebra/01.01.01.01_matrix.vector.hpp
       title: 01_Math/03_Algebra/01.01.01.01_matrix.vector.hpp
     - icon: ':warning:'
@@ -51,22 +51,22 @@ data:
     - icon: ':warning:'
       path: 01_Math/03_Algebra/01.01.02.02_square-matrix.array.hpp
       title: 01_Math/03_Algebra/01.01.02.02_square-matrix.array.hpp
-    - icon: ':warning:'
+    - icon: ':heavy_check_mark:'
       path: 01_Math/03_Algebra/01.02.01.00_matrix-operation.hpp
       title: 01_Math/03_Algebra/01.02.01.00_matrix-operation.hpp
-    - icon: ':warning:'
+    - icon: ':heavy_check_mark:'
       path: 01_Math/03_Algebra/01.02.01.01_matrix-operation.add.hpp
       title: 01_Math/03_Algebra/01.02.01.01_matrix-operation.add.hpp
-    - icon: ':warning:'
+    - icon: ':heavy_check_mark:'
       path: 01_Math/03_Algebra/01.02.01.02_matrix-operation.sub.hpp
       title: 01_Math/03_Algebra/01.02.01.02_matrix-operation.sub.hpp
-    - icon: ':warning:'
+    - icon: ':heavy_check_mark:'
       path: 01_Math/03_Algebra/01.02.01.03_matrix-operation.mul.hpp
       title: 01_Math/03_Algebra/01.02.01.03_matrix-operation.mul.hpp
-    - icon: ':warning:'
+    - icon: ':heavy_check_mark:'
       path: 01_Math/03_Algebra/01.02.01.04_matrix-operation.div.hpp
       title: 01_Math/03_Algebra/01.02.01.04_matrix-operation.div.hpp
-    - icon: ':warning:'
+    - icon: ':heavy_check_mark:'
       path: 01_Math/03_Algebra/01.02.01.05_matrix-operation.pow.hpp
       title: 01_Math/03_Algebra/01.02.01.05_matrix-operation.pow.hpp
   - name: 06_Others/04_Random
@@ -109,5 +109,10 @@ data:
     - icon: ':heavy_check_mark:'
       path: test/01_Math/01_NumberTheory/02.01.03_AOJ-ALDS1-1-C.test.cpp
       title: test/01_Math/01_NumberTheory/02.01.03_AOJ-ALDS1-1-C.test.cpp
+  - name: test/01_Math/03_Algebra
+    pages:
+    - icon: ':heavy_check_mark:'
+      path: test/01_Math/03_Algebra/01.01.01.01_ITP1-6-D.test.cpp
+      title: test/01_Math/03_Algebra/01.01.01.01_ITP1-6-D.test.cpp
 layout: toppage
 ---

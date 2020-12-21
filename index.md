@@ -39,7 +39,7 @@ data:
         )"
   - name: 01_Math/03_Algebra
     pages:
-    - icon: ':heavy_check_mark:'
+    - icon: ':question:'
       path: 01_Math/03_Algebra/01.01.01.01_matrix.vector.hpp
       title: "\u884C\u5217 (vector \u306B\u3088\u308B\u5B9F\u88C5)"
     - icon: ':warning:'
@@ -51,22 +51,22 @@ data:
     - icon: ':warning:'
       path: 01_Math/03_Algebra/01.01.02.02_square-matrix.array.hpp
       title: "\u6B63\u65B9\u884C\u5217 (array \u306B\u3088\u308B\u5B9F\u88C5)"
-    - icon: ':heavy_check_mark:'
+    - icon: ':question:'
       path: 01_Math/03_Algebra/01.02.01.00_matrix-operation.hpp
       title: "\u884C\u5217\u6F14\u7B97 (ALL)"
-    - icon: ':heavy_check_mark:'
+    - icon: ':question:'
       path: 01_Math/03_Algebra/01.02.01.01_matrix-operation.add.hpp
       title: "\u884C\u5217\u6F14\u7B97 (\u52A0\u7B97)"
-    - icon: ':heavy_check_mark:'
+    - icon: ':question:'
       path: 01_Math/03_Algebra/01.02.01.02_matrix-operation.sub.hpp
       title: "\u884C\u5217\u6F14\u7B97 (\u6E1B\u7B97)"
-    - icon: ':heavy_check_mark:'
+    - icon: ':question:'
       path: 01_Math/03_Algebra/01.02.01.03_matrix-operation.mul.hpp
       title: "\u884C\u5217\u6F14\u7B97 (\u4E57\u7B97)"
-    - icon: ':heavy_check_mark:'
+    - icon: ':question:'
       path: 01_Math/03_Algebra/01.02.01.04_matrix-operation.div.hpp
       title: "\u884C\u5217\u6F14\u7B97 (\u9664\u7B97)"
-    - icon: ':heavy_check_mark:'
+    - icon: ':question:'
       path: 01_Math/03_Algebra/01.02.01.05_matrix-operation.pow.hpp
       title: "\u884C\u5217\u6F14\u7B97 (\u7D2F\u4E57)"
   - name: 06_Others/04_Random
@@ -82,7 +82,7 @@ data:
       title: "\u4E71\u6570 (\u5217)"
   - name: template
     pages:
-    - icon: ':heavy_check_mark:'
+    - icon: ':question:'
       path: template/template.hpp
       title: template/template.hpp
   verificationCategories:
@@ -114,5 +114,8 @@ data:
     - icon: ':heavy_check_mark:'
       path: test/01_Math/03_Algebra/01.01.01.01_ITP1-6-D.test.cpp
       title: test/01_Math/03_Algebra/01.01.01.01_ITP1-6-D.test.cpp
+    - icon: ':x:'
+      path: test/01_Math/03_Algebra/01.01.01.01_ITP1-7-D.test.cpp
+      title: test/01_Math/03_Algebra/01.01.01.01_ITP1-7-D.test.cpp
 layout: toppage
 ---

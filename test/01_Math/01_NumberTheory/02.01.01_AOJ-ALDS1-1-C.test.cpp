@@ -1,5 +1,5 @@
 #define PROBLEM "https://onlinejudge.u-aizu.ac.jp/courses/lesson/1/ALDS1/1/ALDS1_1_C"
-#include "template/template.hpp"
+#include "../../../template/template.hpp"
 #include "../../../01_Math/01_NumberTheory/02.01.01_is-prime.naive.hpp"
 
 signed main() {

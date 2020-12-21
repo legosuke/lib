@@ -1,5 +1,5 @@
 #define PROBLEM "https://onlinejudge.u-aizu.ac.jp/courses/lesson/2/ITP1/all/ITP1_3_D"
-#include "template/template.hpp"
+#include "../../../template/template.hpp"
 #include "../../../01_Math/01_NumberTheory/01.01.01_divisor.naive.hpp"
 
 signed main() {

@@ -1,5 +1,5 @@
 #define PROBLEM "https://yukicoder.me/problems/no/3030"
-#include "template/template.hpp"
+#include "../../../template/template.hpp"
 #include "../../../01_Math/01_NumberTheory/02.01.03_is-prime.miller-rabin.hpp"
 
 signed main() {

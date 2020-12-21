@@ -13,12 +13,6 @@ inline std::int64_t mod(std::int64_t a, std::int64_t m) {
  * @note O(\log{m})
  */
 inline std::int64_t mul(std::int64_t a, std::int64_t b, std::int64_t m) {
-    a = mod(a, m), b = mod(b, m);
-    std::int64_t res = 0;
-    while (b) {
-        if (b & 1) res = mod(res + a, m);
-        a = mod(a + a, m);
-        b >>= 1;
-    }
-    return res;
+    __int128_t am = mod(a, m), bm = mod(b, m);
+    return std::int64_t(am * bm % m);
 }

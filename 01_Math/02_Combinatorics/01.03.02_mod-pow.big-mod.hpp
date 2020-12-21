@@ -3,7 +3,7 @@
 
 /**
  * @brief 累乗 : $a^n\bmod{m}$ ($m$ が大きい場合)
- * @note O(\log{n}\log{m})
+ * @note O(\log{n})
  */
 std::uint64_t mod_pow(std::int64_t a, std::uint64_t n, std::uint64_t m) {
     a = mod(a, m);

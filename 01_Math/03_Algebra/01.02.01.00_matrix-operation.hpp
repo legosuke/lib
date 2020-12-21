@@ -4,3 +4,7 @@
 #include "01.02.01.03_matrix-operation.mul.hpp"
 #include "01.02.01.04_matrix-operation.div.hpp"
 #include "01.02.01.05_matrix-operation.pow.hpp"
+
+/**
+ * @brief 行列演算 (ALL)
+ */

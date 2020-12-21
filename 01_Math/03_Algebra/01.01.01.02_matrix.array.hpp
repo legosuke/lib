@@ -2,6 +2,9 @@
 #include <cstdint>
 #include <array>
 
+/**
+ * @brief 行列 (array による実装)
+ */
 template <class T, std::uint32_t n, std::uint32_t m>
 class Matrix {
 protected:

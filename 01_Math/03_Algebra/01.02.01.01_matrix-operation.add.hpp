@@ -1,5 +1,8 @@
 #pragma once
 
+/**
+ * @brief 行列演算 (加算)
+ */
 template <class MatrixClass, typename ScalarType>
 MatrixClass operator + (const MatrixClass& A, const ScalarType& x) {
     MatrixClass C(A.height(), A.width());

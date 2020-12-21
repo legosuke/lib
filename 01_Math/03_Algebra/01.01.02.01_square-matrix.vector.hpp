@@ -2,6 +2,9 @@
 #include <vector>
 #include "01.01.01.01_matrix.vector.hpp"
 
+/**
+ * @brief 正方行列 (vector による実装)
+ */
 template <class T>
 class SquareMatrix : public Matrix<T> {
 public:

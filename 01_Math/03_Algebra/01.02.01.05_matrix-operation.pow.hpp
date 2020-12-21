@@ -2,6 +2,9 @@
 #include <cstdint>
 #include <cassert>
 
+/**
+ * @brief 行列演算 (累乗)
+ */
 template <class MatrixClass>
 MatrixClass operator ^ (MatrixClass A, std::uint64_t n) {
     assert(A.height() == A.width());

@@ -2,6 +2,9 @@
 #include <cstdint>
 #include <vector>
 
+/**
+ * @brief 行列 (vector による実装)
+ */
 template <class T>
 class Matrix {
 protected:

@@ -27,11 +27,11 @@ data:
   - icon: ':heavy_check_mark:'
     path: test/01_Math/03_Algebra/01.01.01.01_ITP1-6-D.test.cpp
     title: test/01_Math/03_Algebra/01.01.01.01_ITP1-6-D.test.cpp
-  - icon: ':x:'
+  - icon: ':heavy_check_mark:'
     path: test/01_Math/03_Algebra/01.01.01.01_ITP1-7-D.test.cpp
     title: test/01_Math/03_Algebra/01.01.01.01_ITP1-7-D.test.cpp
   _pathExtension: hpp
-  _verificationStatusIcon: ':question:'
+  _verificationStatusIcon: ':heavy_check_mark:'
   attributes:
     links: []
   bundledCode: '#line 1 "template/template.hpp"
@@ -53,7 +53,7 @@ data:
   path: template/template.hpp
   requiredBy: []
   timestamp: '2020-12-16 16:02:46+00:00'
-  verificationStatus: LIBRARY_SOME_WA
+  verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
   - test/01_Math/03_Algebra/01.01.01.01_ITP1-7-D.test.cpp
   - test/01_Math/03_Algebra/01.01.01.01_ITP1-6-D.test.cpp

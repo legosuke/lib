@@ -3,27 +3,27 @@
 /**
  * @brief 行列演算 (加算)
  */
-template <class MatrixClass, typename ScalarType>
-MatrixClass operator + (const MatrixClass& A, const ScalarType& x) {
-    MatrixClass C(A.height(), A.width());
+template <class Matrix, typename Scalar>
+Matrix operator + (const Matrix& A, const Scalar& x) {
+    Matrix C(A.height(), A.width());
     for (int i = 0; i < A.height(); ++i) for (int j = 0; j < A.width(); ++j) {
         C[i][j] = A[i][j] + x;
     }
     return C;
 }
 
-template <typename ScalarType, class MatrixClass>
-MatrixClass operator + (const ScalarType& x, const MatrixClass& A) {
-    MatrixClass C(A.height(), A.width());
+template <typename Scalar, class Matrix>
+Matrix operator + (const Scalar& x, const Matrix& A) {
+    Matrix C(A.height(), A.width());
     for (int i = 0; i < A.height(); ++i) for (int j = 0; j < A.width(); ++j) {
         C[i][j] = x + A[i][j];
     }
     return C;
 }
 
-template <class MatrixClass>
-MatrixClass operator + (const MatrixClass& A, const MatrixClass& B) {
-    MatrixClass C(A.height(), A.width());
+template <class Matrix>
+Matrix operator + (const Matrix& A, const Matrix& B) {
+    Matrix C(A.height(), A.width());
     for (int i = 0; i < A.height(); ++i) for (int j = 0; j < A.width(); ++j) {
         C[i][j] = A[i][j] + B[i][j];
     }

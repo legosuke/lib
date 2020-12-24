@@ -25,6 +25,9 @@ data:
     path: test/01_Math/01_NumberTheory/02.01.03_AOJ-ALDS1-1-C.test.cpp
     title: test/01_Math/01_NumberTheory/02.01.03_AOJ-ALDS1-1-C.test.cpp
   - icon: ':heavy_check_mark:'
+    path: test/01_Math/02_Combinatorics/01.03.01_AOJ-NTL-1-B.test.cpp
+    title: test/01_Math/02_Combinatorics/01.03.01_AOJ-NTL-1-B.test.cpp
+  - icon: ':heavy_check_mark:'
     path: test/01_Math/03_Algebra/01.01.01.01_ITP1-6-D.test.cpp
     title: test/01_Math/03_Algebra/01.01.01.01_ITP1-6-D.test.cpp
   - icon: ':heavy_check_mark:'
@@ -55,6 +58,7 @@ data:
   timestamp: '2020-12-16 16:02:46+00:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
+  - test/01_Math/02_Combinatorics/01.03.01_AOJ-NTL-1-B.test.cpp
   - test/01_Math/03_Algebra/01.01.01.01_ITP1-7-D.test.cpp
   - test/01_Math/03_Algebra/01.01.01.01_ITP1-6-D.test.cpp
   - test/01_Math/01_NumberTheory/01.04.01_AOJ-NTL-1-E.test.cpp

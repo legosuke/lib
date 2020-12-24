@@ -30,7 +30,7 @@ data:
     - icon: ':heavy_check_mark:'
       path: 01_Math/02_Combinatorics/01.01.01_big-mod.hpp
       title: "\u5927\u304D\u306A mod \u4E0A\u306E\u8A08\u7B97"
-    - icon: ':warning:'
+    - icon: ':heavy_check_mark:'
       path: 01_Math/02_Combinatorics/01.03.01_mod-pow.hpp
       title: "\u7D2F\u4E57 : $a^n\\bmod{m}$"
     - icon: ':heavy_check_mark:'
@@ -109,6 +109,11 @@ data:
     - icon: ':heavy_check_mark:'
       path: test/01_Math/01_NumberTheory/02.01.03_AOJ-ALDS1-1-C.test.cpp
       title: test/01_Math/01_NumberTheory/02.01.03_AOJ-ALDS1-1-C.test.cpp
+  - name: test/01_Math/02_Combinatorics
+    pages:
+    - icon: ':heavy_check_mark:'
+      path: test/01_Math/02_Combinatorics/01.03.01_AOJ-NTL-1-B.test.cpp
+      title: test/01_Math/02_Combinatorics/01.03.01_AOJ-NTL-1-B.test.cpp
   - name: test/01_Math/03_Algebra
     pages:
     - icon: ':heavy_check_mark:'

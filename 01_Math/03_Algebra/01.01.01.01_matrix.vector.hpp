@@ -25,4 +25,5 @@ public:
         }
         return os;
     }
+    using value_type = T;
 };

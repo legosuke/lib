@@ -39,6 +39,9 @@ data:
         )"
   - name: 01_Math/03_Algebra
     pages:
+    - icon: ':warning:'
+      path: 01_Math/03_Algebra/01.00_matrix-constants.hpp
+      title: 01_Math/03_Algebra/01.00_matrix-constants.hpp
     - icon: ':heavy_check_mark:'
       path: 01_Math/03_Algebra/01.01.01.01_matrix.vector.hpp
       title: "\u884C\u5217 (vector \u306B\u3088\u308B\u5B9F\u88C5)"
@@ -69,6 +72,13 @@ data:
     - icon: ':heavy_check_mark:'
       path: 01_Math/03_Algebra/01.02.01.05_matrix-operation.pow.hpp
       title: "\u884C\u5217\u6F14\u7B97 (\u7D2F\u4E57)"
+    - icon: ':warning:'
+      path: 01_Math/03_Algebra/01.02.03.01.01_gaussian-elimination.floating-point.hpp
+      title: "\u30AC\u30A6\u30B9\u306E\u6D88\u53BB\u6CD5 (\u5B9F\u6570)"
+    - icon: ':warning:'
+      path: 01_Math/03_Algebra/01.03.01.01_matrix-rank.gaussian-elmination.hpp
+      title: "\u884C\u5217\u306E\u968E\u6570 (\u30AC\u30A6\u30B9\u306E\u6D88\u53BB\
+        \u6CD5)"
   - name: 06_Others/04_Random
     pages:
     - icon: ':heavy_check_mark:'

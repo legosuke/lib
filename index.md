@@ -30,6 +30,12 @@ data:
     - icon: ':heavy_check_mark:'
       path: 01_Math/02_Combinatorics/01.01_mod-operation.hpp
       title: "mod \u4E0A\u306E\u57FA\u672C\u6F14\u7B97"
+    - icon: ':warning:'
+      path: 01_Math/02_Combinatorics/01.02.00_modint-base.hpp
+      title: 01_Math/02_Combinatorics/01.02.00_modint-base.hpp
+    - icon: ':warning:'
+      path: 01_Math/02_Combinatorics/01.02.01_modint.static.hpp
+      title: "modint \u69CB\u9020\u4F53 (\u9759\u7684 MOD)"
     - icon: ':heavy_check_mark:'
       path: 01_Math/02_Combinatorics/01.03.01_mod-pow.hpp
       title: "\u7D2F\u4E57 : $a^n\\bmod{m}$"
@@ -83,6 +89,9 @@ data:
     - icon: ':warning:'
       path: 01_Math/03_Algebra/01.02.03.01.01_gaussian-elimination.floating-point.hpp
       title: "\u30AC\u30A6\u30B9\u306E\u6D88\u53BB\u6CD5 (\u5B9F\u6570)"
+    - icon: ':warning:'
+      path: 01_Math/03_Algebra/01.02.03.01.02_gaussian-elimination.modp.hpp
+      title: "\u30AC\u30A6\u30B9\u306E\u6D88\u53BB\u6CD5 (mod p)"
     - icon: ':warning:'
       path: 01_Math/03_Algebra/01.03.01.01_matrix-rank.gaussian-elmination.hpp
       title: "\u884C\u5217\u306E\u968E\u6570 (\u30AC\u30A6\u30B9\u306E\u6D88\u53BB\

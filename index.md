@@ -30,14 +30,14 @@ data:
     - icon: ':heavy_check_mark:'
       path: 01_Math/02_Combinatorics/01.01.01_big-mod.hpp
       title: "\u5927\u304D\u306A mod \u4E0A\u306E\u8A08\u7B97"
-    - icon: ':question:'
+    - icon: ':heavy_check_mark:'
       path: 01_Math/02_Combinatorics/01.03.01_mod-pow.hpp
       title: "\u7D2F\u4E57 : $a^n\\bmod{m}$"
     - icon: ':heavy_check_mark:'
       path: 01_Math/02_Combinatorics/01.03.02_mod-pow.big-mod.hpp
       title: "\u7D2F\u4E57 : $a^n\\bmod{m}$ ($m$ \u304C\u5927\u304D\u3044\u5834\u5408\
         )"
-    - icon: ':x:'
+    - icon: ':heavy_check_mark:'
       path: 01_Math/02_Combinatorics/01.04.01_mod-inv.fermat.hpp
       title: "\u9006\u5143 : $a^{-1}\\bmod{p}$"
   - name: 01_Math/03_Algebra
@@ -95,7 +95,7 @@ data:
       title: "\u4E71\u6570 (\u5217)"
   - name: template
     pages:
-    - icon: ':question:'
+    - icon: ':heavy_check_mark:'
       path: template/template.hpp
       title: template/template.hpp
   verificationCategories:
@@ -127,7 +127,7 @@ data:
     - icon: ':heavy_check_mark:'
       path: test/01_Math/02_Combinatorics/01.03.01_AOJ-NTL-1-B.test.cpp
       title: test/01_Math/02_Combinatorics/01.03.01_AOJ-NTL-1-B.test.cpp
-    - icon: ':x:'
+    - icon: ':heavy_check_mark:'
       path: test/01_Math/02_Combinatorics/01.04.01_AOJ-DPL-5-B.test.cpp
       title: test/01_Math/02_Combinatorics/01.04.01_AOJ-DPL-5-B.test.cpp
   - name: test/01_Math/03_Algebra

@@ -12,6 +12,6 @@ signed main() {
     int ans = 1;
     for (int i = 1; i <= k; ++i) (ans *= i) %= MOD;
     for (int i = 1; i <= n; ++i) (ans *= mod_inv(i, MOD)) %= MOD;
-    for (int i = 1; i <= n - k; ++i) (ans *= mod_inv(i, MOD)) %= MOD;
+    for (int i = 1; i <= k - n; ++i) (ans *= mod_inv(i, MOD)) %= MOD;
     cout << ans << endl;
 } 

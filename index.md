@@ -27,9 +27,6 @@ data:
         )"
   - name: 01_Math/02_Combinatorics
     pages:
-    - icon: ':warning:'
-      path: 01_Math/02_Combinatorics/01.01.02_mod.big.hpp
-      title: 01_Math/02_Combinatorics/01.01.02_mod.big.hpp
     - icon: ':heavy_check_mark:'
       path: 01_Math/02_Combinatorics/01.01_mod-operation.hpp
       title: "mod \u4E0A\u306E\u57FA\u672C\u6F14\u7B97"

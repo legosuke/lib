@@ -1,6 +1,6 @@
 #pragma once
-#include <cstdint>
 #include <array>
+#include <cstdint>
 
 /**
  * @brief 行列 (array による実装)

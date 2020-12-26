@@ -63,11 +63,17 @@ data:
       path: 01_Math/03_Algebra/01.01.01.02_matrix.array.hpp
       title: "\u884C\u5217 (array \u306B\u3088\u308B\u5B9F\u88C5)"
     - icon: ':warning:'
+      path: 01_Math/03_Algebra/01.01.01.03_matrix.binary.hpp
+      title: "\u884C\u5217 (\u30D0\u30A4\u30CA\u30EA)"
+    - icon: ':warning:'
       path: 01_Math/03_Algebra/01.01.02.01_square-matrix.vector.hpp
       title: "\u6B63\u65B9\u884C\u5217 (vector \u306B\u3088\u308B\u5B9F\u88C5)"
     - icon: ':warning:'
       path: 01_Math/03_Algebra/01.01.02.02_square-matrix.array.hpp
       title: "\u6B63\u65B9\u884C\u5217 (array \u306B\u3088\u308B\u5B9F\u88C5)"
+    - icon: ':warning:'
+      path: 01_Math/03_Algebra/01.01.02.03_square-matrix.binary.hpp
+      title: "\u6B63\u65B9\u884C\u5217 (\u30D0\u30A4\u30CA\u30EA)"
     - icon: ':heavy_check_mark:'
       path: 01_Math/03_Algebra/01.02.01.00_matrix-operation.hpp
       title: "\u884C\u5217\u6F14\u7B97 (ALL)"

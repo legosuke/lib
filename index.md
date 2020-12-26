@@ -136,8 +136,8 @@ data:
       path: test/01_Math/02_Combinatorics/01.03.01_AOJ-NTL-1-B.test.cpp
       title: test/01_Math/02_Combinatorics/01.03.01_AOJ-NTL-1-B.test.cpp
     - icon: ':heavy_check_mark:'
-      path: test/01_Math/02_Combinatorics/01.04.01_AOJ-DPL-5-B.test.cpp
-      title: test/01_Math/02_Combinatorics/01.04.01_AOJ-DPL-5-B.test.cpp
+      path: test/01_Math/02_Combinatorics/01.04.01_AOJ-DPL-5-E.test.cpp
+      title: test/01_Math/02_Combinatorics/01.04.01_AOJ-DPL-5-E.test.cpp
     - icon: ':x:'
       path: test/01_Math/02_Combinatorics/01.04.03_AOJ-DPL-5-B.test.cpp
       title: test/01_Math/02_Combinatorics/01.04.03_AOJ-DPL-5-B.test.cpp

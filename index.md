@@ -27,9 +27,12 @@ data:
         )"
   - name: 01_Math/02_Combinatorics
     pages:
+    - icon: ':warning:'
+      path: 01_Math/02_Combinatorics/01.01.02_mod.big.hpp
+      title: 01_Math/02_Combinatorics/01.01.02_mod.big.hpp
     - icon: ':heavy_check_mark:'
-      path: 01_Math/02_Combinatorics/01.01.01_big-mod.hpp
-      title: "\u5927\u304D\u306A mod \u4E0A\u306E\u8A08\u7B97"
+      path: 01_Math/02_Combinatorics/01.01_mod-operation.hpp
+      title: "mod \u4E0A\u306E\u57FA\u672C\u6F14\u7B97"
     - icon: ':heavy_check_mark:'
       path: 01_Math/02_Combinatorics/01.03.01_mod-pow.hpp
       title: "\u7D2F\u4E57 : $a^n\\bmod{m}$"

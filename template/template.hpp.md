@@ -25,6 +25,9 @@ data:
     path: test/01_Math/01_NumberTheory/02.01.03_AOJ-ALDS1-1-C.test.cpp
     title: test/01_Math/01_NumberTheory/02.01.03_AOJ-ALDS1-1-C.test.cpp
   - icon: ':heavy_check_mark:'
+    path: test/01_Math/01_NumberTheory/02.01.03_yukicoder-.test.cpp
+    title: test/01_Math/01_NumberTheory/02.01.03_yukicoder-.test.cpp
+  - icon: ':heavy_check_mark:'
     path: test/01_Math/02_Combinatorics/01.03.01_AOJ-NTL-1-B.test.cpp
     title: test/01_Math/02_Combinatorics/01.03.01_AOJ-NTL-1-B.test.cpp
   - icon: ':heavy_check_mark:'
@@ -70,6 +73,7 @@ data:
   - test/01_Math/01_NumberTheory/01.01.01_AOJ-ITP1-3-D.test.cpp
   - test/01_Math/01_NumberTheory/01.02.01_AOJ-ALDS1-1-B.test.cpp
   - test/01_Math/01_NumberTheory/01.03.01_AOJ-NTL-1-C.test.cpp
+  - test/01_Math/01_NumberTheory/02.01.03_yukicoder-.test.cpp
   - test/01_Math/01_NumberTheory/02.01.03_AOJ-ALDS1-1-C.test.cpp
   - test/01_Math/01_NumberTheory/02.01.02_AOJ-ALDS1-1-C.test.cpp
 documentation_of: template/template.hpp

@@ -39,7 +39,12 @@ data:
         )"
     - icon: ':heavy_check_mark:'
       path: 01_Math/02_Combinatorics/01.04.01_mod-inv.fermat.hpp
-      title: "\u9006\u5143 : $a^{-1}\\bmod{p}$"
+      title: "\u9006\u5143 : $a^{-1}\\bmod{p}$ (\u30D5\u30A7\u30EB\u30DE\u30FC\u306E\
+        \u5C0F\u5B9A\u7406)"
+    - icon: ':warning:'
+      path: 01_Math/02_Combinatorics/01.04.03_mod-inv.ext-gcd.hpp
+      title: "\u9006\u5143 : $a^{-1}\\bmod{m}$ (\u62E1\u5F35\u30E6\u30FC\u30AF\u30EA\
+        \u30C3\u30C9\u306E\u4E92\u52A9\u6CD5)"
   - name: 01_Math/03_Algebra
     pages:
     - icon: ':warning:'
@@ -98,6 +103,11 @@ data:
     - icon: ':heavy_check_mark:'
       path: template/template.hpp
       title: template/template.hpp
+  - name: test/01_Math/02_Combinatorics
+    pages:
+    - icon: ':warning:'
+      path: test/01_Math/02_Combinatorics/01.04.03_AOJ-DPL-5-B.test copy.cpp
+      title: test/01_Math/02_Combinatorics/01.04.03_AOJ-DPL-5-B.test copy.cpp
   verificationCategories:
   - name: test/01_Math/01_NumberTheory
     pages:

@@ -32,7 +32,7 @@ data:
       title: "mod \u4E0A\u306E\u57FA\u672C\u6F14\u7B97"
     - icon: ':warning:'
       path: 01_Math/02_Combinatorics/01.02.00_modint-base.hpp
-      title: 01_Math/02_Combinatorics/01.02.00_modint-base.hpp
+      title: "modint \u69CB\u9020\u4F53 (base)"
     - icon: ':warning:'
       path: 01_Math/02_Combinatorics/01.02.01_modint.static.hpp
       title: "modint \u69CB\u9020\u4F53 (\u9759\u7684 MOD)"

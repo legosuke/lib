@@ -8,5 +8,5 @@
  */
 template <class Matrix, std::uint32_t (*gaussian_elimination)(Matrix&)>
 std::uint32_t matrix_rank(Matrix A) {
-    return gaussian_elimination(A, matrix::EPS);
+    return gaussian_elimination(A);
 }

@@ -57,6 +57,9 @@ data:
       path: 01_Math/03_Algebra/01.00_matrix-constants.hpp
       title: 01_Math/03_Algebra/01.00_matrix-constants.hpp
     - icon: ':heavy_check_mark:'
+      path: 01_Math/03_Algebra/01.01.00_matrix-base.hpp
+      title: "\u884C\u5217 (base)"
+    - icon: ':heavy_check_mark:'
       path: 01_Math/03_Algebra/01.01.01.01_matrix.vector.hpp
       title: "\u884C\u5217 (vector \u306B\u3088\u308B\u5B9F\u88C5)"
     - icon: ':warning:'
@@ -98,6 +101,10 @@ data:
     - icon: ':warning:'
       path: 01_Math/03_Algebra/01.02.03.01.02_gaussian-elimination.modp.hpp
       title: "\u30AC\u30A6\u30B9\u306E\u6D88\u53BB\u6CD5 (mod p)"
+    - icon: ':warning:'
+      path: 01_Math/03_Algebra/01.02.03.01.03_gaussian-elimination.binary.hpp
+      title: "\u30AC\u30A6\u30B9\u306E\u6D88\u53BB\u6CD5 (\u30D0\u30A4\u30CA\u30EA\
+        )"
     - icon: ':warning:'
       path: 01_Math/03_Algebra/01.03.01.01_matrix-rank.gaussian-elmination.hpp
       title: "\u884C\u5217\u306E\u968E\u6570 (\u30AC\u30A6\u30B9\u306E\u6D88\u53BB\

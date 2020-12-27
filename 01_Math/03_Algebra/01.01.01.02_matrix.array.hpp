@@ -1,12 +1,13 @@
 #pragma once
 #include <array>
 #include <cstdint>
+#include "01.01.00_matrix-base.hpp"
 
 /**
  * @brief 行列 (array による実装)
  */
 template <class T, std::uint32_t n, std::uint32_t m>
-class Matrix {
+class Matrix : public MatrixBase {
 protected:
     std::array<std::array<T, m>, n> v;
 

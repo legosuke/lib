@@ -25,7 +25,7 @@ std::uint32_t gaussian_elimination(Matrix& A) {
         std::swap(A[pivot], A[rank]);
         const auto q = A[rank][k];
         for (std::uint32_t j = 0; j < A.width(); ++j) A[rank][j] = A[rank][j] / q;
-        for (std::uint32_t i = rank + 1; i < A.height(); ++i) if (A[i][k]) {
+        for (std::uint32_t i = 0; i < A.height(); ++i) if (i != rank && A[i][k]) {
             const auto q2 = A[i][k];
             for (std::uint32_t j = k; j < A.width(); ++j) A[i][j] = A[i][j] - A[rank][j] * q2;
         }

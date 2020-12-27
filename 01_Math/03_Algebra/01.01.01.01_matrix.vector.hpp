@@ -2,12 +2,13 @@
 #include <cstdint>
 #include <ostream>
 #include <vector>
+#include "01.01.00_matrix-base.hpp"
 
 /**
  * @brief 行列 (vector による実装)
  */
 template <class T>
-class Matrix {
+class Matrix : public MatrixBase {
 protected:
     std::uint32_t n, m;
     std::vector<std::vector<T>> v;

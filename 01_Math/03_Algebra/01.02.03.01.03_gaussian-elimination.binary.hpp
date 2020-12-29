@@ -11,7 +11,8 @@
  */
 template <class Matrix>
 std::uint32_t gaussian_elimination(Matrix& A) {
-    static_assert(is_matrix<Matrix>::value && std::is_same<typename Matrix::value_type, bool>::value);
+    static_assert(is_matrix<Matrix>::value);
+    static_assert(std::is_same<typename Matrix::value_type, bool>::value);
     std::uint32_t rank = 0;
     for (std::uint32_t k = 0; k < A.width(); ++k) {
         std::uint32_t pivot = -1;

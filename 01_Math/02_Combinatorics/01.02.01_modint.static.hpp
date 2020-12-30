@@ -20,24 +20,28 @@ public:
     static_modint(Integer v = 0) : _v((v % MOD + MOD) % MOD) {}
     std::uint32_t mod() const { return MOD; }
     std::uint32_t val() const { return _v; }
-    mint& operator += (const mint& rhs)  {
-        _v += rhs._v;
+    template <typename Integer>
+    mint& operator += (const Integer& rhs)  {
+        _v += mint(rhs)._v;
         if (_v >= MOD) _v -= MOD;
         return *this;
     }
-    mint& operator -= (const mint& rhs)  {
-        _v -= rhs._v;
+    template <typename Integer>
+    mint& operator -= (const Integer& rhs)  {
+        _v -= mint(rhs)._v;
         if (_v >= MOD) _v += MOD;
         return *this;
     }
-    mint& operator *= (const mint& rhs)  {
+    template <typename Integer>
+    mint& operator *= (const Integer& rhs)  {
         std::uint64_t tmp = _v;
-        tmp *= rhs._v;
+        tmp *= mint(rhs)._v;
         _v = (std::uint32_t)(tmp % MOD);
         return *this;
     }
-    mint& operator /= (const mint& rhs)  {
-        return *this = *this * rhs.inv();
+    template <typename Integer>
+    mint& operator /= (const Integer& rhs)  {
+        return *this = *this * mint(rhs).inv();
     }
     template <typename Integer>
     mint& operator = (const Integer v) {
@@ -52,10 +56,14 @@ public:
         return mint(mod_inv(_v, MOD));
     }
     mint operator - () const { return _v ? MOD - _v : 0; }
-    mint operator + (const mint& rhs) { return mint(*this) += rhs; }
-    mint operator - (const mint& rhs) { return mint(*this) -= rhs; }
-    mint operator * (const mint& rhs) { return mint(*this) *= rhs; }
-    mint operator / (const mint& rhs) { return mint(*this) /= rhs; }
+    template <typename Integer>
+    mint operator + (const Integer& rhs) { return mint(*this) += rhs; }
+    template <typename Integer>
+    mint operator - (const Integer& rhs) { return mint(*this) -= rhs; }
+    template <typename Integer>
+    mint operator * (const Integer& rhs) { return mint(*this) *= rhs; }
+    template <typename Integer>
+    mint operator / (const Integer& rhs) { return mint(*this) /= rhs; }
     explicit operator bool() const { return (bool)_v; }
     friend std::ostream& operator << (std::ostream& os, const static_modint<MOD> rhs) {
         return os << rhs._v;

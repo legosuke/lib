@@ -3,6 +3,7 @@
 #include <ostream>
 #include <vector>
 #include "01.01.00_matrix-base.hpp"
+#include "01.02.01.00_matrix-operation.hpp"
 
 /**
  * @brief 行列 (vector)

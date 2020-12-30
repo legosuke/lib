@@ -22,8 +22,8 @@ data:
     path: test/01_Math/01_NumberTheory/02.01.03_AOJ-ALDS1-1-C.test.cpp
     title: test/01_Math/01_NumberTheory/02.01.03_AOJ-ALDS1-1-C.test.cpp
   - icon: ':heavy_check_mark:'
-    path: test/01_Math/01_NumberTheory/02.01.03_yukicoder-.test.cpp
-    title: test/01_Math/01_NumberTheory/02.01.03_yukicoder-.test.cpp
+    path: test/01_Math/01_NumberTheory/02.01.03_yukicoder-3030.test.cpp
+    title: test/01_Math/01_NumberTheory/02.01.03_yukicoder-3030.test.cpp
   _pathExtension: hpp
   _verificationStatusIcon: ':heavy_check_mark:'
   attributes:
@@ -60,7 +60,7 @@ data:
   timestamp: '2020-12-17 21:19:56+00:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
-  - test/01_Math/01_NumberTheory/02.01.03_yukicoder-.test.cpp
+  - test/01_Math/01_NumberTheory/02.01.03_yukicoder-3030.test.cpp
   - test/01_Math/01_NumberTheory/02.01.03_AOJ-ALDS1-1-C.test.cpp
   - test/01_Math/01_NumberTheory/02.01.02_AOJ-ALDS1-1-C.test.cpp
 documentation_of: 06_Others/04_Random/01_random-number.hpp

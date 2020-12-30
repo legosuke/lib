@@ -6,7 +6,7 @@
 signed main() {
     int n, m;
     cin >> n >> m;
-    Matrix<int> A(n, m);
+    matrix_vector<int> A(n, m);
     vector<int> b(m);
     for (int i = 0; i < n; ++i) for (int j = 0; j < m; ++j) {
         cin >> A[i][j];

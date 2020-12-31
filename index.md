@@ -56,7 +56,7 @@ data:
     - icon: ':warning:'
       path: 01_Math/03_Algebra/01.00_matrix-constants.hpp
       title: 01_Math/03_Algebra/01.00_matrix-constants.hpp
-    - icon: ':question:'
+    - icon: ':warning:'
       path: 01_Math/03_Algebra/01.01.00_matrix-base.hpp
       title: "\u884C\u5217 (base)"
     - icon: ':question:'
@@ -180,7 +180,7 @@ data:
     - icon: ':heavy_check_mark:'
       path: test/01_Math/03_Algebra/01.01.01.01_ITP1-6-D.test.cpp
       title: test/01_Math/03_Algebra/01.01.01.01_ITP1-6-D.test.cpp
-    - icon: ':heavy_check_mark:'
+    - icon: ':x:'
       path: test/01_Math/03_Algebra/01.01.01.01_ITP1-7-D.test.cpp
       title: test/01_Math/03_Algebra/01.01.01.01_ITP1-7-D.test.cpp
     - icon: ':x:'

@@ -1,7 +1,7 @@
 #define PROBLEM "https://yukicoder.me/problems/no/194"
 #include "../../../template/template.hpp"
 #include "../../../01_Math/02_Combinatorics/01.02.01_modint.static.hpp"
-#include "../../../01_Math/03_Algebra/01.01.02.01_square-matrix.vector.hpp"
+#include "../../../01_Math/03_Algebra/01.01.01.01_matrix.vector.hpp"
 
 signed main() {
     int N, K; cin >> N >> K;
@@ -23,7 +23,7 @@ signed main() {
         }
         cout << fib[K - 1] << " " << sum << endl;
     } else {
-        square_matrix_vector<modint1000000007> M(N + 1);
+        matrix_vector<modint1000000007> M(N + 1);
         for (int i = 0; i < N - 1; ++i) {
             for (int j = 0; j < N + 1; ++j) {
                 if (j == i + 1) M[i][j] = 1;

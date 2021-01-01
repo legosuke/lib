@@ -14,12 +14,6 @@ public:
 
     matrix_vector() = default;
     explicit matrix_vector(std::uint32_t n, std::uint32_t m, T x = T(0)) { init(n, m, x); }
-    explicit matrix_vector(const matrix_vector& A) {
-        init(A.height(), A.width());
-        for (int i = 0; i < A.height(); ++i) for (int j = 0; j < A.width(); ++j) {
-            _v[i][j] = A._v[i][j];
-        }
-    }
 
     std::uint32_t height() const {
         return _n;
@@ -44,7 +38,7 @@ protected:
 };
 
 template <class T>
-matrix_vector<T>  operator + (const matrix_vector<T>& A, const T& x) {
+matrix_vector<T> operator + (const matrix_vector<T>& A, const T& x) {
     matrix_vector<T> res(A.height(), A.width());
     for (std::uint32_t i = 0; i < A.height(); ++i) for (std::uint32_t j = 0; j < A.width(); ++j) {
         res[i][j] = A[i][j] + x;
@@ -53,7 +47,7 @@ matrix_vector<T>  operator + (const matrix_vector<T>& A, const T& x) {
 }
 
 template <class T>
-matrix_vector<T>  operator + (const T& x, const matrix_vector<T>& A) {
+matrix_vector<T> operator + (const T& x, const matrix_vector<T>& A) {
     matrix_vector<T> res(A.height(), A.width());
     for (std::uint32_t i = 0; i < A.height(); ++i) for (std::uint32_t j = 0; j < A.width(); ++j) {
         res[i][j] = x + A[i][j];
@@ -62,7 +56,7 @@ matrix_vector<T>  operator + (const T& x, const matrix_vector<T>& A) {
 }
 
 template <class T>
-matrix_vector<T>  operator + (const matrix_vector<T>& A, const matrix_vector<T>& B) {
+matrix_vector<T> operator + (const matrix_vector<T>& A, const matrix_vector<T>& B) {
     assert(A.height() == B.height() && A.width() == B.width());
     matrix_vector<T> res(A.height(), A.width());
     for (std::uint32_t i = 0; i < A.height(); ++i) for (std::uint32_t j = 0; j < A.width(); ++j) {
@@ -72,7 +66,7 @@ matrix_vector<T>  operator + (const matrix_vector<T>& A, const matrix_vector<T>&
 }
 
 template <class T>
-matrix_vector<T>  operator - (const matrix_vector<T>& A, const T& x) {
+matrix_vector<T> operator - (const matrix_vector<T>& A, const T& x) {
     matrix_vector<T> res(A.height(), A.width());
     for (std::uint32_t i = 0; i < A.height(); ++i) for (std::uint32_t j = 0; j < A.width(); ++j) {
         res[i][j] = A[i][j] - x;
@@ -81,7 +75,7 @@ matrix_vector<T>  operator - (const matrix_vector<T>& A, const T& x) {
 }
 
 template <class T>
-matrix_vector<T>  operator - (const T& x, const matrix_vector<T>& A) {
+matrix_vector<T> operator - (const T& x, const matrix_vector<T>& A) {
     matrix_vector<T> res(A.height(), A.width());
     for (std::uint32_t i = 0; i < A.height(); ++i) for (std::uint32_t j = 0; j < A.width(); ++j) {
         res[i][j] = x - A[i][j];
@@ -90,7 +84,7 @@ matrix_vector<T>  operator - (const T& x, const matrix_vector<T>& A) {
 }
 
 template <class T>
-matrix_vector<T>  operator - (const matrix_vector<T>& A, const matrix_vector<T>& B) {
+matrix_vector<T> operator - (const matrix_vector<T>& A, const matrix_vector<T>& B) {
     assert(A.height() == B.height() && A.width() == B.width());
     matrix_vector<T> res(A.height(), A.width());
     for (std::uint32_t i = 0; i < A.height(); ++i) for (std::uint32_t j = 0; j < A.width(); ++j) {
@@ -100,7 +94,7 @@ matrix_vector<T>  operator - (const matrix_vector<T>& A, const matrix_vector<T>&
 }
 
 template <class T>
-matrix_vector<T>  operator * (const matrix_vector<T>& A, const T& x) {
+matrix_vector<T> operator * (const matrix_vector<T>& A, const T& x) {
     matrix_vector<T> res(A.height(), A.width());
     for (std::uint32_t i = 0; i < A.height(); ++i) for (std::uint32_t j = 0; j < A.width(); ++j) {
         res[i][j] = A[i][j] * x;
@@ -109,7 +103,7 @@ matrix_vector<T>  operator * (const matrix_vector<T>& A, const T& x) {
 }
 
 template <class T>
-matrix_vector<T>  operator * (const T& x, const matrix_vector<T>& A) {
+matrix_vector<T> operator * (const T& x, const matrix_vector<T>& A) {
     matrix_vector<T> res(A.height(), A.width());
     for (std::uint32_t i = 0; i < A.height(); ++i) for (std::uint32_t j = 0; j < A.width(); ++j) {
         res[i][j] = x * A[i][j];
@@ -118,7 +112,7 @@ matrix_vector<T>  operator * (const T& x, const matrix_vector<T>& A) {
 }
 
 template <class T>
-std::vector<T>  operator * (const matrix_vector<T>& A, const std::vector<T>& v) {
+std::vector<T> operator * (const matrix_vector<T>& A, const std::vector<T>& v) {
     assert(A.width() == (std::uint32_t)v.size());
     std::vector<T> u(A.height(), T(0));
     for (std::uint32_t i = 0; i < A.height(); ++i) for (std::uint32_t j = 0; j < A.width(); ++j) {
@@ -128,8 +122,8 @@ std::vector<T>  operator * (const matrix_vector<T>& A, const std::vector<T>& v) 
 }
 
 template <class T>
-matrix_vector<T>  operator * (const matrix_vector<T>& A, const matrix_vector<T>& B) {
-    assert(A.height() == B.height() && A.width() == B.width());
+matrix_vector<T> operator * (const matrix_vector<T>& A, const matrix_vector<T>& B) {
+    assert(A.width() == B.height());
     matrix_vector<T> res(A.height(), B.width());
     for (std::uint32_t i = 0; i < A.height(); ++i) for (std::uint32_t j = 0; j < B.width(); ++j) for (std::uint32_t k = 0; k < A.width(); ++k) {
         res[i][j] = res[i][j] + A[i][k] * B[k][j];
@@ -138,7 +132,7 @@ matrix_vector<T>  operator * (const matrix_vector<T>& A, const matrix_vector<T>&
 }
 
 template <class T>
-matrix_vector<T>  operator / (const matrix_vector<T>& A, const T& x) {
+matrix_vector<T> operator / (const matrix_vector<T>& A, const T& x) {
     matrix_vector<T> res(A.height(), A.width());
     for (std::uint32_t i = 0; i < A.height(); ++i) for (std::uint32_t j = 0; j < A.width(); ++j) {
         res[i][j] = A[i][j] / x;

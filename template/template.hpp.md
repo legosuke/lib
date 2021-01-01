@@ -39,7 +39,7 @@ data:
   - icon: ':heavy_check_mark:'
     path: test/01_Math/03_Algebra/01.01.01.01_ITP1-6-D.test.cpp
     title: test/01_Math/03_Algebra/01.01.01.01_ITP1-6-D.test.cpp
-  - icon: ':x:'
+  - icon: ':heavy_check_mark:'
     path: test/01_Math/03_Algebra/01.01.01.01_ITP1-7-D.test.cpp
     title: test/01_Math/03_Algebra/01.01.01.01_ITP1-7-D.test.cpp
   - icon: ':x:'

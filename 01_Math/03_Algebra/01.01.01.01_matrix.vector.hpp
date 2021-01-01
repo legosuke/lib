@@ -13,7 +13,6 @@ public:
     using value_type = T;
 
     matrix_vector() = default;
-    explicit matrix_vector(std::uint32_t n, T x = T(0)) { init(n, n, x); }
     explicit matrix_vector(std::uint32_t n, std::uint32_t m, T x = T(0)) { init(n, m, x); }
 
     std::uint32_t height() const {

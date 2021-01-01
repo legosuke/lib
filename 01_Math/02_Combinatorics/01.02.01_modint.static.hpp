@@ -16,8 +16,9 @@ class static_modint : public modint_base {
     using mint = static_modint;
     std::uint32_t _v;
 public:
+    static_modint() = default;
     template <typename Integer>
-    static_modint(Integer v = 0) : _v((v % MOD + MOD) % MOD) {}
+    static_modint(Integer v) : _v((v % MOD + MOD) % MOD) {}
     std::uint32_t mod() const { return MOD; }
     std::uint32_t val() const { return _v; }
     template <typename Integer>
@@ -44,7 +45,7 @@ public:
         return *this = *this * mint(rhs).inv();
     }
     template <typename Integer>
-    mint& operator = (const Integer v) {
+    mint& operator = (const Integer& v) {
         static_assert(std::is_integral<Integer>::value);
         _v = (v % MOD + MOD) % MOD;
         return *this;

@@ -59,7 +59,7 @@ data:
     - icon: ':warning:'
       path: 01_Math/03_Algebra/01.01.00_matrix-base.hpp
       title: "\u884C\u5217 (base)"
-    - icon: ':question:'
+    - icon: ':x:'
       path: 01_Math/03_Algebra/01.01.01.01_matrix.vector.hpp
       title: "\u884C\u5217 (vector)"
     - icon: ':warning:'
@@ -68,7 +68,7 @@ data:
     - icon: ':warning:'
       path: 01_Math/03_Algebra/01.01.01.03_matrix.bitset.hpp
       title: "\u884C\u5217 (bitset)"
-    - icon: ':x:'
+    - icon: ':warning:'
       path: 01_Math/03_Algebra/01.01.02.01_square-matrix.vector.hpp
       title: "\u6B63\u65B9\u884C\u5217 (vector)"
     - icon: ':warning:'
@@ -177,10 +177,10 @@ data:
       title: test/01_Math/02_Combinatorics/01.04.03_AOJ-DPL-5-E.test.cpp
   - name: test/01_Math/03_Algebra
     pages:
-    - icon: ':heavy_check_mark:'
+    - icon: ':x:'
       path: test/01_Math/03_Algebra/01.01.01.01_ITP1-6-D.test.cpp
       title: test/01_Math/03_Algebra/01.01.01.01_ITP1-6-D.test.cpp
-    - icon: ':heavy_check_mark:'
+    - icon: ':x:'
       path: test/01_Math/03_Algebra/01.01.01.01_ITP1-7-D.test.cpp
       title: test/01_Math/03_Algebra/01.01.01.01_ITP1-7-D.test.cpp
     - icon: ':x:'

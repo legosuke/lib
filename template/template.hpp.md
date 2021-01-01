@@ -36,10 +36,10 @@ data:
   - icon: ':heavy_check_mark:'
     path: test/01_Math/02_Combinatorics/01.04.03_AOJ-DPL-5-E.test.cpp
     title: test/01_Math/02_Combinatorics/01.04.03_AOJ-DPL-5-E.test.cpp
-  - icon: ':heavy_check_mark:'
+  - icon: ':x:'
     path: test/01_Math/03_Algebra/01.01.01.01_ITP1-6-D.test.cpp
     title: test/01_Math/03_Algebra/01.01.01.01_ITP1-6-D.test.cpp
-  - icon: ':heavy_check_mark:'
+  - icon: ':x:'
     path: test/01_Math/03_Algebra/01.01.01.01_ITP1-7-D.test.cpp
     title: test/01_Math/03_Algebra/01.01.01.01_ITP1-7-D.test.cpp
   - icon: ':x:'

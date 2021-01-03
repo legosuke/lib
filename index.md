@@ -56,7 +56,7 @@ data:
     - icon: ':warning:'
       path: 01_Math/03_Algebra/01.00_matrix-constants.hpp
       title: 01_Math/03_Algebra/01.00_matrix-constants.hpp
-    - icon: ':warning:'
+    - icon: ':heavy_check_mark:'
       path: 01_Math/03_Algebra/01.01.00_matrix-base.hpp
       title: "\u884C\u5217 (base)"
     - icon: ':heavy_check_mark:'
@@ -68,15 +68,6 @@ data:
     - icon: ':warning:'
       path: 01_Math/03_Algebra/01.01.01.03_matrix.bitset.hpp
       title: "\u884C\u5217 (bitset)"
-    - icon: ':warning:'
-      path: 01_Math/03_Algebra/01.01.02.01_square-matrix.vector.hpp
-      title: "\u6B63\u65B9\u884C\u5217 (vector)"
-    - icon: ':warning:'
-      path: 01_Math/03_Algebra/01.01.02.02_square-matrix.array.hpp
-      title: "\u6B63\u65B9\u884C\u5217 (array)"
-    - icon: ':warning:'
-      path: 01_Math/03_Algebra/01.01.02.03_square-matrix.bitset.hpp
-      title: "\u6B63\u65B9\u884C\u5217 (bitset)"
     - icon: ':warning:'
       path: 01_Math/03_Algebra/01.02.01.00_matrix-operation.hpp
       title: "\u884C\u5217\u6F14\u7B97 (ALL)"

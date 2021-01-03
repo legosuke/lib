@@ -69,31 +69,13 @@ data:
       path: 01_Math/03_Algebra/01.01.01.03_matrix.bitset.hpp
       title: "\u884C\u5217 (bitset)"
     - icon: ':warning:'
-      path: 01_Math/03_Algebra/01.02.01.00_matrix-operation.hpp
-      title: "\u884C\u5217\u6F14\u7B97 (ALL)"
-    - icon: ':warning:'
-      path: 01_Math/03_Algebra/01.02.01.01_matrix-operation.add.hpp
-      title: "\u884C\u5217\u6F14\u7B97 (\u52A0\u7B97)"
-    - icon: ':warning:'
-      path: 01_Math/03_Algebra/01.02.01.02_matrix-operation.sub.hpp
-      title: "\u884C\u5217\u6F14\u7B97 (\u6E1B\u7B97)"
-    - icon: ':warning:'
-      path: 01_Math/03_Algebra/01.02.01.03_matrix-operation.mul.hpp
-      title: "\u884C\u5217\u6F14\u7B97 (\u4E57\u7B97)"
-    - icon: ':warning:'
-      path: 01_Math/03_Algebra/01.02.01.04_matrix-operation.div.hpp
-      title: "\u884C\u5217\u6F14\u7B97 (\u9664\u7B97)"
-    - icon: ':warning:'
-      path: 01_Math/03_Algebra/01.02.01.05_matrix-operation.pow.hpp
-      title: "\u884C\u5217\u6F14\u7B97 (\u7D2F\u4E57)"
-    - icon: ':warning:'
-      path: 01_Math/03_Algebra/01.02.03.01.01_gaussian-elimination.floating-point.hpp
+      path: 01_Math/03_Algebra/01.02.01.01_gaussian-elimination.floating-point.hpp
       title: "\u30AC\u30A6\u30B9\u306E\u6D88\u53BB\u6CD5 (\u5B9F\u6570)"
     - icon: ':warning:'
-      path: 01_Math/03_Algebra/01.02.03.01.02_gaussian-elimination.modp.hpp
+      path: 01_Math/03_Algebra/01.02.01.02_gaussian-elimination.modp.hpp
       title: "\u30AC\u30A6\u30B9\u306E\u6D88\u53BB\u6CD5 (mod p)"
     - icon: ':warning:'
-      path: 01_Math/03_Algebra/01.02.03.01.03_gaussian-elimination.binary.hpp
+      path: 01_Math/03_Algebra/01.02.01.03_gaussian-elimination.binary.hpp
       title: "\u30AC\u30A6\u30B9\u306E\u6D88\u53BB\u6CD5 (\u30D0\u30A4\u30CA\u30EA\
         )"
     - icon: ':warning:'

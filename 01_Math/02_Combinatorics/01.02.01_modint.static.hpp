@@ -3,7 +3,6 @@
 #include <cstdint>
 #include <ostream>
 #include <type_traits>
-#include "../01_NumberTheory/01.04.01_ext-gcd.hpp"
 #include "01.02.00_modint-base.hpp"
 #include "01.03.01_mod-pow.hpp"
 #include "01.04.03_mod-inv.ext-gcd.hpp"
@@ -18,11 +17,11 @@ class static_modint : public modint_base {
 public:
     static_modint() = default;
     template <typename Integer>
-    static_modint(Integer v) : _v((v % MOD + MOD) % MOD) {}
+    static_modint(const Integer& v) : _v((v % MOD + MOD) % MOD) {}
     std::uint32_t mod() const { return MOD; }
     std::uint32_t val() const { return _v; }
     template <typename Integer>
-    mint& operator += (const Integer& rhs)  {
+    mint& operator += (const Integer& rhs) {
         _v += mint(rhs)._v;
         if (_v >= MOD) _v -= MOD;
         return *this;
@@ -42,7 +41,7 @@ public:
     }
     template <typename Integer>
     mint& operator /= (const Integer& rhs)  {
-        return *this = *this * mint(rhs).inv();
+        return *this *= mint(rhs).inv();
     }
     template <typename Integer>
     mint& operator = (const Integer& v) {
@@ -56,19 +55,63 @@ public:
     mint inv() const {
         return mint(mod_inv(_v, MOD));
     }
-    mint operator - () const { return _v ? MOD - _v : 0; }
-    template <typename Integer>
-    mint operator + (const Integer& rhs) { return mint(*this) += rhs; }
-    template <typename Integer>
-    mint operator - (const Integer& rhs) { return mint(*this) -= rhs; }
-    template <typename Integer>
-    mint operator * (const Integer& rhs) { return mint(*this) *= rhs; }
-    template <typename Integer>
-    mint operator / (const Integer& rhs) { return mint(*this) /= rhs; }
-    explicit operator bool() const { return (bool)_v; }
-    friend std::ostream& operator << (std::ostream& os, const static_modint<MOD> rhs) {
+    mint operator - () const { return mint(_v ? MOD - _v : 0); }
+    friend std::ostream& operator << (std::ostream& os, const static_modint<MOD>& rhs) {
         return os << rhs._v;
-    }
+    };
 };
 using modint998244353 = static_modint<998244353>;
 using modint1000000007 = static_modint<1000000007>;
+
+template <std::uint32_t MOD>
+const static_modint<MOD> operator + (const static_modint<MOD>& lhs, const static_modint<MOD>& rhs) {
+    return static_modint<MOD>(lhs) += rhs;
+}
+template <std::uint32_t MOD, typename Integer>
+const static_modint<MOD> operator + (const static_modint<MOD>& lhs, const Integer& rhs) {
+    return static_modint<MOD>(lhs) += rhs;
+}
+template <std::uint32_t MOD, typename Integer>
+const static_modint<MOD> operator + (const Integer& lhs, const static_modint<MOD>& rhs) {
+    return static_modint<MOD>(rhs) += lhs;
+}
+
+template <std::uint32_t MOD>
+const static_modint<MOD> operator - (const static_modint<MOD>& lhs, const static_modint<MOD>& rhs) {
+    return static_modint<MOD>(lhs) -= rhs;
+}
+template <std::uint32_t MOD, typename Integer>
+const static_modint<MOD> operator - (const static_modint<MOD>& lhs, const Integer& rhs) {
+    return static_modint<MOD>(lhs) -= rhs;
+}
+template <std::uint32_t MOD, typename Integer>
+const static_modint<MOD> operator - (const Integer& lhs, const static_modint<MOD>& rhs) {
+    return static_modint<MOD>(rhs) -= lhs;
+}
+
+template <std::uint32_t MOD>
+const static_modint<MOD> operator * (const static_modint<MOD>& lhs, const static_modint<MOD>& rhs) {
+    return static_modint<MOD>(lhs) *= rhs;
+}
+template <std::uint32_t MOD, typename Integer>
+const static_modint<MOD> operator * (const static_modint<MOD>& lhs, const Integer& rhs) {
+    return static_modint<MOD>(lhs) *= rhs;
+}
+template <std::uint32_t MOD, typename Integer>
+const static_modint<MOD> operator * (const Integer& lhs, const static_modint<MOD>& rhs) {
+    static_assert(std::is_same<Integer, static_modint<MOD>>::value == false);
+    return static_modint<MOD>(rhs) *= lhs;
+}
+
+template <std::uint32_t MOD>
+const static_modint<MOD> operator / (const static_modint<MOD>& lhs, const static_modint<MOD>& rhs) {
+    return static_modint<MOD>(lhs) /= rhs;
+}
+template <std::uint32_t MOD, typename Integer>
+const static_modint<MOD> operator / (const static_modint<MOD>& lhs, const Integer& rhs) {
+    return static_modint<MOD>(lhs) /= rhs;
+}
+template <std::uint32_t MOD, typename Integer>
+const static_modint<MOD> operator / (const Integer& lhs, const static_modint<MOD>& rhs) {
+    return static_modint<MOD>(rhs) /= lhs;
+}

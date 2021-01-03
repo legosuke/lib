@@ -3,12 +3,13 @@
 #include <cstdint>
 #include <ostream>
 #include <vector>
+#include "01.01.00_matrix-base.hpp"
 
 /**
  * @brief 行列 (vector)
  */
 template <class T>
-class matrix_vector {
+class matrix_vector : matrix_base {
 public:
     using value_type = T;
 

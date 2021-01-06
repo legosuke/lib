@@ -27,9 +27,9 @@ data:
   - icon: ':heavy_check_mark:'
     path: test/01_Math/01_NumberTheory/02.01.03_yukicoder-3030.test.cpp
     title: test/01_Math/01_NumberTheory/02.01.03_yukicoder-3030.test.cpp
-  - icon: ':x:'
-    path: test/01_Math/02_Combinatorics/01.02.02_yukicoder-840.test.cpp
-    title: test/01_Math/02_Combinatorics/01.02.02_yukicoder-840.test.cpp
+  - icon: ':heavy_check_mark:'
+    path: test/01_Math/02_Combinatorics/01.02.01_yukicoder-840.test.cpp
+    title: test/01_Math/02_Combinatorics/01.02.01_yukicoder-840.test.cpp
   - icon: ':heavy_check_mark:'
     path: test/01_Math/02_Combinatorics/01.03.01_AOJ-NTL-1-B.test.cpp
     title: test/01_Math/02_Combinatorics/01.03.01_AOJ-NTL-1-B.test.cpp
@@ -49,7 +49,7 @@ data:
     path: test/01_Math/03_Algebra/01.01.02.01_yukicoder-194.test.cpp
     title: test/01_Math/03_Algebra/01.01.02.01_yukicoder-194.test.cpp
   _pathExtension: hpp
-  _verificationStatusIcon: ':question:'
+  _verificationStatusIcon: ':heavy_check_mark:'
   attributes:
     links: []
   bundledCode: '#line 1 "template/template.hpp"
@@ -71,12 +71,12 @@ data:
   path: template/template.hpp
   requiredBy: []
   timestamp: '2020-12-16 16:02:46+00:00'
-  verificationStatus: LIBRARY_SOME_WA
+  verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
   - test/01_Math/02_Combinatorics/01.03.01_AOJ-NTL-1-B.test.cpp
   - test/01_Math/02_Combinatorics/01.04.01_AOJ-DPL-5-E.test.cpp
-  - test/01_Math/02_Combinatorics/01.02.02_yukicoder-840.test.cpp
   - test/01_Math/02_Combinatorics/01.04.03_AOJ-DPL-5-E.test.cpp
+  - test/01_Math/02_Combinatorics/01.02.01_yukicoder-840.test.cpp
   - test/01_Math/03_Algebra/01.01.01.01_ITP1-7-D.test.cpp
   - test/01_Math/03_Algebra/01.01.02.01_yukicoder-194.test.cpp
   - test/01_Math/03_Algebra/01.01.01.01_ITP1-6-D.test.cpp

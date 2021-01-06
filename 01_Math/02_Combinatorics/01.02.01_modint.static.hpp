@@ -13,13 +13,19 @@
 template <std::uint32_t MOD>
 class static_modint : public modint_base {
     using mint = static_modint;
-    std::uint32_t _v;
+
 public:
     static_modint() = default;
     template <typename Integer>
     static_modint(const Integer& v) : _v((v % MOD + MOD) % MOD) {}
-    std::uint32_t mod() const { return MOD; }
-    std::uint32_t val() const { return _v; }
+
+    std::uint32_t mod() const {
+        return MOD;
+    }
+    std::uint32_t val() const {
+        return _v;
+    }
+
     template <typename Integer>
     mint& operator += (const Integer& rhs) {
         _v += mint(rhs)._v;
@@ -55,10 +61,15 @@ public:
     mint inv() const {
         return mint(mod_inv(_v, MOD));
     }
-    mint operator - () const { return mint(_v ? MOD - _v : 0); }
+    mint operator - () const {
+        return mint(_v ? MOD - _v : 0);
+    }
     friend std::ostream& operator << (std::ostream& os, const static_modint<MOD>& rhs) {
         return os << rhs._v;
     };
+
+protected:
+    std::uint32_t _v;
 };
 using modint998244353 = static_modint<998244353>;
 using modint1000000007 = static_modint<1000000007>;

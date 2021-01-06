@@ -6,7 +6,7 @@
 #include <vector>
 #include "01.00_matrix-constants.hpp"
 #include "01.01.01.01_matrix.vector.hpp"
-#include "01.02.03.01.01_gaussian-elimination.floating-point.hpp"
+#include "01.02.01.01_gaussian-elimination.floating-point.hpp"
 
 /**
  * @brief 連立一次方程式 (ガウスの消去法、実数)

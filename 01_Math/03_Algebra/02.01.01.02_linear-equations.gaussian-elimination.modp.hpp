@@ -4,7 +4,7 @@
 #include <type_traits>
 #include <vector>
 #include "01.01.01.01_matrix.vector.hpp"
-#include "01.02.03.01.02_gaussian-elimination.modp.hpp"
+#include "01.02.01.02_gaussian-elimination.modp.hpp"
 
 /**
  * @brief 連立一次方程式 (ガウスの消去法、mod p)

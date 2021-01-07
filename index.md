@@ -82,8 +82,8 @@ data:
       title: "\u30AC\u30A6\u30B9\u306E\u6D88\u53BB\u6CD5 (\u30D0\u30A4\u30CA\u30EA\
         )"
     - icon: ':warning:'
-      path: 01_Math/03_Algebra/01.02.02.01_matrix-decomposition.LU.hpp
-      title: "LU \u5206\u89E3"
+      path: 01_Math/03_Algebra/01.02.02.01_matrix-decomposition.LU-decomposition.hpp
+      title: "\u884C\u5217\u306E\u5206\u89E3 (LU \u5206\u89E3)"
     - icon: ':warning:'
       path: 01_Math/03_Algebra/01.03.01.01_matrix-rank.gaussian-elmination.hpp
       title: "\u884C\u5217\u306E\u968E\u6570 (\u30AC\u30A6\u30B9\u306E\u6D88\u53BB\

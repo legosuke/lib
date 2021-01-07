@@ -6,7 +6,7 @@
 #include "01.01.00_matrix-base.hpp"
 
 /**
- * @brief LU 分解
+ * @brief 行列の分解 (LU 分解)
  * @note O(n^3)
  * @warning 行列 A は n 次の正方行列
  */

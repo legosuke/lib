@@ -82,9 +82,15 @@ data:
       title: "\u30AC\u30A6\u30B9\u306E\u6D88\u53BB\u6CD5 (\u30D0\u30A4\u30CA\u30EA\
         )"
     - icon: ':warning:'
+      path: 01_Math/03_Algebra/01.02.02.01_matrix-decomposition.LU.hpp
+      title: "LU \u5206\u89E3"
+    - icon: ':warning:'
       path: 01_Math/03_Algebra/01.03.01.01_matrix-rank.gaussian-elmination.hpp
       title: "\u884C\u5217\u306E\u968E\u6570 (\u30AC\u30A6\u30B9\u306E\u6D88\u53BB\
         \u6CD5)"
+    - icon: ':warning:'
+      path: 01_Math/03_Algebra/01.03.03.02_matrix-determinant.LU-decomposition.hpp
+      title: "\u884C\u5217\u5F0F (LU \u5206\u89E3)"
     - icon: ':warning:'
       path: 01_Math/03_Algebra/02.01.01.01_linear-equations.gaussian-elimination.floating-point.hpp
       title: "\u9023\u7ACB\u4E00\u6B21\u65B9\u7A0B\u5F0F (\u30AC\u30A6\u30B9\u306E\

@@ -36,7 +36,7 @@ data:
     - icon: ':heavy_check_mark:'
       path: 01_Math/02_Combinatorics/01.02.01_modint.static.hpp
       title: "modint \u69CB\u9020\u4F53 (\u9759\u7684 MOD)"
-    - icon: ':warning:'
+    - icon: ':heavy_check_mark:'
       path: 01_Math/02_Combinatorics/01.02.02_modint.dynamic.hpp
       title: "modint \u69CB\u9020\u4F53 (\u52D5\u7684 MOD)"
     - icon: ':heavy_check_mark:'
@@ -142,6 +142,9 @@ data:
       title: test/01_Math/01_NumberTheory/02.01.03_yukicoder-3030.test.cpp
   - name: test/01_Math/02_Combinatorics
     pages:
+    - icon: ':heavy_check_mark:'
+      path: test/01_Math/02_Combinatorics/01.02.01_AOJ-1327.test.cpp
+      title: test/01_Math/02_Combinatorics/01.02.01_AOJ-1327.test.cpp
     - icon: ':heavy_check_mark:'
       path: test/01_Math/02_Combinatorics/01.02.01_yukicoder-840.test.cpp
       title: test/01_Math/02_Combinatorics/01.02.01_yukicoder-840.test.cpp

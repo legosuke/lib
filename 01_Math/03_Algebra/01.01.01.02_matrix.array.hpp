@@ -13,7 +13,7 @@ public:
     using value_type = T;
 
     matrix_array() = default;
-    explicit matrix_array(T x = T(0)) { init(x); }
+    explicit matrix_array(T x = T(0)) { fill(x); }
 
     std::uint32_t height() const {
         return n;
@@ -21,7 +21,7 @@ public:
     std::uint32_t width() const {
         return m;
     }
-    void init(T x = T(0)) {
+    void fill(T x = T(0)) {
         for_each(_v.begin(), _v.end(), [&](auto vv) { vv.fill(x); });
     }
     const std::array<T, m>& operator [] (std::uint32_t i) const {

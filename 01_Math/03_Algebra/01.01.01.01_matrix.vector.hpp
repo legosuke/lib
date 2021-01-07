@@ -22,9 +22,12 @@ public:
     std::uint32_t width() const {
         return _m;
     }
+    void fill(T x = T(0)) {
+        _v.clear(); _v.assign(_n, std::vector<T>(_m, x));
+    }
     void init(std::uint32_t n, std::uint32_t m, T x = T(0)) {
         _n = n; _m = m;
-        _v.clear(); _v.assign(_n, std::vector<T>(_m, x));
+        fill(x);
     }
     const std::vector<T>& operator [] (std::uint32_t i) const {
         return (_v.at(i));

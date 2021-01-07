@@ -1,4 +1,5 @@
 ---
+title: 逆行列 (ガウスの消去法)
 documentation_of: ../01_Math/03_Algebra/01.03.02.01_inverse-matrix.gaussian-elimination.hpp
 ---
 

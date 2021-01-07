@@ -1,8 +1,9 @@
 #pragma once
 #include <cassert>
 #include <cstdint>
-#include <ostream>
+#include <iostream>
 #include <type_traits>
+#include "01.01_mod-operation.hpp"
 #include "01.02.00_modint-base.hpp"
 #include "01.03.01_mod-pow.hpp"
 #include "01.04.03_mod-inv.ext-gcd.hpp"
@@ -22,7 +23,7 @@ public:
     static void set_mod(const std::uint32_t& m) {
         MOD = m;
     }
-    std::uint32_t mod() const {
+    std::uint32_t get_mod() const {
         return MOD;
     }
     std::uint32_t val() const {
@@ -70,6 +71,11 @@ public:
     friend std::ostream& operator << (std::ostream& os, const dynamic_modint<ID>& rhs) {
         return os << rhs._v;
     };
+    friend std::istream& operator >> (std::istream& is, dynamic_modint<ID>& rhs) {
+        is >> rhs._v;
+        rhs._v = mod(rhs._v, dynamic_modint<ID>::MOD);
+        return is;
+    }
 
 protected:
     static std::uint32_t MOD;

@@ -10,10 +10,9 @@
  * @brief 連立一次方程式 (ガウスの消去法、バイナリ)
  * @note O(nm^2)
  */
-template <class SquareMatrix, typename T>
-std::vector<T> linear_equations(SquareMatrix& A, std::vector<T>& b) {
-    static_assert(std::is_same<SquareMatrix::value_type, T>::value);
-    assert(A.height() == A.weight());
+template <class Matrix, typename T>
+std::vector<T> linear_equations(Matrix& A, std::vector<T>& b) {
+    static_assert(std::is_same<Matrix::value_type, T>::value);
     assert(A.height() == (std::uint32_t)b.size());
     matrix_vector<T> Ab(A.height(), A.width() + 1);
     for (std::uint32_t i = 0; i < A.height(); ++i) {

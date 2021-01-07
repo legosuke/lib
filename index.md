@@ -89,6 +89,9 @@ data:
       title: "\u884C\u5217\u306E\u968E\u6570 (\u30AC\u30A6\u30B9\u306E\u6D88\u53BB\
         \u6CD5)"
     - icon: ':warning:'
+      path: 01_Math/03_Algebra/01.03.02.01_inverse-matrix.gaussian-elimination.hpp
+      title: 01_Math/03_Algebra/01.03.02.01_inverse-matrix.gaussian-elimination.hpp
+    - icon: ':warning:'
       path: 01_Math/03_Algebra/01.03.03.02_matrix-determinant.LU-decomposition.hpp
       title: "\u884C\u5217\u5F0F (LU \u5206\u89E3)"
     - icon: ':warning:'

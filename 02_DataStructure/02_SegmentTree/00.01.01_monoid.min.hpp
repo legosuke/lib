@@ -4,8 +4,11 @@
 #include <type_traits>
 #include "00.00_monoid.base.hpp"
 
+/**
+ * @brief モノイド (min)
+ */
 template <typename T>
-class RmQ : public monoid_base {
+class min_monoid : public monoid_base {
     static_assert(std::is_arithmetic<T>::value);
 
 public:

@@ -120,6 +120,9 @@ data:
     - icon: ':warning:'
       path: 02_DataStructure/01_UnionFind/02.03_attributed-union-find.mode.hpp
       title: "\u5C5E\u6027\u3064\u304D Union-Find (mode)"
+    - icon: ':heavy_check_mark:'
+      path: 02_DataStructure/01_UnionFind/03.01_potentialized-union-find.hpp
+      title: "\u30DD\u30C6\u30F3\u30B7\u30E3\u30EB\u4ED8\u304D Union-Find"
   - name: 06_Others/04_Random
     pages:
     - icon: ':heavy_check_mark:'
@@ -199,5 +202,8 @@ data:
     - icon: ':heavy_check_mark:'
       path: test/02_DataStructure/01_UnionFind/02.01_AOJ-2664.test.cpp
       title: test/02_DataStructure/01_UnionFind/02.01_AOJ-2664.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: test/02_DataStructure/01_UnionFind/03.01_AOJ-DSL-1-B.test.cpp
+      title: test/02_DataStructure/01_UnionFind/03.01_AOJ-DSL-1-B.test.cpp
 layout: toppage
 ---

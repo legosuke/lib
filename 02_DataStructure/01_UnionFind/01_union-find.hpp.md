@@ -2,7 +2,7 @@
 data:
   _extendedDependsOn: []
   _extendedRequiredBy:
-  - icon: ':warning:'
+  - icon: ':heavy_check_mark:'
     path: 02_DataStructure/01_UnionFind/02.01_attributed-union-find.min-max.hpp
     title: "\u5C5E\u6027\u3064\u304D Union-Find (min-max)"
   - icon: ':warning:'
@@ -15,6 +15,9 @@ data:
   - icon: ':heavy_check_mark:'
     path: test/02_DataStructure/01_UnionFind/01_AOJ-DSL-1-A.test.cpp
     title: test/02_DataStructure/01_UnionFind/01_AOJ-DSL-1-A.test.cpp
+  - icon: ':heavy_check_mark:'
+    path: test/02_DataStructure/01_UnionFind/02.01_AOJ-2664.test.cpp
+    title: test/02_DataStructure/01_UnionFind/02.01_AOJ-2664.test.cpp
   _pathExtension: hpp
   _verificationStatusIcon: ':heavy_check_mark:'
   attributes:
@@ -67,6 +70,7 @@ data:
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
   - test/02_DataStructure/01_UnionFind/01_AOJ-DSL-1-A.test.cpp
+  - test/02_DataStructure/01_UnionFind/02.01_AOJ-2664.test.cpp
 documentation_of: 02_DataStructure/01_UnionFind/01_union-find.hpp
 layout: document
 redirect_from:

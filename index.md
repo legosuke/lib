@@ -111,7 +111,7 @@ data:
     - icon: ':heavy_check_mark:'
       path: 02_DataStructure/01_UnionFind/01_union-find.hpp
       title: Union-Find
-    - icon: ':warning:'
+    - icon: ':heavy_check_mark:'
       path: 02_DataStructure/01_UnionFind/02.01_attributed-union-find.min-max.hpp
       title: "\u5C5E\u6027\u3064\u304D Union-Find (min-max)"
     - icon: ':warning:'
@@ -196,5 +196,8 @@ data:
     - icon: ':heavy_check_mark:'
       path: test/02_DataStructure/01_UnionFind/01_AOJ-DSL-1-A.test.cpp
       title: test/02_DataStructure/01_UnionFind/01_AOJ-DSL-1-A.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: test/02_DataStructure/01_UnionFind/02.01_AOJ-2664.test.cpp
+      title: test/02_DataStructure/01_UnionFind/02.01_AOJ-2664.test.cpp
 layout: toppage
 ---

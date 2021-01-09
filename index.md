@@ -129,8 +129,8 @@ data:
       path: 02_DataStructure/02_SegmentTree/00.00_monoid.base.hpp
       title: 02_DataStructure/02_SegmentTree/00.00_monoid.base.hpp
     - icon: ':heavy_check_mark:'
-      path: 02_DataStructure/02_SegmentTree/00.01.01_monoid.RmQ.hpp
-      title: 02_DataStructure/02_SegmentTree/00.01.01_monoid.RmQ.hpp
+      path: 02_DataStructure/02_SegmentTree/00.01.01_monoid.min.hpp
+      title: "\u30E2\u30CE\u30A4\u30C9 (min)"
     - icon: ':heavy_check_mark:'
       path: 02_DataStructure/02_SegmentTree/01_segment-tree.hpp
       title: "\u30BB\u30B0\u30E1\u30F3\u30C8\u30C4\u30EA\u30FC"

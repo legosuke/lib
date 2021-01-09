@@ -2,7 +2,7 @@
 data:
   _extendedDependsOn:
   - icon: ':heavy_check_mark:'
-    path: 02_DataStructure/01_UnionFind/03.01_potentialized-union-find.hpp
+    path: 02_DataStructure/01_UnionFind/03_potentialized-union-find.hpp
     title: "\u30DD\u30C6\u30F3\u30B7\u30E3\u30EB\u4ED8\u304D Union-Find"
   - icon: ':heavy_check_mark:'
     path: template/template.hpp
@@ -16,10 +16,10 @@ data:
     PROBLEM: https://onlinejudge.u-aizu.ac.jp/problems/DSL_1_B
     links:
     - https://onlinejudge.u-aizu.ac.jp/problems/DSL_1_B
-  bundledCode: "#line 1 \"test/02_DataStructure/01_UnionFind/03.01_AOJ-DSL-1-B.test.cpp\"\
+  bundledCode: "#line 1 \"test/02_DataStructure/01_UnionFind/03_AOJ-DSL-1-B.test.cpp\"\
     \n#define PROBLEM \"https://onlinejudge.u-aizu.ac.jp/problems/DSL_1_B\"\n#line\
     \ 1 \"template/template.hpp\"\n#include <bits/stdc++.h>\n#define int int64_t\n\
-    using namespace std;\n#line 6 \"02_DataStructure/01_UnionFind/03.01_potentialized-union-find.hpp\"\
+    using namespace std;\n#line 6 \"02_DataStructure/01_UnionFind/03_potentialized-union-find.hpp\"\
     \n\n/**\n * @brief \u30DD\u30C6\u30F3\u30B7\u30E3\u30EB\u4ED8\u304D Union-Find\n\
     \ */\ntemplate <typename T>\nclass PotentializedUnionFind {\npublic:\n    PotentializedUnionFind()\
     \ = default;\n    explicit PotentializedUnionFind(std::uint32_t n)\n        :\
@@ -43,15 +43,15 @@ data:
     \ y) {\n        assert(0 <= x && x < _n && 0 <= y && y < _n);\n        assert(is_same(x,\
     \ y));\n        return weight(y) - weight(x);\n    }\n\nprotected:\n    std::uint32_t\
     \ _n, _num;\n    std::vector<std::uint32_t> _par, _size;\n    std::vector<T> _weight;\n\
-    };\n#line 4 \"test/02_DataStructure/01_UnionFind/03.01_AOJ-DSL-1-B.test.cpp\"\n\
-    \nsigned main() {\n    int n, q;\n    cin >> n >> q;\n    PotentializedUnionFind<int>\
+    };\n#line 4 \"test/02_DataStructure/01_UnionFind/03_AOJ-DSL-1-B.test.cpp\"\n\n\
+    signed main() {\n    int n, q;\n    cin >> n >> q;\n    PotentializedUnionFind<int>\
     \ uf(n);\n    for (int i = 0; i < q; ++i) {\n        int c, x, y, z;\n       \
     \ cin >> c >> x >> y;\n        if (c == 0) {\n            cin >> z;\n        \
     \    uf.unite_trees(x, y, z);\n        } else {\n            if (uf.is_same(x,\
     \ y)) cout << uf.diff_weight(x, y) << endl;\n            else cout << \"?\" <<\
     \ endl;\n        }\n    }\n}\n"
   code: "#define PROBLEM \"https://onlinejudge.u-aizu.ac.jp/problems/DSL_1_B\"\n#include\
-    \ \"../../../template/template.hpp\"\n#include \"../../../02_DataStructure/01_UnionFind/03.01_potentialized-union-find.hpp\"\
+    \ \"../../../template/template.hpp\"\n#include \"../../../02_DataStructure/01_UnionFind/03_potentialized-union-find.hpp\"\
     \n\nsigned main() {\n    int n, q;\n    cin >> n >> q;\n    PotentializedUnionFind<int>\
     \ uf(n);\n    for (int i = 0; i < q; ++i) {\n        int c, x, y, z;\n       \
     \ cin >> c >> x >> y;\n        if (c == 0) {\n            cin >> z;\n        \
@@ -60,17 +60,17 @@ data:
     \ endl;\n        }\n    }\n}"
   dependsOn:
   - template/template.hpp
-  - 02_DataStructure/01_UnionFind/03.01_potentialized-union-find.hpp
+  - 02_DataStructure/01_UnionFind/03_potentialized-union-find.hpp
   isVerificationFile: true
-  path: test/02_DataStructure/01_UnionFind/03.01_AOJ-DSL-1-B.test.cpp
+  path: test/02_DataStructure/01_UnionFind/03_AOJ-DSL-1-B.test.cpp
   requiredBy: []
-  timestamp: '2021-01-09 20:59:12+00:00'
+  timestamp: '2021-01-09 22:04:37+00:00'
   verificationStatus: TEST_ACCEPTED
   verifiedWith: []
-documentation_of: test/02_DataStructure/01_UnionFind/03.01_AOJ-DSL-1-B.test.cpp
+documentation_of: test/02_DataStructure/01_UnionFind/03_AOJ-DSL-1-B.test.cpp
 layout: document
 redirect_from:
-- /verify/test/02_DataStructure/01_UnionFind/03.01_AOJ-DSL-1-B.test.cpp
-- /verify/test/02_DataStructure/01_UnionFind/03.01_AOJ-DSL-1-B.test.cpp.html
-title: test/02_DataStructure/01_UnionFind/03.01_AOJ-DSL-1-B.test.cpp
+- /verify/test/02_DataStructure/01_UnionFind/03_AOJ-DSL-1-B.test.cpp
+- /verify/test/02_DataStructure/01_UnionFind/03_AOJ-DSL-1-B.test.cpp.html
+title: test/02_DataStructure/01_UnionFind/03_AOJ-DSL-1-B.test.cpp
 ---

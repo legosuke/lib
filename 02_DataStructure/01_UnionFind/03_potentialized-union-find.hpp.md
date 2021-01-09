@@ -4,14 +4,14 @@ data:
   _extendedRequiredBy: []
   _extendedVerifiedWith:
   - icon: ':heavy_check_mark:'
-    path: test/02_DataStructure/01_UnionFind/03.01_AOJ-DSL-1-B.test.cpp
-    title: test/02_DataStructure/01_UnionFind/03.01_AOJ-DSL-1-B.test.cpp
+    path: test/02_DataStructure/01_UnionFind/03_AOJ-DSL-1-B.test.cpp
+    title: test/02_DataStructure/01_UnionFind/03_AOJ-DSL-1-B.test.cpp
   _pathExtension: hpp
   _verificationStatusIcon: ':heavy_check_mark:'
   attributes:
     document_title: "\u30DD\u30C6\u30F3\u30B7\u30E3\u30EB\u4ED8\u304D Union-Find"
     links: []
-  bundledCode: "#line 2 \"02_DataStructure/01_UnionFind/03.01_potentialized-union-find.hpp\"\
+  bundledCode: "#line 2 \"02_DataStructure/01_UnionFind/03_potentialized-union-find.hpp\"\
     \n#include <cassert>\n#include <cstdlib>\n#include <utility>\n#include <vector>\n\
     \n/**\n * @brief \u30DD\u30C6\u30F3\u30B7\u30E3\u30EB\u4ED8\u304D Union-Find\n\
     \ */\ntemplate <typename T>\nclass PotentializedUnionFind {\npublic:\n    PotentializedUnionFind()\
@@ -64,16 +64,16 @@ data:
     \   std::vector<std::uint32_t> _par, _size;\n    std::vector<T> _weight;\n};"
   dependsOn: []
   isVerificationFile: false
-  path: 02_DataStructure/01_UnionFind/03.01_potentialized-union-find.hpp
+  path: 02_DataStructure/01_UnionFind/03_potentialized-union-find.hpp
   requiredBy: []
-  timestamp: '2021-01-09 20:59:12+00:00'
+  timestamp: '2021-01-09 22:04:37+00:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
-  - test/02_DataStructure/01_UnionFind/03.01_AOJ-DSL-1-B.test.cpp
-documentation_of: 02_DataStructure/01_UnionFind/03.01_potentialized-union-find.hpp
+  - test/02_DataStructure/01_UnionFind/03_AOJ-DSL-1-B.test.cpp
+documentation_of: 02_DataStructure/01_UnionFind/03_potentialized-union-find.hpp
 layout: document
 redirect_from:
-- /library/02_DataStructure/01_UnionFind/03.01_potentialized-union-find.hpp
-- /library/02_DataStructure/01_UnionFind/03.01_potentialized-union-find.hpp.html
+- /library/02_DataStructure/01_UnionFind/03_potentialized-union-find.hpp
+- /library/02_DataStructure/01_UnionFind/03_potentialized-union-find.hpp.html
 title: "\u30DD\u30C6\u30F3\u30B7\u30E3\u30EB\u4ED8\u304D Union-Find"
 ---

@@ -58,8 +58,8 @@ data:
     path: test/02_DataStructure/01_UnionFind/02.01_AOJ-2664.test.cpp
     title: test/02_DataStructure/01_UnionFind/02.01_AOJ-2664.test.cpp
   - icon: ':heavy_check_mark:'
-    path: test/02_DataStructure/01_UnionFind/03.01_AOJ-DSL-1-B.test.cpp
-    title: test/02_DataStructure/01_UnionFind/03.01_AOJ-DSL-1-B.test.cpp
+    path: test/02_DataStructure/01_UnionFind/03_AOJ-DSL-1-B.test.cpp
+    title: test/02_DataStructure/01_UnionFind/03_AOJ-DSL-1-B.test.cpp
   _pathExtension: hpp
   _verificationStatusIcon: ':heavy_check_mark:'
   attributes:
@@ -101,7 +101,7 @@ data:
   - test/01_Math/01_NumberTheory/01.03.01_AOJ-NTL-1-C.test.cpp
   - test/01_Math/01_NumberTheory/02.01.03_AOJ-ALDS1-1-C.test.cpp
   - test/01_Math/01_NumberTheory/02.01.02_AOJ-ALDS1-1-C.test.cpp
-  - test/02_DataStructure/01_UnionFind/03.01_AOJ-DSL-1-B.test.cpp
+  - test/02_DataStructure/01_UnionFind/03_AOJ-DSL-1-B.test.cpp
   - test/02_DataStructure/01_UnionFind/01_AOJ-DSL-1-A.test.cpp
   - test/02_DataStructure/01_UnionFind/02.01_AOJ-2664.test.cpp
 documentation_of: template/template.hpp

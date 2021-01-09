@@ -1,7 +1,16 @@
 ---
 data:
   _extendedDependsOn: []
-  _extendedRequiredBy: []
+  _extendedRequiredBy:
+  - icon: ':warning:'
+    path: 02_DataStructure/01_UnionFind/02.01_attributed-union-find.min-max.hpp
+    title: "\u5C5E\u6027\u3064\u304D Union-Find (min-max)"
+  - icon: ':warning:'
+    path: 02_DataStructure/01_UnionFind/02.02_attributed-union-find.sum.hpp
+    title: "\u5C5E\u6027\u3064\u304D Union-Find (sum)"
+  - icon: ':warning:'
+    path: 02_DataStructure/01_UnionFind/02.03_attributed-union-find.mode.hpp
+    title: "\u5C5E\u6027\u3064\u304D Union-Find (mode)"
   _extendedVerifiedWith:
   - icon: ':heavy_check_mark:'
     path: test/02_DataStructure/01_UnionFind/01_AOJ-DSL-1-A.test.cpp
@@ -50,7 +59,10 @@ data:
   dependsOn: []
   isVerificationFile: false
   path: 02_DataStructure/01_UnionFind/01_union-find.hpp
-  requiredBy: []
+  requiredBy:
+  - 02_DataStructure/01_UnionFind/02.01_attributed-union-find.min-max.hpp
+  - 02_DataStructure/01_UnionFind/02.03_attributed-union-find.mode.hpp
+  - 02_DataStructure/01_UnionFind/02.02_attributed-union-find.sum.hpp
   timestamp: '2021-01-09 04:37:43+00:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:

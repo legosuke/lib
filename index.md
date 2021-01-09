@@ -111,6 +111,15 @@ data:
     - icon: ':heavy_check_mark:'
       path: 02_DataStructure/01_UnionFind/01_union-find.hpp
       title: Union-Find
+    - icon: ':warning:'
+      path: 02_DataStructure/01_UnionFind/02.01_attributed-union-find.min-max.hpp
+      title: "\u5C5E\u6027\u3064\u304D Union-Find (min-max)"
+    - icon: ':warning:'
+      path: 02_DataStructure/01_UnionFind/02.02_attributed-union-find.sum.hpp
+      title: "\u5C5E\u6027\u3064\u304D Union-Find (sum)"
+    - icon: ':warning:'
+      path: 02_DataStructure/01_UnionFind/02.03_attributed-union-find.mode.hpp
+      title: "\u5C5E\u6027\u3064\u304D Union-Find (mode)"
   - name: 06_Others/04_Random
     pages:
     - icon: ':heavy_check_mark:'

@@ -1,6 +1,6 @@
 #define PROBLEM "https://onlinejudge.u-aizu.ac.jp/problems/DSL_1_B"
 #include "../../../template/template.hpp"
-#include "../../../02_DataStructure/01_UnionFind/03.01_potentialized-union-find.hpp"
+#include "../../../02_DataStructure/01_UnionFind/03_potentialized-union-find.hpp"
 
 signed main() {
     int n, q;

@@ -9,7 +9,6 @@ signed main() {
     for (int i = 0; i < q; ++i) {
         int com, x, y;
         cin >> com >> x >> y;
-        x--; y--;
         if (com == 0) uf.unite_trees(x, y);
         else cout << uf.is_same(x, y) << endl;
     }

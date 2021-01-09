@@ -4,7 +4,10 @@ data:
   - icon: ':heavy_check_mark:'
     path: 02_DataStructure/02_SegmentTree/00.00_monoid.base.hpp
     title: 02_DataStructure/02_SegmentTree/00.00_monoid.base.hpp
-  _extendedRequiredBy: []
+  _extendedRequiredBy:
+  - icon: ':warning:'
+    path: test/02_DataStructure/02_SegmentTree/00.01.01_AOJ-DSL-2-A.test copy.cpp
+    title: test/02_DataStructure/02_SegmentTree/00.01.01_AOJ-DSL-2-A.test copy.cpp
   _extendedVerifiedWith:
   - icon: ':heavy_check_mark:'
     path: test/02_DataStructure/02_SegmentTree/00.01.01_AOJ-DSL-2-A.test.cpp
@@ -75,7 +78,8 @@ data:
   - 02_DataStructure/02_SegmentTree/00.00_monoid.base.hpp
   isVerificationFile: false
   path: 02_DataStructure/02_SegmentTree/01_segment-tree.hpp
-  requiredBy: []
+  requiredBy:
+  - test/02_DataStructure/02_SegmentTree/00.01.01_AOJ-DSL-2-A.test copy.cpp
   timestamp: '2021-01-09 23:25:08+00:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:

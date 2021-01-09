@@ -131,6 +131,9 @@ data:
     - icon: ':heavy_check_mark:'
       path: 02_DataStructure/02_SegmentTree/00.01.01_monoid.min.hpp
       title: "\u30E2\u30CE\u30A4\u30C9 (min)"
+    - icon: ':warning:'
+      path: 02_DataStructure/02_SegmentTree/00.01.02_monoid.max.hpp
+      title: "\u30E2\u30CE\u30A4\u30C9 (max)"
     - icon: ':heavy_check_mark:'
       path: 02_DataStructure/02_SegmentTree/00.01.03_monoid.sum.hpp
       title: "\u30E2\u30CE\u30A4\u30C9 (sum)"

@@ -36,7 +36,7 @@ public:
     }
     std::size_t tree_size(std::uint32_t x) {
         assert(0 <= x && x < _n);
-        return -_size[find_root(x)];
+        return _size[find_root(x)];
     }
     std::size_t number_of_trees() {
         return _num;

@@ -34,7 +34,7 @@ data:
     \ is_same(std::uint32_t x, std::uint32_t y) {\n        assert(0 <= x && x < _n\
     \ && 0 <= y && y < _n);\n        return (find_root(x) == find_root(y));\n    }\n\
     \    std::size_t tree_size(std::uint32_t x) {\n        assert(0 <= x && x < _n);\n\
-    \        return -_size[find_root(x)];\n    }\n    std::size_t number_of_trees()\
+    \        return _size[find_root(x)];\n    }\n    std::size_t number_of_trees()\
     \ {\n        return _num;\n    }\n\nprotected:\n    std::uint32_t _n, _num;\n\
     \    std::vector<std::uint32_t> _par, _size;\n};\n#line 4 \"test/02_DataStructure/01_UnionFind/01_AOJ-DSL-1-A.test.cpp\"\
     \n\nsigned main() {\n    int n, q;\n    cin >> n >> q;\n    UnionFind uf(n);\n\
@@ -53,7 +53,7 @@ data:
   isVerificationFile: true
   path: test/02_DataStructure/01_UnionFind/01_AOJ-DSL-1-A.test.cpp
   requiredBy: []
-  timestamp: '2021-01-09 04:42:02+00:00'
+  timestamp: '2021-01-09 20:51:59+00:00'
   verificationStatus: TEST_ACCEPTED
   verifiedWith: []
 documentation_of: test/02_DataStructure/01_UnionFind/01_AOJ-DSL-1-A.test.cpp

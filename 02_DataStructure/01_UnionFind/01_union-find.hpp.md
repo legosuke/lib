@@ -38,7 +38,7 @@ data:
     \   }\n    bool is_same(std::uint32_t x, std::uint32_t y) {\n        assert(0\
     \ <= x && x < _n && 0 <= y && y < _n);\n        return (find_root(x) == find_root(y));\n\
     \    }\n    std::size_t tree_size(std::uint32_t x) {\n        assert(0 <= x &&\
-    \ x < _n);\n        return -_size[find_root(x)];\n    }\n    std::size_t number_of_trees()\
+    \ x < _n);\n        return _size[find_root(x)];\n    }\n    std::size_t number_of_trees()\
     \ {\n        return _num;\n    }\n\nprotected:\n    std::uint32_t _n, _num;\n\
     \    std::vector<std::uint32_t> _par, _size;\n};\n"
   code: "#pragma once\n#include <cassert>\n#include <cstdint>\n#include <vector>\n\
@@ -56,7 +56,7 @@ data:
     \ is_same(std::uint32_t x, std::uint32_t y) {\n        assert(0 <= x && x < _n\
     \ && 0 <= y && y < _n);\n        return (find_root(x) == find_root(y));\n    }\n\
     \    std::size_t tree_size(std::uint32_t x) {\n        assert(0 <= x && x < _n);\n\
-    \        return -_size[find_root(x)];\n    }\n    std::size_t number_of_trees()\
+    \        return _size[find_root(x)];\n    }\n    std::size_t number_of_trees()\
     \ {\n        return _num;\n    }\n\nprotected:\n    std::uint32_t _n, _num;\n\
     \    std::vector<std::uint32_t> _par, _size;\n};"
   dependsOn: []
@@ -66,7 +66,7 @@ data:
   - 02_DataStructure/01_UnionFind/02.01_attributed-union-find.min-max.hpp
   - 02_DataStructure/01_UnionFind/02.03_attributed-union-find.mode.hpp
   - 02_DataStructure/01_UnionFind/02.02_attributed-union-find.sum.hpp
-  timestamp: '2021-01-09 04:37:43+00:00'
+  timestamp: '2021-01-09 20:51:59+00:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
   - test/02_DataStructure/01_UnionFind/01_AOJ-DSL-1-A.test.cpp

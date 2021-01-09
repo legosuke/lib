@@ -4,14 +4,14 @@ data:
   - icon: ':heavy_check_mark:'
     path: 02_DataStructure/02_SegmentTree/00.00_monoid.base.hpp
     title: 02_DataStructure/02_SegmentTree/00.00_monoid.base.hpp
-  _extendedRequiredBy:
-  - icon: ':warning:'
-    path: test/02_DataStructure/02_SegmentTree/00.01.01_AOJ-DSL-2-A.test copy.cpp
-    title: test/02_DataStructure/02_SegmentTree/00.01.01_AOJ-DSL-2-A.test copy.cpp
+  _extendedRequiredBy: []
   _extendedVerifiedWith:
   - icon: ':heavy_check_mark:'
     path: test/02_DataStructure/02_SegmentTree/00.01.01_AOJ-DSL-2-A.test.cpp
     title: test/02_DataStructure/02_SegmentTree/00.01.01_AOJ-DSL-2-A.test.cpp
+  - icon: ':heavy_check_mark:'
+    path: test/02_DataStructure/02_SegmentTree/00.01.03_AOJ-DSL-2-B.test.cpp
+    title: test/02_DataStructure/02_SegmentTree/00.01.03_AOJ-DSL-2-B.test.cpp
   _pathExtension: hpp
   _verificationStatusIcon: ':heavy_check_mark:'
   attributes:
@@ -78,12 +78,12 @@ data:
   - 02_DataStructure/02_SegmentTree/00.00_monoid.base.hpp
   isVerificationFile: false
   path: 02_DataStructure/02_SegmentTree/01_segment-tree.hpp
-  requiredBy:
-  - test/02_DataStructure/02_SegmentTree/00.01.01_AOJ-DSL-2-A.test copy.cpp
+  requiredBy: []
   timestamp: '2021-01-09 23:25:08+00:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
   - test/02_DataStructure/02_SegmentTree/00.01.01_AOJ-DSL-2-A.test.cpp
+  - test/02_DataStructure/02_SegmentTree/00.01.03_AOJ-DSL-2-B.test.cpp
 documentation_of: 02_DataStructure/02_SegmentTree/01_segment-tree.hpp
 layout: document
 redirect_from:

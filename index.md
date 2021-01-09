@@ -131,7 +131,7 @@ data:
     - icon: ':heavy_check_mark:'
       path: 02_DataStructure/02_SegmentTree/00.01.01_monoid.min.hpp
       title: "\u30E2\u30CE\u30A4\u30C9 (min)"
-    - icon: ':warning:'
+    - icon: ':heavy_check_mark:'
       path: 02_DataStructure/02_SegmentTree/00.01.03_monoid.sum.hpp
       title: "\u30E2\u30CE\u30A4\u30C9 (sum)"
     - icon: ':heavy_check_mark:'
@@ -153,11 +153,6 @@ data:
     - icon: ':heavy_check_mark:'
       path: template/template.hpp
       title: template/template.hpp
-  - name: test/02_DataStructure/02_SegmentTree
-    pages:
-    - icon: ':warning:'
-      path: test/02_DataStructure/02_SegmentTree/00.01.01_AOJ-DSL-2-A.test copy.cpp
-      title: test/02_DataStructure/02_SegmentTree/00.01.01_AOJ-DSL-2-A.test copy.cpp
   verificationCategories:
   - name: test/01_Math/01_NumberTheory
     pages:
@@ -229,5 +224,8 @@ data:
     - icon: ':heavy_check_mark:'
       path: test/02_DataStructure/02_SegmentTree/00.01.01_AOJ-DSL-2-A.test.cpp
       title: test/02_DataStructure/02_SegmentTree/00.01.01_AOJ-DSL-2-A.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: test/02_DataStructure/02_SegmentTree/00.01.03_AOJ-DSL-2-B.test.cpp
+      title: test/02_DataStructure/02_SegmentTree/00.01.03_AOJ-DSL-2-B.test.cpp
 layout: toppage
 ---

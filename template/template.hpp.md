@@ -1,10 +1,7 @@
 ---
 data:
   _extendedDependsOn: []
-  _extendedRequiredBy:
-  - icon: ':warning:'
-    path: test/02_DataStructure/02_SegmentTree/00.01.01_AOJ-DSL-2-A.test copy.cpp
-    title: test/02_DataStructure/02_SegmentTree/00.01.01_AOJ-DSL-2-A.test copy.cpp
+  _extendedRequiredBy: []
   _extendedVerifiedWith:
   - icon: ':heavy_check_mark:'
     path: test/01_Math/01_NumberTheory/01.01.01_AOJ-ITP1-3-D.test.cpp
@@ -66,6 +63,9 @@ data:
   - icon: ':heavy_check_mark:'
     path: test/02_DataStructure/02_SegmentTree/00.01.01_AOJ-DSL-2-A.test.cpp
     title: test/02_DataStructure/02_SegmentTree/00.01.01_AOJ-DSL-2-A.test.cpp
+  - icon: ':heavy_check_mark:'
+    path: test/02_DataStructure/02_SegmentTree/00.01.03_AOJ-DSL-2-B.test.cpp
+    title: test/02_DataStructure/02_SegmentTree/00.01.03_AOJ-DSL-2-B.test.cpp
   _pathExtension: hpp
   _verificationStatusIcon: ':heavy_check_mark:'
   attributes:
@@ -87,8 +87,7 @@ data:
   dependsOn: []
   isVerificationFile: false
   path: template/template.hpp
-  requiredBy:
-  - test/02_DataStructure/02_SegmentTree/00.01.01_AOJ-DSL-2-A.test copy.cpp
+  requiredBy: []
   timestamp: '2020-12-16 16:02:46+00:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
@@ -109,6 +108,7 @@ data:
   - test/01_Math/01_NumberTheory/02.01.03_AOJ-ALDS1-1-C.test.cpp
   - test/01_Math/01_NumberTheory/02.01.02_AOJ-ALDS1-1-C.test.cpp
   - test/02_DataStructure/02_SegmentTree/00.01.01_AOJ-DSL-2-A.test.cpp
+  - test/02_DataStructure/02_SegmentTree/00.01.03_AOJ-DSL-2-B.test.cpp
   - test/02_DataStructure/01_UnionFind/03_AOJ-DSL-1-B.test.cpp
   - test/02_DataStructure/01_UnionFind/01_AOJ-DSL-1-A.test.cpp
   - test/02_DataStructure/01_UnionFind/02.01_AOJ-2664.test.cpp

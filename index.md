@@ -108,7 +108,7 @@ data:
         \u6D88\u53BB\u6CD5\u3001\u30D0\u30A4\u30CA\u30EA)"
   - name: 02_DataStructure/01_UnionFind
     pages:
-    - icon: ':x:'
+    - icon: ':heavy_check_mark:'
       path: 02_DataStructure/01_UnionFind/01_union-find.hpp
       title: Union-Find
   - name: 06_Others/04_Random
@@ -124,7 +124,7 @@ data:
       title: "\u4E71\u6570 (\u5217)"
   - name: template
     pages:
-    - icon: ':question:'
+    - icon: ':heavy_check_mark:'
       path: template/template.hpp
       title: template/template.hpp
   verificationCategories:
@@ -184,7 +184,7 @@ data:
       title: test/01_Math/03_Algebra/01.01.02.01_yukicoder-194.test.cpp
   - name: test/02_DataStructure/01_UnionFind
     pages:
-    - icon: ':x:'
+    - icon: ':heavy_check_mark:'
       path: test/02_DataStructure/01_UnionFind/01_AOJ-DSL-1-A.test.cpp
       title: test/02_DataStructure/01_UnionFind/01_AOJ-DSL-1-A.test.cpp
 layout: toppage

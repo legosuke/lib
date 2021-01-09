@@ -1,16 +1,16 @@
 ---
 data:
   _extendedDependsOn:
-  - icon: ':x:'
+  - icon: ':heavy_check_mark:'
     path: 02_DataStructure/01_UnionFind/01_union-find.hpp
     title: Union-Find
-  - icon: ':question:'
+  - icon: ':heavy_check_mark:'
     path: template/template.hpp
     title: template/template.hpp
   _extendedRequiredBy: []
   _extendedVerifiedWith: []
   _pathExtension: cpp
-  _verificationStatusIcon: ':x:'
+  _verificationStatusIcon: ':heavy_check_mark:'
   attributes:
     '*NOT_SPECIAL_COMMENTS*': ''
     PROBLEM: https://onlinejudge.u-aizu.ac.jp/problems/DSL_1_A
@@ -39,22 +39,22 @@ data:
     \    std::vector<std::uint32_t> _par, _size;\n};\n#line 4 \"test/02_DataStructure/01_UnionFind/01_AOJ-DSL-1-A.test.cpp\"\
     \n\nsigned main() {\n    int n, q;\n    cin >> n >> q;\n    UnionFind uf(n);\n\
     \    for (int i = 0; i < q; ++i) {\n        int com, x, y;\n        cin >> com\
-    \ >> x >> y;\n        x--; y--;\n        if (com == 0) uf.unite_trees(x, y);\n\
-    \        else cout << uf.is_same(x, y) << endl;\n    }\n}\n"
+    \ >> x >> y;\n        if (com == 0) uf.unite_trees(x, y);\n        else cout <<\
+    \ uf.is_same(x, y) << endl;\n    }\n}\n"
   code: "#define PROBLEM \"https://onlinejudge.u-aizu.ac.jp/problems/DSL_1_A\"\n#include\
     \ \"../../../template/template.hpp\"\n#include \"../../../02_DataStructure/01_UnionFind/01_union-find.hpp\"\
     \n\nsigned main() {\n    int n, q;\n    cin >> n >> q;\n    UnionFind uf(n);\n\
     \    for (int i = 0; i < q; ++i) {\n        int com, x, y;\n        cin >> com\
-    \ >> x >> y;\n        x--; y--;\n        if (com == 0) uf.unite_trees(x, y);\n\
-    \        else cout << uf.is_same(x, y) << endl;\n    }\n}"
+    \ >> x >> y;\n        if (com == 0) uf.unite_trees(x, y);\n        else cout <<\
+    \ uf.is_same(x, y) << endl;\n    }\n}"
   dependsOn:
   - template/template.hpp
   - 02_DataStructure/01_UnionFind/01_union-find.hpp
   isVerificationFile: true
   path: test/02_DataStructure/01_UnionFind/01_AOJ-DSL-1-A.test.cpp
   requiredBy: []
-  timestamp: '2021-01-09 04:37:43+00:00'
-  verificationStatus: TEST_WRONG_ANSWER
+  timestamp: '2021-01-09 04:42:02+00:00'
+  verificationStatus: TEST_ACCEPTED
   verifiedWith: []
 documentation_of: test/02_DataStructure/01_UnionFind/01_AOJ-DSL-1-A.test.cpp
 layout: document

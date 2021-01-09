@@ -3,11 +3,11 @@ data:
   _extendedDependsOn: []
   _extendedRequiredBy: []
   _extendedVerifiedWith:
-  - icon: ':x:'
+  - icon: ':heavy_check_mark:'
     path: test/02_DataStructure/01_UnionFind/01_AOJ-DSL-1-A.test.cpp
     title: test/02_DataStructure/01_UnionFind/01_AOJ-DSL-1-A.test.cpp
   _pathExtension: hpp
-  _verificationStatusIcon: ':x:'
+  _verificationStatusIcon: ':heavy_check_mark:'
   attributes:
     document_title: Union-Find
     links: []
@@ -52,7 +52,7 @@ data:
   path: 02_DataStructure/01_UnionFind/01_union-find.hpp
   requiredBy: []
   timestamp: '2021-01-09 04:37:43+00:00'
-  verificationStatus: LIBRARY_ALL_WA
+  verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
   - test/02_DataStructure/01_UnionFind/01_AOJ-DSL-1-A.test.cpp
 documentation_of: 02_DataStructure/01_UnionFind/01_union-find.hpp

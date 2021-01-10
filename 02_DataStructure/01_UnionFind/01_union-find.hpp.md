@@ -25,7 +25,7 @@ data:
     links: []
   bundledCode: "#line 2 \"02_DataStructure/01_UnionFind/01_union-find.hpp\"\n#include\
     \ <cassert>\n#include <cstdint>\n#include <vector>\n\n/**\n * @brief Union-Find\n\
-    \ */\nclass UnionFind {\npublic:\n    UnionFind() = default;\n    explicit UnionFind(std::uint32_t\
+    \ */\nclass union_find {\npublic:\n    union_find() = default;\n    explicit union_find(std::uint32_t\
     \ n) : _n(n), _num(n), _par(n, n), _size(n, 1) {}\n    void init(std::uint32_t\
     \ n) { _par.assign(n, n); _size.assign(n, 1); }\n    \n    std::uint32_t unite_trees(std::uint32_t\
     \ x, std::uint32_t y) {\n        assert(0 <= x && x < _n && 0 <= y && y < _n);\n\
@@ -42,8 +42,8 @@ data:
     \ {\n        return _num;\n    }\n\nprotected:\n    std::uint32_t _n, _num;\n\
     \    std::vector<std::uint32_t> _par, _size;\n};\n"
   code: "#pragma once\n#include <cassert>\n#include <cstdint>\n#include <vector>\n\
-    \n/**\n * @brief Union-Find\n */\nclass UnionFind {\npublic:\n    UnionFind()\
-    \ = default;\n    explicit UnionFind(std::uint32_t n) : _n(n), _num(n), _par(n,\
+    \n/**\n * @brief Union-Find\n */\nclass union_find {\npublic:\n    union_find()\
+    \ = default;\n    explicit union_find(std::uint32_t n) : _n(n), _num(n), _par(n,\
     \ n), _size(n, 1) {}\n    void init(std::uint32_t n) { _par.assign(n, n); _size.assign(n,\
     \ 1); }\n    \n    std::uint32_t unite_trees(std::uint32_t x, std::uint32_t y)\
     \ {\n        assert(0 <= x && x < _n && 0 <= y && y < _n);\n        x = find_root(x);\
@@ -66,7 +66,7 @@ data:
   - 02_DataStructure/01_UnionFind/02.01_attributed-union-find.min-max.hpp
   - 02_DataStructure/01_UnionFind/02.03_attributed-union-find.mode.hpp
   - 02_DataStructure/01_UnionFind/02.02_attributed-union-find.sum.hpp
-  timestamp: '2021-01-09 20:51:59+00:00'
+  timestamp: '2021-01-10 00:26:45+00:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
   - test/02_DataStructure/01_UnionFind/01_AOJ-DSL-1-A.test.cpp

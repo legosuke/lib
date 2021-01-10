@@ -21,9 +21,9 @@ data:
     \ 1 \"template/template.hpp\"\n#include <bits/stdc++.h>\n#define int int64_t\n\
     using namespace std;\n#line 6 \"02_DataStructure/01_UnionFind/03_potentialized-union-find.hpp\"\
     \n\n/**\n * @brief \u30DD\u30C6\u30F3\u30B7\u30E3\u30EB\u4ED8\u304D Union-Find\n\
-    \ */\ntemplate <typename T>\nclass PotentializedUnionFind {\npublic:\n    PotentializedUnionFind()\
-    \ = default;\n    explicit PotentializedUnionFind(std::uint32_t n)\n        :\
-    \ _n(n), _num(n), _par(n, n), _size(n, 1), _weight(n) {}\n\n    bool unite_trees(std::uint32_t\
+    \ */\ntemplate <typename T>\nclass potentialized_union_find {\npublic:\n    potentialized_union_find()\
+    \ = default;\n    explicit potentialized_union_find(std::uint32_t n)\n       \
+    \ : _n(n), _num(n), _par(n, n), _size(n, 1), _weight(n) {}\n\n    bool unite_trees(std::uint32_t\
     \ x, std::uint32_t y, T w) {\n        assert(0 <= x && x < _n && 0 <= y && y <\
     \ _n);\n        w += weight(x); w -= weight(y);\n        x = find_root(x); y =\
     \ find_root(y);\n        if (x == y) return (w == 0);\n        if (_size[x] <\
@@ -44,7 +44,7 @@ data:
     \ y));\n        return weight(y) - weight(x);\n    }\n\nprotected:\n    std::uint32_t\
     \ _n, _num;\n    std::vector<std::uint32_t> _par, _size;\n    std::vector<T> _weight;\n\
     };\n#line 4 \"test/02_DataStructure/01_UnionFind/03_AOJ-DSL-1-B.test.cpp\"\n\n\
-    signed main() {\n    int n, q;\n    cin >> n >> q;\n    PotentializedUnionFind<int>\
+    signed main() {\n    int n, q;\n    cin >> n >> q;\n    potentialized_union_find<int>\
     \ uf(n);\n    for (int i = 0; i < q; ++i) {\n        int c, x, y, z;\n       \
     \ cin >> c >> x >> y;\n        if (c == 0) {\n            cin >> z;\n        \
     \    uf.unite_trees(x, y, z);\n        } else {\n            if (uf.is_same(x,\
@@ -52,7 +52,7 @@ data:
     \ endl;\n        }\n    }\n}\n"
   code: "#define PROBLEM \"https://onlinejudge.u-aizu.ac.jp/problems/DSL_1_B\"\n#include\
     \ \"../../../template/template.hpp\"\n#include \"../../../02_DataStructure/01_UnionFind/03_potentialized-union-find.hpp\"\
-    \n\nsigned main() {\n    int n, q;\n    cin >> n >> q;\n    PotentializedUnionFind<int>\
+    \n\nsigned main() {\n    int n, q;\n    cin >> n >> q;\n    potentialized_union_find<int>\
     \ uf(n);\n    for (int i = 0; i < q; ++i) {\n        int c, x, y, z;\n       \
     \ cin >> c >> x >> y;\n        if (c == 0) {\n            cin >> z;\n        \
     \    uf.unite_trees(x, y, z);\n        } else {\n            if (uf.is_same(x,\
@@ -64,7 +64,7 @@ data:
   isVerificationFile: true
   path: test/02_DataStructure/01_UnionFind/03_AOJ-DSL-1-B.test.cpp
   requiredBy: []
-  timestamp: '2021-01-09 22:04:37+00:00'
+  timestamp: '2021-01-10 00:26:45+00:00'
   verificationStatus: TEST_ACCEPTED
   verifiedWith: []
 documentation_of: test/02_DataStructure/01_UnionFind/03_AOJ-DSL-1-B.test.cpp

@@ -14,9 +14,9 @@ data:
   bundledCode: "#line 2 \"02_DataStructure/01_UnionFind/03_potentialized-union-find.hpp\"\
     \n#include <cassert>\n#include <cstdlib>\n#include <utility>\n#include <vector>\n\
     \n/**\n * @brief \u30DD\u30C6\u30F3\u30B7\u30E3\u30EB\u4ED8\u304D Union-Find\n\
-    \ */\ntemplate <typename T>\nclass PotentializedUnionFind {\npublic:\n    PotentializedUnionFind()\
-    \ = default;\n    explicit PotentializedUnionFind(std::uint32_t n)\n        :\
-    \ _n(n), _num(n), _par(n, n), _size(n, 1), _weight(n) {}\n\n    bool unite_trees(std::uint32_t\
+    \ */\ntemplate <typename T>\nclass potentialized_union_find {\npublic:\n    potentialized_union_find()\
+    \ = default;\n    explicit potentialized_union_find(std::uint32_t n)\n       \
+    \ : _n(n), _num(n), _par(n, n), _size(n, 1), _weight(n) {}\n\n    bool unite_trees(std::uint32_t\
     \ x, std::uint32_t y, T w) {\n        assert(0 <= x && x < _n && 0 <= y && y <\
     \ _n);\n        w += weight(x); w -= weight(y);\n        x = find_root(x); y =\
     \ find_root(y);\n        if (x == y) return (w == 0);\n        if (_size[x] <\
@@ -39,8 +39,8 @@ data:
     };\n"
   code: "#pragma once\n#include <cassert>\n#include <cstdlib>\n#include <utility>\n\
     #include <vector>\n\n/**\n * @brief \u30DD\u30C6\u30F3\u30B7\u30E3\u30EB\u4ED8\
-    \u304D Union-Find\n */\ntemplate <typename T>\nclass PotentializedUnionFind {\n\
-    public:\n    PotentializedUnionFind() = default;\n    explicit PotentializedUnionFind(std::uint32_t\
+    \u304D Union-Find\n */\ntemplate <typename T>\nclass potentialized_union_find\
+    \ {\npublic:\n    potentialized_union_find() = default;\n    explicit potentialized_union_find(std::uint32_t\
     \ n)\n        : _n(n), _num(n), _par(n, n), _size(n, 1), _weight(n) {}\n\n   \
     \ bool unite_trees(std::uint32_t x, std::uint32_t y, T w) {\n        assert(0\
     \ <= x && x < _n && 0 <= y && y < _n);\n        w += weight(x); w -= weight(y);\n\
@@ -66,7 +66,7 @@ data:
   isVerificationFile: false
   path: 02_DataStructure/01_UnionFind/03_potentialized-union-find.hpp
   requiredBy: []
-  timestamp: '2021-01-09 22:04:37+00:00'
+  timestamp: '2021-01-10 00:26:45+00:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
   - test/02_DataStructure/01_UnionFind/03_AOJ-DSL-1-B.test.cpp

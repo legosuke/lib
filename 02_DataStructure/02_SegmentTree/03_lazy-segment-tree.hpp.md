@@ -37,11 +37,11 @@ data:
     \ lazy_type, std::uint32_t>::value);\n\nprotected:\n    void init(const std::uint32_t&\
     \ n) {\n        for (_size = 1, _level = 0; _size < n; _size <<= 1, ++_level);\n\
     \        _data.assign(_size << 1, _monoid_x.e());\n        _lazy.assign(_size\
-    \ << 1, _monoid_f.e());\n    }\n\n    lazy_type reflect(std::uint32_t j, std::uint32_t\
+    \ << 1, _monoid_f.e());\n    }\n\n    data_type reflect(std::uint32_t j, std::uint32_t\
     \ length) {\n        return _lazy[j] == _monoid_f.e() ? _data[j] : _mapping.op(_data[j],\
     \ _lazy[j], length);\n    }\n\n    void push(std::uint32_t p) {\n        for (std::uint32_t\
     \ i = _level, length = _size; i > 0; --i, length >>= 1) {\n            std::uint32_t\
-    \ j = p >> i;\n            if (_lazy[j] == _monoid_x.e()) continue;\n        \
+    \ j = p >> i;\n            if (_lazy[j] == _monoid_f.e()) continue;\n        \
     \    _lazy[(j << 1) | 0] = _monoid_f.op(_lazy[(j << 1) | 0], _lazy[j]);\n    \
     \        _lazy[(j << 1) | 1] = _monoid_f.op(_lazy[(j << 1) | 1], _lazy[j]);\n\
     \            _data[j] = reflect(j, length);\n            _lazy[j] = _monoid_f.e();\n\
@@ -86,12 +86,12 @@ data:
     \ decltype(Mapping::op), data_type, lazy_type, std::uint32_t>::value);\n\nprotected:\n\
     \    void init(const std::uint32_t& n) {\n        for (_size = 1, _level = 0;\
     \ _size < n; _size <<= 1, ++_level);\n        _data.assign(_size << 1, _monoid_x.e());\n\
-    \        _lazy.assign(_size << 1, _monoid_f.e());\n    }\n\n    lazy_type reflect(std::uint32_t\
+    \        _lazy.assign(_size << 1, _monoid_f.e());\n    }\n\n    data_type reflect(std::uint32_t\
     \ j, std::uint32_t length) {\n        return _lazy[j] == _monoid_f.e() ? _data[j]\
     \ : _mapping.op(_data[j], _lazy[j], length);\n    }\n\n    void push(std::uint32_t\
     \ p) {\n        for (std::uint32_t i = _level, length = _size; i > 0; --i, length\
     \ >>= 1) {\n            std::uint32_t j = p >> i;\n            if (_lazy[j] ==\
-    \ _monoid_x.e()) continue;\n            _lazy[(j << 1) | 0] = _monoid_f.op(_lazy[(j\
+    \ _monoid_f.e()) continue;\n            _lazy[(j << 1) | 0] = _monoid_f.op(_lazy[(j\
     \ << 1) | 0], _lazy[j]);\n            _lazy[(j << 1) | 1] = _monoid_f.op(_lazy[(j\
     \ << 1) | 1], _lazy[j]);\n            _data[j] = reflect(j, length);\n       \
     \     _lazy[j] = _monoid_f.e();\n        }\n    }\n\n    void recalc(std::uint32_t\
@@ -131,7 +131,7 @@ data:
   isVerificationFile: false
   path: 02_DataStructure/02_SegmentTree/03_lazy-segment-tree.hpp
   requiredBy: []
-  timestamp: '2021-01-10 04:49:38+00:00'
+  timestamp: '2021-01-10 06:08:08+00:00'
   verificationStatus: LIBRARY_SOME_WA
   verifiedWith:
   - test/02_DataStructure/02_SegmentTree/00.02.02_AOJ-DSL-2-G.test.cpp

@@ -1,16 +1,16 @@
 ---
 data:
   _extendedDependsOn:
-  - icon: ':question:'
+  - icon: ':heavy_check_mark:'
     path: 02_DataStructure/02_SegmentTree/00.00_monoid.base.hpp
     title: 02_DataStructure/02_SegmentTree/00.00_monoid.base.hpp
   _extendedRequiredBy: []
   _extendedVerifiedWith:
-  - icon: ':x:'
+  - icon: ':heavy_check_mark:'
     path: test/02_DataStructure/02_SegmentTree/00.01.04_AOJ-DSL-2-D.test.cpp
     title: test/02_DataStructure/02_SegmentTree/00.01.04_AOJ-DSL-2-D.test.cpp
   _pathExtension: hpp
-  _verificationStatusIcon: ':x:'
+  _verificationStatusIcon: ':heavy_check_mark:'
   attributes:
     document_title: "\u53CC\u5BFE\u30BB\u30B0\u30E1\u30F3\u30C8\u30C4\u30EA\u30FC"
     links: []
@@ -24,8 +24,8 @@ data:
     \npublic:\n    using T = typename Monoid::value_type;\n\nprotected:\n    void\
     \ init(const std::uint32_t& n) {\n        for (_size = 1, _level = 0; _size <\
     \ n; _size <<= 1, ++_level);\n        _lazy.assign(_size << 1, _monoid.e());\n\
-    \    }\n\n    void push(std::uint32_t p) {\n        for (std::uint32_t i = lev;\
-    \ i > 0; --i) {\n            std::uint32_t j = k >> i;\n            if (_lazy[j]\
+    \    }\n\n    void push(std::uint32_t p) {\n        for (std::uint32_t i = _level;\
+    \ i > 0; --i) {\n            std::uint32_t j = p >> i;\n            if (_lazy[j]\
     \ == _monoid.e()) continue;\n            _lazy[(j << 1) | 0] = _monoid.op(_lazy[(j\
     \ << 1) | 0], _lazy[j]);\n            _lazy[(j << 1) | 1] = _monoid.op(_lazy[(j\
     \ << 1) | 1], _lazy[j]);\n            _lazy[j] = _monoid.e();\n        }\n   \
@@ -41,7 +41,7 @@ data:
     \ p < _size);\n        _lazy[p += _size] = x;\n    }\n    T get(std::uint32_t\
     \ p) {\n        assert(0 <= p && p < _size);\n        push(p += _size);\n    \
     \    return _lazy[p];\n    }\n\n    void apply(std::uint32_t l, std::uint32_t\
-    \ r, const T& x) {\n        if (a >= b) return;\n        push(l += _size); push(r\
+    \ r, const T& x) {\n        if (l >= r) return;\n        push(l += _size); push(r\
     \ += _size - 1);\n        for (++r; l < r; l >>= 1, r >>= 1) {\n            if\
     \ (l & 1) _lazy[l] = _monoid.op(_lazy[l], x), ++l;\n            if (r & 1) --r,\
     \ _lazy[r] = _monoid.op(_lazy[r], x);\n\t\t}\n    }\n\nprotected:\n    std::uint32_t\
@@ -54,8 +54,8 @@ data:
     \    using T = typename Monoid::value_type;\n\nprotected:\n    void init(const\
     \ std::uint32_t& n) {\n        for (_size = 1, _level = 0; _size < n; _size <<=\
     \ 1, ++_level);\n        _lazy.assign(_size << 1, _monoid.e());\n    }\n\n   \
-    \ void push(std::uint32_t p) {\n        for (std::uint32_t i = lev; i > 0; --i)\
-    \ {\n            std::uint32_t j = k >> i;\n            if (_lazy[j] == _monoid.e())\
+    \ void push(std::uint32_t p) {\n        for (std::uint32_t i = _level; i > 0;\
+    \ --i) {\n            std::uint32_t j = p >> i;\n            if (_lazy[j] == _monoid.e())\
     \ continue;\n            _lazy[(j << 1) | 0] = _monoid.op(_lazy[(j << 1) | 0],\
     \ _lazy[j]);\n            _lazy[(j << 1) | 1] = _monoid.op(_lazy[(j << 1) | 1],\
     \ _lazy[j]);\n            _lazy[j] = _monoid.e();\n        }\n    }\n\npublic:\n\
@@ -70,7 +70,7 @@ data:
     \ p, T x) {\n        assert(0 <= p && p < _size);\n        _lazy[p += _size] =\
     \ x;\n    }\n    T get(std::uint32_t p) {\n        assert(0 <= p && p < _size);\n\
     \        push(p += _size);\n        return _lazy[p];\n    }\n\n    void apply(std::uint32_t\
-    \ l, std::uint32_t r, const T& x) {\n        if (a >= b) return;\n        push(l\
+    \ l, std::uint32_t r, const T& x) {\n        if (l >= r) return;\n        push(l\
     \ += _size); push(r += _size - 1);\n        for (++r; l < r; l >>= 1, r >>= 1)\
     \ {\n            if (l & 1) _lazy[l] = _monoid.op(_lazy[l], x), ++l;\n       \
     \     if (r & 1) --r, _lazy[r] = _monoid.op(_lazy[r], x);\n\t\t}\n    }\n\nprotected:\n\
@@ -81,8 +81,8 @@ data:
   isVerificationFile: false
   path: 02_DataStructure/02_SegmentTree/02_dual-segment-tree.hpp
   requiredBy: []
-  timestamp: '2021-01-10 00:53:51+00:00'
-  verificationStatus: LIBRARY_ALL_WA
+  timestamp: '2021-01-10 00:56:53+00:00'
+  verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
   - test/02_DataStructure/02_SegmentTree/00.01.04_AOJ-DSL-2-D.test.cpp
 documentation_of: 02_DataStructure/02_SegmentTree/02_dual-segment-tree.hpp

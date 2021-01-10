@@ -13,7 +13,7 @@ class dual_segment_tree {
     static_assert(is_monoid<Monoid>::value);
 
 public:
-    using T = typename Monoid::value_type;
+    using lazy_type = typename Monoid::value_type;
 
 protected:
     void init(const std::uint32_t& n) {
@@ -36,15 +36,14 @@ public:
     explicit dual_segment_tree(const std::uint32_t& n) {
         build(n);
     }
-    explicit dual_segment_tree(const std::vector<T>& v) {
+    explicit dual_segment_tree(const std::vector<lazy_type>& v) {
         build(v);
     }
     
-
     void build(const std::uint32_t& n) {
         init(n);
     }
-    void build(const std::vector<T>& v) {
+    void build(const std::vector<lazy_type>& v) {
         const std::uint32_t n = v.size();
         init(n);
         for (std::uint32_t i = 0; i < n; ++i) {
@@ -55,17 +54,17 @@ public:
         }
     }
 
-    void set(std::uint32_t p, T x) {
+    void set(std::uint32_t p, lazy_type x) {
         assert(0 <= p && p < _size);
         _lazy[p += _size] = x;
     }
-    T get(std::uint32_t p) {
+    lazy_type get(std::uint32_t p) {
         assert(0 <= p && p < _size);
         push(p += _size);
         return _lazy[p];
     }
 
-    void apply(std::uint32_t l, std::uint32_t r, const T& x) {
+    void apply(std::uint32_t l, std::uint32_t r, const lazy_type& x) {
         if (l >= r) return;
         push(l += _size); push(r += _size - 1);
         for (++r; l < r; l >>= 1, r >>= 1) {
@@ -76,6 +75,6 @@ public:
 
 protected:
     std::uint32_t _size, _level;
-    std::vector<T> _lazy;
+    std::vector<lazy_type> _lazy;
     const Monoid _monoid = Monoid();
 };

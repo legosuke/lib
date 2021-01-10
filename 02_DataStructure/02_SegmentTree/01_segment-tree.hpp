@@ -13,7 +13,7 @@ class segment_tree {
     static_assert(is_monoid<Monoid>::value);
 
 public:
-    using T = typename Monoid::value_type;
+    using data_type = typename Monoid::value_type;
 
 protected:
     void init(const std::uint32_t& n) {
@@ -26,14 +26,14 @@ public:
     explicit segment_tree(const std::uint32_t& n) {
         build(n);
     }
-    explicit segment_tree(const std::vector<T>& v) {
+    explicit segment_tree(const std::vector<data_type>& v) {
         build(v);
     }
 
     void build(const std::uint32_t& n) {
         init(n);
     }
-    void build(const std::vector<T>& v) {
+    void build(const std::vector<data_type>& v) {
         const std::uint32_t n = v.size();
         init(n);
         for (std::uint32_t i = 0; i < n; ++i) {
@@ -44,21 +44,21 @@ public:
         }
     }
 
-    void set(std::uint32_t p, T x) {
+    void set(std::uint32_t p, data_type x) {
         assert(0 <= p && p < _size);
         _data[p += _size] = x;
         while (p >>= 1) {
             _data[p] = _monoid.op(_data[(p << 1) | 0], _data[(p << 1) | 1]);
         }
     }
-    T get(std::uint32_t p) {
+    data_type get(std::uint32_t p) {
         assert(0 <= p && p < _size);
         return _data[p + _size];
     }
 
-    T product(std::uint32_t l, std::uint32_t r) {
+    data_type product(std::uint32_t l, std::uint32_t r) {
         if (l >= r) return _monoid.e();
-        T L = _monoid.e(), R = _monoid.e();
+        data_type L = _monoid.e(), R = _monoid.e();
         for (l += _size, r += _size; l < r; l >>= 1, r >>= 1) {
             if (l & 1) L = _monoid.op(L, _data[l++]);
             if (r & 1) R = _monoid.op(_data[--r], R);
@@ -68,6 +68,6 @@ public:
 
 protected:
     std::uint32_t _size, _level;
-    std::vector<T> _data;
+    std::vector<data_type> _data;
     const Monoid _monoid = Monoid();
 };

@@ -56,7 +56,7 @@ public:
         return _data[p + _size];
     }
 
-    T query(std::uint32_t a, std::uint32_t b) {
+    T product(std::uint32_t a, std::uint32_t b) {
         if (a >= b) return _monoid.e();
         T L = _monoid.e(), R = _monoid.e();
         for (std::uint32_t l = a + _size, r = b + _size; l < r; l >>= 1, r >>= 1) {
@@ -64,9 +64,6 @@ public:
             if (r & 1) R = _monoid.op(_data[--r], R);
 		}
         return _monoid.op(L, R);
-    }
-    T query() {
-        return _data[1];
     }
 
 protected:

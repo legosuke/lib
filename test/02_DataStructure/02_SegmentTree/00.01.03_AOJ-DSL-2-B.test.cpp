@@ -11,6 +11,6 @@ signed main() {
         int com, x, y;
         cin >> com >> x >> y;
         if (com == 0) st.set(x - 1, y + st.get(x - 1));
-        else cout << st.query(x - 1, y) << endl;
+        else cout << st.product(x - 1, y) << endl;
     }
 }

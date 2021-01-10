@@ -6,10 +6,10 @@
 /**
  * @brief Union-Find
  */
-class UnionFind {
+class union_find {
 public:
-    UnionFind() = default;
-    explicit UnionFind(std::uint32_t n) : _n(n), _num(n), _par(n, n), _size(n, 1) {}
+    union_find() = default;
+    explicit union_find(std::uint32_t n) : _n(n), _num(n), _par(n, n), _size(n, 1) {}
     void init(std::uint32_t n) { _par.assign(n, n); _size.assign(n, 1); }
     
     std::uint32_t unite_trees(std::uint32_t x, std::uint32_t y) {

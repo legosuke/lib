@@ -5,7 +5,7 @@
 signed main() {
     int n, q;
     cin >> n >> q;
-    PotentializedUnionFind<int> uf(n);
+    potentialized_union_find<int> uf(n);
     for (int i = 0; i < q; ++i) {
         int c, x, y, z;
         cin >> c >> x >> y;

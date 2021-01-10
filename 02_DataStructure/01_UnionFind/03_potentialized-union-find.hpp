@@ -8,10 +8,10 @@
  * @brief ポテンシャル付き Union-Find
  */
 template <typename T>
-class PotentializedUnionFind {
+class potentialized_union_find {
 public:
-    PotentializedUnionFind() = default;
-    explicit PotentializedUnionFind(std::uint32_t n)
+    potentialized_union_find() = default;
+    explicit potentialized_union_find(std::uint32_t n)
         : _n(n), _num(n), _par(n, n), _size(n, 1), _weight(n) {}
 
     bool unite_trees(std::uint32_t x, std::uint32_t y, T w) {

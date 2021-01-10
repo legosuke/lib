@@ -7,10 +7,10 @@
  * @warning データの値は後から変更できない
  */
 template <typename T>
-class UnionFindMode : public UnionFind {
+class union_find_mode : public union_find {
 public:
-    UnionFindMode() = default;
-    explicit UnionFindMode(std::uint32_t n) : UnionFind(n), _mode(n), _count(n) {}
+    union_find_mode() = default;
+    explicit union_find_mode(std::uint32_t n) : union_find(n), _mode(n), _count(n) {}
 
     void set(std::uint32_t x, T val) {
         assert(0 <= x && x < _n);
@@ -20,7 +20,7 @@ public:
     std::uint32_t unite_trees(std::uint32_t x, std::uint32_t y) {
         assert(0 <= x && x < _n && 0 <= y && y < _n);
         x = find_root(x); y = find_root(y);
-        std::uint32_t res = UnionFind::unite_trees(x, y);
+        std::uint32_t res = union_find::unite_trees(x, y);
         for (auto p : _count[y]) {
             _count[x][p.first] += p.second;
             if (_count[x][p.first] >= _count[x][_mode[x]]) {

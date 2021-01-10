@@ -6,10 +6,10 @@
  * @warning データの値は後から変更できない
  */
 template <typename T>
-class UnionFindSum : public UnionFind {
+class union_find_sum : public union_find {
 public:
-    UnionFindSum() = default;
-    explicit UnionFindSum(std::uint32_t n) : UnionFind(n), _sum(n) {}
+    union_find_sum() = default;
+    explicit union_find_sum(std::uint32_t n) : union_find(n), _sum(n) {}
 
     void set(std::uint32_t x, T val) {
         assert(0 <= x && x < _n);
@@ -18,7 +18,7 @@ public:
     std::uint32_t unite_trees(std::uint32_t x, std::uint32_t y) {
         assert(0 <= x && x < _n && 0 <= y && y < _n);
         x = find_root(x); y = find_root(y);
-        std::uint32_t res = UnionFind::unite_trees(x, y);
+        std::uint32_t res = union_find::unite_trees(x, y);
         _sum[res] = _sum[x] + _sum[y];
         return res;
     }

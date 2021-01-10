@@ -5,7 +5,7 @@
 signed main() {
     int n, q;
     cin >> n >> q;
-    UnionFind uf(n);
+    union_find uf(n);
     for (int i = 0; i < q; ++i) {
         int com, x, y;
         cin >> com >> x >> y;

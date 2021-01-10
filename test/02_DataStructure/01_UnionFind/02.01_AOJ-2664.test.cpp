@@ -5,7 +5,7 @@
 signed main() {
     int N;
     cin >> N;
-    UnionFindMinMax<int> uf(N);
+    union_find_minmax<int> uf(N);
     map<string, int> mp;
     for (int i = 0; i < N; ++i) {
         string a;

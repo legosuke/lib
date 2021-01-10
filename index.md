@@ -125,7 +125,7 @@ data:
       title: "\u30DD\u30C6\u30F3\u30B7\u30E3\u30EB\u4ED8\u304D Union-Find"
   - name: 02_DataStructure/02_SegmentTree
     pages:
-    - icon: ':heavy_check_mark:'
+    - icon: ':question:'
       path: 02_DataStructure/02_SegmentTree/00.00_monoid.base.hpp
       title: 02_DataStructure/02_SegmentTree/00.00_monoid.base.hpp
     - icon: ':heavy_check_mark:'
@@ -137,9 +137,15 @@ data:
     - icon: ':heavy_check_mark:'
       path: 02_DataStructure/02_SegmentTree/00.01.03_monoid.sum.hpp
       title: "\u30E2\u30CE\u30A4\u30C9 (sum)"
+    - icon: ':x:'
+      path: 02_DataStructure/02_SegmentTree/00.01.04_monoid.update.hpp
+      title: "\u30E2\u30CE\u30A4\u30C9 (update)"
     - icon: ':heavy_check_mark:'
       path: 02_DataStructure/02_SegmentTree/01_segment-tree.hpp
       title: "\u30BB\u30B0\u30E1\u30F3\u30C8\u30C4\u30EA\u30FC"
+    - icon: ':x:'
+      path: 02_DataStructure/02_SegmentTree/02_dual-segment-tree.hpp
+      title: "\u53CC\u5BFE\u30BB\u30B0\u30E1\u30F3\u30C8\u30C4\u30EA\u30FC"
   - name: 06_Others/04_Random
     pages:
     - icon: ':heavy_check_mark:'
@@ -153,7 +159,7 @@ data:
       title: "\u4E71\u6570 (\u5217)"
   - name: template
     pages:
-    - icon: ':heavy_check_mark:'
+    - icon: ':question:'
       path: template/template.hpp
       title: template/template.hpp
   verificationCategories:
@@ -230,5 +236,8 @@ data:
     - icon: ':heavy_check_mark:'
       path: test/02_DataStructure/02_SegmentTree/00.01.03_AOJ-DSL-2-B.test.cpp
       title: test/02_DataStructure/02_SegmentTree/00.01.03_AOJ-DSL-2-B.test.cpp
+    - icon: ':x:'
+      path: test/02_DataStructure/02_SegmentTree/00.01.04_AOJ-DSL-2-D.test.cpp
+      title: test/02_DataStructure/02_SegmentTree/00.01.04_AOJ-DSL-2-D.test.cpp
 layout: toppage
 ---

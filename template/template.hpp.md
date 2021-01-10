@@ -72,20 +72,20 @@ data:
   - icon: ':heavy_check_mark:'
     path: test/02_DataStructure/02_SegmentTree/00.01.04_AOJ-DSL-2-D.test.cpp
     title: test/02_DataStructure/02_SegmentTree/00.01.04_AOJ-DSL-2-D.test.cpp
-  - icon: ':heavy_check_mark:'
+  - icon: ':x:'
     path: test/02_DataStructure/02_SegmentTree/00.02.01_AOJ-DSL-2-F.test.cpp
     title: test/02_DataStructure/02_SegmentTree/00.02.01_AOJ-DSL-2-F.test.cpp
-  - icon: ':heavy_check_mark:'
+  - icon: ':x:'
     path: test/02_DataStructure/02_SegmentTree/00.02.02_AOJ-DSL-2-G.test.cpp
     title: test/02_DataStructure/02_SegmentTree/00.02.02_AOJ-DSL-2-G.test.cpp
-  - icon: ':heavy_check_mark:'
+  - icon: ':x:'
     path: test/02_DataStructure/02_SegmentTree/00.02.03_AOJ-DSL-2-H.test.cpp
     title: test/02_DataStructure/02_SegmentTree/00.02.03_AOJ-DSL-2-H.test.cpp
-  - icon: ':heavy_check_mark:'
+  - icon: ':x:'
     path: test/02_DataStructure/02_SegmentTree/00.02.04_AOJ-DSL-2-I.test.cpp
     title: test/02_DataStructure/02_SegmentTree/00.02.04_AOJ-DSL-2-I.test.cpp
   _pathExtension: hpp
-  _verificationStatusIcon: ':heavy_check_mark:'
+  _verificationStatusIcon: ':question:'
   attributes:
     links: []
   bundledCode: '#line 1 "template/template.hpp"
@@ -107,7 +107,7 @@ data:
   path: template/template.hpp
   requiredBy: []
   timestamp: '2020-12-16 16:02:46+00:00'
-  verificationStatus: LIBRARY_ALL_AC
+  verificationStatus: LIBRARY_SOME_WA
   verifiedWith:
   - test/01_Math/02_Combinatorics/01.03.01_AOJ-NTL-1-B.test.cpp
   - test/01_Math/02_Combinatorics/01.02.01_AOJ-1327.test.cpp

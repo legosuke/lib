@@ -23,12 +23,12 @@ data:
     \ {};\n\ntemplate <class T>\nusing is_monoid = std::is_base_of<monoid_base, T>;\n\
     #line 7 \"02_DataStructure/02_SegmentTree/01_segment-tree.hpp\"\n\n/**\n * @brief\
     \ \u30BB\u30B0\u30E1\u30F3\u30C8\u30C4\u30EA\u30FC\n */\ntemplate <class Monoid>\n\
-    class SegmentTree {\n    static_assert(is_monoid<Monoid>::value);\n\npublic:\n\
+    class segment_tree {\n    static_assert(is_monoid<Monoid>::value);\n\npublic:\n\
     \    using T = typename Monoid::value_type;\n\nprotected:\n    void init(const\
     \ std::uint32_t& n) {\n        for (_size = 1, _level = 0; _size < n; _size <<=\
     \ 1, ++_level);\n        _data.assign(_size << 1, _monoid.e());\n    }\n\npublic:\n\
-    \    SegmentTree() = default;\n    explicit SegmentTree(const std::uint32_t& n)\
-    \ {\n        build(n);\n    }\n    explicit SegmentTree(const std::vector<T>&\
+    \    segment_tree() = default;\n    explicit segment_tree(const std::uint32_t&\
+    \ n) {\n        build(n);\n    }\n    explicit segment_tree(const std::vector<T>&\
     \ v) {\n        build(v);\n    }\n\n    void build(const std::uint32_t& n) {\n\
     \        init(n);\n    }\n    void build(const std::vector<T>& v) {\n        const\
     \ std::uint32_t n = v.size();\n        init(n);\n        for (std::uint32_t i\
@@ -50,12 +50,12 @@ data:
   code: "#pragma once\n#include <cassert>\n#include <cstdint>\n#include <type_traits>\n\
     #include <vector>\n#include \"00.00_monoid.base.hpp\"\n\n/**\n * @brief \u30BB\
     \u30B0\u30E1\u30F3\u30C8\u30C4\u30EA\u30FC\n */\ntemplate <class Monoid>\nclass\
-    \ SegmentTree {\n    static_assert(is_monoid<Monoid>::value);\n\npublic:\n   \
-    \ using T = typename Monoid::value_type;\n\nprotected:\n    void init(const std::uint32_t&\
+    \ segment_tree {\n    static_assert(is_monoid<Monoid>::value);\n\npublic:\n  \
+    \  using T = typename Monoid::value_type;\n\nprotected:\n    void init(const std::uint32_t&\
     \ n) {\n        for (_size = 1, _level = 0; _size < n; _size <<= 1, ++_level);\n\
-    \        _data.assign(_size << 1, _monoid.e());\n    }\n\npublic:\n    SegmentTree()\
-    \ = default;\n    explicit SegmentTree(const std::uint32_t& n) {\n        build(n);\n\
-    \    }\n    explicit SegmentTree(const std::vector<T>& v) {\n        build(v);\n\
+    \        _data.assign(_size << 1, _monoid.e());\n    }\n\npublic:\n    segment_tree()\
+    \ = default;\n    explicit segment_tree(const std::uint32_t& n) {\n        build(n);\n\
+    \    }\n    explicit segment_tree(const std::vector<T>& v) {\n        build(v);\n\
     \    }\n\n    void build(const std::uint32_t& n) {\n        init(n);\n    }\n\
     \    void build(const std::vector<T>& v) {\n        const std::uint32_t n = v.size();\n\
     \        init(n);\n        for (std::uint32_t i = 0; i < n; ++i) {\n         \
@@ -78,7 +78,7 @@ data:
   isVerificationFile: false
   path: 02_DataStructure/02_SegmentTree/01_segment-tree.hpp
   requiredBy: []
-  timestamp: '2021-01-10 00:21:09+00:00'
+  timestamp: '2021-01-10 00:23:56+00:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
   - test/02_DataStructure/02_SegmentTree/00.01.01_AOJ-DSL-2-A.test.cpp

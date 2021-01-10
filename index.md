@@ -150,6 +150,9 @@ data:
       path: 02_DataStructure/02_SegmentTree/00.02.02_mapping.plus-plus.hpp
       title: "\u5199\u50CF (plus-plus)"
     - icon: ':heavy_check_mark:'
+      path: 02_DataStructure/02_SegmentTree/00.02.03_mapping.plus-min.hpp
+      title: "\u5199\u50CF (plus-min)"
+    - icon: ':heavy_check_mark:'
       path: 02_DataStructure/02_SegmentTree/01_segment-tree.hpp
       title: "\u30BB\u30B0\u30E1\u30F3\u30C8\u30C4\u30EA\u30FC"
     - icon: ':heavy_check_mark:'
@@ -260,5 +263,8 @@ data:
     - icon: ':heavy_check_mark:'
       path: test/02_DataStructure/02_SegmentTree/00.02.02_AOJ-DSL-2-G.test.cpp
       title: test/02_DataStructure/02_SegmentTree/00.02.02_AOJ-DSL-2-G.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: test/02_DataStructure/02_SegmentTree/00.02.03_AOJ-DSL-2-H.test.cpp
+      title: test/02_DataStructure/02_SegmentTree/00.02.03_AOJ-DSL-2-H.test.cpp
 layout: toppage
 ---

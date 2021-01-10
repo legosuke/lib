@@ -78,6 +78,9 @@ data:
   - icon: ':heavy_check_mark:'
     path: test/02_DataStructure/02_SegmentTree/00.02.02_AOJ-DSL-2-G.test.cpp
     title: test/02_DataStructure/02_SegmentTree/00.02.02_AOJ-DSL-2-G.test.cpp
+  - icon: ':heavy_check_mark:'
+    path: test/02_DataStructure/02_SegmentTree/00.02.03_AOJ-DSL-2-H.test.cpp
+    title: test/02_DataStructure/02_SegmentTree/00.02.03_AOJ-DSL-2-H.test.cpp
   _pathExtension: hpp
   _verificationStatusIcon: ':heavy_check_mark:'
   attributes:
@@ -124,6 +127,7 @@ data:
   - test/02_DataStructure/02_SegmentTree/00.01.01_AOJ-DSL-2-A.test.cpp
   - test/02_DataStructure/02_SegmentTree/00.02.01_AOJ-DSL-2-F.test.cpp
   - test/02_DataStructure/02_SegmentTree/00.01.03_AOJ-DSL-2-B.test.cpp
+  - test/02_DataStructure/02_SegmentTree/00.02.03_AOJ-DSL-2-H.test.cpp
   - test/02_DataStructure/02_SegmentTree/00.01.04_AOJ-DSL-2-D.test.cpp
   - test/02_DataStructure/01_UnionFind/03_AOJ-DSL-1-B.test.cpp
   - test/02_DataStructure/01_UnionFind/01_AOJ-DSL-1-A.test.cpp

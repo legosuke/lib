@@ -8,7 +8,7 @@
 signed main() {
     int n, q;
     cin >> n >> q;
-    lazy_segment_tree<min_monoid<int>, plus_monoid<int>, plus_min_mapping<int>> lst(n);
+    lazy_segment_tree<min_monoid<int>, plus_monoid<int>, min_plus_mapping<int>> lst(n);
     for (int i = 0; i < n; ++i) {
         lst.set(i, 0);
     }

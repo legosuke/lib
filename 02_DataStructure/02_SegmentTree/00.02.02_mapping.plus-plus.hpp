@@ -12,7 +12,7 @@ public:
     using data_type = typename plus_monoid<T>::value_type;
     using lazy_type = typename plus_monoid<T>::value_type;
     static data_type op(data_type x, lazy_type f, std::uint32_t length) {
-        static_assert(std::is_convertible(lazy_type, data_type));
+        static_assert(std::is_convertible<lazy_type, data_type>::value);
         return x + f * length;
     }
 };

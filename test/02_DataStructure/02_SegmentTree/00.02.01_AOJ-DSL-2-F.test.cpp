@@ -8,7 +8,7 @@
 signed main() {
     int n, q;
     cin >> n >> q;
-    lazy_segment_tree<min_monoid<std::int32_t>, update_monoid<std::int32_t>, update_min_mapping<std::int32_t>> lst(n);
+    lazy_segment_tree<min_monoid<std::int32_t>, update_monoid<std::int32_t>, min_update_mapping<std::int32_t>> lst(n);
     for (int i = 0; i < q; ++i) {
         int com, s, t;
         cin >> com >> s >> t;

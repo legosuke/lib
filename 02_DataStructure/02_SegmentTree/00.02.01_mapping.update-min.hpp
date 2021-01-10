@@ -7,17 +7,17 @@
 #include "00.01.04_monoid.update.hpp"
 
 /**
- * @brief 写像 (update-min)
+ * @brief 写像 (min-update)
  */
 template <typename T>
-class update_min_mapping : public mapping_base {
+class min_update_mapping : public mapping_base {
     static_assert(std::is_arithmetic<T>::value);
 
 public:
     using data_type = typename min_monoid<T>::value_type;
     using lazy_type = typename update_monoid<T>::value_type;
     static data_type op(data_type x, lazy_type f, std::uint32_t length) {
-        static_assert(std::is_convertible(lazy_type, data_type));
+        static_assert(std::is_convertible<lazy_type, data_type>::value);
         return f;
     }
 };

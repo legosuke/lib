@@ -8,7 +8,7 @@ signed main() {
     cin >> n >> q;
     segment_tree<max_monoid<std::int32_t>> st(n);
     for (int i = 0; i < n; ++i) {
-        st.set(i, 0x7fffffff);
+        st.set(i, -0x7fffffff);
     }
     for (int i = 0; i < q; ++i) {
         int com, x, y;

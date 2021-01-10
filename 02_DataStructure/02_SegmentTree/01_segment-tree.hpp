@@ -9,7 +9,7 @@
  * @brief セグメントツリー
  */
 template <class Monoid>
-class SegmentTree {
+class segment_tree {
     static_assert(is_monoid<Monoid>::value);
 
 public:
@@ -22,11 +22,11 @@ protected:
     }
 
 public:
-    SegmentTree() = default;
-    explicit SegmentTree(const std::uint32_t& n) {
+    segment_tree() = default;
+    explicit segment_tree(const std::uint32_t& n) {
         build(n);
     }
-    explicit SegmentTree(const std::vector<T>& v) {
+    explicit segment_tree(const std::vector<T>& v) {
         build(v);
     }
 

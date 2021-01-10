@@ -6,7 +6,7 @@
 signed main() {
     int n, q;
     cin >> n >> q;
-    SegmentTree<sum_monoid<int>> st(n);
+    segment_tree<sum_monoid<int>> st(n);
     for (int i = 0; i < q; ++i) {
         int com, x, y;
         cin >> com >> x >> y;

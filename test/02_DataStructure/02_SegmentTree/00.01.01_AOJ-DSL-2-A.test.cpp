@@ -6,7 +6,7 @@
 signed main() {
     int n, q;
     cin >> n >> q;
-    SegmentTree<min_monoid<std::int32_t>> st(n);
+    segment_tree<min_monoid<std::int32_t>> st(n);
     for (int i = 0; i < q; ++i) {
         int com, x, y;
         cin >> com >> x >> y;

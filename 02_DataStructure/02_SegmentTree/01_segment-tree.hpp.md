@@ -1,7 +1,7 @@
 ---
 data:
   _extendedDependsOn:
-  - icon: ':heavy_check_mark:'
+  - icon: ':question:'
     path: 02_DataStructure/02_SegmentTree/00.00_monoid.base.hpp
     title: 02_DataStructure/02_SegmentTree/00.00_monoid.base.hpp
   _extendedRequiredBy: []
@@ -9,11 +9,14 @@ data:
   - icon: ':heavy_check_mark:'
     path: test/02_DataStructure/02_SegmentTree/00.01.01_AOJ-DSL-2-A.test.cpp
     title: test/02_DataStructure/02_SegmentTree/00.01.01_AOJ-DSL-2-A.test.cpp
+  - icon: ':x:'
+    path: test/02_DataStructure/02_SegmentTree/00.01.02_AOJ-DSL-2-A.test.cpp
+    title: test/02_DataStructure/02_SegmentTree/00.01.02_AOJ-DSL-2-A.test.cpp
   - icon: ':heavy_check_mark:'
     path: test/02_DataStructure/02_SegmentTree/00.01.03_AOJ-DSL-2-B.test.cpp
     title: test/02_DataStructure/02_SegmentTree/00.01.03_AOJ-DSL-2-B.test.cpp
   _pathExtension: hpp
-  _verificationStatusIcon: ':heavy_check_mark:'
+  _verificationStatusIcon: ':question:'
   attributes:
     document_title: "\u30BB\u30B0\u30E1\u30F3\u30C8\u30C4\u30EA\u30FC"
     links: []
@@ -78,10 +81,11 @@ data:
   path: 02_DataStructure/02_SegmentTree/01_segment-tree.hpp
   requiredBy: []
   timestamp: '2021-01-10 06:18:30+00:00'
-  verificationStatus: LIBRARY_ALL_AC
+  verificationStatus: LIBRARY_SOME_WA
   verifiedWith:
   - test/02_DataStructure/02_SegmentTree/00.01.01_AOJ-DSL-2-A.test.cpp
   - test/02_DataStructure/02_SegmentTree/00.01.03_AOJ-DSL-2-B.test.cpp
+  - test/02_DataStructure/02_SegmentTree/00.01.02_AOJ-DSL-2-A.test.cpp
 documentation_of: 02_DataStructure/02_SegmentTree/01_segment-tree.hpp
 layout: document
 redirect_from:

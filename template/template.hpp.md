@@ -75,6 +75,9 @@ data:
   - icon: ':heavy_check_mark:'
     path: test/02_DataStructure/02_SegmentTree/00.02.01_AOJ-DSL-2-F.test.cpp
     title: test/02_DataStructure/02_SegmentTree/00.02.01_AOJ-DSL-2-F.test.cpp
+  - icon: ':heavy_check_mark:'
+    path: test/02_DataStructure/02_SegmentTree/00.02.02_AOJ-DSL-2-G.test.cpp
+    title: test/02_DataStructure/02_SegmentTree/00.02.02_AOJ-DSL-2-G.test.cpp
   _pathExtension: hpp
   _verificationStatusIcon: ':heavy_check_mark:'
   attributes:
@@ -117,6 +120,7 @@ data:
   - test/01_Math/01_NumberTheory/02.01.03_AOJ-ALDS1-1-C.test.cpp
   - test/01_Math/01_NumberTheory/02.01.02_AOJ-ALDS1-1-C.test.cpp
   - test/02_DataStructure/02_SegmentTree/00.01.03_AOJ-DSL-2-E.test.cpp
+  - test/02_DataStructure/02_SegmentTree/00.02.02_AOJ-DSL-2-G.test.cpp
   - test/02_DataStructure/02_SegmentTree/00.01.01_AOJ-DSL-2-A.test.cpp
   - test/02_DataStructure/02_SegmentTree/00.02.01_AOJ-DSL-2-F.test.cpp
   - test/02_DataStructure/02_SegmentTree/00.01.03_AOJ-DSL-2-B.test.cpp

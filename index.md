@@ -146,7 +146,7 @@ data:
     - icon: ':heavy_check_mark:'
       path: 02_DataStructure/02_SegmentTree/00.02.01_mapping.update-min.hpp
       title: "\u5199\u50CF (update-min)"
-    - icon: ':warning:'
+    - icon: ':heavy_check_mark:'
       path: 02_DataStructure/02_SegmentTree/00.02.02_mapping.plus-plus.hpp
       title: "\u5199\u50CF (plus-plus)"
     - icon: ':heavy_check_mark:'
@@ -257,5 +257,8 @@ data:
     - icon: ':heavy_check_mark:'
       path: test/02_DataStructure/02_SegmentTree/00.02.01_AOJ-DSL-2-F.test.cpp
       title: test/02_DataStructure/02_SegmentTree/00.02.01_AOJ-DSL-2-F.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: test/02_DataStructure/02_SegmentTree/00.02.02_AOJ-DSL-2-G.test.cpp
+      title: test/02_DataStructure/02_SegmentTree/00.02.02_AOJ-DSL-2-G.test.cpp
 layout: toppage
 ---

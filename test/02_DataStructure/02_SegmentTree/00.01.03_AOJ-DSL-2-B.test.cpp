@@ -1,12 +1,12 @@
 #define PROBLEM "https://onlinejudge.u-aizu.ac.jp/problems/DSL_2_B"
 #include "../../../template/template.hpp"
-#include "../../../02_DataStructure/02_SegmentTree/00.01.03_monoid.sum.hpp"
+#include "../../../02_DataStructure/02_SegmentTree/00.01.03_monoid.plus.hpp"
 #include "../../../02_DataStructure/02_SegmentTree/01_segment-tree.hpp"
 
 signed main() {
     int n, q;
     cin >> n >> q;
-    segment_tree<sum_monoid<int>> st(n);
+    segment_tree<plus_monoid<int>> st(n);
     for (int i = 0; i < q; ++i) {
         int com, x, y;
         cin >> com >> x >> y;

@@ -2,10 +2,10 @@
 #include "00.00_monoid.base.hpp"
 
 /**
- * @brief モノイド (sum)
+ * @brief モノイド (plus)
  */
 template <class T>
-class sum_monoid : public monoid_base {
+class plus_monoid : public monoid_base {
 public:
     using value_type = T;
     const T op(T lhs, T rhs) const { return lhs + rhs; }

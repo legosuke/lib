@@ -26,14 +26,14 @@ protected:
         _lazy.assign(_size << 1, _monoid_f.e());
     }
 
-    lazy_type reflect(std::uint32_t j, std::uint32_t length) {
+    data_type reflect(std::uint32_t j, std::uint32_t length) {
         return _lazy[j] == _monoid_f.e() ? _data[j] : _mapping.op(_data[j], _lazy[j], length);
     }
 
     void push(std::uint32_t p) {
         for (std::uint32_t i = _level, length = _size; i > 0; --i, length >>= 1) {
             std::uint32_t j = p >> i;
-            if (_lazy[j] == _monoid_x.e()) continue;
+            if (_lazy[j] == _monoid_f.e()) continue;
             _lazy[(j << 1) | 0] = _monoid_f.op(_lazy[(j << 1) | 0], _lazy[j]);
             _lazy[(j << 1) | 1] = _monoid_f.op(_lazy[(j << 1) | 1], _lazy[j]);
             _data[j] = reflect(j, length);

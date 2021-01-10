@@ -7,6 +7,9 @@ data:
   _extendedRequiredBy: []
   _extendedVerifiedWith:
   - icon: ':heavy_check_mark:'
+    path: test/02_DataStructure/02_SegmentTree/00.01.03_AOJ-DSL-2-E.test.cpp
+    title: test/02_DataStructure/02_SegmentTree/00.01.03_AOJ-DSL-2-E.test.cpp
+  - icon: ':heavy_check_mark:'
     path: test/02_DataStructure/02_SegmentTree/00.01.04_AOJ-DSL-2-D.test.cpp
     title: test/02_DataStructure/02_SegmentTree/00.01.04_AOJ-DSL-2-D.test.cpp
   _pathExtension: hpp
@@ -84,6 +87,7 @@ data:
   timestamp: '2021-01-10 00:56:53+00:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
+  - test/02_DataStructure/02_SegmentTree/00.01.03_AOJ-DSL-2-E.test.cpp
   - test/02_DataStructure/02_SegmentTree/00.01.04_AOJ-DSL-2-D.test.cpp
 documentation_of: 02_DataStructure/02_SegmentTree/02_dual-segment-tree.hpp
 layout: document

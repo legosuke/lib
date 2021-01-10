@@ -237,6 +237,9 @@ data:
       path: test/02_DataStructure/02_SegmentTree/00.01.03_AOJ-DSL-2-B.test.cpp
       title: test/02_DataStructure/02_SegmentTree/00.01.03_AOJ-DSL-2-B.test.cpp
     - icon: ':heavy_check_mark:'
+      path: test/02_DataStructure/02_SegmentTree/00.01.03_AOJ-DSL-2-E.test.cpp
+      title: test/02_DataStructure/02_SegmentTree/00.01.03_AOJ-DSL-2-E.test.cpp
+    - icon: ':heavy_check_mark:'
       path: test/02_DataStructure/02_SegmentTree/00.01.04_AOJ-DSL-2-D.test.cpp
       title: test/02_DataStructure/02_SegmentTree/00.01.04_AOJ-DSL-2-D.test.cpp
 layout: toppage

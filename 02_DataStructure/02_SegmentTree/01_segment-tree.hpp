@@ -56,10 +56,10 @@ public:
         return _data[p + _size];
     }
 
-    T product(std::uint32_t a, std::uint32_t b) {
-        if (a >= b) return _monoid.e();
+    T product(std::uint32_t l, std::uint32_t r) {
+        if (l >= r) return _monoid.e();
         T L = _monoid.e(), R = _monoid.e();
-        for (std::uint32_t l = a + _size, r = b + _size; l < r; l >>= 1, r >>= 1) {
+        for (l += _size, r += _size; l < r; l >>= 1, r >>= 1) {
             if (l & 1) L = _monoid.op(L, _data[l++]);
             if (r & 1) R = _monoid.op(_data[--r], R);
 		}

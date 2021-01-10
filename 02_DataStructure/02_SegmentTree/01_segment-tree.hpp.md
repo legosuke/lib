@@ -39,14 +39,13 @@ data:
     \ x;\n        while (p >>= 1) {\n            _data[p] = _monoid.op(_data[(p <<\
     \ 1) | 0], _data[(p << 1) | 1]);\n        }\n    }\n    T get(std::uint32_t p)\
     \ {\n        assert(0 <= p && p < _size);\n        return _data[p + _size];\n\
-    \    }\n\n    T query(std::uint32_t a, std::uint32_t b) {\n        if (a >= b)\
-    \ return _monoid.e();\n        T L = _monoid.e(), R = _monoid.e();\n        for\
-    \ (std::uint32_t l = a + _size, r = b + _size; l < r; l >>= 1, r >>= 1) {\n  \
-    \          if (l & 1) L = _monoid.op(L, _data[l++]);\n            if (r & 1) R\
-    \ = _monoid.op(_data[--r], R);\n\t\t}\n        return _monoid.op(L, R);\n    }\n\
-    \    T query() {\n        return _data[1];\n    }\n\nprotected:\n    std::uint32_t\
-    \ _size, _level;\n    std::vector<T> _data;\n    const Monoid _monoid = Monoid();\n\
-    };\n"
+    \    }\n\n    T product(std::uint32_t a, std::uint32_t b) {\n        if (a >=\
+    \ b) return _monoid.e();\n        T L = _monoid.e(), R = _monoid.e();\n      \
+    \  for (std::uint32_t l = a + _size, r = b + _size; l < r; l >>= 1, r >>= 1) {\n\
+    \            if (l & 1) L = _monoid.op(L, _data[l++]);\n            if (r & 1)\
+    \ R = _monoid.op(_data[--r], R);\n\t\t}\n        return _monoid.op(L, R);\n  \
+    \  }\n\nprotected:\n    std::uint32_t _size, _level;\n    std::vector<T> _data;\n\
+    \    const Monoid _monoid = Monoid();\n};\n"
   code: "#pragma once\n#include <cassert>\n#include <cstdint>\n#include <type_traits>\n\
     #include <vector>\n#include \"00.00_monoid.base.hpp\"\n\n/**\n * @brief \u30BB\
     \u30B0\u30E1\u30F3\u30C8\u30C4\u30EA\u30FC\n */\ntemplate <class Monoid>\nclass\
@@ -65,20 +64,19 @@ data:
     \     assert(0 <= p && p < _size);\n        _data[p += _size] = x;\n        while\
     \ (p >>= 1) {\n            _data[p] = _monoid.op(_data[(p << 1) | 0], _data[(p\
     \ << 1) | 1]);\n        }\n    }\n    T get(std::uint32_t p) {\n        assert(0\
-    \ <= p && p < _size);\n        return _data[p + _size];\n    }\n\n    T query(std::uint32_t\
+    \ <= p && p < _size);\n        return _data[p + _size];\n    }\n\n    T product(std::uint32_t\
     \ a, std::uint32_t b) {\n        if (a >= b) return _monoid.e();\n        T L\
     \ = _monoid.e(), R = _monoid.e();\n        for (std::uint32_t l = a + _size, r\
     \ = b + _size; l < r; l >>= 1, r >>= 1) {\n            if (l & 1) L = _monoid.op(L,\
     \ _data[l++]);\n            if (r & 1) R = _monoid.op(_data[--r], R);\n\t\t}\n\
-    \        return _monoid.op(L, R);\n    }\n    T query() {\n        return _data[1];\n\
-    \    }\n\nprotected:\n    std::uint32_t _size, _level;\n    std::vector<T> _data;\n\
-    \    const Monoid _monoid = Monoid();\n};"
+    \        return _monoid.op(L, R);\n    }\n\nprotected:\n    std::uint32_t _size,\
+    \ _level;\n    std::vector<T> _data;\n    const Monoid _monoid = Monoid();\n};"
   dependsOn:
   - 02_DataStructure/02_SegmentTree/00.00_monoid.base.hpp
   isVerificationFile: false
   path: 02_DataStructure/02_SegmentTree/01_segment-tree.hpp
   requiredBy: []
-  timestamp: '2021-01-10 00:23:56+00:00'
+  timestamp: '2021-01-10 00:42:13+00:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
   - test/02_DataStructure/02_SegmentTree/00.01.01_AOJ-DSL-2-A.test.cpp

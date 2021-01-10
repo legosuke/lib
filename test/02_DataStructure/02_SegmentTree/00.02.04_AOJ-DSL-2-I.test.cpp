@@ -15,9 +15,9 @@ signed main() {
         if (com == 0) {
             int x;
             cin >> x;
-            lst.apply(s - 1, t, x);
+            lst.apply(s, t + 1, x);
         } else {
-            cout << lst.product(s - 1, t) << endl;
+            cout << lst.product(s, t + 1) << endl;
         }
     }
 }

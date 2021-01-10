@@ -20,5 +20,6 @@
 "test/02_DataStructure/01_UnionFind/03_AOJ-DSL-1-B.test.cpp": "2021-01-10 00:26:45 +0000",
 "test/02_DataStructure/02_SegmentTree/00.01.01_AOJ-DSL-2-A.test.cpp": "2021-01-10 00:44:55 +0000",
 "test/02_DataStructure/02_SegmentTree/00.01.03_AOJ-DSL-2-B.test.cpp": "2021-01-10 00:59:39 +0000",
+"test/02_DataStructure/02_SegmentTree/00.01.03_AOJ-DSL-2-E.test.cpp": "2021-01-10 01:02:14 +0000",
 "test/02_DataStructure/02_SegmentTree/00.01.04_AOJ-DSL-2-D.test.cpp": "2021-01-10 00:56:53 +0000"
 }

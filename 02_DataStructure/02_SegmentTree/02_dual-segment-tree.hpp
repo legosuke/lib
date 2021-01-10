@@ -22,8 +22,8 @@ protected:
     }
 
     void push(std::uint32_t p) {
-        for (std::uint32_t i = lev; i > 0; --i) {
-            std::uint32_t j = k >> i;
+        for (std::uint32_t i = _level; i > 0; --i) {
+            std::uint32_t j = p >> i;
             if (_lazy[j] == _monoid.e()) continue;
             _lazy[(j << 1) | 0] = _monoid.op(_lazy[(j << 1) | 0], _lazy[j]);
             _lazy[(j << 1) | 1] = _monoid.op(_lazy[(j << 1) | 1], _lazy[j]);
@@ -66,7 +66,7 @@ public:
     }
 
     void apply(std::uint32_t l, std::uint32_t r, const T& x) {
-        if (a >= b) return;
+        if (l >= r) return;
         push(l += _size); push(r += _size - 1);
         for (++r; l < r; l >>= 1, r >>= 1) {
             if (l & 1) _lazy[l] = _monoid.op(_lazy[l], x), ++l;

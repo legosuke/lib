@@ -3,7 +3,7 @@ data:
   _extendedDependsOn:
   - icon: ':heavy_check_mark:'
     path: 02_DataStructure/02_SegmentTree/00.00_monoid.base.hpp
-    title: 02_DataStructure/02_SegmentTree/00.00_monoid.base.hpp
+    title: "\u30E2\u30CE\u30A4\u30C9 (base)"
   _extendedRequiredBy: []
   _extendedVerifiedWith:
   - icon: ':heavy_check_mark:'
@@ -12,6 +12,7 @@ data:
   - icon: ':heavy_check_mark:'
     path: test/02_DataStructure/02_SegmentTree/00.01.04_AOJ-DSL-2-D.test.cpp
     title: test/02_DataStructure/02_SegmentTree/00.01.04_AOJ-DSL-2-D.test.cpp
+  _isVerificationFailed: false
   _pathExtension: hpp
   _verificationStatusIcon: ':heavy_check_mark:'
   attributes:
@@ -19,11 +20,11 @@ data:
     links: []
   bundledCode: "#line 2 \"02_DataStructure/02_SegmentTree/02_dual-segment-tree.hpp\"\
     \n#include <cassert>\n#include <cstdint>\n#include <type_traits>\n#include <vector>\n\
-    #line 3 \"02_DataStructure/02_SegmentTree/00.00_monoid.base.hpp\"\n\nclass monoid_base\
-    \ {};\n\ntemplate <class T>\nusing is_monoid = std::is_base_of<monoid_base, T>;\n\
-    #line 7 \"02_DataStructure/02_SegmentTree/02_dual-segment-tree.hpp\"\n\n/**\n\
-    \ * @brief \u53CC\u5BFE\u30BB\u30B0\u30E1\u30F3\u30C8\u30C4\u30EA\u30FC\n */\n\
-    template <class MonoidF>\nclass dual_segment_tree {\n    static_assert(is_monoid<MonoidF>::value);\n\
+    #line 3 \"02_DataStructure/02_SegmentTree/00.00_monoid.base.hpp\"\n\n/**\n * @brief\
+    \ \u30E2\u30CE\u30A4\u30C9 (base)\n */\nclass monoid_base {};\n\ntemplate <class\
+    \ T>\nusing is_monoid = std::is_base_of<monoid_base, T>;\n#line 7 \"02_DataStructure/02_SegmentTree/02_dual-segment-tree.hpp\"\
+    \n\n/**\n * @brief \u53CC\u5BFE\u30BB\u30B0\u30E1\u30F3\u30C8\u30C4\u30EA\u30FC\
+    \n */\ntemplate <class MonoidF>\nclass dual_segment_tree {\n    static_assert(is_monoid<MonoidF>::value);\n\
     \npublic:\n    using lazy_type = typename MonoidF::value_type;\n\nprotected:\n\
     \    void init(const std::uint32_t& n) {\n        for (_size = 1, _level = 0;\
     \ _size < n; _size <<= 1, ++_level);\n        _lazy.assign(_size << 1, _monoid_f.e());\n\
@@ -85,11 +86,11 @@ data:
   isVerificationFile: false
   path: 02_DataStructure/02_SegmentTree/02_dual-segment-tree.hpp
   requiredBy: []
-  timestamp: '2021-01-10 06:18:30+00:00'
+  timestamp: '2021-03-25 11:25:32+00:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
-  - test/02_DataStructure/02_SegmentTree/00.01.03_AOJ-DSL-2-E.test.cpp
   - test/02_DataStructure/02_SegmentTree/00.01.04_AOJ-DSL-2-D.test.cpp
+  - test/02_DataStructure/02_SegmentTree/00.01.03_AOJ-DSL-2-E.test.cpp
 documentation_of: 02_DataStructure/02_SegmentTree/02_dual-segment-tree.hpp
 layout: document
 redirect_from:

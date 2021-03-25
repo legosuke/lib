@@ -6,6 +6,7 @@ data:
     title: "\u4E71\u6570 (\u6570)"
   _extendedRequiredBy: []
   _extendedVerifiedWith: []
+  _isVerificationFailed: false
   _pathExtension: hpp
   _verificationStatusIcon: ':warning:'
   attributes:

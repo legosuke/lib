@@ -6,6 +6,7 @@ data:
   - icon: ':heavy_check_mark:'
     path: test/02_DataStructure/01_UnionFind/03_AOJ-DSL-1-B.test.cpp
     title: test/02_DataStructure/01_UnionFind/03_AOJ-DSL-1-B.test.cpp
+  _isVerificationFailed: false
   _pathExtension: hpp
   _verificationStatusIcon: ':heavy_check_mark:'
   attributes:

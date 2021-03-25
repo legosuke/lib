@@ -127,7 +127,7 @@ data:
     pages:
     - icon: ':heavy_check_mark:'
       path: 02_DataStructure/02_SegmentTree/00.00_monoid.base.hpp
-      title: 02_DataStructure/02_SegmentTree/00.00_monoid.base.hpp
+      title: "\u30E2\u30CE\u30A4\u30C9 (base)"
     - icon: ':heavy_check_mark:'
       path: 02_DataStructure/02_SegmentTree/00.01.01_monoid.min.hpp
       title: "\u30E2\u30CE\u30A4\u30C9 (min)"
@@ -142,7 +142,7 @@ data:
       title: "\u30E2\u30CE\u30A4\u30C9 (update)"
     - icon: ':heavy_check_mark:'
       path: 02_DataStructure/02_SegmentTree/00.02.00_mapping.base.hpp
-      title: 02_DataStructure/02_SegmentTree/00.02.00_mapping.base.hpp
+      title: "\u5199\u50CF (base)"
     - icon: ':heavy_check_mark:'
       path: 02_DataStructure/02_SegmentTree/00.02.01_mapping.update-min.hpp
       title: "\u5199\u50CF (min-update)"

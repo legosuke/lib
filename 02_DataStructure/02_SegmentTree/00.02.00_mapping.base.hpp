@@ -1,6 +1,9 @@
 #pragma once
 #include <type_traits>
 
+/**
+ * @brief 写像 (base)
+ */
 class mapping_base {};
 
 template <class T>

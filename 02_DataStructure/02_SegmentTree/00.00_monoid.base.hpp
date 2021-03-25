@@ -1,6 +1,9 @@
 #pragma once
 #include <type_traits>
 
+/**
+ * @brief モノイド (base)
+ */
 class monoid_base {};
 
 template <class T>

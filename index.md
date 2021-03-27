@@ -25,6 +25,9 @@ data:
       path: 01_Math/01_NumberTheory/02.01.03_is-prime.miller-rabin.hpp
       title: "\u7D20\u6570\u5224\u5B9A (\u30DF\u30E9\u30FC\u30FB\u30E9\u30D3\u30F3\
         )"
+    - icon: ':heavy_check_mark:'
+      path: 01_Math/01_NumberTheory/02.02.01_prime-factor.naive.hpp
+      title: "\u7D20\u56E0\u6570\u5206\u89E3 (\u7D20\u6734\u306A\u624B\u6CD5)"
   - name: 01_Math/02_Combinatorics
     pages:
     - icon: ':heavy_check_mark:'
@@ -207,6 +210,9 @@ data:
     - icon: ':heavy_check_mark:'
       path: test/01_Math/01_NumberTheory/02.01.03_yukicoder-3030.test.cpp
       title: test/01_Math/01_NumberTheory/02.01.03_yukicoder-3030.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: test/01_Math/01_NumberTheory/02.02.01_AOJ-NTL-1-A.test.cpp
+      title: test/01_Math/01_NumberTheory/02.02.01_AOJ-NTL-1-A.test.cpp
   - name: test/01_Math/02_Combinatorics
     pages:
     - icon: ':heavy_check_mark:'

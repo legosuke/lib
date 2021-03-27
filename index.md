@@ -28,6 +28,16 @@ data:
     - icon: ':heavy_check_mark:'
       path: 01_Math/01_NumberTheory/02.02.01_prime-factor.naive.hpp
       title: "\u7D20\u56E0\u6570\u5206\u89E3 (\u7D20\u6734\u306A\u624B\u6CD5)"
+    - icon: ':warning:'
+      path: 01_Math/01_NumberTheory/02.04.01_least-prime-factor.naive.hpp
+      title: "\u6700\u5C0F\u7D20\u56E0\u6570 (\u7D20\u6734\u306A\u624B\u6CD5)"
+    - icon: ':warning:'
+      path: 01_Math/01_NumberTheory/02.04.02_least-prime-factor.sieve.hpp
+      title: "\u6700\u5C0F\u7D20\u56E0\u6570 (\u7BE9)"
+    - icon: ':heavy_check_mark:'
+      path: 01_Math/01_NumberTheory/03.01.01.01_sieve.eratosthenes.naive.hpp
+      title: "\u30A8\u30E9\u30C8\u30B9\u30C6\u30CD\u30B9\u306E\u7BE9 (\u7D20\u6734\
+        \u306A\u624B\u6CD5)"
   - name: 01_Math/02_Combinatorics
     pages:
     - icon: ':heavy_check_mark:'
@@ -213,6 +223,9 @@ data:
     - icon: ':heavy_check_mark:'
       path: test/01_Math/01_NumberTheory/02.02.01_AOJ-NTL-1-A.test.cpp
       title: test/01_Math/01_NumberTheory/02.02.01_AOJ-NTL-1-A.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: test/01_Math/01_NumberTheory/03.01.01.01_AOJ-1276.test.cpp
+      title: test/01_Math/01_NumberTheory/03.01.01.01_AOJ-1276.test.cpp
   - name: test/01_Math/02_Combinatorics
     pages:
     - icon: ':heavy_check_mark:'

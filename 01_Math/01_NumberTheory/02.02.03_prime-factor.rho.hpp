@@ -5,6 +5,9 @@
 #include "01.02.01_gcd.hpp"
 #include "02.01.03_is-prime.miller-rabin.hpp"
 
+/**
+ * @brief 素因数分解 (ロー法)
+ */
 class Rho {
     inline std::int64_t f(__int128_t x, std::int64_t c, std::int64_t n) {
         return (x * x % n + c) % n;

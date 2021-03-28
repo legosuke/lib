@@ -10,7 +10,7 @@ data:
     title: "\u7D20\u6570\u5224\u5B9A (\u30DF\u30E9\u30FC\u30FB\u30E9\u30D3\u30F3)"
   - icon: ':heavy_check_mark:'
     path: 01_Math/01_NumberTheory/02.02.03_prime-factor.rho.hpp
-    title: 01_Math/01_NumberTheory/02.02.03_prime-factor.rho.hpp
+    title: "\u7D20\u56E0\u6570\u5206\u89E3 (\u30ED\u30FC\u6CD5)"
   - icon: ':warning:'
     path: 06_Others/04_Random/02_random-string.hpp
     title: "\u4E71\u6570 (\u6587\u5B57\u5217)"

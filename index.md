@@ -34,7 +34,7 @@ data:
         \u6CD5)"
     - icon: ':heavy_check_mark:'
       path: 01_Math/01_NumberTheory/02.02.03_prime-factor.rho.hpp
-      title: 01_Math/01_NumberTheory/02.02.03_prime-factor.rho.hpp
+      title: "\u7D20\u56E0\u6570\u5206\u89E3 (\u30ED\u30FC\u6CD5)"
     - icon: ':heavy_check_mark:'
       path: 01_Math/01_NumberTheory/02.03.01_euler-totient.naive.hpp
       title: "\u30AA\u30A4\u30E9\u30FC\u306E\u30C8\u30FC\u30B7\u30A7\u30F3\u30C8\u95A2\

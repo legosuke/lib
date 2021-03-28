@@ -14,7 +14,11 @@ signed main() {
         int k = 0;
         for (auto p : pf) k += p.second;
         cout << k;
-        for (auto p : pf) cout << " " << p.first;
+        for (auto p : pf) {
+            for (int i = 0; i < p.second; ++i) {
+                cout << " " << p.first;
+            }
+        }
         cout << endl;
     }
 }

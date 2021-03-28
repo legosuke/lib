@@ -3,7 +3,7 @@
 #include <vector>
 
 /**
- * @brief エラトステネスの篩 (素朴な手法)
+ * @brief 篩 (エラトステネス)
  * @note O(n\log{\log{n}})
  */
 std::vector<bool> sieve(std::uint32_t n) {

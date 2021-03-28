@@ -5,9 +5,12 @@ data:
   - icon: ':heavy_check_mark:'
     path: 01_Math/01_NumberTheory/02.01.02_is-prime.fermat.hpp
     title: "\u7D20\u6570\u5224\u5B9A (\u30D5\u30A7\u30EB\u30DE\u30FC)"
-  - icon: ':heavy_check_mark:'
+  - icon: ':question:'
     path: 01_Math/01_NumberTheory/02.01.03_is-prime.miller-rabin.hpp
     title: "\u7D20\u6570\u5224\u5B9A (\u30DF\u30E9\u30FC\u30FB\u30E9\u30D3\u30F3)"
+  - icon: ':x:'
+    path: 01_Math/01_NumberTheory/02.02.03_prime-factor.rho.hpp
+    title: 01_Math/01_NumberTheory/02.02.03_prime-factor.rho.hpp
   - icon: ':warning:'
     path: 06_Others/04_Random/02_random-string.hpp
     title: "\u4E71\u6570 (\u6587\u5B57\u5217)"
@@ -24,9 +27,12 @@ data:
   - icon: ':heavy_check_mark:'
     path: test/01_Math/01_NumberTheory/02.01.03_yukicoder-3030.test.cpp
     title: test/01_Math/01_NumberTheory/02.01.03_yukicoder-3030.test.cpp
-  _isVerificationFailed: false
+  - icon: ':x:'
+    path: test/01_Math/01_NumberTheory/02.02.03_LC-factorize.test.cpp
+    title: test/01_Math/01_NumberTheory/02.02.03_LC-factorize.test.cpp
+  _isVerificationFailed: true
   _pathExtension: hpp
-  _verificationStatusIcon: ':heavy_check_mark:'
+  _verificationStatusIcon: ':question:'
   attributes:
     document_title: "\u4E71\u6570 (\u6570)"
     links: []
@@ -55,12 +61,14 @@ data:
   path: 06_Others/04_Random/01_random-number.hpp
   requiredBy:
   - 01_Math/01_NumberTheory/02.01.02_is-prime.fermat.hpp
+  - 01_Math/01_NumberTheory/02.02.03_prime-factor.rho.hpp
   - 01_Math/01_NumberTheory/02.01.03_is-prime.miller-rabin.hpp
   - 06_Others/04_Random/02_random-string.hpp
   - 06_Others/04_Random/03_random-vector.hpp
   timestamp: '2020-12-17 21:19:56+00:00'
-  verificationStatus: LIBRARY_ALL_AC
+  verificationStatus: LIBRARY_SOME_WA
   verifiedWith:
+  - test/01_Math/01_NumberTheory/02.02.03_LC-factorize.test.cpp
   - test/01_Math/01_NumberTheory/02.01.03_AOJ-ALDS1-1-C.test.cpp
   - test/01_Math/01_NumberTheory/02.01.02_AOJ-ALDS1-1-C.test.cpp
   - test/01_Math/01_NumberTheory/02.01.03_yukicoder-3030.test.cpp

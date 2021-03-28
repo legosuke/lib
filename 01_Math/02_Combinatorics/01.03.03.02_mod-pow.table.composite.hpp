@@ -5,7 +5,7 @@
 #include "../01_NumberTheory/02.04.02_least-prime-factor.sieve.hpp"
 
 /**
- * @brief 累乗の列挙 ; $a^k\bmod{m}, 1≤a<n$
+ * @brief 累乗の列挙
  * @note O(n\log{k}/\log{n}+n)
  */
 std::vector<std::uint32_t> mod_pow_table(std::uint32_t n, std::uint64_t k, std::uint64_t m) {

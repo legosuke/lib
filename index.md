@@ -87,6 +87,9 @@ data:
       path: 01_Math/02_Combinatorics/01.04.03_mod-inv.ext-gcd.hpp
       title: "\u9006\u5143 : $a^{-1}\\bmod{m}$ (\u62E1\u5F35\u30E6\u30FC\u30AF\u30EA\
         \u30C3\u30C9\u306E\u4E92\u52A9\u6CD5)"
+    - icon: ':warning:'
+      path: 01_Math/02_Combinatorics/01.04.04.02_mod-inv.table.composite.hpp
+      title: "\u9006\u5143\u306E\u5217\u6319 ; $a^{-1}\\bmod{m}, 1\u2264a<n$"
   - name: 01_Math/03_Algebra
     pages:
     - icon: ':warning:'

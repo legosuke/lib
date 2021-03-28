@@ -78,7 +78,7 @@ data:
         )"
     - icon: ':warning:'
       path: 01_Math/02_Combinatorics/01.03.03.02_mod-pow.table.composite.hpp
-      title: "\u7D2F\u4E57\u306E\u5217\u6319 $a^k\\bmod{m}, 1\u2264a<n$"
+      title: "\u7D2F\u4E57\u306E\u5217\u6319 ; $a^k\\bmod{m}, 1\u2264a<n$"
     - icon: ':heavy_check_mark:'
       path: 01_Math/02_Combinatorics/01.04.01_mod-inv.fermat.hpp
       title: "\u9006\u5143 : $a^{-1}\\bmod{p}$ (\u30D5\u30A7\u30EB\u30DE\u30FC\u306E\

@@ -41,6 +41,9 @@ data:
     - icon: ':heavy_check_mark:'
       path: 01_Math/01_NumberTheory/03.01.01_sieve.eratosthenes.hpp
       title: "\u7BE9 (\u30A8\u30E9\u30C8\u30B9\u30C6\u30CD\u30B9)"
+    - icon: ':heavy_check_mark:'
+      path: 01_Math/01_NumberTheory/03.01.02_sieve.linear.hpp
+      title: "\u7BE9 (\u7DDA\u5F62)"
   - name: 01_Math/02_Combinatorics
     pages:
     - icon: ':heavy_check_mark:'
@@ -232,6 +235,9 @@ data:
     - icon: ':heavy_check_mark:'
       path: test/01_Math/01_NumberTheory/03.01.01_AOJ-1276.test.cpp
       title: test/01_Math/01_NumberTheory/03.01.01_AOJ-1276.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: test/01_Math/01_NumberTheory/03.01.02_AOJ-1276.test.cpp
+      title: test/01_Math/01_NumberTheory/03.01.02_AOJ-1276.test.cpp
   - name: test/01_Math/02_Combinatorics
     pages:
     - icon: ':heavy_check_mark:'

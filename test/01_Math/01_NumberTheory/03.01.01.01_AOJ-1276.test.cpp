@@ -1,6 +1,6 @@
 #define PROBLEM "https://onlinejudge.u-aizu.ac.jp/problems/1276"
 #include "../../../template/template.hpp"
-#include "../../../01_Math/01_NumberTheory/03.01.01.01_sieve.eratosthenes.naive.hpp"
+#include "../../../01_Math/01_NumberTheory/03.01.01_sieve.eratosthenes.hpp"
 
 signed main() {
     const int MAX_N = 1299709;

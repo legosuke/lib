@@ -3,7 +3,7 @@
 
 /**
  * @brief 最小公倍数
- * @note O(\min\log(a,b))
+ * @note O(min(log(a),log(b)))
  */
 std::uint64_t lcm(std::uint64_t a, std::uint64_t b) {
     return a / gcd(a, b) * b;

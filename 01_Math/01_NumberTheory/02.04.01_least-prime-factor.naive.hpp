@@ -2,7 +2,7 @@
 
 /**
  * @brief 最小素因数 (素朴な手法)
- * @note O(\sqrt{n})
+ * @note O(√n)
  */
 std::uint64_t least_prime_factor(std::uint64_t n) {
     if (n <= 1) return n;

@@ -3,7 +3,7 @@
 
 /**
  * @brief 累乗 : $a^n\bmod{m}$
- * @note O(\log{n})
+ * @note O(log(m))
  */
 std::uint32_t mod_pow(std::int64_t a, std::uint64_t n, std::uint32_t m) {
     a = (a % m + m) % m;

@@ -5,7 +5,7 @@
 
 /**
  * @brief オイラーのトーシェント関数 (テーブル)
- * @note O(n\log{\log{n}})
+ * @note O(n⋅log(log(n)))
  */
 std::vector<std::uint32_t> totient(std::uint32_t n) {
     std::vector<std::uint32_t> phi(n);

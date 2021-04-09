@@ -7,7 +7,7 @@ std::vector<std::uint32_t> lpf = least_prime_factor(MAX_N + 1);
 
 /**
  * @brief 素因数分解 (LPFを利用した手法)
- * @note O(\log{n})
+ * @note O(log(n))
  */
 std::vector<std::pair<std::uint32_t, std::uint8_t>> prime_factor(std::uint32_t n) {
     std::vector<std::pair<std::uint32_t, std::uint8_t>> pf;

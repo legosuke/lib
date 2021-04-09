@@ -5,7 +5,7 @@
 
 /**
  * @brief 篩 (アトキン)
- * @note O(n/\log{\log{n}})
+ * @note O(n/log(log(n)))
  */
 std::vector<bool> sieve(std::uint32_t n) {
     std::vector<bool> isp(n, false);

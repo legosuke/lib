@@ -6,8 +6,8 @@
 
 /**
  * @brief 素数判定 (ミラー・ラビン)
- * @note O(k\log^3{n})
- * @attention 誤判定する確率は 4^{-k}
+ * @note O(k⋅log³(n))
+ * @attention 誤判定する確率は 4⁻ᵏ
  */
 bool is_prime(std::uint64_t n, std::uint32_t k = 20) {
     if (n == 2) return true;

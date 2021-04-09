@@ -4,7 +4,7 @@
 
 /**
  * @brief 逆元 : $a^{-1}\bmod{p}$ (フェルマーの小定理)
- * @note O(\log{p})
+ * @note O(log(p))
  * @warning p は素数
  */
 std::uint32_t mod_inv(std::int64_t a, std::uint32_t p) {

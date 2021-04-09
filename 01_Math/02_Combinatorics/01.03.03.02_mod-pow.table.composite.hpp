@@ -6,7 +6,7 @@
 
 /**
  * @brief 累乗の列挙
- * @note O(n\log{k}/\log{n}+n)
+ * @note O(n⋅log(k)/log(n) + n)
  */
 std::vector<std::uint32_t> mod_pow_table(std::uint32_t n, std::uint64_t k, std::uint64_t m) {
     auto lpf = least_prime_factor(n);

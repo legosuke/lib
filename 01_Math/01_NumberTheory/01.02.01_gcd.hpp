@@ -4,7 +4,7 @@
 
 /**
  * @brief 最大公約数
- * @note O(\min\log(a,b))
+ * @note O(min(log(a),log(b)))
  */
 std::uint64_t gcd(std::uint64_t a, std::uint64_t b) {
     while (b) std::swap(b, a %= b);

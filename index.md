@@ -93,6 +93,21 @@ data:
     - icon: ':warning:'
       path: 01_Math/02_Combinatorics/01.04.04.02_mod-inv.table.composite.hpp
       title: "\u9006\u5143\u306E\u5217\u6319"
+    - icon: ':warning:'
+      path: 01_Math/02_Combinatorics/01.05.01.01_least-primitive-root.naive.hpp
+      title: "$mod p$ \u306E\u6700\u5C0F\u539F\u59CB\u6839 (\u7D20\u6734\u306A\u624B\
+        \u6CD5)"
+    - icon: ':warning:'
+      path: 01_Math/02_Combinatorics/01.05.01.02_least-primitive-root.prime-factor.hpp
+      title: "$mod p$ \u306E\u6700\u5C0F\u539F\u59CB\u6839 (\u7D20\u56E0\u6570\u5206\
+        \u89E3)"
+    - icon: ':warning:'
+      path: 01_Math/02_Combinatorics/01.05.02.01_primitive-root.randomized.hpp
+      title: "$mod p$ \u306E\u539F\u59CB\u6839 (\u4E71\u629E)"
+    - icon: ':warning:'
+      path: 01_Math/02_Combinatorics/01.05.02.02_primitive-root.prime-factor+randomized.hpp
+      title: "$mod p$ \u306E\u539F\u59CB\u6839 (\u7D20\u56E0\u6570\u5206\u89E3 + \u4E71\
+        \u629E)"
   - name: 01_Math/03_Algebra
     pages:
     - icon: ':warning:'

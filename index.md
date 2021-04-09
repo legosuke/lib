@@ -95,19 +95,19 @@ data:
       title: "\u9006\u5143\u306E\u5217\u6319"
     - icon: ':warning:'
       path: 01_Math/02_Combinatorics/01.05.01.01_least-primitive-root.naive.hpp
-      title: "$mod p$ \u306E\u6700\u5C0F\u539F\u59CB\u6839 (\u7D20\u6734\u306A\u624B\
+      title: "$\\mod{p}$ \u306E\u6700\u5C0F\u539F\u59CB\u6839 (\u7D20\u6734\u306A\u624B\
         \u6CD5)"
     - icon: ':warning:'
       path: 01_Math/02_Combinatorics/01.05.01.02_least-primitive-root.prime-factor.hpp
-      title: "$mod p$ \u306E\u6700\u5C0F\u539F\u59CB\u6839 (\u7D20\u56E0\u6570\u5206\
+      title: "$\\mod{p}$ \u306E\u6700\u5C0F\u539F\u59CB\u6839 (\u7D20\u56E0\u6570\u5206\
         \u89E3)"
     - icon: ':warning:'
       path: 01_Math/02_Combinatorics/01.05.02.01_primitive-root.randomized.hpp
-      title: "$mod p$ \u306E\u539F\u59CB\u6839 (\u4E71\u629E)"
+      title: "$\\mod{p}$ \u306E\u539F\u59CB\u6839 (\u4E71\u629E)"
     - icon: ':warning:'
       path: 01_Math/02_Combinatorics/01.05.02.02_primitive-root.prime-factor+randomized.hpp
-      title: "$mod p$ \u306E\u539F\u59CB\u6839 (\u7D20\u56E0\u6570\u5206\u89E3 + \u4E71\
-        \u629E)"
+      title: "$\\mod{p}$ \u306E\u539F\u59CB\u6839 (\u7D20\u56E0\u6570\u5206\u89E3\
+        \ + \u4E71\u629E)"
   - name: 01_Math/03_Algebra
     pages:
     - icon: ':warning:'
@@ -130,7 +130,7 @@ data:
       title: "\u30AC\u30A6\u30B9\u306E\u6D88\u53BB\u6CD5 (\u5B9F\u6570)"
     - icon: ':warning:'
       path: 01_Math/03_Algebra/01.02.01.02_gaussian-elimination.modp.hpp
-      title: "\u30AC\u30A6\u30B9\u306E\u6D88\u53BB\u6CD5 (mod p)"
+      title: "\u30AC\u30A6\u30B9\u306E\u6D88\u53BB\u6CD5 ($\\mod{p}$)"
     - icon: ':warning:'
       path: 01_Math/03_Algebra/01.02.01.03_gaussian-elimination.binary.hpp
       title: "\u30AC\u30A6\u30B9\u306E\u6D88\u53BB\u6CD5 (\u30D0\u30A4\u30CA\u30EA\
@@ -155,7 +155,7 @@ data:
     - icon: ':warning:'
       path: 01_Math/03_Algebra/02.01.01.02_linear-equations.gaussian-elimination.modp.hpp
       title: "\u9023\u7ACB\u4E00\u6B21\u65B9\u7A0B\u5F0F (\u30AC\u30A6\u30B9\u306E\
-        \u6D88\u53BB\u6CD5\u3001mod p)"
+        \u6D88\u53BB\u6CD5\u3001$\\mod{p}$)"
     - icon: ':warning:'
       path: 01_Math/03_Algebra/02.01.01.03_linear-equations.gaussian-elimination.binary.hpp
       title: "\u9023\u7ACB\u4E00\u6B21\u65B9\u7A0B\u5F0F (\u30AC\u30A6\u30B9\u306E\

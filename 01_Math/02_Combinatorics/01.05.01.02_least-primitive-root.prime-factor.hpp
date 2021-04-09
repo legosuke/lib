@@ -5,7 +5,7 @@
 #include "01.03.02_mod-pow.big-mod.hpp"
 
 /**
- * @brief $mod p$ の最小原始根 (素因数分解)
+ * @brief $\mod{p}$ の最小原始根 (素因数分解)
  * @note O(p⋅log²(p)/log(log(p)) + IP + PF)
  *       - IP : 素数判定
  *       - PF : 素因数分解

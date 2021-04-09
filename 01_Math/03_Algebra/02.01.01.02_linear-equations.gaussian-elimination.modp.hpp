@@ -7,7 +7,7 @@
 #include "01.02.01.02_gaussian-elimination.modp.hpp"
 
 /**
- * @brief 連立一次方程式 (ガウスの消去法、mod p)
+ * @brief 連立一次方程式 (ガウスの消去法、$\mod{p}$)
  * @note O(nm²)
  */
 template <class Matrix, typename T>

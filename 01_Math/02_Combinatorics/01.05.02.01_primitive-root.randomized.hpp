@@ -6,7 +6,7 @@
 #include "../01_NumberTheory/02.01.01_is-prime.naive.hpp"
 
 /**
- * @brief $mod p$ の原始根 (乱択)
+ * @brief $\mod{p}$ の原始根 (乱択)
  * @note O(p⋅log(p))
  */
 std::uint32_t primitive_root(std::uint32_t p) {

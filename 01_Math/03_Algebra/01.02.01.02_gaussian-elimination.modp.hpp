@@ -5,7 +5,7 @@
 #include "../02_Combinatorics/01.02.00_modint-base.hpp"
 
 /**
- * @brief ガウスの消去法 (mod p)
+ * @brief ガウスの消去法 ($\mod{p}$)
  * @note O(nm²)
  * @warning p は素数
  * @warning 行列 A に対して破壊的

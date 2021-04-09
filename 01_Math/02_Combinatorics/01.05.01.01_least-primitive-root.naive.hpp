@@ -4,7 +4,7 @@
 #include "../01_NumberTheory/02.01.01_is-prime.naive.hpp"
 
 /**
- * @brief $mod p$ の最小原始根 (素朴な手法)
+ * @brief $\mod{p}$ の最小原始根 (素朴な手法)
  * @note O(p²)
  * @note 実際は少し速い
  */

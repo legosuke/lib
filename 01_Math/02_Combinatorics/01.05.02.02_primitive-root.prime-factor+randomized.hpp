@@ -6,7 +6,7 @@
 #include "01.03.02_mod-pow.big-mod.hpp"
 
 /**
- * @brief $mod p$ の原始根 (素因数分解 + 乱択)
+ * @brief $\mod{p}$ の原始根 (素因数分解 + 乱択)
  * @note O(log³(p)/log(log(p)) + IP + PF)
  *       - IP : 素数判定
  *       - PF : 素因数分解

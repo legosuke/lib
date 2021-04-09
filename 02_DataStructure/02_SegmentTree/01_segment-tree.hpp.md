@@ -86,8 +86,8 @@ data:
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
   - test/02_DataStructure/02_SegmentTree/00.01.02_AOJ-DSL-2-A.test.cpp
-  - test/02_DataStructure/02_SegmentTree/00.01.01_AOJ-DSL-2-A.test.cpp
   - test/02_DataStructure/02_SegmentTree/00.01.03_AOJ-DSL-2-B.test.cpp
+  - test/02_DataStructure/02_SegmentTree/00.01.01_AOJ-DSL-2-A.test.cpp
 documentation_of: 02_DataStructure/02_SegmentTree/01_segment-tree.hpp
 layout: document
 redirect_from:

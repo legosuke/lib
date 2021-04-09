@@ -5,11 +5,10 @@
 signed main() {
     int Q;
     cin >> Q;
-    Rho rho;
     for (int i = 0; i < Q; ++i) {
         int a;
         cin >> a;
-        auto pf = rho.prime_factor(a);
+        auto pf = prime_factor(a);
         sort(pf.begin(), pf.end());
         int k = 0;
         for (auto p : pf) k += p.second;

@@ -6,7 +6,7 @@
 
 /**
  * @brief ガウスの消去法 (mod p)
- * @note O(nm^2)
+ * @note O(nm²)
  * @warning p は素数
  * @warning 行列 A に対して破壊的
  */

@@ -6,7 +6,7 @@
 
 /**
  * @brief ガウスの消去法 (バイナリ)
- * @note O(nm^2)
+ * @note O(nm²)
  * @warning 行列 A に対して破壊的
  */
 template <class Matrix>

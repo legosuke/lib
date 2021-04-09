@@ -6,7 +6,7 @@
 
 /**
  * @brief 行列式 (LU 分解)
- * @note O(n^3)
+ * @note O(n³)
  * @warning 行列 A は n 次の正方行列
  */
 template <class SquareMatrix>

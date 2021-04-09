@@ -10,7 +10,7 @@
 
 /**
  * @brief 逆行列 (ガウスの消去法)
- * @note O(n^3)
+ * @note O(n³)
  * @warning 行列 A は n 次の正方行列
  */
 template <class SquareMatrix, std::uint32_t (*gaussian_elimination)(SquareMatrix&)>

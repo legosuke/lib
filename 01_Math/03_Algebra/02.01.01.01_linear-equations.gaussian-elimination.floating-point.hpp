@@ -10,7 +10,7 @@
 
 /**
  * @brief 連立一次方程式 (ガウスの消去法、実数)
- * @note O(nm^2)
+ * @note O(nm²)
  */
 template <class Matrix, typename T>
 std::vector<T> linear_equations(Matrix& A, std::vector<T>& b) {

@@ -5,7 +5,7 @@
 
 /**
  * @brief 約数列挙 (素朴な手法)
- * @note O(\sqrt{n})
+ * @note O(√n)
  */
 std::vector<std::uint64_t> divisor(std::uint64_t n) {
     std::vector<std::uint64_t> res;

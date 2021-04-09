@@ -3,7 +3,7 @@
 
 /**
  * @brief 素因数分解 (素朴な手法)
- * @note O(\sqrt{n})
+ * @note O(√n)
  */
 std::vector<std::pair<std::uint64_t, std::uint8_t>> prime_factor(std::uint64_t n) {
     std::vector<std::pair<std::uint64_t, std::uint8_t>> pf;

@@ -3,7 +3,7 @@
 
 /**
  * @brief オイラーのトーシェント関数 (素朴な手法)
- * @note O(\sqrt{n})
+ * @note O(√n)
  */
 std::uint64_t totient(std::uint64_t n) {
     std::uint64_t res = n;

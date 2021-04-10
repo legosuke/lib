@@ -1,11 +1,15 @@
 #pragma once
+#include <cassert>
 #include <cstdint>
+#include <type_traits>
 
 /**
  * @brief 拡張ユークリッドの互助法
  * @note O(min(log(a),log(b)))
  */
-std::int64_t ext_gcd(std::int64_t a, std::int64_t b, std::int_least64_t& x, std::int_least64_t& y) {
+template <typename Integer>
+Integer ext_gcd(Integer a, Integer b, Integer& x, Integer& y) {
+    static_assert(std::is_integral<Integer>::value);
     if (b == 0) { x = 1; y = 0; return a; }
     auto g = ext_gcd(b, a % b, y, x);
     y -= a / b * x;

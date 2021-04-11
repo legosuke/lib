@@ -14,7 +14,7 @@ data:
       title: "\u6700\u5C0F\u516C\u500D\u6570"
     - icon: ':heavy_check_mark:'
       path: 01_Math/01_NumberTheory/01.04.01_ext-gcd.hpp
-      title: "\u62E1\u5F35\u30E6\u30FC\u30AF\u30EA\u30C3\u30C9\u306E\u4E92\u52A9\u6CD5"
+      title: "\u62E1\u5F35\u30E6\u30FC\u30AF\u30EA\u30C3\u30C9\u306E\u4E92\u9664\u6CD5"
     - icon: ':heavy_check_mark:'
       path: 01_Math/01_NumberTheory/02.01.01_is-prime.naive.hpp
       title: "\u7D20\u6570\u5224\u5B9A (\u7D20\u6734\u306A\u624B\u6CD5)"
@@ -110,7 +110,8 @@ data:
         \ + \u4E71\u629E)"
     - icon: ':heavy_check_mark:'
       path: 01_Math/02_Combinatorics/01.06.01_chinese-remainder-theorem.ext-gcd.hpp
-      title: 01_Math/02_Combinatorics/01.06.01_chinese-remainder-theorem.ext-gcd.hpp
+      title: "\u4E2D\u56FD\u5270\u4F59\u5B9A\u7406 (\u62E1\u5F35\u30E6\u30FC\u30AF\
+        \u30EA\u30C3\u30C9\u306E\u4E92\u9664\u6CD5)"
   - name: 01_Math/03_Algebra
     pages:
     - icon: ':warning:'

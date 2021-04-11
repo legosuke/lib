@@ -4,7 +4,7 @@
 #include <type_traits>
 
 /**
- * @brief 拡張ユークリッドの互助法
+ * @brief 拡張ユークリッドの互除法
  * @note O(min(log(a),log(b)))
  */
 template <typename Integer1, typename Integer2, typename Integer3>

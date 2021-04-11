@@ -7,6 +7,10 @@
 #include "../01_NumberTheory/01.04.01_ext-gcd.hpp"
 #include "01.01_mod-operation.hpp"
 
+/**
+ * @brief 中国剰余定理 (拡張ユークリッドの互除法)
+ * @note O(t⋅log(max(mᵢ)))
+ */
 template <typename Integer>
 std::pair<Integer, Integer> chinese_remainder_theorem(std::vector<Integer> r, std::vector<Integer> m) {
     static_assert(std::is_integral<Integer>::value);

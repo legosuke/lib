@@ -7,10 +7,11 @@
  * @brief 拡張ユークリッドの互助法
  * @note O(min(log(a),log(b)))
  */
-template <typename Integer1, typename Integer2>
-Integer1 ext_gcd(Integer1 a, Integer1 b, Integer2& x, Integer2& y) {
+template <typename Integer1, typename Integer2, typename Integer3>
+Integer1 ext_gcd(Integer1 a, Integer2 b, Integer3& x, Integer3& y) {
     static_assert(std::is_integral<Integer1>::value);
     static_assert(std::is_integral<Integer2>::value);
+    static_assert(std::is_integral<Integer3>::value);
     if (b == 0) { x = 1; y = 0; return a; }
     auto g = ext_gcd(b, a % b, y, x);
     y -= a / b * x;

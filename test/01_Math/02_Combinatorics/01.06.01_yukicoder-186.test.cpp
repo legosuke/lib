@@ -8,5 +8,5 @@ signed main() {
         cin >> X[i] >> Y[i];
     }
     auto ans = chinese_remainder_theorem(X, Y);
-    cout << (ans.second == -1 ? -1 : ans.first) << endl;
+    cout << (ans.second == -1 ? -1 : ans.first == 0 ? ans.second : ans.first) << endl;
 }

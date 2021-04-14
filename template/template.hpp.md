@@ -66,7 +66,7 @@ data:
   - icon: ':heavy_check_mark:'
     path: test/01_Math/02_Combinatorics/01.06.01_yukicoder-186.test.cpp
     title: test/01_Math/02_Combinatorics/01.06.01_yukicoder-186.test.cpp
-  - icon: ':x:'
+  - icon: ':heavy_check_mark:'
     path: test/01_Math/02_Combinatorics/01.06.02_yukicoder-186.test.cpp
     title: test/01_Math/02_Combinatorics/01.06.02_yukicoder-186.test.cpp
   - icon: ':heavy_check_mark:'
@@ -114,9 +114,9 @@ data:
   - icon: ':heavy_check_mark:'
     path: test/02_DataStructure/02_SegmentTree/00.02.04_AOJ-DSL-2-I.test.cpp
     title: test/02_DataStructure/02_SegmentTree/00.02.04_AOJ-DSL-2-I.test.cpp
-  _isVerificationFailed: true
+  _isVerificationFailed: false
   _pathExtension: hpp
-  _verificationStatusIcon: ':question:'
+  _verificationStatusIcon: ':heavy_check_mark:'
   attributes:
     links: []
   bundledCode: '#line 1 "template/template.hpp"
@@ -138,7 +138,7 @@ data:
   path: template/template.hpp
   requiredBy: []
   timestamp: '2020-12-16 16:02:46+00:00'
-  verificationStatus: LIBRARY_SOME_WA
+  verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
   - test/02_DataStructure/02_SegmentTree/00.01.02_AOJ-DSL-2-A.test.cpp
   - test/02_DataStructure/02_SegmentTree/00.01.03_AOJ-DSL-2-B.test.cpp

@@ -5,7 +5,7 @@ documentation_of: ../01_Math/02_Combinatorics/01.06.01_chinese-remainder-theorem
 
 ## 中国剰余定理
 
-どんな $r_{1},r_{2},\ldots,r_{t}$ に対しても連立合同式
+$m_{1},m_{2},\ldots,m_{t}$ のどの2つも互いに素ならば、どんな $r_{1},r_{2},\ldots,r_{t}$ に対しても連立合同式
 
 $$
 x\equiv\begin{cases}

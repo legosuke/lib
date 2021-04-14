@@ -109,6 +109,9 @@ data:
       title: "$\\mod{p}$ \u306E\u539F\u59CB\u6839 (\u7D20\u56E0\u6570\u5206\u89E3\
         \ + \u4E71\u629E)"
     - icon: ':heavy_check_mark:'
+      path: 01_Math/02_Combinatorics/01.06.00_pre-chinese-remainder-theorem.hpp
+      title: "\u4E2D\u56FD\u5270\u4F59\u5B9A\u7406\u306E\u524D\u51E6\u7406"
+    - icon: ':heavy_check_mark:'
       path: 01_Math/02_Combinatorics/01.06.01_chinese-remainder-theorem.ext-gcd.hpp
       title: "\u4E2D\u56FD\u5270\u4F59\u5B9A\u7406 (\u62E1\u5F35\u30E6\u30FC\u30AF\
         \u30EA\u30C3\u30C9\u306E\u4E92\u9664\u6CD5)"

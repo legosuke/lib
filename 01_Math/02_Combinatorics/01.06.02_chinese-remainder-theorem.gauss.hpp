@@ -14,7 +14,7 @@
  * @note O(t⋅log(max(mᵢ)))
  */
 template <typename Integer>
-std::pair<Integer, Integer> chinese_remainder_theorem(std::vector<Integer> r, std::vector<Integer> m, Integer MOD) {
+std::pair<Integer, Integer> chinese_remainder_theorem(std::vector<Integer> r, std::vector<Integer> m) {
     static_assert(std::is_integral<Integer>::value);
     if (!pre_chinese_remainder_theorem(r, m)) return std::make_pair(0, -1);
     Integer x = 0, M = 1;

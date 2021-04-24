@@ -6,7 +6,7 @@ data:
     - icon: ':heavy_check_mark:'
       path: 01_Math/01_NumberTheory/01.01.01_divisor.naive.hpp
       title: "\u7D04\u6570\u5217\u6319 (\u7D20\u6734\u306A\u624B\u6CD5)"
-    - icon: ':heavy_check_mark:'
+    - icon: ':question:'
       path: 01_Math/01_NumberTheory/01.02.01_gcd.hpp
       title: "\u6700\u5927\u516C\u7D04\u6570"
     - icon: ':heavy_check_mark:'
@@ -26,6 +26,9 @@ data:
       path: 01_Math/01_NumberTheory/02.01.03_is-prime.euler-pseudoprime.hpp
       title: "\u7D20\u6570\u5224\u5B9A (\u30AA\u30A4\u30E9\u30FC\u64EC\u7D20\u6570\
         )"
+    - icon: ':x:'
+      path: 01_Math/01_NumberTheory/02.01.04_is-prime.strong-pseudoprime.hpp
+      title: "\u7D20\u6570\u5224\u5B9A (\u5F37\u64EC\u4F3C\u7D20\u6570)"
     - icon: ':heavy_check_mark:'
       path: 01_Math/01_NumberTheory/02.01.05_is-prime.miller-rabin.hpp
       title: "\u7D20\u6570\u5224\u5B9A (\u30DF\u30E9\u30FC\u30FB\u30E9\u30D3\u30F3\
@@ -65,7 +68,7 @@ data:
       title: "\u7BE9 (\u30A2\u30C8\u30AD\u30F3)"
   - name: 01_Math/02_Combinatorics
     pages:
-    - icon: ':heavy_check_mark:'
+    - icon: ':question:'
       path: 01_Math/02_Combinatorics/01.01_mod-operation.hpp
       title: "mod \u4E0A\u306E\u57FA\u672C\u6F14\u7B97"
     - icon: ':heavy_check_mark:'
@@ -80,7 +83,7 @@ data:
     - icon: ':heavy_check_mark:'
       path: 01_Math/02_Combinatorics/01.03.01_mod-pow.hpp
       title: "\u7D2F\u4E57 : $a^n\\bmod{m}$"
-    - icon: ':heavy_check_mark:'
+    - icon: ':question:'
       path: 01_Math/02_Combinatorics/01.03.02_mod-pow.big-mod.hpp
       title: "\u7D2F\u4E57 : $a^n\\bmod{m}$ ($m$ \u304C\u5927\u304D\u3044\u5834\u5408\
         )"
@@ -238,7 +241,7 @@ data:
       title: "\u9045\u5EF6\u30BB\u30B0\u30E1\u30F3\u30C8\u30C4\u30EA\u30FC"
   - name: 06_Others/04_Random
     pages:
-    - icon: ':heavy_check_mark:'
+    - icon: ':question:'
       path: 06_Others/04_Random/01_random-number.hpp
       title: "\u4E71\u6570 (\u6570)"
     - icon: ':warning:'
@@ -249,7 +252,7 @@ data:
       title: "\u4E71\u6570 (\u5217)"
   - name: template
     pages:
-    - icon: ':heavy_check_mark:'
+    - icon: ':question:'
       path: template/template.hpp
       title: template/template.hpp
   verificationCategories:
@@ -276,6 +279,15 @@ data:
     - icon: ':heavy_check_mark:'
       path: test/01_Math/01_NumberTheory/02.01.03_AOJ-ALDS1-1-C.test.cpp
       title: test/01_Math/01_NumberTheory/02.01.03_AOJ-ALDS1-1-C.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: test/01_Math/01_NumberTheory/02.01.03_yukicoder-3030.test.cpp
+      title: test/01_Math/01_NumberTheory/02.01.03_yukicoder-3030.test.cpp
+    - icon: ':x:'
+      path: test/01_Math/01_NumberTheory/02.01.04_AOJ-ALDS1-1-C.test.cpp
+      title: test/01_Math/01_NumberTheory/02.01.04_AOJ-ALDS1-1-C.test.cpp
+    - icon: ':x:'
+      path: test/01_Math/01_NumberTheory/02.01.04_yukicoder-3030.test.cpp
+      title: test/01_Math/01_NumberTheory/02.01.04_yukicoder-3030.test.cpp
     - icon: ':heavy_check_mark:'
       path: test/01_Math/01_NumberTheory/02.01.05_AOJ-ALDS1-1-C.test.cpp
       title: test/01_Math/01_NumberTheory/02.01.05_AOJ-ALDS1-1-C.test.cpp

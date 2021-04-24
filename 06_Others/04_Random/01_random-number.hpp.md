@@ -8,6 +8,9 @@ data:
   - icon: ':heavy_check_mark:'
     path: 01_Math/01_NumberTheory/02.01.03_is-prime.euler-pseudoprime.hpp
     title: "\u7D20\u6570\u5224\u5B9A (\u30AA\u30A4\u30E9\u30FC\u64EC\u7D20\u6570)"
+  - icon: ':x:'
+    path: 01_Math/01_NumberTheory/02.01.04_is-prime.strong-pseudoprime.hpp
+    title: "\u7D20\u6570\u5224\u5B9A (\u5F37\u64EC\u4F3C\u7D20\u6570)"
   - icon: ':heavy_check_mark:'
     path: 01_Math/01_NumberTheory/02.01.05_is-prime.miller-rabin.hpp
     title: "\u7D20\u6570\u5224\u5B9A (\u30DF\u30E9\u30FC\u30FB\u30E9\u30D3\u30F3)"
@@ -28,6 +31,15 @@ data:
     path: test/01_Math/01_NumberTheory/02.01.03_AOJ-ALDS1-1-C.test.cpp
     title: test/01_Math/01_NumberTheory/02.01.03_AOJ-ALDS1-1-C.test.cpp
   - icon: ':heavy_check_mark:'
+    path: test/01_Math/01_NumberTheory/02.01.03_yukicoder-3030.test.cpp
+    title: test/01_Math/01_NumberTheory/02.01.03_yukicoder-3030.test.cpp
+  - icon: ':x:'
+    path: test/01_Math/01_NumberTheory/02.01.04_AOJ-ALDS1-1-C.test.cpp
+    title: test/01_Math/01_NumberTheory/02.01.04_AOJ-ALDS1-1-C.test.cpp
+  - icon: ':x:'
+    path: test/01_Math/01_NumberTheory/02.01.04_yukicoder-3030.test.cpp
+    title: test/01_Math/01_NumberTheory/02.01.04_yukicoder-3030.test.cpp
+  - icon: ':heavy_check_mark:'
     path: test/01_Math/01_NumberTheory/02.01.05_AOJ-ALDS1-1-C.test.cpp
     title: test/01_Math/01_NumberTheory/02.01.05_AOJ-ALDS1-1-C.test.cpp
   - icon: ':heavy_check_mark:'
@@ -36,9 +48,9 @@ data:
   - icon: ':heavy_check_mark:'
     path: test/01_Math/01_NumberTheory/02.02.03_LC-factorize.test.cpp
     title: test/01_Math/01_NumberTheory/02.02.03_LC-factorize.test.cpp
-  _isVerificationFailed: false
+  _isVerificationFailed: true
   _pathExtension: hpp
-  _verificationStatusIcon: ':heavy_check_mark:'
+  _verificationStatusIcon: ':question:'
   attributes:
     document_title: "\u4E71\u6570 (\u6570)"
     links: []
@@ -69,17 +81,21 @@ data:
   - 01_Math/01_NumberTheory/02.01.05_is-prime.miller-rabin.hpp
   - 01_Math/01_NumberTheory/02.01.03_is-prime.euler-pseudoprime.hpp
   - 01_Math/01_NumberTheory/02.01.02_is-prime.fermer-pseudoprime.hpp
+  - 01_Math/01_NumberTheory/02.01.04_is-prime.strong-pseudoprime.hpp
   - 01_Math/01_NumberTheory/02.02.03_prime-factor.rho.hpp
   - 06_Others/04_Random/03_random-vector.hpp
   - 06_Others/04_Random/02_random-string.hpp
   timestamp: '2020-12-17 21:19:56+00:00'
-  verificationStatus: LIBRARY_ALL_AC
+  verificationStatus: LIBRARY_SOME_WA
   verifiedWith:
   - test/01_Math/01_NumberTheory/02.01.05_yukicoder-3030.test.cpp
   - test/01_Math/01_NumberTheory/02.01.05_AOJ-ALDS1-1-C.test.cpp
   - test/01_Math/01_NumberTheory/02.01.03_AOJ-ALDS1-1-C.test.cpp
+  - test/01_Math/01_NumberTheory/02.01.03_yukicoder-3030.test.cpp
   - test/01_Math/01_NumberTheory/02.01.02_AOJ-ALDS1-1-C.test.cpp
   - test/01_Math/01_NumberTheory/02.02.03_LC-factorize.test.cpp
+  - test/01_Math/01_NumberTheory/02.01.04_yukicoder-3030.test.cpp
+  - test/01_Math/01_NumberTheory/02.01.04_AOJ-ALDS1-1-C.test.cpp
 documentation_of: 06_Others/04_Random/01_random-number.hpp
 layout: document
 redirect_from:

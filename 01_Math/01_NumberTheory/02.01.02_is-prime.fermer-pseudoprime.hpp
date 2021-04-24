@@ -5,7 +5,7 @@
 #include "../../06_Others/04_Random/01_random-number.hpp"
 
 /**
- * @brief 素数判定 (フェルマー)
+ * @brief 素数判定 (フェルマー擬素数)
  * @note O(k⋅log²(n))
  */
 bool is_prime(std::uint64_t n, std::uint32_t k = 50) {

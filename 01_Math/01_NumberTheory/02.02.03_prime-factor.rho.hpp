@@ -3,7 +3,7 @@
 #include <random>
 #include <vector>
 #include "01.02.01_gcd.hpp"
-#include "02.01.03_is-prime.miller-rabin.hpp"
+#include "02.01.05_is-prime.miller-rabin.hpp"
 
 /**
  * @brief 素因数分解 (ロー法)

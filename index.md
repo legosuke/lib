@@ -19,10 +19,15 @@ data:
       path: 01_Math/01_NumberTheory/02.01.01_is-prime.naive.hpp
       title: "\u7D20\u6570\u5224\u5B9A (\u7D20\u6734\u306A\u624B\u6CD5)"
     - icon: ':heavy_check_mark:'
-      path: 01_Math/01_NumberTheory/02.01.02_is-prime.fermat.hpp
-      title: "\u7D20\u6570\u5224\u5B9A (\u30D5\u30A7\u30EB\u30DE\u30FC)"
+      path: 01_Math/01_NumberTheory/02.01.02_is-prime.fermer-pseudoprime.hpp
+      title: "\u7D20\u6570\u5224\u5B9A (\u30AA\u30A4\u30E9\u30FC\u64EC\u7D20\u6570\
+        )"
     - icon: ':heavy_check_mark:'
-      path: 01_Math/01_NumberTheory/02.01.03_is-prime.miller-rabin.hpp
+      path: 01_Math/01_NumberTheory/02.01.03_is-prime.euler-pseudoprime.hpp
+      title: "\u7D20\u6570\u5224\u5B9A (\u30AA\u30A4\u30E9\u30FC\u64EC\u7D20\u6570\
+        )"
+    - icon: ':heavy_check_mark:'
+      path: 01_Math/01_NumberTheory/02.01.05_is-prime.miller-rabin.hpp
       title: "\u7D20\u6570\u5224\u5B9A (\u30DF\u30E9\u30FC\u30FB\u30E9\u30D3\u30F3\
         )"
     - icon: ':heavy_check_mark:'
@@ -118,6 +123,9 @@ data:
     - icon: ':heavy_check_mark:'
       path: 01_Math/02_Combinatorics/01.06.02_chinese-remainder-theorem.gauss.hpp
       title: "\u4E2D\u56FD\u5270\u4F59\u5B9A\u7406 (Gauss)"
+    - icon: ':heavy_check_mark:'
+      path: 01_Math/02_Combinatorics/01.07_jacobi-symbol.hpp
+      title: "\u30E4\u30B3\u30D3\u8A18\u53F7"
   - name: 01_Math/03_Algebra
     pages:
     - icon: ':warning:'
@@ -269,8 +277,11 @@ data:
       path: test/01_Math/01_NumberTheory/02.01.03_AOJ-ALDS1-1-C.test.cpp
       title: test/01_Math/01_NumberTheory/02.01.03_AOJ-ALDS1-1-C.test.cpp
     - icon: ':heavy_check_mark:'
-      path: test/01_Math/01_NumberTheory/02.01.03_yukicoder-3030.test.cpp
-      title: test/01_Math/01_NumberTheory/02.01.03_yukicoder-3030.test.cpp
+      path: test/01_Math/01_NumberTheory/02.01.05_AOJ-ALDS1-1-C.test.cpp
+      title: test/01_Math/01_NumberTheory/02.01.05_AOJ-ALDS1-1-C.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: test/01_Math/01_NumberTheory/02.01.05_yukicoder-3030.test.cpp
+      title: test/01_Math/01_NumberTheory/02.01.05_yukicoder-3030.test.cpp
     - icon: ':heavy_check_mark:'
       path: test/01_Math/01_NumberTheory/02.02.01_AOJ-NTL-1-A.test.cpp
       title: test/01_Math/01_NumberTheory/02.02.01_AOJ-NTL-1-A.test.cpp

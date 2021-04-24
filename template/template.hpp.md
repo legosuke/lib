@@ -25,8 +25,11 @@ data:
     path: test/01_Math/01_NumberTheory/02.01.03_AOJ-ALDS1-1-C.test.cpp
     title: test/01_Math/01_NumberTheory/02.01.03_AOJ-ALDS1-1-C.test.cpp
   - icon: ':heavy_check_mark:'
-    path: test/01_Math/01_NumberTheory/02.01.03_yukicoder-3030.test.cpp
-    title: test/01_Math/01_NumberTheory/02.01.03_yukicoder-3030.test.cpp
+    path: test/01_Math/01_NumberTheory/02.01.05_AOJ-ALDS1-1-C.test.cpp
+    title: test/01_Math/01_NumberTheory/02.01.05_AOJ-ALDS1-1-C.test.cpp
+  - icon: ':heavy_check_mark:'
+    path: test/01_Math/01_NumberTheory/02.01.05_yukicoder-3030.test.cpp
+    title: test/01_Math/01_NumberTheory/02.01.05_yukicoder-3030.test.cpp
   - icon: ':heavy_check_mark:'
     path: test/01_Math/01_NumberTheory/02.02.01_AOJ-NTL-1-A.test.cpp
     title: test/01_Math/01_NumberTheory/02.02.01_AOJ-NTL-1-A.test.cpp
@@ -140,43 +143,44 @@ data:
   timestamp: '2020-12-16 16:02:46+00:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
-  - test/02_DataStructure/02_SegmentTree/00.01.02_AOJ-DSL-2-A.test.cpp
-  - test/02_DataStructure/02_SegmentTree/00.01.03_AOJ-DSL-2-B.test.cpp
-  - test/02_DataStructure/02_SegmentTree/00.02.04_AOJ-DSL-2-I.test.cpp
-  - test/02_DataStructure/02_SegmentTree/00.02.03_AOJ-DSL-2-H.test.cpp
-  - test/02_DataStructure/02_SegmentTree/00.01.01_AOJ-DSL-2-A.test.cpp
-  - test/02_DataStructure/02_SegmentTree/00.02.01_AOJ-DSL-2-F.test.cpp
-  - test/02_DataStructure/02_SegmentTree/00.02.02_AOJ-DSL-2-G.test.cpp
-  - test/02_DataStructure/02_SegmentTree/00.01.04_AOJ-DSL-2-D.test.cpp
-  - test/02_DataStructure/02_SegmentTree/00.01.03_AOJ-DSL-2-E.test.cpp
-  - test/02_DataStructure/01_UnionFind/03_AOJ-DSL-1-B.test.cpp
-  - test/02_DataStructure/01_UnionFind/02.01_AOJ-2664.test.cpp
   - test/02_DataStructure/01_UnionFind/01_AOJ-DSL-1-A.test.cpp
-  - test/01_Math/03_Algebra/01.01.01.01_ITP1-7-D.test.cpp
-  - test/01_Math/03_Algebra/01.01.02.01_yukicoder-194.test.cpp
-  - test/01_Math/03_Algebra/01.01.01.01_ITP1-6-D.test.cpp
-  - test/01_Math/01_NumberTheory/02.02.03_LC-factorize.test.cpp
-  - test/01_Math/01_NumberTheory/02.01.03_AOJ-ALDS1-1-C.test.cpp
-  - test/01_Math/01_NumberTheory/02.03.01_AOJ-NTL-1-D.test.cpp
-  - test/01_Math/01_NumberTheory/02.02.01_AOJ-NTL-1-A.test.cpp
-  - test/01_Math/01_NumberTheory/02.02.02_yukicoder-0811.test.cpp
-  - test/01_Math/01_NumberTheory/03.01.03_AOJ-1276.test.cpp
-  - test/01_Math/01_NumberTheory/01.02.01_AOJ-ALDS1-1-B.test.cpp
-  - test/01_Math/01_NumberTheory/02.01.01_AOJ-ALDS1-1-C.test.cpp
+  - test/02_DataStructure/01_UnionFind/02.01_AOJ-2664.test.cpp
+  - test/02_DataStructure/01_UnionFind/03_AOJ-DSL-1-B.test.cpp
+  - test/02_DataStructure/02_SegmentTree/00.01.01_AOJ-DSL-2-A.test.cpp
+  - test/02_DataStructure/02_SegmentTree/00.02.02_AOJ-DSL-2-G.test.cpp
+  - test/02_DataStructure/02_SegmentTree/00.02.01_AOJ-DSL-2-F.test.cpp
+  - test/02_DataStructure/02_SegmentTree/00.01.02_AOJ-DSL-2-A.test.cpp
+  - test/02_DataStructure/02_SegmentTree/00.01.03_AOJ-DSL-2-E.test.cpp
+  - test/02_DataStructure/02_SegmentTree/00.01.04_AOJ-DSL-2-D.test.cpp
+  - test/02_DataStructure/02_SegmentTree/00.02.04_AOJ-DSL-2-I.test.cpp
+  - test/02_DataStructure/02_SegmentTree/00.01.03_AOJ-DSL-2-B.test.cpp
+  - test/02_DataStructure/02_SegmentTree/00.02.03_AOJ-DSL-2-H.test.cpp
   - test/01_Math/01_NumberTheory/01.04.01_AOJ-NTL-1-E.test.cpp
-  - test/01_Math/01_NumberTheory/03.01.01_AOJ-1276.test.cpp
-  - test/01_Math/01_NumberTheory/02.01.02_AOJ-ALDS1-1-C.test.cpp
-  - test/01_Math/01_NumberTheory/02.01.03_yukicoder-3030.test.cpp
-  - test/01_Math/01_NumberTheory/01.01.01_AOJ-ITP1-3-D.test.cpp
+  - test/01_Math/01_NumberTheory/02.01.05_yukicoder-3030.test.cpp
+  - test/01_Math/01_NumberTheory/01.02.01_AOJ-ALDS1-1-B.test.cpp
+  - test/01_Math/01_NumberTheory/02.01.05_AOJ-ALDS1-1-C.test.cpp
+  - test/01_Math/01_NumberTheory/02.02.01_AOJ-NTL-1-A.test.cpp
+  - test/01_Math/01_NumberTheory/03.01.03_AOJ-1276.test.cpp
   - test/01_Math/01_NumberTheory/03.01.02_AOJ-1276.test.cpp
+  - test/01_Math/01_NumberTheory/02.03.01_AOJ-NTL-1-D.test.cpp
+  - test/01_Math/01_NumberTheory/01.01.01_AOJ-ITP1-3-D.test.cpp
+  - test/01_Math/01_NumberTheory/02.01.03_AOJ-ALDS1-1-C.test.cpp
   - test/01_Math/01_NumberTheory/01.03.01_AOJ-NTL-1-C.test.cpp
-  - test/01_Math/02_Combinatorics/01.02.01_yukicoder-840.test.cpp
-  - test/01_Math/02_Combinatorics/01.02.01_AOJ-1327.test.cpp
-  - test/01_Math/02_Combinatorics/01.06.01_yukicoder-186.test.cpp
+  - test/01_Math/01_NumberTheory/02.01.02_AOJ-ALDS1-1-C.test.cpp
+  - test/01_Math/01_NumberTheory/02.02.03_LC-factorize.test.cpp
+  - test/01_Math/01_NumberTheory/03.01.01_AOJ-1276.test.cpp
+  - test/01_Math/01_NumberTheory/02.01.01_AOJ-ALDS1-1-C.test.cpp
+  - test/01_Math/01_NumberTheory/02.02.02_yukicoder-0811.test.cpp
   - test/01_Math/02_Combinatorics/01.04.01_AOJ-DPL-5-E.test.cpp
-  - test/01_Math/02_Combinatorics/01.04.03_AOJ-DPL-5-E.test.cpp
   - test/01_Math/02_Combinatorics/01.06.02_yukicoder-186.test.cpp
   - test/01_Math/02_Combinatorics/01.03.01_AOJ-NTL-1-B.test.cpp
+  - test/01_Math/02_Combinatorics/01.02.01_yukicoder-840.test.cpp
+  - test/01_Math/02_Combinatorics/01.06.01_yukicoder-186.test.cpp
+  - test/01_Math/02_Combinatorics/01.02.01_AOJ-1327.test.cpp
+  - test/01_Math/02_Combinatorics/01.04.03_AOJ-DPL-5-E.test.cpp
+  - test/01_Math/03_Algebra/01.01.01.01_ITP1-6-D.test.cpp
+  - test/01_Math/03_Algebra/01.01.01.01_ITP1-7-D.test.cpp
+  - test/01_Math/03_Algebra/01.01.02.01_yukicoder-194.test.cpp
 documentation_of: template/template.hpp
 layout: document
 redirect_from:

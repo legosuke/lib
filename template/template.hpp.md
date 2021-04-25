@@ -39,10 +39,10 @@ data:
   - icon: ':heavy_check_mark:'
     path: test/01_Math/01_NumberTheory/02.01.05.01_yukicoder-3030.test.cpp
     title: test/01_Math/01_NumberTheory/02.01.05.01_yukicoder-3030.test.cpp
-  - icon: ':x:'
+  - icon: ':heavy_check_mark:'
     path: test/01_Math/01_NumberTheory/02.01.05.02_AOJ-ALDS1-1-C.test.cpp
     title: test/01_Math/01_NumberTheory/02.01.05.02_AOJ-ALDS1-1-C.test.cpp
-  - icon: ':x:'
+  - icon: ':heavy_check_mark:'
     path: test/01_Math/01_NumberTheory/02.01.05.02_yukicoder-3030.test.cpp
     title: test/01_Math/01_NumberTheory/02.01.05.02_yukicoder-3030.test.cpp
   - icon: ':heavy_check_mark:'
@@ -51,6 +51,9 @@ data:
   - icon: ':heavy_check_mark:'
     path: test/01_Math/01_NumberTheory/02.02.02_yukicoder-0811.test.cpp
     title: test/01_Math/01_NumberTheory/02.02.02_yukicoder-0811.test.cpp
+  - icon: ':heavy_check_mark:'
+    path: test/01_Math/01_NumberTheory/02.02.03_LC-factorize.test.cpp
+    title: test/01_Math/01_NumberTheory/02.02.03_LC-factorize.test.cpp
   - icon: ':heavy_check_mark:'
     path: test/01_Math/01_NumberTheory/02.03.01_AOJ-NTL-1-D.test.cpp
     title: test/01_Math/01_NumberTheory/02.03.01_AOJ-NTL-1-D.test.cpp
@@ -129,9 +132,9 @@ data:
   - icon: ':heavy_check_mark:'
     path: test/02_DataStructure/02_SegmentTree/00.02.04_AOJ-DSL-2-I.test.cpp
     title: test/02_DataStructure/02_SegmentTree/00.02.04_AOJ-DSL-2-I.test.cpp
-  _isVerificationFailed: true
+  _isVerificationFailed: false
   _pathExtension: hpp
-  _verificationStatusIcon: ':question:'
+  _verificationStatusIcon: ':heavy_check_mark:'
   attributes:
     links: []
   bundledCode: '#line 1 "template/template.hpp"
@@ -153,7 +156,7 @@ data:
   path: template/template.hpp
   requiredBy: []
   timestamp: '2020-12-16 16:02:46+00:00'
-  verificationStatus: LIBRARY_SOME_WA
+  verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
   - test/02_DataStructure/01_UnionFind/01_AOJ-DSL-1-A.test.cpp
   - test/02_DataStructure/01_UnionFind/02.01_AOJ-2664.test.cpp
@@ -180,6 +183,7 @@ data:
   - test/01_Math/01_NumberTheory/02.01.05.02_AOJ-ALDS1-1-C.test.cpp
   - test/01_Math/01_NumberTheory/01.03.01_AOJ-NTL-1-C.test.cpp
   - test/01_Math/01_NumberTheory/02.01.02_AOJ-ALDS1-1-C.test.cpp
+  - test/01_Math/01_NumberTheory/02.02.03_LC-factorize.test.cpp
   - test/01_Math/01_NumberTheory/02.01.04_yukicoder-3030.test.cpp
   - test/01_Math/01_NumberTheory/02.01.05.02_yukicoder-3030.test.cpp
   - test/01_Math/01_NumberTheory/02.01.04_AOJ-ALDS1-1-C.test.cpp

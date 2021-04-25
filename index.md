@@ -243,6 +243,14 @@ data:
     - icon: ':heavy_check_mark:'
       path: 02_DataStructure/02_SegmentTree/03_lazy-segment-tree.hpp
       title: "\u9045\u5EF6\u30BB\u30B0\u30E1\u30F3\u30C8\u30C4\u30EA\u30FC"
+  - name: 03_Graph/01_TreeAlgorithm
+    pages:
+    - icon: ':heavy_check_mark:'
+      path: 03_Graph/01_TreeAlgorithm/01.00_tree-diameter.hpp
+      title: 03_Graph/01_TreeAlgorithm/01.00_tree-diameter.hpp
+    - icon: ':heavy_check_mark:'
+      path: 03_Graph/01_TreeAlgorithm/01.01_tree-diameter-weight.hpp
+      title: 03_Graph/01_TreeAlgorithm/01.01_tree-diameter-weight.hpp
   - name: 06_Others/04_Random
     pages:
     - icon: ':heavy_check_mark:'
@@ -256,6 +264,9 @@ data:
       title: "\u4E71\u6570 (\u5217)"
   - name: template
     pages:
+    - icon: ':heavy_check_mark:'
+      path: template/graph.hpp
+      title: template/graph.hpp
     - icon: ':heavy_check_mark:'
       path: template/template.hpp
       title: template/template.hpp
@@ -399,5 +410,10 @@ data:
     - icon: ':heavy_check_mark:'
       path: test/02_DataStructure/02_SegmentTree/00.02.04_AOJ-DSL-2-I.test.cpp
       title: test/02_DataStructure/02_SegmentTree/00.02.04_AOJ-DSL-2-I.test.cpp
+  - name: test/03_Graph/01_TreeAlgorithm
+    pages:
+    - icon: ':heavy_check_mark:'
+      path: test/03_Graph/01_TreeAlgorithm/01_AOJ-GRL.test.cpp
+      title: test/03_Graph/01_TreeAlgorithm/01_AOJ-GRL.test.cpp
 layout: toppage
 ---

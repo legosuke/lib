@@ -1,0 +1,82 @@
+---
+data:
+  _extendedDependsOn:
+  - icon: ':heavy_check_mark:'
+    path: 03_Graph/01_TreeAlgorithm/01.00_tree-diameter.hpp
+    title: 03_Graph/01_TreeAlgorithm/01.00_tree-diameter.hpp
+  - icon: ':heavy_check_mark:'
+    path: 03_Graph/01_TreeAlgorithm/01.01_tree-diameter-weight.hpp
+    title: 03_Graph/01_TreeAlgorithm/01.01_tree-diameter-weight.hpp
+  - icon: ':heavy_check_mark:'
+    path: template/graph.hpp
+    title: template/graph.hpp
+  - icon: ':heavy_check_mark:'
+    path: template/template.hpp
+    title: template/template.hpp
+  _extendedRequiredBy: []
+  _extendedVerifiedWith: []
+  _isVerificationFailed: false
+  _pathExtension: cpp
+  _verificationStatusIcon: ':heavy_check_mark:'
+  attributes:
+    '*NOT_SPECIAL_COMMENTS*': ''
+    PROBLEM: https://onlinejudge.u-aizu.ac.jp/courses/lesson/5/GRL/all/GRL_5_A
+    links:
+    - https://onlinejudge.u-aizu.ac.jp/courses/lesson/5/GRL/all/GRL_5_A
+  bundledCode: "#line 1 \"test/03_Graph/01_TreeAlgorithm/01_AOJ-GRL.test.cpp\"\n#define\
+    \ PROBLEM \"https://onlinejudge.u-aizu.ac.jp/courses/lesson/5/GRL/all/GRL_5_A\"\
+    \n#line 1 \"template/template.hpp\"\n#include <bits/stdc++.h>\n#define int int64_t\n\
+    using namespace std;\n#line 4 \"template/graph.hpp\"\n\ntemplate <typename T =\
+    \ std::uint32_t>\nstruct Edge {\n    std::uint32_t from, to;\n    T weight;\n\
+    \    Edge(std::uint32_t f, std::uint32_t t, T w) : from(f), to(t), weight(w) {}\n\
+    \    using weight_type = T;\n};\n\nstruct UnweightedEdge : Edge<> {\n    explicit\
+    \ UnweightedEdge(std::uint32_t t) : Edge<>(-1, t, 1) {}\n    explicit UnweightedEdge(std::uint32_t\
+    \ f, std::uint32_t t) : Edge<>(f, t, 1) {}\n};\nusing UnweightedEdges = std::vector<UnweightedEdge>;\n\
+    using UnweightedGraph = std::vector<UnweightedEdges>;\n\ntemplate <typename T\
+    \ = std::uint32_t>\nstruct WeightedEdge : Edge<T> {\n    explicit WeightedEdge(std::uint32_t\
+    \ t, T w) : Edge<T>(-1, t, w) {}\n    explicit WeightedEdge(std::uint32_t f, std::uint32_t\
+    \ t, T w) : Edge<T>(f, t, w) {}\n};\ntemplate <typename T = std::uint32_t> using\
+    \ WeightedEdges = std::vector<WeightedEdge<T>>;\ntemplate <typename T = std::uint32_t>\
+    \ using WeightedGraph = std::vector<WeightedEdges<T>>;\n#line 3 \"03_Graph/01_TreeAlgorithm/01.00_tree-diameter.hpp\"\
+    \n\nnamespace __tree_diameter {\n    std::vector<std::uint32_t> prev_node;\n\n\
+    \    template <class Graph>\n    std::pair<std::uint32_t, typename Graph::value_type::value_type::weight_type>\
+    \ dfs(const Graph& g, std::uint32_t v, std::uint32_t pv) {\n        std::pair<std::uint32_t,\
+    \ typename Graph::value_type::value_type::weight_type> res(v, 0);\n        for\
+    \ (auto e : g[v]) if (e.to != pv) {\n            auto tmp = dfs(g, e.to, v);\n\
+    \            tmp.second += e.weight;\n            if (tmp.second > res.second)\
+    \ {\n                res = tmp;\n                prev_node[e.to] = v;\n      \
+    \      }\n        }\n        return res;\n    }\n}\n#line 3 \"03_Graph/01_TreeAlgorithm/01.01_tree-diameter-weight.hpp\"\
+    \n\ntemplate <class Graph>\ntypename Graph::value_type::value_type::weight_type\
+    \ tree_diameter_weight(const Graph& g) {\n    using namespace __tree_diameter;\n\
+    \    using T = typename Graph::value_type::value_type::weight_type;\n    prev_node.assign(g.size(),\
+    \ -1);\n    std::pair<std::uint32_t, T> leaf1 = dfs(g, 0, -1);\n    prev_node.assign(g.size(),\
+    \ -1);\n    std::pair<std::uint32_t, T> leaf2 = dfs(g, leaf1.first, -1);\n   \
+    \ return leaf2.second;\n}\n#line 4 \"test/03_Graph/01_TreeAlgorithm/01_AOJ-GRL.test.cpp\"\
+    \n\nsigned main() {\n    int n;\n    cin >> n;\n    WeightedGraph<> g(n);\n  \
+    \  for (int i = 0; i < n - 1; ++i) {\n        int s, t, w;\n        cin >> s >>\
+    \ t >> w;\n        g[s].emplace_back(t, w);\n        g[t].emplace_back(s, w);\n\
+    \    }\n    cout << tree_diameter_weight(g) << endl;\n}\n"
+  code: "#define PROBLEM \"https://onlinejudge.u-aizu.ac.jp/courses/lesson/5/GRL/all/GRL_5_A\"\
+    \n#include \"../../../template/template.hpp\"\n#include \"../../../03_Graph/01_TreeAlgorithm/01.01_tree-diameter-weight.hpp\"\
+    \n\nsigned main() {\n    int n;\n    cin >> n;\n    WeightedGraph<> g(n);\n  \
+    \  for (int i = 0; i < n - 1; ++i) {\n        int s, t, w;\n        cin >> s >>\
+    \ t >> w;\n        g[s].emplace_back(t, w);\n        g[t].emplace_back(s, w);\n\
+    \    }\n    cout << tree_diameter_weight(g) << endl;\n}"
+  dependsOn:
+  - template/template.hpp
+  - 03_Graph/01_TreeAlgorithm/01.01_tree-diameter-weight.hpp
+  - 03_Graph/01_TreeAlgorithm/01.00_tree-diameter.hpp
+  - template/graph.hpp
+  isVerificationFile: true
+  path: test/03_Graph/01_TreeAlgorithm/01_AOJ-GRL.test.cpp
+  requiredBy: []
+  timestamp: '2021-04-25 12:31:21+00:00'
+  verificationStatus: TEST_ACCEPTED
+  verifiedWith: []
+documentation_of: test/03_Graph/01_TreeAlgorithm/01_AOJ-GRL.test.cpp
+layout: document
+redirect_from:
+- /verify/test/03_Graph/01_TreeAlgorithm/01_AOJ-GRL.test.cpp
+- /verify/test/03_Graph/01_TreeAlgorithm/01_AOJ-GRL.test.cpp.html
+title: test/03_Graph/01_TreeAlgorithm/01_AOJ-GRL.test.cpp
+---

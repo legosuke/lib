@@ -1,6 +1,6 @@
 #define PROBLEM "https://yukicoder.me/problems/no/3030"
 #include "../../../template/template.hpp"
-#include "../../../01_Math/01_NumberTheory/02.01.05_is-prime.miller-rabin.hpp"
+#include "../../../01_Math/01_NumberTheory/02.01.05.02_is-prime.miller-rabin.deterministic.hpp"
 
 signed main() {
     int n; cin >> n;

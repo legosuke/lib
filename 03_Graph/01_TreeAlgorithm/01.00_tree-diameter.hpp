@@ -1,6 +1,9 @@
 #pragma once
 #include "../../template/graph.hpp"
 
+/**
+ * @brief 木の直径
+ */
 namespace __tree_diameter {
     std::vector<std::uint32_t> prev_node;
 

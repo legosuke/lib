@@ -1,6 +1,10 @@
 #pragma once
 #include "01.00_tree-diameter.hpp"
 
+/**
+ * @brief 木の直径 (重み)
+ * @note O(n)
+ */
 template <class Graph>
 typename Graph::value_type::value_type::weight_type tree_diameter_weight(const Graph& g) {
     using namespace __tree_diameter;

@@ -3,10 +3,10 @@ data:
   _extendedDependsOn:
   - icon: ':heavy_check_mark:'
     path: 03_Graph/01_TreeAlgorithm/01.00_tree-diameter.hpp
-    title: 03_Graph/01_TreeAlgorithm/01.00_tree-diameter.hpp
+    title: "\u6728\u306E\u76F4\u5F84"
   - icon: ':heavy_check_mark:'
     path: 03_Graph/01_TreeAlgorithm/01.01_tree-diameter-weight.hpp
-    title: 03_Graph/01_TreeAlgorithm/01.01_tree-diameter-weight.hpp
+    title: "\u6728\u306E\u76F4\u5F84 (\u91CD\u307F)"
   - icon: ':heavy_check_mark:'
     path: template/graph.hpp
     title: template/graph.hpp
@@ -38,24 +38,26 @@ data:
     \ t, T w) : Edge<T>(f, t, w) {}\n};\ntemplate <typename T = std::uint32_t> using\
     \ WeightedEdges = std::vector<WeightedEdge<T>>;\ntemplate <typename T = std::uint32_t>\
     \ using WeightedGraph = std::vector<WeightedEdges<T>>;\n#line 3 \"03_Graph/01_TreeAlgorithm/01.00_tree-diameter.hpp\"\
-    \n\nnamespace __tree_diameter {\n    std::vector<std::uint32_t> prev_node;\n\n\
-    \    template <class Graph>\n    std::pair<std::uint32_t, typename Graph::value_type::value_type::weight_type>\
+    \n\n/**\n * @brief \u6728\u306E\u76F4\u5F84\n */\nnamespace __tree_diameter {\n\
+    \    std::vector<std::uint32_t> prev_node;\n\n    template <class Graph>\n   \
+    \ std::pair<std::uint32_t, typename Graph::value_type::value_type::weight_type>\
     \ dfs(const Graph& g, std::uint32_t v, std::uint32_t pv) {\n        std::pair<std::uint32_t,\
     \ typename Graph::value_type::value_type::weight_type> res(v, 0);\n        for\
     \ (auto e : g[v]) if (e.to != pv) {\n            auto tmp = dfs(g, e.to, v);\n\
     \            tmp.second += e.weight;\n            if (tmp.second > res.second)\
     \ {\n                res = tmp;\n                prev_node[e.to] = v;\n      \
     \      }\n        }\n        return res;\n    }\n}\n#line 3 \"03_Graph/01_TreeAlgorithm/01.01_tree-diameter-weight.hpp\"\
-    \n\ntemplate <class Graph>\ntypename Graph::value_type::value_type::weight_type\
-    \ tree_diameter_weight(const Graph& g) {\n    using namespace __tree_diameter;\n\
-    \    using T = typename Graph::value_type::value_type::weight_type;\n    prev_node.assign(g.size(),\
-    \ -1);\n    std::pair<std::uint32_t, T> leaf1 = dfs(g, 0, -1);\n    prev_node.assign(g.size(),\
-    \ -1);\n    std::pair<std::uint32_t, T> leaf2 = dfs(g, leaf1.first, -1);\n   \
-    \ return leaf2.second;\n}\n#line 4 \"test/03_Graph/01_TreeAlgorithm/01_AOJ-GRL.test.cpp\"\
-    \n\nsigned main() {\n    int n;\n    cin >> n;\n    WeightedGraph<> g(n);\n  \
-    \  for (int i = 0; i < n - 1; ++i) {\n        int s, t, w;\n        cin >> s >>\
-    \ t >> w;\n        g[s].emplace_back(t, w);\n        g[t].emplace_back(s, w);\n\
-    \    }\n    cout << tree_diameter_weight(g) << endl;\n}\n"
+    \n\n/**\n * @brief \u6728\u306E\u76F4\u5F84 (\u91CD\u307F)\n * @note O(n)\n */\n\
+    template <class Graph>\ntypename Graph::value_type::value_type::weight_type tree_diameter_weight(const\
+    \ Graph& g) {\n    using namespace __tree_diameter;\n    using T = typename Graph::value_type::value_type::weight_type;\n\
+    \    prev_node.assign(g.size(), -1);\n    std::pair<std::uint32_t, T> leaf1 =\
+    \ dfs(g, 0, -1);\n    prev_node.assign(g.size(), -1);\n    std::pair<std::uint32_t,\
+    \ T> leaf2 = dfs(g, leaf1.first, -1);\n    return leaf2.second;\n}\n#line 4 \"\
+    test/03_Graph/01_TreeAlgorithm/01_AOJ-GRL.test.cpp\"\n\nsigned main() {\n    int\
+    \ n;\n    cin >> n;\n    WeightedGraph<> g(n);\n    for (int i = 0; i < n - 1;\
+    \ ++i) {\n        int s, t, w;\n        cin >> s >> t >> w;\n        g[s].emplace_back(t,\
+    \ w);\n        g[t].emplace_back(s, w);\n    }\n    cout << tree_diameter_weight(g)\
+    \ << endl;\n}\n"
   code: "#define PROBLEM \"https://onlinejudge.u-aizu.ac.jp/courses/lesson/5/GRL/all/GRL_5_A\"\
     \n#include \"../../../template/template.hpp\"\n#include \"../../../03_Graph/01_TreeAlgorithm/01.01_tree-diameter-weight.hpp\"\
     \n\nsigned main() {\n    int n;\n    cin >> n;\n    WeightedGraph<> g(n);\n  \
@@ -70,7 +72,7 @@ data:
   isVerificationFile: true
   path: test/03_Graph/01_TreeAlgorithm/01_AOJ-GRL.test.cpp
   requiredBy: []
-  timestamp: '2021-04-25 12:31:21+00:00'
+  timestamp: '2021-04-25 12:39:38+00:00'
   verificationStatus: TEST_ACCEPTED
   verifiedWith: []
 documentation_of: test/03_Graph/01_TreeAlgorithm/01_AOJ-GRL.test.cpp

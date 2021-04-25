@@ -30,9 +30,13 @@ data:
       path: 01_Math/01_NumberTheory/02.01.04_is-prime.strong-pseudoprime.hpp
       title: "\u7D20\u6570\u5224\u5B9A (\u5F37\u64EC\u4F3C\u7D20\u6570)"
     - icon: ':heavy_check_mark:'
-      path: 01_Math/01_NumberTheory/02.01.05_is-prime.miller-rabin.hpp
+      path: 01_Math/01_NumberTheory/02.01.05.01_is-prime.miller-rabin.probablistic.hpp
       title: "\u7D20\u6570\u5224\u5B9A (\u30DF\u30E9\u30FC\u30FB\u30E9\u30D3\u30F3\
-        )"
+        \u3001\u78BA\u7387\u7684)"
+    - icon: ':x:'
+      path: 01_Math/01_NumberTheory/02.01.05.02_is-prime.miller-rabin.deterministic.hpp
+      title: "\u7D20\u6570\u5224\u5B9A (\u30DF\u30E9\u30FC\u30FB\u30E9\u30D3\u30F3\
+        \u3001\u6C7A\u5B9A\u7684)"
     - icon: ':heavy_check_mark:'
       path: 01_Math/01_NumberTheory/02.02.01_prime-factor.naive.hpp
       title: "\u7D20\u56E0\u6570\u5206\u89E3 (\u7D20\u6734\u306A\u624B\u6CD5)"
@@ -40,7 +44,7 @@ data:
       path: 01_Math/01_NumberTheory/02.02.02_prime-factor.sieve.hpp
       title: "\u7D20\u56E0\u6570\u5206\u89E3 (LPF\u3092\u5229\u7528\u3057\u305F\u624B\
         \u6CD5)"
-    - icon: ':heavy_check_mark:'
+    - icon: ':warning:'
       path: 01_Math/01_NumberTheory/02.02.03_prime-factor.rho.hpp
       title: "\u7D20\u56E0\u6570\u5206\u89E3 (\u30ED\u30FC\u6CD5)"
     - icon: ':heavy_check_mark:'
@@ -68,7 +72,7 @@ data:
       title: "\u7BE9 (\u30A2\u30C8\u30AD\u30F3)"
   - name: 01_Math/02_Combinatorics
     pages:
-    - icon: ':heavy_check_mark:'
+    - icon: ':question:'
       path: 01_Math/02_Combinatorics/01.01_mod-operation.hpp
       title: "mod \u4E0A\u306E\u57FA\u672C\u6F14\u7B97"
     - icon: ':heavy_check_mark:'
@@ -83,7 +87,7 @@ data:
     - icon: ':heavy_check_mark:'
       path: 01_Math/02_Combinatorics/01.03.01_mod-pow.hpp
       title: "\u7D2F\u4E57 : $a^n\\bmod{m}$"
-    - icon: ':heavy_check_mark:'
+    - icon: ':question:'
       path: 01_Math/02_Combinatorics/01.03.02_mod-pow.big-mod.hpp
       title: "\u7D2F\u4E57 : $a^n\\bmod{m}$ ($m$ \u304C\u5927\u304D\u3044\u5834\u5408\
         )"
@@ -252,7 +256,7 @@ data:
       title: "\u4E71\u6570 (\u5217)"
   - name: template
     pages:
-    - icon: ':heavy_check_mark:'
+    - icon: ':question:'
       path: template/template.hpp
       title: template/template.hpp
   verificationCategories:
@@ -289,18 +293,24 @@ data:
       path: test/01_Math/01_NumberTheory/02.01.04_yukicoder-3030.test.cpp
       title: test/01_Math/01_NumberTheory/02.01.04_yukicoder-3030.test.cpp
     - icon: ':heavy_check_mark:'
-      path: test/01_Math/01_NumberTheory/02.01.05_AOJ-ALDS1-1-C.test.cpp
-      title: test/01_Math/01_NumberTheory/02.01.05_AOJ-ALDS1-1-C.test.cpp
+      path: test/01_Math/01_NumberTheory/02.01.05.01_AOJ-ALDS1-1-C.test.cpp
+      title: test/01_Math/01_NumberTheory/02.01.05.01_AOJ-ALDS1-1-C.test.cpp
     - icon: ':heavy_check_mark:'
-      path: test/01_Math/01_NumberTheory/02.01.05_yukicoder-3030.test.cpp
-      title: test/01_Math/01_NumberTheory/02.01.05_yukicoder-3030.test.cpp
+      path: test/01_Math/01_NumberTheory/02.01.05.01_yukicoder-3030.test.cpp
+      title: test/01_Math/01_NumberTheory/02.01.05.01_yukicoder-3030.test.cpp
+    - icon: ':x:'
+      path: test/01_Math/01_NumberTheory/02.01.05.02_AOJ-ALDS1-1-C.test.cpp
+      title: test/01_Math/01_NumberTheory/02.01.05.02_AOJ-ALDS1-1-C.test.cpp
+    - icon: ':x:'
+      path: test/01_Math/01_NumberTheory/02.01.05.02_yukicoder-3030.test.cpp
+      title: test/01_Math/01_NumberTheory/02.01.05.02_yukicoder-3030.test.cpp
     - icon: ':heavy_check_mark:'
       path: test/01_Math/01_NumberTheory/02.02.01_AOJ-NTL-1-A.test.cpp
       title: test/01_Math/01_NumberTheory/02.02.01_AOJ-NTL-1-A.test.cpp
     - icon: ':heavy_check_mark:'
       path: test/01_Math/01_NumberTheory/02.02.02_yukicoder-0811.test.cpp
       title: test/01_Math/01_NumberTheory/02.02.02_yukicoder-0811.test.cpp
-    - icon: ':heavy_check_mark:'
+    - icon: ':x:'
       path: test/01_Math/01_NumberTheory/02.02.03_LC-factorize.test.cpp
       title: test/01_Math/01_NumberTheory/02.02.03_LC-factorize.test.cpp
     - icon: ':heavy_check_mark:'

@@ -20,7 +20,7 @@ signed main() {
     v = M * v;
     modint998244353 ans = 0;
     for (int i = 0; i < K * K; ++i) {
-        ans += v[i * K].val();
+        ans += v[i * K].get_val();
     }
     cout << ans << endl;
 }

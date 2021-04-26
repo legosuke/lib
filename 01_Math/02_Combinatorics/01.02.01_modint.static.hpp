@@ -23,7 +23,7 @@ public:
     std::uint32_t get_mod() const {
         return MOD;
     }
-    std::uint32_t val() const {
+    std::uint32_t get_val() const {
         return _v;
     }
 

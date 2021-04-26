@@ -1,9 +1,9 @@
 #pragma once
-#include <cmath>
 #include "../02_Combinatorics/01.02.02_modint.dynamic.hpp"
 
 /**
  * @brief フィボナッチ数 (Binet)
+ * @note O(log(n))
  * @warning m は 2 と互いに素
  */
 std::uint64_t fibonacci_number(std::uint64_t n, std::uint64_t m) {

@@ -14,7 +14,7 @@ public:
     using value_type = T;
 
     matrix_vector() = default;
-    explicit matrix_vector(std::uint32_t n, std::uint32_t m, T x = T(0)) { init(n, m, x); }
+    matrix_vector(std::uint32_t n, std::uint32_t m, T x = T(0)) { init(n, m, x); }
 
     std::uint32_t height() const {
         return _n;
@@ -147,7 +147,7 @@ template <class T>
 matrix_vector<T> operator ^ (matrix_vector<T> A, std::uint64_t n) {
     assert(A.height() == A.width());
     matrix_vector<T> B(A.height(), A.width());
-    for (int i = 0; i < A.height(); ++i) B[i][i] = T(1);
+    for (std::uint32_t i = 0; i < A.height(); ++i) B[i][i] = T(1);
     while (n) {
         if (n & 1) B = B * A;
         A = A * A;

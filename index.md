@@ -77,6 +77,9 @@ data:
       path: 01_Math/01_NumberTheory/04.01.02_fibonacci-number.matrix-power.hpp
       title: "\u30D5\u30A3\u30DC\u30CA\u30C3\u30C1\u6570 (\u884C\u5217\u7D2F\u4E57\
         )"
+    - icon: ':heavy_check_mark:'
+      path: 01_Math/01_NumberTheory/04.01.03_fibonacci-number.kitamasa.hpp
+      title: "\u30D5\u30A3\u30DC\u30CA\u30C3\u30C1\u6570 (Kitamasa\u6CD5)"
   - name: 01_Math/02_Combinatorics
     pages:
     - icon: ':heavy_check_mark:'
@@ -261,6 +264,11 @@ data:
     - icon: ':warning:'
       path: 03_Graph/01_TreeAlgorithm/01.02_tree-diameter.path.hpp
       title: "\u6728\u306E\u76F4\u5F84 (\u30D1\u30B9)"
+  - name: 05_DP/03_Efficient
+    pages:
+    - icon: ':heavy_check_mark:'
+      path: 05_DP/03_Efficient/02.01_kitamasa.hpp
+      title: "Kitamasa \u6CD5"
   - name: 06_Others/04_Random
     pages:
     - icon: ':heavy_check_mark:'
@@ -352,6 +360,9 @@ data:
     - icon: ':heavy_check_mark:'
       path: test/01_Math/01_NumberTheory/04.01.02_AOJ-ALDS1-10-A.test.cpp
       title: test/01_Math/01_NumberTheory/04.01.02_AOJ-ALDS1-10-A.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: test/01_Math/01_NumberTheory/04.01.03_AOJ-ALDS1-10-A.test.cpp
+      title: test/01_Math/01_NumberTheory/04.01.03_AOJ-ALDS1-10-A.test.cpp
   - name: test/01_Math/02_Combinatorics
     pages:
     - icon: ':heavy_check_mark:'

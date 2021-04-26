@@ -12,7 +12,7 @@ data:
     - icon: ':heavy_check_mark:'
       path: 01_Math/01_NumberTheory/01.03.01_lcm.hpp
       title: "\u6700\u5C0F\u516C\u500D\u6570"
-    - icon: ':heavy_check_mark:'
+    - icon: ':question:'
       path: 01_Math/01_NumberTheory/01.04.01_ext-gcd.hpp
       title: "\u62E1\u5F35\u30E6\u30FC\u30AF\u30EA\u30C3\u30C9\u306E\u4E92\u9664\u6CD5"
     - icon: ':heavy_check_mark:'
@@ -70,27 +70,27 @@ data:
     - icon: ':heavy_check_mark:'
       path: 01_Math/01_NumberTheory/03.01.03_sieve.atkin.hpp
       title: "\u7BE9 (\u30A2\u30C8\u30AD\u30F3)"
-    - icon: ':warning:'
+    - icon: ':x:'
       path: 01_Math/01_NumberTheory/04.01.01_fibonacci-number.binet.hpp
       title: "\u30D5\u30A3\u30DC\u30CA\u30C3\u30C1\u6570 (Binet)"
   - name: 01_Math/02_Combinatorics
     pages:
-    - icon: ':heavy_check_mark:'
+    - icon: ':question:'
       path: 01_Math/02_Combinatorics/01.01_mod-operation.hpp
       title: "mod \u4E0A\u306E\u57FA\u672C\u6F14\u7B97"
-    - icon: ':heavy_check_mark:'
+    - icon: ':question:'
       path: 01_Math/02_Combinatorics/01.02.00_modint-base.hpp
       title: "modint \u69CB\u9020\u4F53 (base)"
     - icon: ':heavy_check_mark:'
       path: 01_Math/02_Combinatorics/01.02.01_modint.static.hpp
       title: "modint \u69CB\u9020\u4F53 (\u9759\u7684 MOD)"
-    - icon: ':heavy_check_mark:'
+    - icon: ':question:'
       path: 01_Math/02_Combinatorics/01.02.02_modint.dynamic.hpp
       title: "modint \u69CB\u9020\u4F53 (\u52D5\u7684 MOD)"
     - icon: ':heavy_check_mark:'
       path: 01_Math/02_Combinatorics/01.03.01_mod-pow.hpp
       title: "\u7D2F\u4E57 : $a^n\\bmod{m}$"
-    - icon: ':heavy_check_mark:'
+    - icon: ':question:'
       path: 01_Math/02_Combinatorics/01.03.02_mod-pow.big-mod.hpp
       title: "\u7D2F\u4E57 : $a^n\\bmod{m}$ ($m$ \u304C\u5927\u304D\u3044\u5834\u5408\
         )"
@@ -101,7 +101,7 @@ data:
       path: 01_Math/02_Combinatorics/01.04.01_mod-inv.fermat.hpp
       title: "\u9006\u5143 : $a^{-1}\\bmod{p}$ (\u30D5\u30A7\u30EB\u30DE\u30FC\u306E\
         \u5C0F\u5B9A\u7406)"
-    - icon: ':heavy_check_mark:'
+    - icon: ':question:'
       path: 01_Math/02_Combinatorics/01.04.03_mod-inv.ext-gcd.hpp
       title: "\u9006\u5143 : $a^{-1}\\bmod{m}$ (\u62E1\u5F35\u30E6\u30FC\u30AF\u30EA\
         \u30C3\u30C9\u306E\u4E92\u52A9\u6CD5)"
@@ -273,7 +273,7 @@ data:
     - icon: ':heavy_check_mark:'
       path: template/graph.hpp
       title: template/graph.hpp
-    - icon: ':heavy_check_mark:'
+    - icon: ':question:'
       path: template/template.hpp
       title: template/template.hpp
   verificationCategories:
@@ -342,6 +342,9 @@ data:
     - icon: ':heavy_check_mark:'
       path: test/01_Math/01_NumberTheory/03.01.03_AOJ-1276.test.cpp
       title: test/01_Math/01_NumberTheory/03.01.03_AOJ-1276.test.cpp
+    - icon: ':x:'
+      path: test/01_Math/01_NumberTheory/04.01.01_AOJ-ALDS1-10-A.test.cpp
+      title: test/01_Math/01_NumberTheory/04.01.01_AOJ-ALDS1-10-A.test.cpp
   - name: test/01_Math/02_Combinatorics
     pages:
     - icon: ':heavy_check_mark:'

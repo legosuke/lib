@@ -16,7 +16,7 @@ inline M add(T a, U b, M m) {
 
 template <typename T, typename U, typename M>
 inline M sub(T a, U b, M m) {
-    return mod(mod(a, m) - mod(b, m), m);
+    return mod(mod(a, m) + m - mod(b, m), m);
 }
 
 template <typename T, typename U, typename M>

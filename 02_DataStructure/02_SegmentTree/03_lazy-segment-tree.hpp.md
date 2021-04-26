@@ -25,12 +25,12 @@ data:
     document_title: "\u9045\u5EF6\u30BB\u30B0\u30E1\u30F3\u30C8\u30C4\u30EA\u30FC"
     links: []
   bundledCode: "#line 2 \"02_DataStructure/02_SegmentTree/03_lazy-segment-tree.hpp\"\
-    \n#include <cassert>\n#include <cstdint>\n#include <type_traits>\n#include <vector>\n\
-    #line 3 \"02_DataStructure/02_SegmentTree/00.00_monoid.base.hpp\"\n\n/**\n * @brief\
-    \ \u30E2\u30CE\u30A4\u30C9 (base)\n */\nclass monoid_base {};\n\ntemplate <class\
-    \ T>\nusing is_monoid = std::is_base_of<monoid_base, T>;\n#line 7 \"02_DataStructure/02_SegmentTree/03_lazy-segment-tree.hpp\"\
-    \n\n/**\n * @brief \u9045\u5EF6\u30BB\u30B0\u30E1\u30F3\u30C8\u30C4\u30EA\u30FC\
-    \n */\ntemplate <class MonoidX, class MonoidF, class Mapping>\nclass lazy_segment_tree\
+    \n#include <cassert>\n#include <cstdint>\n#include <vector>\n#line 2 \"02_DataStructure/02_SegmentTree/00.00_monoid.base.hpp\"\
+    \n#include <type_traits>\n\n/**\n * @brief \u30E2\u30CE\u30A4\u30C9 (base)\n */\n\
+    class monoid_base {};\n\ntemplate <class T>\nusing is_monoid = std::is_base_of<monoid_base,\
+    \ T>;\n#line 6 \"02_DataStructure/02_SegmentTree/03_lazy-segment-tree.hpp\"\n\n\
+    /**\n * @brief \u9045\u5EF6\u30BB\u30B0\u30E1\u30F3\u30C8\u30C4\u30EA\u30FC\n\
+    \ */\ntemplate <class MonoidX, class MonoidF, class Mapping>\nclass lazy_segment_tree\
     \ {\n    static_assert(is_monoid<MonoidX>::value);\n    static_assert(is_monoid<MonoidF>::value);\n\
     \    static_assert(is_mapping<Mapping>::value);\n\npublic:\n    using data_type\
     \ = typename MonoidX::value_type;\n    using lazy_type = typename MonoidF::value_type;\n\
@@ -77,10 +77,10 @@ data:
     \    std::uint32_t _size, _level;\n    std::vector<data_type> _data;\n    std::vector<lazy_type>\
     \ _lazy;\n    const MonoidX _monoid_x = MonoidX();\n    const MonoidF _monoid_f\
     \ = MonoidF();\n    const Mapping _mapping = Mapping();\n};\n"
-  code: "#pragma once\n#include <cassert>\n#include <cstdint>\n#include <type_traits>\n\
-    #include <vector>\n#include \"00.00_monoid.base.hpp\"\n\n/**\n * @brief \u9045\
-    \u5EF6\u30BB\u30B0\u30E1\u30F3\u30C8\u30C4\u30EA\u30FC\n */\ntemplate <class MonoidX,\
-    \ class MonoidF, class Mapping>\nclass lazy_segment_tree {\n    static_assert(is_monoid<MonoidX>::value);\n\
+  code: "#pragma once\n#include <cassert>\n#include <cstdint>\n#include <vector>\n\
+    #include \"00.00_monoid.base.hpp\"\n\n/**\n * @brief \u9045\u5EF6\u30BB\u30B0\u30E1\
+    \u30F3\u30C8\u30C4\u30EA\u30FC\n */\ntemplate <class MonoidX, class MonoidF, class\
+    \ Mapping>\nclass lazy_segment_tree {\n    static_assert(is_monoid<MonoidX>::value);\n\
     \    static_assert(is_monoid<MonoidF>::value);\n    static_assert(is_mapping<Mapping>::value);\n\
     \npublic:\n    using data_type = typename MonoidX::value_type;\n    using lazy_type\
     \ = typename MonoidF::value_type;\n    static_assert(std::is_invocable_r<data_type,\
@@ -132,7 +132,7 @@ data:
   isVerificationFile: false
   path: 02_DataStructure/02_SegmentTree/03_lazy-segment-tree.hpp
   requiredBy: []
-  timestamp: '2021-03-25 11:25:32+00:00'
+  timestamp: '2021-04-26 12:50:54+00:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
   - test/02_DataStructure/02_SegmentTree/00.02.02_AOJ-DSL-2-G.test.cpp

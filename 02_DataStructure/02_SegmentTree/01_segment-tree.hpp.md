@@ -15,7 +15,7 @@ data:
   - icon: ':heavy_check_mark:'
     path: test/02_DataStructure/02_SegmentTree/00.01.02.01_AOJ-DSL-2-A.test.cpp
     title: test/02_DataStructure/02_SegmentTree/00.01.02.01_AOJ-DSL-2-A.test.cpp
-  - icon: ':x:'
+  - icon: ':heavy_check_mark:'
     path: test/02_DataStructure/02_SegmentTree/00.01.02.02_AOJ-DSL-2-A.test.cpp
     title: test/02_DataStructure/02_SegmentTree/00.01.02.02_AOJ-DSL-2-A.test.cpp
   - icon: ':heavy_check_mark:'

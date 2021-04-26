@@ -21,7 +21,7 @@ public:
     }
 
     /**
-     * @note O(|E|⋅log(|V|))
+     * @note O((|V| + |E|)⋅log(|V|))
      */
     void build(std::uint32_t s) {
         using P = std::pair<T, std::uint32_t>;

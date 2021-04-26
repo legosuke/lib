@@ -7,7 +7,7 @@ signed main() {
     int n, q;
     cin >> n >> q;
     segment_tree<min_index_monoid<int>> st(n);
-    vector<int> A(n, (1LL << 31) - 1);
+    vector<int> A(n, 0x7fffffff);
     for (int i = 0; i < q; ++i) {
         int com, x, y;
         cin >> com >> x >> y;

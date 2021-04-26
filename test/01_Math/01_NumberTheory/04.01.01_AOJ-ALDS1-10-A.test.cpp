@@ -5,5 +5,5 @@
 signed main() {
     int n;
     cin >> n;
-    cout << fibonacci_number(n, 1000000000001) << endl;
+    cout << fibonacci_number(n + 1, 1000000000001) << endl;
 }

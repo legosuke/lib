@@ -73,6 +73,10 @@ data:
     - icon: ':heavy_check_mark:'
       path: 01_Math/01_NumberTheory/04.01.01_fibonacci-number.binet.hpp
       title: "\u30D5\u30A3\u30DC\u30CA\u30C3\u30C1\u6570 (Binet)"
+    - icon: ':heavy_check_mark:'
+      path: 01_Math/01_NumberTheory/04.01.02_fibonacci-number.matrix-power.hpp
+      title: "\u30D5\u30A3\u30DC\u30CA\u30C3\u30C1\u6570 (\u884C\u5217\u7D2F\u4E57\
+        )"
   - name: 01_Math/02_Combinatorics
     pages:
     - icon: ':heavy_check_mark:'
@@ -147,7 +151,7 @@ data:
     - icon: ':heavy_check_mark:'
       path: 01_Math/03_Algebra/01.01.01.01_matrix.vector.hpp
       title: "\u884C\u5217 (vector)"
-    - icon: ':warning:'
+    - icon: ':heavy_check_mark:'
       path: 01_Math/03_Algebra/01.01.01.02_matrix.array.hpp
       title: "\u884C\u5217 (array)"
     - icon: ':warning:'
@@ -345,6 +349,9 @@ data:
     - icon: ':heavy_check_mark:'
       path: test/01_Math/01_NumberTheory/04.01.01_AOJ-ALDS1-10-A.test.cpp
       title: test/01_Math/01_NumberTheory/04.01.01_AOJ-ALDS1-10-A.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: test/01_Math/01_NumberTheory/04.01.02_AOJ-ALDS1-10-A.test.cpp
+      title: test/01_Math/01_NumberTheory/04.01.02_AOJ-ALDS1-10-A.test.cpp
   - name: test/01_Math/02_Combinatorics
     pages:
     - icon: ':heavy_check_mark:'

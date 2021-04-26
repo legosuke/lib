@@ -1,11 +1,8 @@
 #pragma once
-#include <cassert>
-#include <cstdint>
 #include <iostream>
-#include <type_traits>
 #include "01.01_mod-operation.hpp"
 #include "01.02.00_modint-base.hpp"
-#include "01.03.01_mod-pow.hpp"
+#include "01.03.02_mod-pow.big-mod.hpp"
 #include "01.04.03_mod-inv.ext-gcd.hpp"
 
 /**
@@ -18,35 +15,31 @@ class dynamic_modint : public modint_base {
 public:
     dynamic_modint() = default;
     template <typename Integer>
-    dynamic_modint(const Integer& v) : _v((v % MOD + MOD) % MOD) {}
+    dynamic_modint(const Integer& v) : _v(mod(v, MOD)) {}
 
-    static void set_mod(const std::uint32_t& m) {
+    static void set_mod(const std::uint64_t& m) {
         MOD = m;
     }
-    std::uint32_t get_mod() const {
+    std::uint64_t get_mod() const {
         return MOD;
     }
-    std::uint32_t get_val() const {
+    std::uint64_t get_val() const {
         return _v;
     }
 
     template <typename Integer>
     mint& operator += (const Integer& rhs) {
-        _v += mint(rhs)._v;
-        if (_v >= MOD) _v -= MOD;
+        _v = add(_v, mint(rhs)._v, MOD);
         return *this;
     }
     template <typename Integer>
     mint& operator -= (const Integer& rhs)  {
-        _v -= mint(rhs)._v;
-        if (_v >= MOD) _v += MOD;
+        _v = sub(_v, mint(rhs)._v, MOD);
         return *this;
     }
     template <typename Integer>
     mint& operator *= (const Integer& rhs)  {
-        std::uint64_t tmp = _v;
-        tmp *= mint(rhs)._v;
-        _v = (std::uint32_t)(tmp % MOD);
+        _v = mul(_v, mint(rhs)._v, MOD);
         return *this;
     }
     template <typename Integer>
@@ -56,7 +49,7 @@ public:
     template <typename Integer>
     mint& operator = (const Integer& v) {
         static_assert(std::is_integral<Integer>::value);
-        _v = (v % MOD + MOD) % MOD;
+        _v = mod(v, MOD);
         return *this;
     }
     mint pow(std::uint64_t n) const {
@@ -78,63 +71,63 @@ public:
     }
 
 protected:
-    static std::uint32_t MOD;
-    std::uint32_t _v;
+    static std::uint64_t MOD;
+    std::uint64_t _v;
 };
 using modint = dynamic_modint<0xffffffff>;
 
 template <std::uint32_t ID>
-std::uint32_t dynamic_modint<ID>::MOD = 1000000007;
+std::uint64_t dynamic_modint<ID>::MOD = 1000000007;
 
-template <std::uint32_t MOD>
-const dynamic_modint<MOD> operator + (const dynamic_modint<MOD>& lhs, const dynamic_modint<MOD>& rhs) {
-    return dynamic_modint<MOD>(lhs) += rhs;
+template <std::uint32_t ID>
+const dynamic_modint<ID> operator + (const dynamic_modint<ID>& lhs, const dynamic_modint<ID>& rhs) {
+    return dynamic_modint<ID>(lhs) += rhs;
 }
-template <std::uint32_t MOD, typename Integer>
-const dynamic_modint<MOD> operator + (const dynamic_modint<MOD>& lhs, const Integer& rhs) {
-    return dynamic_modint<MOD>(lhs) += rhs;
+template <std::uint32_t ID, typename Integer>
+const dynamic_modint<ID> operator + (const dynamic_modint<ID>& lhs, const Integer& rhs) {
+    return dynamic_modint<ID>(lhs) += rhs;
 }
-template <std::uint32_t MOD, typename Integer>
-const dynamic_modint<MOD> operator + (const Integer& lhs, const dynamic_modint<MOD>& rhs) {
-    return dynamic_modint<MOD>(rhs) += lhs;
-}
-
-template <std::uint32_t MOD>
-const dynamic_modint<MOD> operator - (const dynamic_modint<MOD>& lhs, const dynamic_modint<MOD>& rhs) {
-    return dynamic_modint<MOD>(lhs) -= rhs;
-}
-template <std::uint32_t MOD, typename Integer>
-const dynamic_modint<MOD> operator - (const dynamic_modint<MOD>& lhs, const Integer& rhs) {
-    return dynamic_modint<MOD>(lhs) -= rhs;
-}
-template <std::uint32_t MOD, typename Integer>
-const dynamic_modint<MOD> operator - (const Integer& lhs, const dynamic_modint<MOD>& rhs) {
-    return dynamic_modint<MOD>(rhs) -= lhs;
+template <std::uint32_t ID, typename Integer>
+const dynamic_modint<ID> operator + (const Integer& lhs, const dynamic_modint<ID>& rhs) {
+    return dynamic_modint<ID>(rhs) += lhs;
 }
 
-template <std::uint32_t MOD>
-const dynamic_modint<MOD> operator * (const dynamic_modint<MOD>& lhs, const dynamic_modint<MOD>& rhs) {
-    return dynamic_modint<MOD>(lhs) *= rhs;
+template <std::uint32_t ID>
+const dynamic_modint<ID> operator - (const dynamic_modint<ID>& lhs, const dynamic_modint<ID>& rhs) {
+    return dynamic_modint<ID>(lhs) -= rhs;
 }
-template <std::uint32_t MOD, typename Integer>
-const dynamic_modint<MOD> operator * (const dynamic_modint<MOD>& lhs, const Integer& rhs) {
-    return dynamic_modint<MOD>(lhs) *= rhs;
+template <std::uint32_t ID, typename Integer>
+const dynamic_modint<ID> operator - (const dynamic_modint<ID>& lhs, const Integer& rhs) {
+    return dynamic_modint<ID>(lhs) -= rhs;
 }
-template <std::uint32_t MOD, typename Integer>
-const dynamic_modint<MOD> operator * (const Integer& lhs, const dynamic_modint<MOD>& rhs) {
-    static_assert(std::is_same<Integer, dynamic_modint<MOD>>::value == false);
-    return dynamic_modint<MOD>(rhs) *= lhs;
+template <std::uint32_t ID, typename Integer>
+const dynamic_modint<ID> operator - (const Integer& lhs, const dynamic_modint<ID>& rhs) {
+    return dynamic_modint<ID>(rhs) -= lhs;
 }
 
-template <std::uint32_t MOD>
-const dynamic_modint<MOD> operator / (const dynamic_modint<MOD>& lhs, const dynamic_modint<MOD>& rhs) {
-    return dynamic_modint<MOD>(lhs) /= rhs;
+template <std::uint32_t ID>
+const dynamic_modint<ID> operator * (const dynamic_modint<ID>& lhs, const dynamic_modint<ID>& rhs) {
+    return dynamic_modint<ID>(lhs) *= rhs;
 }
-template <std::uint32_t MOD, typename Integer>
-const dynamic_modint<MOD> operator / (const dynamic_modint<MOD>& lhs, const Integer& rhs) {
-    return dynamic_modint<MOD>(lhs) /= rhs;
+template <std::uint32_t ID, typename Integer>
+const dynamic_modint<ID> operator * (const dynamic_modint<ID>& lhs, const Integer& rhs) {
+    return dynamic_modint<ID>(lhs) *= rhs;
 }
-template <std::uint32_t MOD, typename Integer>
-const dynamic_modint<MOD> operator / (const Integer& lhs, const dynamic_modint<MOD>& rhs) {
-    return dynamic_modint<MOD>(rhs) /= lhs;
+template <std::uint32_t ID, typename Integer>
+const dynamic_modint<ID> operator * (const Integer& lhs, const dynamic_modint<ID>& rhs) {
+    static_assert(std::is_same<Integer, dynamic_modint<ID>>::value == false);
+    return dynamic_modint<ID>(rhs) *= lhs;
+}
+
+template <std::uint32_t ID>
+const dynamic_modint<ID> operator / (const dynamic_modint<ID>& lhs, const dynamic_modint<ID>& rhs) {
+    return dynamic_modint<ID>(lhs) /= rhs;
+}
+template <std::uint32_t ID, typename Integer>
+const dynamic_modint<ID> operator / (const dynamic_modint<ID>& lhs, const Integer& rhs) {
+    return dynamic_modint<ID>(lhs) /= rhs;
+}
+template <std::uint32_t ID, typename Integer>
+const dynamic_modint<ID> operator / (const Integer& lhs, const dynamic_modint<ID>& rhs) {
+    return dynamic_modint<ID>(rhs) /= lhs;
 }

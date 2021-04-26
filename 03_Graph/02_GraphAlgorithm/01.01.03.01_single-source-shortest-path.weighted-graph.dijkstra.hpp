@@ -49,6 +49,10 @@ public:
         return dist[t];
     }
 
+    std::vector<T> distance_list() {
+        return dist;
+    }
+
     /**
      * @note O(min(|V|, |E|))
      */

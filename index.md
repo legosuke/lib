@@ -251,6 +251,9 @@ data:
     - icon: ':heavy_check_mark:'
       path: 03_Graph/01_TreeAlgorithm/01.01_tree-diameter-weight.hpp
       title: "\u6728\u306E\u76F4\u5F84 (\u91CD\u307F)"
+    - icon: ':warning:'
+      path: 03_Graph/01_TreeAlgorithm/01.02_tree-diameter.path.hpp
+      title: "\u6728\u306E\u76F4\u5F84 (\u30D1\u30B9)"
   - name: 06_Others/04_Random
     pages:
     - icon: ':heavy_check_mark:'

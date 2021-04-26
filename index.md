@@ -274,7 +274,7 @@ data:
     pages:
     - icon: ':heavy_check_mark:'
       path: 03_Graph/02_GraphAlgorithm/01.01.03.01_single-source-shortest-path.weighted-graph.dijkstra.hpp
-      title: 03_Graph/02_GraphAlgorithm/01.01.03.01_single-source-shortest-path.weighted-graph.dijkstra.hpp
+      title: "\u5358\u4E00\u59CB\u70B9\u6700\u77ED\u7D4C\u8DEF (Dijkstra)"
   - name: 05_DP/03_Efficient
     pages:
     - icon: ':heavy_check_mark:'

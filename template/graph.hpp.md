@@ -13,8 +13,8 @@ data:
     title: "\u6728\u306E\u76F4\u5F84 (\u30D1\u30B9)"
   _extendedVerifiedWith:
   - icon: ':heavy_check_mark:'
-    path: test/03_Graph/01_TreeAlgorithm/01_AOJ-GRL.test.cpp
-    title: test/03_Graph/01_TreeAlgorithm/01_AOJ-GRL.test.cpp
+    path: test/03_Graph/01_TreeAlgorithm/01.01_AOJ-GRL-5-A.test.cpp
+    title: test/03_Graph/01_TreeAlgorithm/01.01_AOJ-GRL-5-A.test.cpp
   _isVerificationFailed: false
   _pathExtension: hpp
   _verificationStatusIcon: ':heavy_check_mark:'
@@ -55,7 +55,7 @@ data:
   timestamp: '2021-04-25 12:31:21+00:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
-  - test/03_Graph/01_TreeAlgorithm/01_AOJ-GRL.test.cpp
+  - test/03_Graph/01_TreeAlgorithm/01.01_AOJ-GRL-5-A.test.cpp
 documentation_of: template/graph.hpp
 layout: document
 redirect_from:

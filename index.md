@@ -452,7 +452,7 @@ data:
   - name: test/03_Graph/01_TreeAlgorithm
     pages:
     - icon: ':heavy_check_mark:'
-      path: test/03_Graph/01_TreeAlgorithm/01_AOJ-GRL.test.cpp
-      title: test/03_Graph/01_TreeAlgorithm/01_AOJ-GRL.test.cpp
+      path: test/03_Graph/01_TreeAlgorithm/01.01_AOJ-GRL-5-A.test.cpp
+      title: test/03_Graph/01_TreeAlgorithm/01.01_AOJ-GRL-5-A.test.cpp
 layout: toppage
 ---

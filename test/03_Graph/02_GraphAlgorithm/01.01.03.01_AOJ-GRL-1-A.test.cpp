@@ -9,7 +9,7 @@ signed main() {
     for (int i = 0; i < E; ++i) {
         int s, t, d;
         cin >> s >> t >> d;
-        g.add_edge(s, t, d);
+        g[s].emplace_back(t, d);
     }
     g.build(r);
     for (int i = 0; i < V; ++i) {

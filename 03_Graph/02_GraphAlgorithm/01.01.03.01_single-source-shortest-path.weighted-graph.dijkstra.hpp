@@ -5,15 +5,24 @@
 #include <type_traits>
 #include "../../template/graph.hpp"
 
+/**
+ * @brief 単一始点最短経路 (Dijkstra)
+ */
 template <typename T>
 class Dijkstra {
 public:
     Dijkstra(std::uint32_t n) : g(n) {}
 
-    void add_edge(std::uint32_t a, std::uint32_t b, T w) {
-        g[a].emplace_back(b, w);
+    const WeightedEdges<T>& operator [] (std::uint32_t i) const {
+        return (g.at(i));
+    }
+    WeightedEdges<T>& operator [] (std::uint32_t i) {
+        return (g.at(i));
     }
 
+    /**
+     * @note O(|E|⋅log(|V|))
+     */
     void build(std::uint32_t s) {
         using P = std::pair<T, std::uint32_t>;
         std::priority_queue<P, std::vector<P>, std::greater<P>> que;
@@ -40,6 +49,9 @@ public:
         return dist[t];
     }
 
+    /**
+     * @note O(min(|V|, |E|))
+     */
     std::vector<std::uint32_t> path(std::uint32_t t) {
         std::vector<std::uint32_t> res(t);
         while (prev[res.back()] != -1) {

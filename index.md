@@ -270,6 +270,11 @@ data:
     - icon: ':warning:'
       path: 03_Graph/01_TreeAlgorithm/01.02_tree-diameter.path.hpp
       title: "\u6728\u306E\u76F4\u5F84 (\u30D1\u30B9)"
+  - name: 03_Graph/02_GraphAlgorithm
+    pages:
+    - icon: ':heavy_check_mark:'
+      path: 03_Graph/02_GraphAlgorithm/01.01.03.01_single-source-shortest-path.weighted-graph.dijkstra.hpp
+      title: 03_Graph/02_GraphAlgorithm/01.01.03.01_single-source-shortest-path.weighted-graph.dijkstra.hpp
   - name: 05_DP/03_Efficient
     pages:
     - icon: ':heavy_check_mark:'
@@ -454,5 +459,10 @@ data:
     - icon: ':heavy_check_mark:'
       path: test/03_Graph/01_TreeAlgorithm/01.01_AOJ-GRL-5-A.test.cpp
       title: test/03_Graph/01_TreeAlgorithm/01.01_AOJ-GRL-5-A.test.cpp
+  - name: test/03_Graph/02_GraphAlgorithm
+    pages:
+    - icon: ':heavy_check_mark:'
+      path: test/03_Graph/02_GraphAlgorithm/01.01.03.01_AOJ-GRL-1-A.test.cpp
+      title: test/03_Graph/02_GraphAlgorithm/01.01.03.01_AOJ-GRL-1-A.test.cpp
 layout: toppage
 ---

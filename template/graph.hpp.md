@@ -11,10 +11,16 @@ data:
   - icon: ':warning:'
     path: 03_Graph/01_TreeAlgorithm/01.02_tree-diameter.path.hpp
     title: "\u6728\u306E\u76F4\u5F84 (\u30D1\u30B9)"
+  - icon: ':heavy_check_mark:'
+    path: 03_Graph/02_GraphAlgorithm/01.01.03.01_single-source-shortest-path.weighted-graph.dijkstra.hpp
+    title: 03_Graph/02_GraphAlgorithm/01.01.03.01_single-source-shortest-path.weighted-graph.dijkstra.hpp
   _extendedVerifiedWith:
   - icon: ':heavy_check_mark:'
     path: test/03_Graph/01_TreeAlgorithm/01.01_AOJ-GRL-5-A.test.cpp
     title: test/03_Graph/01_TreeAlgorithm/01.01_AOJ-GRL-5-A.test.cpp
+  - icon: ':heavy_check_mark:'
+    path: test/03_Graph/02_GraphAlgorithm/01.01.03.01_AOJ-GRL-1-A.test.cpp
+    title: test/03_Graph/02_GraphAlgorithm/01.01.03.01_AOJ-GRL-1-A.test.cpp
   _isVerificationFailed: false
   _pathExtension: hpp
   _verificationStatusIcon: ':heavy_check_mark:'
@@ -49,12 +55,14 @@ data:
   isVerificationFile: false
   path: template/graph.hpp
   requiredBy:
+  - 03_Graph/02_GraphAlgorithm/01.01.03.01_single-source-shortest-path.weighted-graph.dijkstra.hpp
   - 03_Graph/01_TreeAlgorithm/01.00_tree-diameter.hpp
   - 03_Graph/01_TreeAlgorithm/01.01_tree-diameter-weight.hpp
   - 03_Graph/01_TreeAlgorithm/01.02_tree-diameter.path.hpp
   timestamp: '2021-04-25 12:31:21+00:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
+  - test/03_Graph/02_GraphAlgorithm/01.01.03.01_AOJ-GRL-1-A.test.cpp
   - test/03_Graph/01_TreeAlgorithm/01.01_AOJ-GRL-5-A.test.cpp
 documentation_of: template/graph.hpp
 layout: document

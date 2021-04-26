@@ -1,7 +1,7 @@
 #pragma once
 #include <cstdint>
 #include "00.02.00_mapping.base.hpp"
-#include "00.01.01_monoid.min.hpp"
+#include "00.01.01.01_monoid.min.hpp"
 #include "00.01.03_monoid.plus.hpp"
 
 /**

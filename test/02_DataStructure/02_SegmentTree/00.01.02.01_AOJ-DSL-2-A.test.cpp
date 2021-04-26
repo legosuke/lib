@@ -1,6 +1,6 @@
 #define PROBLEM "https://onlinejudge.u-aizu.ac.jp/problems/DSL_2_A"
 #include "../../../template/template.hpp"
-#include "../../../02_DataStructure/02_SegmentTree/00.01.02_monoid.max.hpp"
+#include "../../../02_DataStructure/02_SegmentTree/00.01.02.01_monoid.max.hpp"
 #include "../../../02_DataStructure/02_SegmentTree/01_segment-tree.hpp"
 
 signed main() {

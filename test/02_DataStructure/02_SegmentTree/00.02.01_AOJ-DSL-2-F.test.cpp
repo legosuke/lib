@@ -1,8 +1,8 @@
 #define PROBLEM "https://onlinejudge.u-aizu.ac.jp/problems/DSL_2_F"
 #include "../../../template/template.hpp"
-#include "../../../02_DataStructure/02_SegmentTree/00.01.01_monoid.min.hpp"
+#include "../../../02_DataStructure/02_SegmentTree/00.01.01.01_monoid.min.hpp"
 #include "../../../02_DataStructure/02_SegmentTree/00.01.04_monoid.update.hpp"
-#include "../../../02_DataStructure/02_SegmentTree/00.02.01_mapping.update-min.hpp"
+#include "../../../02_DataStructure/02_SegmentTree/00.02.01_mapping.min-update.hpp"
 #include "../../../02_DataStructure/02_SegmentTree/03_lazy-segment-tree.hpp"
 
 signed main() {

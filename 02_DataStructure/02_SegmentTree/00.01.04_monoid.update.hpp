@@ -1,6 +1,5 @@
 #pragma once
 #include <limits>
-#include <type_traits>
 #include "00.00_monoid.base.hpp"
 
 /**

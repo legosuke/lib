@@ -1,7 +1,6 @@
 #pragma once
 #include <cassert>
 #include <cstdint>
-#include <type_traits>
 #include <vector>
 #include "00.00_monoid.base.hpp"
 

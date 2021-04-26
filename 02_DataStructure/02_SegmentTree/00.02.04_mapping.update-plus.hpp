@@ -1,6 +1,5 @@
 #pragma once
 #include <cstdint>
-#include <type_traits>
 #include "00.02.00_mapping.base.hpp"
 #include "00.01.03_monoid.plus.hpp"
 #include "00.01.04_monoid.update.hpp"

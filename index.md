@@ -218,10 +218,10 @@ data:
       path: 02_DataStructure/02_SegmentTree/00.00_monoid.base.hpp
       title: "\u30E2\u30CE\u30A4\u30C9 (base)"
     - icon: ':heavy_check_mark:'
-      path: 02_DataStructure/02_SegmentTree/00.01.01_monoid.min.hpp
+      path: 02_DataStructure/02_SegmentTree/00.01.01.01_monoid.min.hpp
       title: "\u30E2\u30CE\u30A4\u30C9 (min)"
     - icon: ':heavy_check_mark:'
-      path: 02_DataStructure/02_SegmentTree/00.01.02_monoid.max.hpp
+      path: 02_DataStructure/02_SegmentTree/00.01.02.01_monoid.max.hpp
       title: "\u30E2\u30CE\u30A4\u30C9 (max)"
     - icon: ':heavy_check_mark:'
       path: 02_DataStructure/02_SegmentTree/00.01.03_monoid.plus.hpp
@@ -233,16 +233,16 @@ data:
       path: 02_DataStructure/02_SegmentTree/00.02.00_mapping.base.hpp
       title: "\u5199\u50CF (base)"
     - icon: ':heavy_check_mark:'
-      path: 02_DataStructure/02_SegmentTree/00.02.01_mapping.update-min.hpp
+      path: 02_DataStructure/02_SegmentTree/00.02.01_mapping.min-update.hpp
       title: "\u5199\u50CF (min-update)"
     - icon: ':heavy_check_mark:'
       path: 02_DataStructure/02_SegmentTree/00.02.02_mapping.plus-plus.hpp
       title: "\u5199\u50CF (plus-plus)"
     - icon: ':heavy_check_mark:'
-      path: 02_DataStructure/02_SegmentTree/00.02.03_mapping.plus-min.hpp
+      path: 02_DataStructure/02_SegmentTree/00.02.03_mapping.min-plus.hpp
       title: "\u5199\u50CF (min-plus)"
     - icon: ':heavy_check_mark:'
-      path: 02_DataStructure/02_SegmentTree/00.02.04_mapping.update-plus.hpp
+      path: 02_DataStructure/02_SegmentTree/00.02.04_mapping.plus-update.hpp
       title: "\u5199\u50CF (plus-update)"
     - icon: ':heavy_check_mark:'
       path: 02_DataStructure/02_SegmentTree/01_segment-tree.hpp
@@ -411,11 +411,11 @@ data:
   - name: test/02_DataStructure/02_SegmentTree
     pages:
     - icon: ':heavy_check_mark:'
-      path: test/02_DataStructure/02_SegmentTree/00.01.01_AOJ-DSL-2-A.test.cpp
-      title: test/02_DataStructure/02_SegmentTree/00.01.01_AOJ-DSL-2-A.test.cpp
+      path: test/02_DataStructure/02_SegmentTree/00.01.01.01_AOJ-DSL-2-A.test.cpp
+      title: test/02_DataStructure/02_SegmentTree/00.01.01.01_AOJ-DSL-2-A.test.cpp
     - icon: ':heavy_check_mark:'
-      path: test/02_DataStructure/02_SegmentTree/00.01.02_AOJ-DSL-2-A.test.cpp
-      title: test/02_DataStructure/02_SegmentTree/00.01.02_AOJ-DSL-2-A.test.cpp
+      path: test/02_DataStructure/02_SegmentTree/00.01.02.01_AOJ-DSL-2-A.test.cpp
+      title: test/02_DataStructure/02_SegmentTree/00.01.02.01_AOJ-DSL-2-A.test.cpp
     - icon: ':heavy_check_mark:'
       path: test/02_DataStructure/02_SegmentTree/00.01.03_AOJ-DSL-2-B.test.cpp
       title: test/02_DataStructure/02_SegmentTree/00.01.03_AOJ-DSL-2-B.test.cpp

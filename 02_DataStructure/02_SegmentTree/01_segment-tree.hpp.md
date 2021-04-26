@@ -7,11 +7,11 @@ data:
   _extendedRequiredBy: []
   _extendedVerifiedWith:
   - icon: ':heavy_check_mark:'
-    path: test/02_DataStructure/02_SegmentTree/00.01.01_AOJ-DSL-2-A.test.cpp
-    title: test/02_DataStructure/02_SegmentTree/00.01.01_AOJ-DSL-2-A.test.cpp
+    path: test/02_DataStructure/02_SegmentTree/00.01.01.01_AOJ-DSL-2-A.test.cpp
+    title: test/02_DataStructure/02_SegmentTree/00.01.01.01_AOJ-DSL-2-A.test.cpp
   - icon: ':heavy_check_mark:'
-    path: test/02_DataStructure/02_SegmentTree/00.01.02_AOJ-DSL-2-A.test.cpp
-    title: test/02_DataStructure/02_SegmentTree/00.01.02_AOJ-DSL-2-A.test.cpp
+    path: test/02_DataStructure/02_SegmentTree/00.01.02.01_AOJ-DSL-2-A.test.cpp
+    title: test/02_DataStructure/02_SegmentTree/00.01.02.01_AOJ-DSL-2-A.test.cpp
   - icon: ':heavy_check_mark:'
     path: test/02_DataStructure/02_SegmentTree/00.01.03_AOJ-DSL-2-B.test.cpp
     title: test/02_DataStructure/02_SegmentTree/00.01.03_AOJ-DSL-2-B.test.cpp
@@ -85,9 +85,9 @@ data:
   timestamp: '2021-04-26 12:50:54+00:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
-  - test/02_DataStructure/02_SegmentTree/00.01.01_AOJ-DSL-2-A.test.cpp
-  - test/02_DataStructure/02_SegmentTree/00.01.02_AOJ-DSL-2-A.test.cpp
+  - test/02_DataStructure/02_SegmentTree/00.01.01.01_AOJ-DSL-2-A.test.cpp
   - test/02_DataStructure/02_SegmentTree/00.01.03_AOJ-DSL-2-B.test.cpp
+  - test/02_DataStructure/02_SegmentTree/00.01.02.01_AOJ-DSL-2-A.test.cpp
 documentation_of: 02_DataStructure/02_SegmentTree/01_segment-tree.hpp
 layout: document
 redirect_from:

@@ -214,13 +214,13 @@ data:
       title: "\u30DD\u30C6\u30F3\u30B7\u30E3\u30EB\u4ED8\u304D Union-Find"
   - name: 02_DataStructure/02_SegmentTree
     pages:
-    - icon: ':question:'
+    - icon: ':heavy_check_mark:'
       path: 02_DataStructure/02_SegmentTree/00.00_monoid.base.hpp
       title: "\u30E2\u30CE\u30A4\u30C9 (base)"
     - icon: ':heavy_check_mark:'
       path: 02_DataStructure/02_SegmentTree/00.01.01.01_monoid.min.hpp
       title: "\u30E2\u30CE\u30A4\u30C9 (min)"
-    - icon: ':x:'
+    - icon: ':heavy_check_mark:'
       path: 02_DataStructure/02_SegmentTree/00.01.01.02_monoid.min-index.hpp
       title: "\u30E2\u30CE\u30A4\u30C9 (min-index)"
     - icon: ':heavy_check_mark:'
@@ -250,7 +250,7 @@ data:
     - icon: ':heavy_check_mark:'
       path: 02_DataStructure/02_SegmentTree/00.02.04_mapping.plus-update.hpp
       title: "\u5199\u50CF (plus-update)"
-    - icon: ':question:'
+    - icon: ':heavy_check_mark:'
       path: 02_DataStructure/02_SegmentTree/01_segment-tree.hpp
       title: "\u30BB\u30B0\u30E1\u30F3\u30C8\u30C4\u30EA\u30FC"
     - icon: ':heavy_check_mark:'
@@ -291,7 +291,7 @@ data:
     - icon: ':heavy_check_mark:'
       path: template/graph.hpp
       title: template/graph.hpp
-    - icon: ':question:'
+    - icon: ':heavy_check_mark:'
       path: template/template.hpp
       title: template/template.hpp
   verificationCategories:
@@ -419,7 +419,7 @@ data:
     - icon: ':heavy_check_mark:'
       path: test/02_DataStructure/02_SegmentTree/00.01.01.01_AOJ-DSL-2-A.test.cpp
       title: test/02_DataStructure/02_SegmentTree/00.01.01.01_AOJ-DSL-2-A.test.cpp
-    - icon: ':x:'
+    - icon: ':heavy_check_mark:'
       path: test/02_DataStructure/02_SegmentTree/00.01.01.02_AOJ-DSL-2-A.test.cpp
       title: test/02_DataStructure/02_SegmentTree/00.01.01.02_AOJ-DSL-2-A.test.cpp
     - icon: ':heavy_check_mark:'

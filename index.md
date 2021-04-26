@@ -70,6 +70,9 @@ data:
     - icon: ':heavy_check_mark:'
       path: 01_Math/01_NumberTheory/03.01.03_sieve.atkin.hpp
       title: "\u7BE9 (\u30A2\u30C8\u30AD\u30F3)"
+    - icon: ':warning:'
+      path: 01_Math/01_NumberTheory/04.01.01_fibonacci-number.binet.hpp
+      title: "\u30D5\u30A3\u30DC\u30CA\u30C3\u30C1\u6570 (Binet)"
   - name: 01_Math/02_Combinatorics
     pages:
     - icon: ':heavy_check_mark:'

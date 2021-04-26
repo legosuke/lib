@@ -1,17 +1,17 @@
 #pragma once
-#include "01.01_mod-operation.hpp"
+#include <cstdint>
 
 /**
  * @brief 累乗 : $a^n\bmod{m}$
  * @note O(log(m))
  */
-std::uint64_t mod_pow(std::int64_t a, std::uint64_t n, std::uint64_t m) {
-    a = mod(a, m);
+std::uint32_t mod_pow(std::int64_t a, std::uint64_t n, std::uint32_t m) {
+    a = (a % m + m) % m;
     std::uint64_t res = 1;
     while (n) {
-        if (n & 1) res = mul(res, a, m);
-        a = mul(a, a, m);
+        if (n & 1) (res *= a) %= m;
+        (a *= a) %= m;
         n >>= 1;
     }
-    return res;
+    return (std::uint32_t)res;
 }

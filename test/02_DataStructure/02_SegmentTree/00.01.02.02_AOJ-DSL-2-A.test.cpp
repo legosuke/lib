@@ -7,6 +7,9 @@ signed main() {
     int n, q;
     cin >> n >> q;
     segment_tree<max_index_monoid<int>> st(n);
+    for (int i = 0; i < n; ++i) {
+        st.set(i, make_pair(-0x7fffffff, i));
+    }
     vector<int> A(n, 0x7fffffff);
     for (int i = 0; i < q; ++i) {
         int com, x, y;

@@ -96,7 +96,7 @@ data:
   - icon: ':heavy_check_mark:'
     path: test/01_Math/02_Combinatorics/01.06.02_yukicoder-186.test.cpp
     title: test/01_Math/02_Combinatorics/01.06.02_yukicoder-186.test.cpp
-  - icon: ':x:'
+  - icon: ':heavy_check_mark:'
     path: test/01_Math/02_Combinatorics/02.03.01_AOJ-DPL-5-E.test.cpp
     title: test/01_Math/02_Combinatorics/02.03.01_AOJ-DPL-5-E.test.cpp
   - icon: ':heavy_check_mark:'
@@ -156,9 +156,9 @@ data:
   - icon: ':heavy_check_mark:'
     path: test/03_Graph/02_GraphAlgorithm/01.01.03.01_AOJ-GRL-1-A.test.cpp
     title: test/03_Graph/02_GraphAlgorithm/01.01.03.01_AOJ-GRL-1-A.test.cpp
-  _isVerificationFailed: true
+  _isVerificationFailed: false
   _pathExtension: hpp
-  _verificationStatusIcon: ':question:'
+  _verificationStatusIcon: ':heavy_check_mark:'
   attributes:
     links: []
   bundledCode: '#line 1 "template/template.hpp"
@@ -180,7 +180,7 @@ data:
   path: template/template.hpp
   requiredBy: []
   timestamp: '2020-12-16 16:02:46+00:00'
-  verificationStatus: LIBRARY_SOME_WA
+  verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
   - test/02_DataStructure/01_UnionFind/01_AOJ-DSL-1-A.test.cpp
   - test/02_DataStructure/01_UnionFind/02.01_AOJ-2664.test.cpp

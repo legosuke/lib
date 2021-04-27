@@ -2,10 +2,10 @@
 data:
   _extendedDependsOn: []
   _extendedRequiredBy:
-  - icon: ':x:'
+  - icon: ':heavy_check_mark:'
     path: 03_Graph/01_TreeAlgorithm/01.00_tree-diameter.hpp
     title: "\u6728\u306E\u76F4\u5F84"
-  - icon: ':x:'
+  - icon: ':heavy_check_mark:'
     path: 03_Graph/01_TreeAlgorithm/01.01_tree-diameter-weight.hpp
     title: "\u6728\u306E\u76F4\u5F84 (\u91CD\u307F)"
   - icon: ':warning:'
@@ -15,15 +15,15 @@ data:
     path: 03_Graph/02_GraphAlgorithm/01.01.03.01_single-source-shortest-path.weighted-graph.dijkstra.hpp
     title: "\u5358\u4E00\u59CB\u70B9\u6700\u77ED\u7D4C\u8DEF (Dijkstra)"
   _extendedVerifiedWith:
-  - icon: ':x:'
+  - icon: ':heavy_check_mark:'
     path: test/03_Graph/01_TreeAlgorithm/01.01_AOJ-GRL-5-A.test.cpp
     title: test/03_Graph/01_TreeAlgorithm/01.01_AOJ-GRL-5-A.test.cpp
   - icon: ':heavy_check_mark:'
     path: test/03_Graph/02_GraphAlgorithm/01.01.03.01_AOJ-GRL-1-A.test.cpp
     title: test/03_Graph/02_GraphAlgorithm/01.01.03.01_AOJ-GRL-1-A.test.cpp
-  _isVerificationFailed: true
+  _isVerificationFailed: false
   _pathExtension: hpp
-  _verificationStatusIcon: ':question:'
+  _verificationStatusIcon: ':heavy_check_mark:'
   attributes:
     links: []
   bundledCode: "#line 2 \"template/graph.hpp\"\n#include <cstdint>\n#include <vector>\n\
@@ -60,7 +60,7 @@ data:
   - 03_Graph/01_TreeAlgorithm/01.01_tree-diameter-weight.hpp
   - 03_Graph/01_TreeAlgorithm/01.02_tree-diameter.path.hpp
   timestamp: '2021-04-27 18:12:15+00:00'
-  verificationStatus: LIBRARY_SOME_WA
+  verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
   - test/03_Graph/02_GraphAlgorithm/01.01.03.01_AOJ-GRL-1-A.test.cpp
   - test/03_Graph/01_TreeAlgorithm/01.01_AOJ-GRL-5-A.test.cpp

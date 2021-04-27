@@ -5,7 +5,7 @@
 signed main() {
     int n;
     cin >> n;
-    WeightedGraph<> g(n);
+    weighted_graph<> g(n);
     for (int i = 0; i < n - 1; ++i) {
         int s, t, w;
         cin >> s >> t >> w;

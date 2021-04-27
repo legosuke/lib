@@ -9,14 +9,14 @@
  * @brief 単一始点最短経路 (Dijkstra)
  */
 template <typename T>
-class Dijkstra {
+class dijkstra {
 public:
-    Dijkstra(std::uint32_t n) : g(n) {}
+    dijkstra(std::uint32_t n) : g(n) {}
 
-    const WeightedEdges<T>& operator [] (std::uint32_t i) const {
+    const weighted_edges<T>& operator [] (std::uint32_t i) const {
         return (g.at(i));
     }
-    WeightedEdges<T>& operator [] (std::uint32_t i) {
+    weighted_edges<T>& operator [] (std::uint32_t i) {
         return (g.at(i));
     }
 
@@ -67,7 +67,7 @@ public:
 
 private:
     const T INF = std::numeric_limits<T>::max();
-    WeightedGraph<T> g;
+    weighted_graph<T> g;
     std::vector<T> dist;
     std::vector<std::uint32_t> prev;
 };

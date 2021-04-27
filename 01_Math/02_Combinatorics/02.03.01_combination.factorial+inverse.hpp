@@ -5,12 +5,12 @@
  * @brief 組合せ (階乗 + 逆元)
  */
 template <class ModInt>
-class Combination {
+class combination {
 public:
     /**
      * @note O(n)
      */
-    Combination(std::uint32_t n) {
+    combination(std::uint32_t n) {
         fact = factorial_table<ModInt>(n);
         ifact.resize(n + 1);
         ifact[n] = fact[n].inv();

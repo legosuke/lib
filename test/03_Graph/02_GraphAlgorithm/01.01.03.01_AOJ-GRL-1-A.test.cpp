@@ -5,7 +5,7 @@
 signed main() {
     int V, E, r;
     cin >> V >> E >> r;
-    Dijkstra<long> g(V);
+    dijkstra<long> g(V);
     for (int i = 0; i < E; ++i) {
         int s, t, d;
         cin >> s >> t >> d;

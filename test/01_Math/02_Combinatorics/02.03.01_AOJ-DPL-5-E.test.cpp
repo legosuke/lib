@@ -4,7 +4,7 @@
 #include "../../../01_Math/02_Combinatorics/02.03.01_combination.factorial+inverse.hpp"
 
 signed main() {
-    Combination<modint1000000007> comb(1001);
+    combination<modint1000000007> comb(1001);
     int n, k;
     cin >> n >> k;
     if (n > k) cout << 0 << endl;

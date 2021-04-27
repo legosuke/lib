@@ -272,10 +272,10 @@ data:
       title: Binary Indexed Tree (1D)
   - name: 03_Graph/01_TreeAlgorithm
     pages:
-    - icon: ':heavy_check_mark:'
+    - icon: ':x:'
       path: 03_Graph/01_TreeAlgorithm/01.00_tree-diameter.hpp
       title: "\u6728\u306E\u76F4\u5F84"
-    - icon: ':heavy_check_mark:'
+    - icon: ':x:'
       path: 03_Graph/01_TreeAlgorithm/01.01_tree-diameter-weight.hpp
       title: "\u6728\u306E\u76F4\u5F84 (\u91CD\u307F)"
     - icon: ':warning:'
@@ -304,7 +304,7 @@ data:
       title: "\u4E71\u6570 (\u5217)"
   - name: template
     pages:
-    - icon: ':heavy_check_mark:'
+    - icon: ':question:'
       path: template/graph.hpp
       title: template/graph.hpp
     - icon: ':question:'
@@ -475,7 +475,7 @@ data:
       title: test/02_DataStructure/03_BinaryIndexedTree/01.01_AOJ-DSL-2-B.test.cpp
   - name: test/03_Graph/01_TreeAlgorithm
     pages:
-    - icon: ':heavy_check_mark:'
+    - icon: ':x:'
       path: test/03_Graph/01_TreeAlgorithm/01.01_AOJ-GRL-5-A.test.cpp
       title: test/03_Graph/01_TreeAlgorithm/01.01_AOJ-GRL-5-A.test.cpp
   - name: test/03_Graph/02_GraphAlgorithm

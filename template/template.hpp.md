@@ -153,7 +153,7 @@ data:
   - icon: ':x:'
     path: test/02_DataStructure/03_BinaryIndexedTree/01.01_AOJ-DSL-2-B.test.cpp
     title: test/02_DataStructure/03_BinaryIndexedTree/01.01_AOJ-DSL-2-B.test.cpp
-  - icon: ':heavy_check_mark:'
+  - icon: ':x:'
     path: test/03_Graph/01_TreeAlgorithm/01.01_AOJ-GRL-5-A.test.cpp
     title: test/03_Graph/01_TreeAlgorithm/01.01_AOJ-GRL-5-A.test.cpp
   - icon: ':heavy_check_mark:'

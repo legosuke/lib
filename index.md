@@ -267,7 +267,7 @@ data:
       title: "\u9045\u5EF6\u30BB\u30B0\u30E1\u30F3\u30C8\u30C4\u30EA\u30FC"
   - name: 02_DataStructure/03_BinaryIndexedTree
     pages:
-    - icon: ':x:'
+    - icon: ':heavy_check_mark:'
       path: 02_DataStructure/03_BinaryIndexedTree/01.01_binary-indexed-tree-1d.hpp
       title: Binary Indexed Tree (1D)
   - name: 03_Graph/01_TreeAlgorithm
@@ -470,7 +470,7 @@ data:
       title: test/02_DataStructure/02_SegmentTree/00.02.04_AOJ-DSL-2-I.test.cpp
   - name: test/02_DataStructure/03_BinaryIndexedTree
     pages:
-    - icon: ':x:'
+    - icon: ':heavy_check_mark:'
       path: test/02_DataStructure/03_BinaryIndexedTree/01.01_AOJ-DSL-2-B.test.cpp
       title: test/02_DataStructure/03_BinaryIndexedTree/01.01_AOJ-DSL-2-B.test.cpp
   - name: test/03_Graph/01_TreeAlgorithm

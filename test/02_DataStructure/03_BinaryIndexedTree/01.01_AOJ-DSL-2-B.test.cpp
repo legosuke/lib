@@ -10,6 +10,6 @@ signed main() {
         int com, x, y;
         cin >> com >> x >> y;
         if (com == 0) bit.add(x, y);
-        else cout << bit.sum(x, y) << endl;
+        else cout << bit.sum(x, y + 1) << endl;
     }
 }

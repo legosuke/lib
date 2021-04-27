@@ -7,5 +7,6 @@ signed main() {
     Combination<modint1000000007> comb(1001);
     int n, k;
     cin >> n >> k;
-    cout << comb.c(k, n) << endl;
+    if (n > k) cout << 0 << endl;
+    else cout << comb.c(k, n) << endl;
 }

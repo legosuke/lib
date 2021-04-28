@@ -14,6 +14,9 @@ data:
   - icon: ':heavy_check_mark:'
     path: 03_Graph/02_GraphAlgorithm/01.01.03.01_single-source-shortest-path.weighted-graph.dijkstra.hpp
     title: "\u5358\u4E00\u59CB\u70B9\u6700\u77ED\u7D4C\u8DEF (Dijkstra)"
+  - icon: ':heavy_check_mark:'
+    path: 03_Graph/04_DirectedGraphAlgorithm/02.01_strongly-connected-components.hpp
+    title: "\u5F37\u9023\u7D50\u6210\u5206\u5206\u89E3"
   _extendedVerifiedWith:
   - icon: ':heavy_check_mark:'
     path: test/03_Graph/01_TreeAlgorithm/01.01_AOJ-GRL-5-A.test.cpp
@@ -21,6 +24,9 @@ data:
   - icon: ':heavy_check_mark:'
     path: test/03_Graph/02_GraphAlgorithm/01.01.03.01_AOJ-GRL-1-A.test.cpp
     title: test/03_Graph/02_GraphAlgorithm/01.01.03.01_AOJ-GRL-1-A.test.cpp
+  - icon: ':heavy_check_mark:'
+    path: test/03_Graph/04_DirectedGraphAlgorithm/02.01_AOJ-GRL-3-C.test.cpp
+    title: test/03_Graph/04_DirectedGraphAlgorithm/02.01_AOJ-GRL-3-C.test.cpp
   _isVerificationFailed: false
   _pathExtension: hpp
   _verificationStatusIcon: ':heavy_check_mark:'
@@ -56,6 +62,7 @@ data:
   path: template/graph.hpp
   requiredBy:
   - 03_Graph/02_GraphAlgorithm/01.01.03.01_single-source-shortest-path.weighted-graph.dijkstra.hpp
+  - 03_Graph/04_DirectedGraphAlgorithm/02.01_strongly-connected-components.hpp
   - 03_Graph/01_TreeAlgorithm/01.00_tree-diameter.hpp
   - 03_Graph/01_TreeAlgorithm/01.01_tree-diameter-weight.hpp
   - 03_Graph/01_TreeAlgorithm/01.02_tree-diameter.path.hpp
@@ -63,6 +70,7 @@ data:
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
   - test/03_Graph/02_GraphAlgorithm/01.01.03.01_AOJ-GRL-1-A.test.cpp
+  - test/03_Graph/04_DirectedGraphAlgorithm/02.01_AOJ-GRL-3-C.test.cpp
   - test/03_Graph/01_TreeAlgorithm/01.01_AOJ-GRL-5-A.test.cpp
 documentation_of: template/graph.hpp
 layout: document

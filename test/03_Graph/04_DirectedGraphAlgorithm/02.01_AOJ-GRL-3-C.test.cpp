@@ -17,7 +17,7 @@ signed main() {
     for (int i = 0; i < Q; ++i) {
         int u, v;
         cin >> u >> v;
-        cout << g.same(u, v) << endl;
+        cout << g.is_same(u, v) << endl;
     }
     return 0;
 }

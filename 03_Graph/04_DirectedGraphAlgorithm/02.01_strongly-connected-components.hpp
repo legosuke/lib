@@ -1,4 +1,5 @@
 #pragma once
+#include <cassert>
 #include <algorithm>
 #include <vector>
 #include "../../template/graph.hpp"
@@ -18,8 +19,8 @@ private:
     }
 
     void rdfs(std::uint32_t v) {
-        if (~cmp[v]) return;
-        cmp[v] = sz;
+        if (~cmp_id[v]) return;
+        cmp_id[v] = sz;
         for (auto&& e : rg[v]) {
             rdfs(e.to);
         }
@@ -27,7 +28,7 @@ private:
 
 public:
     stolongly_connected_components(std::uint32_t n)
-        : sz(0), g(n), gg(n), rg(n), cmp(n, -1), used(n, false) {}
+        : sz(0), g(n), gg(n), rg(n), cmp_id(n, -1), used(n, false) {}
 
     const unweighted_edges& operator [] (std::uint32_t i) const {
         return (g.at(i));
@@ -53,56 +54,46 @@ public:
         }
         std::reverse(begin(ord), end(ord));
         for (auto&& i : ord) {
-            if (!~cmp[i]) {
+            if (!~cmp_id[i]) {
                 rdfs(i);
                 ++sz;
             }
         }
         dag.resize(sz);
+        cmps.resize(sz);
         for (std::uint32_t i = 0; i < n; ++i) {
             for (auto&& e : g[i]) {
-                std::uint32_t x = cmp[i], y = cmp[e.to];
+                std::uint32_t x = cmp_id[i], y = cmp_id[e.to];
                 if (x == y) continue;
                 dag[x].emplace_back(y);
             }
+            cmps[cmp_id[i]].emplace_back(i);
         }
     }
 
-    /**
-     * @brief 要素 k が属する連結成分の番号
-     * @note O(1)
-     */
-    std::uint32_t component(std::uint32_t k) {
-        return cmp[k];
+    std::vector<std::uint32_t> component(std::uint32_t k) {
+        assert(0 <= k && k < cmps.size());
+        return cmps[k];
     }
-
-    /**
-     * @brief 要素 x と要素 y が同じ連結成分に属するか判定
-     * @note O(1)
-     */
-    bool same(std::uint32_t x, std::uint32_t y) {
-        return cmp[x] == cmp[y];
+    std::uint32_t component_id(std::uint32_t k) {
+        assert(0 <= k && k < cmp_id.size());
+        return cmp_id[k];
     }
-
-    /**
-     * @brief 連結成分の個数
-     * @note O(1)
-     */
-    std::uint32_t size() {
+    bool is_same(std::uint32_t x, std::uint32_t y) {
+        assert(0 <= x && x < cmp_id.size() && 0 <= y && y < cmp_id.size());
+        return cmp_id[x] == cmp_id[y];
+    }
+    std::uint32_t number_of_components() {
         return sz;
     }
-
-    /**
-     * @brief 連結成分のグラフ
-     * @note O(1)
-     */
-    unweighted_graph component_graph() {
+    unweighted_graph components_graph() {
         return dag;
     }
 
 private:
     std::uint32_t sz;
     unweighted_graph g, gg, rg, dag;
-    std::vector<std::uint32_t> cmp, ord;
+    std::vector<std::uint32_t> cmp_id, ord;
+    std::vector<std::vector<std::uint32_t>> cmps;
     std::vector<bool> used;
 };

@@ -7,6 +7,9 @@
 #include "03.01.01_sieve.eratosthenes.hpp"
 #include "02.07_enumerate-primes.hpp"
 
+/**
+ * @brief $n$ 以下の素数の個数 (Meissel-Lehmer)
+ */
 namespace __prime_count {
     const std::uint32_t LIMIT = 20'000'000;
     const std::uint32_t A_LIMIT = 500;
@@ -37,9 +40,6 @@ namespace __prime_count {
     }
 }
 
-/**
- * @brief n 以下の素数の個数
- */
 std::uint64_t prime_count(std::uint64_t n) {
     using namespace __prime_count;
     if (pi_cache.find(n) != pi_cache.end()) return pi_cache[n];

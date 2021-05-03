@@ -22,7 +22,7 @@ public:
     const bool& operator [] (std::uint32_t i) const {
         return (is_prime[i]);
     }
-    bool& operator [] (std::uint32_t i) {
+    bool operator [] (std::uint32_t i) {
         return (is_prime[i]);
     }
     

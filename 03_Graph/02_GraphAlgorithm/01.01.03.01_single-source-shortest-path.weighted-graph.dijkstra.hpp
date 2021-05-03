@@ -57,7 +57,7 @@ public:
      * @note O(min(|V|, |E|))
      */
     std::vector<std::uint32_t> path(std::uint32_t t) {
-        std::vector<std::uint32_t> res(t);
+        std::vector<std::uint32_t> res(1, t);
         while (prev[res.back()] != -1) {
             res.push_back(prev[res.back()]);
         }

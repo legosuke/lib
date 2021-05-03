@@ -165,12 +165,12 @@ data:
   - icon: ':heavy_check_mark:'
     path: test/03_Graph/04_DirectedGraphAlgorithm/02.01_AOJ-GRL-3-C.test.cpp
     title: test/03_Graph/04_DirectedGraphAlgorithm/02.01_AOJ-GRL-3-C.test.cpp
-  - icon: ':x:'
+  - icon: ':heavy_check_mark:'
     path: test/05_DP/01_Typical/02.01_AOJ-0360.test.cpp
     title: test/05_DP/01_Typical/02.01_AOJ-0360.test.cpp
-  _isVerificationFailed: true
+  _isVerificationFailed: false
   _pathExtension: hpp
-  _verificationStatusIcon: ':question:'
+  _verificationStatusIcon: ':heavy_check_mark:'
   attributes:
     links: []
   bundledCode: '#line 1 "template/template.hpp"
@@ -192,7 +192,7 @@ data:
   path: template/template.hpp
   requiredBy: []
   timestamp: '2020-12-16 16:02:46+00:00'
-  verificationStatus: LIBRARY_SOME_WA
+  verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
   - test/05_DP/01_Typical/02.01_AOJ-0360.test.cpp
   - test/02_DataStructure/03_BinaryIndexedTree/01.01_AOJ-DSL-2-B.test.cpp

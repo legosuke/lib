@@ -53,5 +53,6 @@
 "test/03_Graph/01_TreeAlgorithm/01.01_AOJ-GRL-5-A.test.cpp": "2021-04-27 18:23:39 +0000",
 "test/03_Graph/02_GraphAlgorithm/01.01.03.01_AOJ-GRL-1-A.test.cpp": "2021-04-27 18:12:15 +0000",
 "test/03_Graph/04_DirectedGraphAlgorithm/02.01_AOJ-GRL-3-C.test.cpp": "2021-04-28 02:49:08 +0000",
-"test/05_DP/01_Typical/02.01_AOJ-0360.test.cpp": "2021-05-03 16:26:12 +0000"
+"test/05_DP/01_Typical/02.01_AOJ-0360.test.cpp": "2021-05-03 16:26:12 +0000",
+"test/05_DP/01_Typical/02.02_AOJ-DSL-5-B.test.cpp": "2021-05-03 17:23:50 +0000"
 }

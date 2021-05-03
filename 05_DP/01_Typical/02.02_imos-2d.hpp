@@ -41,5 +41,5 @@ public:
     }
 
 private:
-    std::vector<std::vector<T>>> data;
+    std::vector<std::vector<T>> data;
 };

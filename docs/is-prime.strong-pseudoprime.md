@@ -1,6 +1,6 @@
 ---
 title: 素数判定 (オイラー擬素数)
-documentation_of: ../01_Math/01_NumberTheory/02.01.04_is-prime.strong.pseudoprime.hpp
+documentation_of: ../01_Math/01_NumberTheory/02.01.04_is-prime.strong-pseudoprime.hpp
 ---
 
 ## 概要

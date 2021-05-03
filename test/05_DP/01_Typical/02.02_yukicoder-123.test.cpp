@@ -25,5 +25,5 @@ signed main() {
             ans += max(0L, hp[i][j]);
         }
     }
-    cout << ans << endl;
+    cout << ans;
 }

@@ -5,13 +5,17 @@
 signed main() {
     int a, b, n;
     cin >> a >> b >> n;
-    vector<pair<int, int>> v;
-    v.emplace_back(a, b);
+    auto cnt = imos_1d<int>(1000);
+    cnt.add(a, b, 1);
     for (int i = 0; i < n; ++i) {
         int s, f;
         cin >> s >> f;
-        v.emplace_back(s, f);
+        cnt.add(s, f, 1);
     }
-    auto cnt = imos_1d<int>(1000, v);
-    cout << (*max_element(begin(cnt), end(cnt)) > 1) << endl;
+    for (int i = 0; i < 1000; ++i) {
+        if (cnt[i] <= 1) continue;
+        cout << 1 << endl;
+        return 0;
+    }
+    cout << 0 << endl;
 }

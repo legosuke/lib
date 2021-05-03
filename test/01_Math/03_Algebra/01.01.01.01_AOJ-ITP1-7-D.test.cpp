@@ -1,4 +1,4 @@
-#define PROBLEM "https://onlinejudge.u-aizu.ac.jp/courses/lesson/2/ITP1/7/ITP1_7_D"
+#define PROBLEM "https://onlinejudge.u-aizu.ac.jp/problems/ITP1_7_D"
 #include "../../../template/template.hpp"
 #include "../../../01_Math/03_Algebra/01.01.01.01_matrix.vector.hpp"
 

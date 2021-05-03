@@ -61,10 +61,10 @@ data:
     - icon: ':heavy_check_mark:'
       path: 01_Math/01_NumberTheory/02.04.02_least-prime-factor.sieve.hpp
       title: "\u6700\u5C0F\u7D20\u56E0\u6570 (\u7BE9)"
-    - icon: ':x:'
+    - icon: ':heavy_check_mark:'
       path: 01_Math/01_NumberTheory/03.01.00_sieve.base.hpp
       title: "\u7BE9 (base)"
-    - icon: ':x:'
+    - icon: ':heavy_check_mark:'
       path: 01_Math/01_NumberTheory/03.01.01_sieve.eratosthenes.hpp
       title: "\u7BE9 (\u30A8\u30E9\u30C8\u30B9\u30C6\u30CD\u30B9)"
     - icon: ':heavy_check_mark:'
@@ -315,7 +315,7 @@ data:
     - icon: ':heavy_check_mark:'
       path: template/graph.hpp
       title: template/graph.hpp
-    - icon: ':question:'
+    - icon: ':heavy_check_mark:'
       path: template/template.hpp
       title: template/template.hpp
   verificationCategories:
@@ -375,7 +375,7 @@ data:
     - icon: ':heavy_check_mark:'
       path: test/01_Math/01_NumberTheory/02.03.01_AOJ-NTL-1-D.test.cpp
       title: test/01_Math/01_NumberTheory/02.03.01_AOJ-NTL-1-D.test.cpp
-    - icon: ':x:'
+    - icon: ':heavy_check_mark:'
       path: test/01_Math/01_NumberTheory/03.01.01_AOJ-1276.test.cpp
       title: test/01_Math/01_NumberTheory/03.01.01_AOJ-1276.test.cpp
     - icon: ':heavy_check_mark:'

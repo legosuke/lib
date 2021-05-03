@@ -11,7 +11,7 @@ public:
     /**
      * @note field is [0, N) × [0, M)
      */
-    imos_2d(std::uint32_t N, std::uint32_t M) : data(N + 1, std::vector<T>(M + 1, 0)) {}
+    imos_2d(std::uint32_t N, std::uint32_t M) : N(N), M(M), data(N + 1, std::vector<T>(M + 1, 0)) {}
 
     void build() {
         for (std::uint32_t i = 0; i < N; ++i) {
@@ -41,5 +41,6 @@ public:
     }
 
 private:
+    const std::uint32_t N, M;
     std::vector<std::vector<T>> data;
 };

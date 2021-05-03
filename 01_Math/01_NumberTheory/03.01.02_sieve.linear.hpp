@@ -1,6 +1,7 @@
 #pragma once
 #include <bitset>
 #include "02.04.02_least-prime-factor.sieve.hpp"
+#include "03.01.00_sieve.base.hpp"
 
 /**
  * @brief 篩 (線形)

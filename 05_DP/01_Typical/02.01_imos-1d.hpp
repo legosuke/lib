@@ -22,9 +22,6 @@ public:
     const T& operator [] (std::uint32_t i) const {
         return (data.at(i));
     }
-    T& operator [] (std::uint32_t i) {
-        return (data.at(i));
-    }
 
     /**
      * @note add val to [x1, x2)

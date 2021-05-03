@@ -14,7 +14,7 @@ public:
     imos_1d(std::uint32_t N) : data(N + 1, 0) {}
 
     void build() {
-        for (std::uint32_t i = 0; i < data.size(); ++i) {
+        for (std::uint32_t i = 0; i + 1 < data.size(); ++i) {
             data[i + 1] += data[i];
         }
     }
@@ -27,11 +27,11 @@ public:
     }
 
     /**
-     * @note add x to [l,r)
+     * @note add val to [x1, x2)
      */
-    void add(std::uint32_t l, std::uint32_t r, const T& x) {
-        data[l] += x;
-        data[r] -= x;
+    void add(std::uint32_t x1, std::uint32_t x2, const T& val) {
+        data[x1] += val;
+        data[x2] -= val;
     }
 
 private:

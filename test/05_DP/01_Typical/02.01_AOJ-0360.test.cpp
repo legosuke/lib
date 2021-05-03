@@ -12,6 +12,7 @@ signed main() {
         cin >> s >> f;
         cnt.add(s, f, 1);
     }
+    cnt.build();
     for (int i = 0; i < 1000; ++i) {
         if (cnt[i] <= 1) continue;
         cout << 1 << endl;

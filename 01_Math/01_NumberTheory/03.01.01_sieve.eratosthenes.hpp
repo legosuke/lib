@@ -4,7 +4,7 @@
 
 /**
  * @brief 篩 (エラトステネス)
- * @note O(n⋅log(log(n)))
+ * @note O(n⋅log(log(n))) time / O(n) space
  */
 template <std::uint32_t N>
 class eratosthenes : sieve_base {

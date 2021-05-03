@@ -11,21 +11,19 @@ class eratosthenes : sieve_base {
 public:
     eratosthenes() {
         is_prime.set();
-        is_prime[0] = is_prime[1] = false;
-        for (std::uint32_t i = 2; i * i <= N; ++i) if (is_prime[i]) {
-            for (std::uint32_t j = i * i; j <= N; j += i) {
+        is_prime[0] = false;
+        for (std::uint32_t i = 1; (2 * i + 1) * (2 * i + 1) <= N; ++i) if (is_prime[i]) {
+            for (std::uint32_t j = 2 * i * (i + 1); 2 * j + 1 <= N; j += 2 * i + 1) {
                 is_prime[j] = false;
             }
         }
     }
 
-    const bool& operator [] (std::uint32_t i) const {
-        return (is_prime[i]);
-    }
-    bool operator [] (std::uint32_t i) {
-        return (is_prime[i]);
+    const bool operator [] (std::uint32_t i) const {
+        if (i % 2 == 0) return (i == 2);
+        return (is_prime[(i - 1) / 2]);
     }
     
 private:
-    std::bitset<N + 1> is_prime;
+    std::bitset<((N + 1) >> 1)> is_prime;
 };

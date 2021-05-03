@@ -303,7 +303,7 @@ data:
     - icon: ':heavy_check_mark:'
       path: 05_DP/01_Typical/02.01_imos-1d.hpp
       title: "\u3044\u3082\u3059\u6CD5 (1D)"
-    - icon: ':x:'
+    - icon: ':heavy_check_mark:'
       path: 05_DP/01_Typical/02.02_imos-2d.hpp
       title: "\u3044\u3082\u3059\u6CD5 (2D)"
   - name: 05_DP/03_Efficient
@@ -327,7 +327,7 @@ data:
     - icon: ':heavy_check_mark:'
       path: template/graph.hpp
       title: template/graph.hpp
-    - icon: ':question:'
+    - icon: ':heavy_check_mark:'
       path: template/template.hpp
       title: template/template.hpp
   verificationCategories:
@@ -516,8 +516,8 @@ data:
     - icon: ':heavy_check_mark:'
       path: test/05_DP/01_Typical/02.01_AOJ-0360.test.cpp
       title: test/05_DP/01_Typical/02.01_AOJ-0360.test.cpp
-    - icon: ':x:'
-      path: test/05_DP/01_Typical/02.02_yukicoder-123.test.cpp
-      title: test/05_DP/01_Typical/02.02_yukicoder-123.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: test/05_DP/01_Typical/02.02_AOJ-DSL-5-B.test.cpp
+      title: test/05_DP/01_Typical/02.02_AOJ-DSL-5-B.test.cpp
 layout: toppage
 ---

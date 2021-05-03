@@ -165,6 +165,9 @@ data:
   - icon: ':heavy_check_mark:'
     path: test/03_Graph/04_DirectedGraphAlgorithm/02.01_AOJ-GRL-3-C.test.cpp
     title: test/03_Graph/04_DirectedGraphAlgorithm/02.01_AOJ-GRL-3-C.test.cpp
+  - icon: ':heavy_check_mark:'
+    path: test/05_DP/01_Typical/02.01_AOJ-0360.test.cpp
+    title: test/05_DP/01_Typical/02.01_AOJ-0360.test.cpp
   _isVerificationFailed: false
   _pathExtension: hpp
   _verificationStatusIcon: ':heavy_check_mark:'
@@ -191,6 +194,7 @@ data:
   timestamp: '2020-12-16 16:02:46+00:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
+  - test/05_DP/01_Typical/02.01_AOJ-0360.test.cpp
   - test/02_DataStructure/03_BinaryIndexedTree/01.01_AOJ-DSL-2-B.test.cpp
   - test/02_DataStructure/01_UnionFind/01_AOJ-DSL-1-A.test.cpp
   - test/02_DataStructure/01_UnionFind/02.01_AOJ-2664.test.cpp

@@ -8,11 +8,6 @@
  * @note O(log³(n))
  * @warning n ≤ 2⁶⁴
  */
-/**
- * @brief 素数判定 (ミラー・ラビン、決定的)
- * @note O(log³(n))
- * @warning n ≤ 2⁶⁴
- */
 bool is_prime(std::uint64_t n) {
     if (n < 2 || !(n & 1)) return (n == 2);
     std::uint64_t d = n - 1;

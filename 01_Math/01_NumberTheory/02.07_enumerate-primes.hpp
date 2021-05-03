@@ -3,6 +3,11 @@
 #include <vector>
 #include "03.01.00_sieve.base.hpp"
 
+/**
+ * @brief 素数列挙
+ * @note O(n + SIEVE)
+ *       - SIEVE : 篩
+ */
 template <class sieve>
 std::vector<std::uint32_t> enumerate_primes(std::uint32_t n) {
     static_assert(is_sieve<sieve>::value);

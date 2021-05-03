@@ -63,6 +63,10 @@ data:
       path: 01_Math/01_NumberTheory/02.04.02_least-prime-factor.sieve.hpp
       title: "\u6700\u5C0F\u7D20\u56E0\u6570 (\u7BE9)"
     - icon: ':heavy_check_mark:'
+      path: 01_Math/01_NumberTheory/02.05.03_prime-count.missel-lehmer.hpp
+      title: "{p1,p1,...,pa} \u306E\u3044\u305A\u308C\u3082\u7D20\u56E0\u6570\u306B\
+        \u3082\u305F\u306A\u3044\u6570\u306E\u500B\u6570"
+    - icon: ':heavy_check_mark:'
       path: 01_Math/01_NumberTheory/02.07_enumerate-primes.hpp
       title: "\u7D20\u6570\u5217\u6319"
     - icon: ':heavy_check_mark:'
@@ -387,6 +391,9 @@ data:
     - icon: ':heavy_check_mark:'
       path: test/01_Math/01_NumberTheory/02.03.01_AOJ-NTL-1-D.test.cpp
       title: test/01_Math/01_NumberTheory/02.03.01_AOJ-NTL-1-D.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: test/01_Math/01_NumberTheory/02.05.03_LC-couting-primes.test.cpp
+      title: test/01_Math/01_NumberTheory/02.05.03_LC-couting-primes.test.cpp
     - icon: ':heavy_check_mark:'
       path: test/01_Math/01_NumberTheory/02.07_LC-enumerate-primes.test.cpp
       title: test/01_Math/01_NumberTheory/02.07_LC-enumerate-primes.test.cpp

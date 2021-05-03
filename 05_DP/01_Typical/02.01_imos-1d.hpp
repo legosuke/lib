@@ -14,7 +14,7 @@ public:
     imos_1d(std::uint32_t N) : data(N + 1, 0) {}
 
     void build() {
-        for (std::uint32_t i = 0; i < N; ++i) {
+        for (std::uint32_t i = 0; i < data.size(); ++i) {
             data[i + 1] += data[i];
         }
     }

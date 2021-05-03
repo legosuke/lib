@@ -299,7 +299,7 @@ data:
       title: "\u5F37\u9023\u7D50\u6210\u5206\u5206\u89E3"
   - name: 05_DP/01_Typical
     pages:
-    - icon: ':heavy_check_mark:'
+    - icon: ':x:'
       path: 05_DP/01_Typical/02.01_imos-1d.hpp
       title: "\u3044\u3082\u3059\u6CD5 (1D)"
   - name: 05_DP/03_Efficient
@@ -323,7 +323,7 @@ data:
     - icon: ':heavy_check_mark:'
       path: template/graph.hpp
       title: template/graph.hpp
-    - icon: ':heavy_check_mark:'
+    - icon: ':question:'
       path: template/template.hpp
       title: template/template.hpp
   verificationCategories:
@@ -433,11 +433,11 @@ data:
   - name: test/01_Math/03_Algebra
     pages:
     - icon: ':heavy_check_mark:'
-      path: test/01_Math/03_Algebra/01.01.01.01_ITP1-6-D.test.cpp
-      title: test/01_Math/03_Algebra/01.01.01.01_ITP1-6-D.test.cpp
+      path: test/01_Math/03_Algebra/01.01.01.01_AOJ-ITP1-6-D.test.cpp
+      title: test/01_Math/03_Algebra/01.01.01.01_AOJ-ITP1-6-D.test.cpp
     - icon: ':heavy_check_mark:'
-      path: test/01_Math/03_Algebra/01.01.01.01_ITP1-7-D.test.cpp
-      title: test/01_Math/03_Algebra/01.01.01.01_ITP1-7-D.test.cpp
+      path: test/01_Math/03_Algebra/01.01.01.01_AOJ-ITP1-7-D.test.cpp
+      title: test/01_Math/03_Algebra/01.01.01.01_AOJ-ITP1-7-D.test.cpp
     - icon: ':heavy_check_mark:'
       path: test/01_Math/03_Algebra/01.01.02.01_yukicoder-194.test.cpp
       title: test/01_Math/03_Algebra/01.01.02.01_yukicoder-194.test.cpp
@@ -509,7 +509,7 @@ data:
       title: test/03_Graph/04_DirectedGraphAlgorithm/02.01_AOJ-GRL-3-C.test.cpp
   - name: test/05_DP/01_Typical
     pages:
-    - icon: ':heavy_check_mark:'
+    - icon: ':x:'
       path: test/05_DP/01_Typical/02.01_AOJ-0360.test.cpp
       title: test/05_DP/01_Typical/02.01_AOJ-0360.test.cpp
 layout: toppage

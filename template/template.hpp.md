@@ -103,11 +103,11 @@ data:
     path: test/01_Math/02_Combinatorics/02.03.01_AOJ-DPL-5-E.test.cpp
     title: test/01_Math/02_Combinatorics/02.03.01_AOJ-DPL-5-E.test.cpp
   - icon: ':heavy_check_mark:'
-    path: test/01_Math/03_Algebra/01.01.01.01_ITP1-6-D.test.cpp
-    title: test/01_Math/03_Algebra/01.01.01.01_ITP1-6-D.test.cpp
+    path: test/01_Math/03_Algebra/01.01.01.01_AOJ-ITP1-6-D.test.cpp
+    title: test/01_Math/03_Algebra/01.01.01.01_AOJ-ITP1-6-D.test.cpp
   - icon: ':heavy_check_mark:'
-    path: test/01_Math/03_Algebra/01.01.01.01_ITP1-7-D.test.cpp
-    title: test/01_Math/03_Algebra/01.01.01.01_ITP1-7-D.test.cpp
+    path: test/01_Math/03_Algebra/01.01.01.01_AOJ-ITP1-7-D.test.cpp
+    title: test/01_Math/03_Algebra/01.01.01.01_AOJ-ITP1-7-D.test.cpp
   - icon: ':heavy_check_mark:'
     path: test/01_Math/03_Algebra/01.01.02.01_yukicoder-194.test.cpp
     title: test/01_Math/03_Algebra/01.01.02.01_yukicoder-194.test.cpp
@@ -165,12 +165,12 @@ data:
   - icon: ':heavy_check_mark:'
     path: test/03_Graph/04_DirectedGraphAlgorithm/02.01_AOJ-GRL-3-C.test.cpp
     title: test/03_Graph/04_DirectedGraphAlgorithm/02.01_AOJ-GRL-3-C.test.cpp
-  - icon: ':heavy_check_mark:'
+  - icon: ':x:'
     path: test/05_DP/01_Typical/02.01_AOJ-0360.test.cpp
     title: test/05_DP/01_Typical/02.01_AOJ-0360.test.cpp
-  _isVerificationFailed: false
+  _isVerificationFailed: true
   _pathExtension: hpp
-  _verificationStatusIcon: ':heavy_check_mark:'
+  _verificationStatusIcon: ':question:'
   attributes:
     links: []
   bundledCode: '#line 1 "template/template.hpp"
@@ -192,7 +192,7 @@ data:
   path: template/template.hpp
   requiredBy: []
   timestamp: '2020-12-16 16:02:46+00:00'
-  verificationStatus: LIBRARY_ALL_AC
+  verificationStatus: LIBRARY_SOME_WA
   verifiedWith:
   - test/05_DP/01_Typical/02.01_AOJ-0360.test.cpp
   - test/02_DataStructure/03_BinaryIndexedTree/01.01_AOJ-DSL-2-B.test.cpp
@@ -246,8 +246,8 @@ data:
   - test/01_Math/02_Combinatorics/01.06.01_yukicoder-186.test.cpp
   - test/01_Math/02_Combinatorics/01.02.01_AOJ-1327.test.cpp
   - test/01_Math/02_Combinatorics/01.04.03_AOJ-DPL-5-E.test.cpp
-  - test/01_Math/03_Algebra/01.01.01.01_ITP1-6-D.test.cpp
-  - test/01_Math/03_Algebra/01.01.01.01_ITP1-7-D.test.cpp
+  - test/01_Math/03_Algebra/01.01.01.01_AOJ-ITP1-7-D.test.cpp
+  - test/01_Math/03_Algebra/01.01.01.01_AOJ-ITP1-6-D.test.cpp
   - test/01_Math/03_Algebra/01.01.02.01_yukicoder-194.test.cpp
 documentation_of: template/template.hpp
 layout: document

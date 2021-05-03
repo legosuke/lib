@@ -5,7 +5,7 @@
 signed main() {
     const int MAX_N = 1299709;
     int n;
-    auto is_prime = sieve(MAX_N + 1);
+    auto is_prime = eratosthenes<MAX_N>();
     while (cin >> n, n) {
         if (is_prime[n]) {
             cout << 0 << endl;

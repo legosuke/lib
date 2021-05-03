@@ -165,7 +165,7 @@ data:
   - icon: ':heavy_check_mark:'
     path: test/03_Graph/02_GraphAlgorithm/01.01.03.01_AOJ-GRL-1-A.test.cpp
     title: test/03_Graph/02_GraphAlgorithm/01.01.03.01_AOJ-GRL-1-A.test.cpp
-  - icon: ':x:'
+  - icon: ':heavy_check_mark:'
     path: test/03_Graph/02_GraphAlgorithm/01.01.03.01_LC-shortest-path.test.cpp
     title: test/03_Graph/02_GraphAlgorithm/01.01.03.01_LC-shortest-path.test.cpp
   - icon: ':heavy_check_mark:'
@@ -177,9 +177,9 @@ data:
   - icon: ':heavy_check_mark:'
     path: test/05_DP/01_Typical/02.02_AOJ-DSL-5-B.test.cpp
     title: test/05_DP/01_Typical/02.02_AOJ-DSL-5-B.test.cpp
-  _isVerificationFailed: true
+  _isVerificationFailed: false
   _pathExtension: hpp
-  _verificationStatusIcon: ':question:'
+  _verificationStatusIcon: ':heavy_check_mark:'
   attributes:
     links: []
   bundledCode: '#line 1 "template/template.hpp"
@@ -201,7 +201,7 @@ data:
   path: template/template.hpp
   requiredBy: []
   timestamp: '2020-12-16 16:02:46+00:00'
-  verificationStatus: LIBRARY_SOME_WA
+  verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
   - test/05_DP/01_Typical/02.01_AOJ-0360.test.cpp
   - test/05_DP/01_Typical/02.02_AOJ-DSL-5-B.test.cpp

@@ -1,4 +1,4 @@
-#define PROBLEM "https://old.yosupo.jp/problem/factorize"
+#define PROBLEM "https://judge.yosupo.jp/problem/factorize"
 #include "../../../template/template.hpp"
 #include "../../../01_Math/01_NumberTheory/02.02.03_prime-factor.rho.hpp"
 

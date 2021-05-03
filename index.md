@@ -63,7 +63,7 @@ data:
       title: "\u6700\u5C0F\u7D20\u56E0\u6570 (\u7BE9)"
     - icon: ':heavy_check_mark:'
       path: 01_Math/01_NumberTheory/02.07_enumerate-primes.hpp
-      title: 01_Math/01_NumberTheory/02.07_enumerate-primes.hpp
+      title: "\u7D20\u6570\u5217\u6319"
     - icon: ':heavy_check_mark:'
       path: 01_Math/01_NumberTheory/03.01.00_sieve.base.hpp
       title: "\u7BE9 (base)"

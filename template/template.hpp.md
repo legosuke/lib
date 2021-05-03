@@ -58,6 +58,9 @@ data:
     path: test/01_Math/01_NumberTheory/02.03.01_AOJ-NTL-1-D.test.cpp
     title: test/01_Math/01_NumberTheory/02.03.01_AOJ-NTL-1-D.test.cpp
   - icon: ':heavy_check_mark:'
+    path: test/01_Math/01_NumberTheory/02.07_LC-enumerate-primes.test.cpp
+    title: test/01_Math/01_NumberTheory/02.07_LC-enumerate-primes.test.cpp
+  - icon: ':heavy_check_mark:'
     path: test/01_Math/01_NumberTheory/03.01.01_AOJ-1276.test.cpp
     title: test/01_Math/01_NumberTheory/03.01.01_AOJ-1276.test.cpp
   - icon: ':heavy_check_mark:'
@@ -206,6 +209,7 @@ data:
   - test/03_Graph/02_GraphAlgorithm/01.01.03.01_AOJ-GRL-1-A.test.cpp
   - test/03_Graph/04_DirectedGraphAlgorithm/02.01_AOJ-GRL-3-C.test.cpp
   - test/03_Graph/01_TreeAlgorithm/01.01_AOJ-GRL-5-A.test.cpp
+  - test/01_Math/01_NumberTheory/02.07_LC-enumerate-primes.test.cpp
   - test/01_Math/01_NumberTheory/01.04.01_AOJ-NTL-1-E.test.cpp
   - test/01_Math/01_NumberTheory/02.01.05.01_AOJ-ALDS1-1-C.test.cpp
   - test/01_Math/01_NumberTheory/01.02.01_AOJ-ALDS1-1-B.test.cpp

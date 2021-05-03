@@ -1,48 +1,45 @@
 #pragma once
-#include <cmath>
-#include <cstdint>
-#include <vector>
+#include <bitset>
+#include "03.01.00_sieve.base.hpp"
 
 /**
  * @brief 篩 (アトキン)
- * @note O(n/log(log(n)))
+ * @note O(n/log(log(n))) time / O(n) space
  */
-std::vector<bool> sieve(std::uint32_t n) {
-    std::vector<bool> is_prime(n, false);
-    std::uint32_t sqrt_n = std::uint32_t(sqrt(n)), m;
-    for (std::uint32_t z = 1; z <= 5; z += 4) {
-        for (std::uint32_t y = z; y <= sqrt_n; y += 6) {
-            for (std::uint32_t x = 1; x <= sqrt_n && (m = 4 * x * x + y * y) < n; ++x) {
-                is_prime[m] = !is_prime[m];
-            }
-            for (std::uint32_t x = y + 1; x <= sqrt_n && (m = 3 * x * x - y * y) < n; x += 2) {
-                is_prime[m] = !is_prime[m];
-            }
-        }
-    }
-    for (std::uint32_t z = 2; z <= 4; z += 2) {
-        for (std::uint32_t y = z; y <= sqrt_n; y += 6) {
-            for (std::uint32_t x = 1; x <= sqrt_n && (m = 3 * x * x + y * y) < n; x += 2) {
-                is_prime[m] = !is_prime[m];
-            }
-            for (std::uint32_t x = y + 1; x <= sqrt_n && (m = 3 * x * x - y * y) < n; x += 2) {
-                is_prime[m] = !is_prime[m];
-            }
-        }
-    }
-    for (std::uint32_t y = 3; y <= sqrt_n; y += 6) {
-        for (std::uint32_t z = 1; z <= 2; ++z) {
-            for (std::uint32_t x = z; x <= sqrt_n && (m = 4 * x * x + y * y) < n; x += 3) {
-                is_prime[m] = !is_prime[m];
+template <std::uint32_t N>
+class atkin : sieve_base {
+public:
+    atkin() {
+        is_prime.reset();
+        for (std::uint32_t x = 1; x * x < N; ++x) {
+            for (std::uint32_t y = 1; y * y < N; ++y) {
+                std::uint32_t n = (4 * x * x) + (y * y);
+                if (n <= N && (n % 12 == 1 || n % 12 == 5)) {
+                    is_prime[n].flip();
+                }
+                n = (3 * x * x) + (y * y);
+                if (n <= N && n % 12 == 7) {
+                    is_prime[n].flip();
+                }
+                n = (3 * x * x) - (y * y);
+                if (x > y && n <= N && n % 12 == 11) {
+                    is_prime[n].flip();
+                }
             }
         }
-    }
-    for (std::uint32_t i = 5; i < sqrt_n; ++i) {
-        if (!is_prime[i]) continue;
-        for (std::uint32_t i2 = i * i, j = i2; j < n; j += i2) {
-            is_prime[j] = false;
+        for (std::uint32_t r = 5; r * r < N; ++r) {
+            if (!is_prime[r]) continue;
+            for (std::uint32_t i = r * r; i < N; i += r * r) {
+                is_prime[i] = false;
+            }
         }
+        is_prime[2] = is_prime[3] = true;
     }
-    is_prime[2] = is_prime[3] = true;
-    return is_prime;
-}
+
+    const bool operator [] (std::uint32_t i) const {
+        return (is_prime[i]);
+    }
+    
+private:
+    std::bitset<N + 1> is_prime;
+};

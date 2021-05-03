@@ -168,9 +168,12 @@ data:
   - icon: ':heavy_check_mark:'
     path: test/05_DP/01_Typical/02.01_AOJ-0360.test.cpp
     title: test/05_DP/01_Typical/02.01_AOJ-0360.test.cpp
-  _isVerificationFailed: false
+  - icon: ':x:'
+    path: test/05_DP/01_Typical/02.02_yukicoder-123.test.cpp
+    title: test/05_DP/01_Typical/02.02_yukicoder-123.test.cpp
+  _isVerificationFailed: true
   _pathExtension: hpp
-  _verificationStatusIcon: ':heavy_check_mark:'
+  _verificationStatusIcon: ':question:'
   attributes:
     links: []
   bundledCode: '#line 1 "template/template.hpp"
@@ -192,9 +195,10 @@ data:
   path: template/template.hpp
   requiredBy: []
   timestamp: '2020-12-16 16:02:46+00:00'
-  verificationStatus: LIBRARY_ALL_AC
+  verificationStatus: LIBRARY_SOME_WA
   verifiedWith:
   - test/05_DP/01_Typical/02.01_AOJ-0360.test.cpp
+  - test/05_DP/01_Typical/02.02_yukicoder-123.test.cpp
   - test/02_DataStructure/03_BinaryIndexedTree/01.01_AOJ-DSL-2-B.test.cpp
   - test/02_DataStructure/01_UnionFind/01_AOJ-DSL-1-A.test.cpp
   - test/02_DataStructure/01_UnionFind/02.01_AOJ-2664.test.cpp

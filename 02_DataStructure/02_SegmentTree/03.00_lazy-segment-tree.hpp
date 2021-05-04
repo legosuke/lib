@@ -5,7 +5,7 @@
 #include "00.00_monoid.base.hpp"
 
 /**
- * @brief 遅延セグメントツリー
+ * @brief 遅延評価セグメント木
  */
 template <class MonoidX, class MonoidF, class Mapping>
 class lazy_segment_tree {

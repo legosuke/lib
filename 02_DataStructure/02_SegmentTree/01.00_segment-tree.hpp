@@ -5,7 +5,7 @@
 #include "00.00_monoid.base.hpp"
 
 /**
- * @brief セグメントツリー
+ * @brief セグメント木
  */
 template <class MonoidX>
 class segment_tree {

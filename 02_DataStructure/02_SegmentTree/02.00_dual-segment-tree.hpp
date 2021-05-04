@@ -5,7 +5,7 @@
 #include "00.00_monoid.base.hpp"
 
 /**
- * @brief 双対セグメントツリー
+ * @brief 双対セグメント木
  */
 template <class MonoidF>
 class dual_segment_tree {

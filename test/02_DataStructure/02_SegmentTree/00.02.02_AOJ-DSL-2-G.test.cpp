@@ -2,7 +2,7 @@
 #include "../../../template/template.hpp"
 #include "../../../02_DataStructure/02_SegmentTree/00.01.03_monoid.plus.hpp"
 #include "../../../02_DataStructure/02_SegmentTree/00.02.02_mapping.plus-plus.hpp"
-#include "../../../02_DataStructure/02_SegmentTree/03_lazy-segment-tree.hpp"
+#include "../../../02_DataStructure/02_SegmentTree/03.00_lazy-segment-tree.hpp"
 
 signed main() {
     int n, q;

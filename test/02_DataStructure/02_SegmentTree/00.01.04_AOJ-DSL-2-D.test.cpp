@@ -1,7 +1,7 @@
 #define PROBLEM "https://onlinejudge.u-aizu.ac.jp/problems/DSL_2_D"
 #include "../../../template/template.hpp"
 #include "../../../02_DataStructure/02_SegmentTree/00.01.04_monoid.update.hpp"
-#include "../../../02_DataStructure/02_SegmentTree/02_dual-segment-tree.hpp"
+#include "../../../02_DataStructure/02_SegmentTree/02.00_dual-segment-tree.hpp"
 
 signed main() {
     int n, q;

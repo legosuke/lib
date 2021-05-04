@@ -268,13 +268,13 @@ data:
       title: "\u5199\u50CF (plus-update)"
     - icon: ':heavy_check_mark:'
       path: 02_DataStructure/02_SegmentTree/01.00_segment-tree.hpp
-      title: "\u30BB\u30B0\u30E1\u30F3\u30C8\u30C4\u30EA\u30FC"
+      title: "\u30BB\u30B0\u30E1\u30F3\u30C8\u6728"
     - icon: ':heavy_check_mark:'
       path: 02_DataStructure/02_SegmentTree/02.00_dual-segment-tree.hpp
-      title: "\u53CC\u5BFE\u30BB\u30B0\u30E1\u30F3\u30C8\u30C4\u30EA\u30FC"
+      title: "\u53CC\u5BFE\u30BB\u30B0\u30E1\u30F3\u30C8\u6728"
     - icon: ':heavy_check_mark:'
       path: 02_DataStructure/02_SegmentTree/03.00_lazy-segment-tree.hpp
-      title: "\u9045\u5EF6\u30BB\u30B0\u30E1\u30F3\u30C8\u30C4\u30EA\u30FC"
+      title: "\u9045\u5EF6\u8A55\u4FA1\u30BB\u30B0\u30E1\u30F3\u30C8\u6728"
   - name: 02_DataStructure/03_BinaryIndexedTree
     pages:
     - icon: ':heavy_check_mark:'

@@ -267,7 +267,7 @@ data:
       path: 02_DataStructure/02_SegmentTree/00.02.04_mapping.plus-update.hpp
       title: "\u5199\u50CF (plus-update)"
     - icon: ':heavy_check_mark:'
-      path: 02_DataStructure/02_SegmentTree/01_segment-tree.hpp
+      path: 02_DataStructure/02_SegmentTree/01.00_segment-tree.hpp
       title: "\u30BB\u30B0\u30E1\u30F3\u30C8\u30C4\u30EA\u30FC"
     - icon: ':heavy_check_mark:'
       path: 02_DataStructure/02_SegmentTree/02_dual-segment-tree.hpp

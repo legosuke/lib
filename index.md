@@ -211,6 +211,17 @@ data:
       path: 01_Math/03_Algebra/02.01.01.03_linear-equations.gaussian-elimination.binary.hpp
       title: "\u9023\u7ACB\u4E00\u6B21\u65B9\u7A0B\u5F0F (\u30AC\u30A6\u30B9\u306E\
         \u6D88\u53BB\u6CD5\u3001\u30D0\u30A4\u30CA\u30EA)"
+    - icon: ':warning:'
+      path: 01_Math/03_Algebra/03.04.01_polynomial-expand.fft.hpp
+      title: "\u591A\u9805\u5F0F\u5C55\u958B (\u9AD8\u901F\u30D5\u30FC\u30EA\u30A8\
+        \u5909\u63DB)"
+    - icon: ':warning:'
+      path: 01_Math/03_Algebra/04.01_fast-fourier-transform.hpp
+      title: "\u9AD8\u901F\u30D5\u30FC\u30EA\u30A8\u5909\u63DB"
+    - icon: ':warning:'
+      path: 01_Math/03_Algebra/05.01_convolution.fast-fourier-transform.hpp
+      title: "\u7573\u307F\u8FBC\u307F (\u9AD8\u901F\u30D5\u30FC\u30EA\u30A8\u5909\
+        \u63DB)"
   - name: 02_DataStructure/01_UnionFind
     pages:
     - icon: ':heavy_check_mark:'

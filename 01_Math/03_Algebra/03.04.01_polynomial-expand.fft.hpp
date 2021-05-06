@@ -5,6 +5,7 @@
 namespace __fft {
     /**
      * @brief 多項式展開 (高速フーリエ変換)
+     * @note O(n⋅log²(n))
      */
     std::vector<F> polynomial_expand(std::vector<F> z) {
         std::uint32_t n = __bit_pow2::bit_ceil(z.size());

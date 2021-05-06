@@ -64,14 +64,14 @@ data:
   isVerificationFile: false
   path: 02_DataStructure/01_UnionFind/01_union-find.hpp
   requiredBy:
+  - 02_DataStructure/01_UnionFind/02.03_attributed-union-find.mode.hpp
   - 02_DataStructure/01_UnionFind/02.02_attributed-union-find.sum.hpp
   - 02_DataStructure/01_UnionFind/02.01_attributed-union-find.min-max.hpp
-  - 02_DataStructure/01_UnionFind/02.03_attributed-union-find.mode.hpp
   timestamp: '2021-01-10 00:26:45+00:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
-  - test/02_DataStructure/01_UnionFind/01_AOJ-DSL-1-A.test.cpp
   - test/02_DataStructure/01_UnionFind/02.01_AOJ-2664.test.cpp
+  - test/02_DataStructure/01_UnionFind/01_AOJ-DSL-1-A.test.cpp
 documentation_of: 02_DataStructure/01_UnionFind/01_union-find.hpp
 layout: document
 redirect_from:

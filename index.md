@@ -20,8 +20,8 @@ data:
       title: "\u7D20\u6570\u5224\u5B9A (\u7D20\u6734\u306A\u624B\u6CD5)"
     - icon: ':heavy_check_mark:'
       path: 01_Math/01_NumberTheory/02.01.02_is-prime.fermer-pseudoprime.hpp
-      title: "\u7D20\u6570\u5224\u5B9A (\u30AA\u30A4\u30E9\u30FC\u64EC\u7D20\u6570\
-        )"
+      title: "\u7D20\u6570\u5224\u5B9A (\u30D5\u30A7\u30EB\u30DE\u30FC\u64EC\u7D20\
+        \u6570)"
     - icon: ':heavy_check_mark:'
       path: 01_Math/01_NumberTheory/02.01.03_is-prime.euler-pseudoprime.hpp
       title: "\u7D20\u6570\u5224\u5B9A (\u30AA\u30A4\u30E9\u30FC\u64EC\u7D20\u6570\
@@ -320,6 +320,47 @@ data:
     - icon: ':heavy_check_mark:'
       path: 05_DP/03_Efficient/02.01_kitamasa.hpp
       title: "Kitamasa \u6CD5"
+  - name: 06_Others/03_BitTechnic
+    pages:
+    - icon: ':warning:'
+      path: 06_Others/03_BitTechnic/06.01_bit-reverse.hpp
+      title: "\u30D3\u30C3\u30C8\u5217\u306E\u53CD\u8EE2"
+    - icon: ':warning:'
+      path: 06_Others/03_BitTechnic/06.02_bit-reverse-copy.hpp
+      title: "\u30D3\u30C3\u30C8\u53CD\u8EE2\u7F6E\u63DB"
+    - icon: ':warning:'
+      path: 06_Others/03_BitTechnic/07.00_bit-count.hpp
+      title: "\u30D3\u30C3\u30C8\u30AB\u30A6\u30F3\u30C8"
+    - icon: ':warning:'
+      path: 06_Others/03_BitTechnic/07.01_bit-count.countl-zero.hpp
+      title: "\u30D3\u30C3\u30C8\u30AB\u30A6\u30F3\u30C8 (countl_zero)"
+    - icon: ':warning:'
+      path: 06_Others/03_BitTechnic/07.02_bit-count.countl-one.hpp
+      title: "\u30D3\u30C3\u30C8\u30AB\u30A6\u30F3\u30C8 (countl_one)"
+    - icon: ':warning:'
+      path: 06_Others/03_BitTechnic/07.03_bit-count.countr-zero.hpp
+      title: "\u30D3\u30C3\u30C8\u30AB\u30A6\u30F3\u30C8 (countr_zero)"
+    - icon: ':warning:'
+      path: 06_Others/03_BitTechnic/07.04_bit-count.countr-one.hpp
+      title: "\u30D3\u30C3\u30C8\u30AB\u30A6\u30F3\u30C8 (countr_one)"
+    - icon: ':warning:'
+      path: 06_Others/03_BitTechnic/07.05_bit-count.popcount.hpp
+      title: "\u30D3\u30C3\u30C8\u30AB\u30A6\u30F3\u30C8 (popcount)"
+    - icon: ':warning:'
+      path: 06_Others/03_BitTechnic/08.00_bit-pow2.hpp
+      title: "$2$ \u306E\u7D2F\u4E57\u6574\u6570"
+    - icon: ':warning:'
+      path: 06_Others/03_BitTechnic/08.01_bit-pow2.has-single-bit.hpp
+      title: "$2$ \u306E\u7D2F\u4E57\u6574\u6570 (has_single_bit)"
+    - icon: ':warning:'
+      path: 06_Others/03_BitTechnic/08.02_bit-pow2.bit-ceil.hpp
+      title: "$2$ \u306E\u7D2F\u4E57\u6574\u6570 (bit_ceil)"
+    - icon: ':warning:'
+      path: 06_Others/03_BitTechnic/08.03_bit-pow2.bit-floor.hpp
+      title: "$2$ \u306E\u7D2F\u4E57\u6574\u6570 (bit_floor)"
+    - icon: ':warning:'
+      path: 06_Others/03_BitTechnic/08.04_bit-pow2.bit-width.hpp
+      title: "$2$ \u306E\u7D2F\u4E57\u6574\u6570 (bit_width)"
   - name: 06_Others/04_Random
     pages:
     - icon: ':heavy_check_mark:'

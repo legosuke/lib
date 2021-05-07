@@ -1,8 +1,5 @@
 #pragma once
-#include <bit>
 #include <vector>
-#include "06.01_bit-reverse.hpp"
-#include "08.04_bit-pow2.bit-width.hpp"
 
 /**
  * @brief ビット反転置換
@@ -11,10 +8,9 @@
 template <typename T>
 std::vector<T> bit_reverse_copy(std::vector<T> a) {
     std::uint32_t n = a.size();
-    std::vector<T> A(n);
-    std::uint32_t len = __bit_pow2::bit_width(n - 1);
-    for (std::uint32_t k = 0; k < n; ++k) {
-        A[bit_reverse(k, len)] = a[k];
+    for (std::uint32_t i = 0, j = 1; j < n - 1; ++j) {
+        for (std::uint32_t k = n >> 1; k > (i ^= k); k >>= 1);
+        if (j < i) std::swap(a[i], a[j]);
     }
-    return A;
+    return a;
 }

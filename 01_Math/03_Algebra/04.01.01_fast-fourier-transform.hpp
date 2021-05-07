@@ -12,24 +12,24 @@ namespace __fft {
      * @note O(n⋅log(n))
      */
     std::vector<F> fast_fourier_transform(std::vector<F> a, bool is_inverse) {
-        auto A = bit_reverse_copy(a);
         std::uint32_t n = a.size();
-        for (std::uint32_t s = 1; (1U << s) <= n; ++s) {
-            std::uint32_t m = (1 << s);
-            F wm = std::polar(1.0, 2 * M_PI / m);
-            if (is_inverse) wm = std::conj(wm);
-            for (std::uint32_t k = 0; k < n; k += m) {
-                F w = 1;
-                for (std::uint32_t j = 0; j < m / 2; ++j) {
-                    F t = w * A[k + j + m / 2];
-                    F u = A[k + j];
-                    A[k + j] = u + t;
-                    A[k + j + m / 2] = u - t;
-                    w = w * wm;
+        auto A = bit_reverse_copy(a);
+        std::vector<F> zeta_pow;
+        for (std::uint32_t i = 0; i < n; ++i) {
+            long double theta = M_PI / n * i * (is_inverse ? -1 : 1);
+            zeta_pow.emplace_back(cos(theta), sin(theta));
+        }
+        for (std::uint32_t m = 1; m < n; m <<= 1) {
+            for (std::uint32_t j = 0; j < m; ++j) {
+                F fac = zeta_pow[n / m * j];
+                for (std::uint32_t k = 0; k < n; k += m << 1) {
+                    F s = A[k + j] + fac * A[k + j + m];
+                    F t = A[k + j] - fac * A[k + j + m];
+                    A[k + j] = s; A[k + j + m] = t;
                 }
             }
         }
-        if (is_inverse) for (auto&& elem : A) elem /= 1.0f * n;
+        if (is_inverse) for (auto&& elem : A) elem /= (long double)n;
         return A;
     }
 }

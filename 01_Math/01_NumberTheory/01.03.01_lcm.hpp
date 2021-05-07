@@ -1,5 +1,5 @@
 #pragma once
-#include "01.02.01_gcd.hpp"
+#include "01.02.01.01_gcd.hpp"
 
 /**
  * @brief 最小公倍数

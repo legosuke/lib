@@ -7,8 +7,11 @@ data:
       path: 01_Math/01_NumberTheory/01.01.01_divisor.naive.hpp
       title: "\u7D04\u6570\u5217\u6319 (\u7D20\u6734\u306A\u624B\u6CD5)"
     - icon: ':heavy_check_mark:'
-      path: 01_Math/01_NumberTheory/01.02.01_gcd.hpp
+      path: 01_Math/01_NumberTheory/01.02.01.01_gcd.hpp
       title: "\u6700\u5927\u516C\u7D04\u6570"
+    - icon: ':heavy_check_mark:'
+      path: 01_Math/01_NumberTheory/01.02.01.02_gcd.brent.hpp
+      title: "\u6700\u5927\u516C\u7D04\u6570 (Brent)"
     - icon: ':heavy_check_mark:'
       path: 01_Math/01_NumberTheory/01.03.01_lcm.hpp
       title: "\u6700\u5C0F\u516C\u500D\u6570"
@@ -140,14 +143,14 @@ data:
       path: 01_Math/02_Combinatorics/01.05.02.02_primitive-root.prime-factor+randomized.hpp
       title: "$\\mod{p}$ \u306E\u539F\u59CB\u6839 (\u7D20\u56E0\u6570\u5206\u89E3\
         \ + \u4E71\u629E)"
-    - icon: ':heavy_check_mark:'
+    - icon: ':warning:'
       path: 01_Math/02_Combinatorics/01.06.00_pre-chinese-remainder-theorem.hpp
       title: "\u4E2D\u56FD\u5270\u4F59\u5B9A\u7406\u306E\u524D\u51E6\u7406"
-    - icon: ':heavy_check_mark:'
+    - icon: ':warning:'
       path: 01_Math/02_Combinatorics/01.06.01_chinese-remainder-theorem.ext-gcd.hpp
       title: "\u4E2D\u56FD\u5270\u4F59\u5B9A\u7406 (\u62E1\u5F35\u30E6\u30FC\u30AF\
         \u30EA\u30C3\u30C9\u306E\u4E92\u9664\u6CD5)"
-    - icon: ':heavy_check_mark:'
+    - icon: ':warning:'
       path: 01_Math/02_Combinatorics/01.06.02_chinese-remainder-theorem.gauss.hpp
       title: "\u4E2D\u56FD\u5270\u4F59\u5B9A\u7406 (Gauss)"
     - icon: ':heavy_check_mark:'
@@ -411,8 +414,11 @@ data:
       path: test/01_Math/01_NumberTheory/01.01.01_AOJ-ITP1-3-D.test.cpp
       title: test/01_Math/01_NumberTheory/01.01.01_AOJ-ITP1-3-D.test.cpp
     - icon: ':heavy_check_mark:'
-      path: test/01_Math/01_NumberTheory/01.02.01_AOJ-ALDS1-1-B.test.cpp
-      title: test/01_Math/01_NumberTheory/01.02.01_AOJ-ALDS1-1-B.test.cpp
+      path: test/01_Math/01_NumberTheory/01.02.01.01_AOJ-ALDS1-1-B.test.cpp
+      title: test/01_Math/01_NumberTheory/01.02.01.01_AOJ-ALDS1-1-B.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: test/01_Math/01_NumberTheory/01.02.01.02_AOJ-ALDS1-1-B.test.cpp
+      title: test/01_Math/01_NumberTheory/01.02.01.02_AOJ-ALDS1-1-B.test.cpp
     - icon: ':heavy_check_mark:'
       path: test/01_Math/01_NumberTheory/01.03.01_AOJ-NTL-1-C.test.cpp
       title: test/01_Math/01_NumberTheory/01.03.01_AOJ-NTL-1-C.test.cpp
@@ -502,10 +508,10 @@ data:
     - icon: ':heavy_check_mark:'
       path: test/01_Math/02_Combinatorics/01.04.03_AOJ-DPL-5-E.test.cpp
       title: test/01_Math/02_Combinatorics/01.04.03_AOJ-DPL-5-E.test.cpp
-    - icon: ':heavy_check_mark:'
+    - icon: ':x:'
       path: test/01_Math/02_Combinatorics/01.06.01_yukicoder-186.test.cpp
       title: test/01_Math/02_Combinatorics/01.06.01_yukicoder-186.test.cpp
-    - icon: ':heavy_check_mark:'
+    - icon: ':x:'
       path: test/01_Math/02_Combinatorics/01.06.02_yukicoder-186.test.cpp
       title: test/01_Math/02_Combinatorics/01.06.02_yukicoder-186.test.cpp
     - icon: ':heavy_check_mark:'

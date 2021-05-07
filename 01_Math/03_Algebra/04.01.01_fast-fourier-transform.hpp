@@ -11,9 +11,9 @@ namespace __fft {
      * @brief 高速フーリエ変換
      * @note O(n⋅log(n))
      */
-    std::vector<F> fast_fourier_transform(const std::vector<F>& a, bool is_inverse) {
+    std::vector<F> fast_fourier_transform(std::vector<F> a, bool is_inverse) {
         auto A = bit_reverse_copy(a);
-        const std::uint32_t n = a.size();
+        std::uint32_t n = a.size();
         for (std::uint32_t s = 1; (1U << s) <= n; ++s) {
             std::uint32_t m = (1 << s);
             F wm = std::polar(1.0, 2 * M_PI / m);

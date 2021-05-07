@@ -212,6 +212,16 @@ data:
       title: "\u9023\u7ACB\u4E00\u6B21\u65B9\u7A0B\u5F0F (\u30AC\u30A6\u30B9\u306E\
         \u6D88\u53BB\u6CD5\u3001\u30D0\u30A4\u30CA\u30EA)"
     - icon: ':warning:'
+      path: 01_Math/03_Algebra/03.01.00_polynomial.base.hpp
+      title: "\u591A\u9805\u5F0F (base)"
+    - icon: ':warning:'
+      path: 01_Math/03_Algebra/03.01.01_polynomial.real.hpp
+      title: "\u591A\u9805\u5F0F (\u5B9F\u6570)"
+    - icon: ':warning:'
+      path: 01_Math/03_Algebra/03.02.01_polynomial-multiply.karatsuba.hpp
+      title: "\u591A\u9805\u5F0F\u306E\u4E57\u7B97 (\u30AB\u30E9\u30C4\u30D0\u6CD5\
+        )"
+    - icon: ':warning:'
       path: 01_Math/03_Algebra/03.04.01_polynomial-expand.fft.hpp
       title: "\u591A\u9805\u5F0F\u5C55\u958B (\u9AD8\u901F\u30D5\u30FC\u30EA\u30A8\
         \u5909\u63DB)"

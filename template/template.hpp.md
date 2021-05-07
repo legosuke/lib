@@ -100,6 +100,12 @@ data:
     path: test/01_Math/02_Combinatorics/01.04.03_AOJ-DPL-5-E.test.cpp
     title: test/01_Math/02_Combinatorics/01.04.03_AOJ-DPL-5-E.test.cpp
   - icon: ':heavy_check_mark:'
+    path: test/01_Math/02_Combinatorics/01.06.01_yukicoder-186.test.cpp
+    title: test/01_Math/02_Combinatorics/01.06.01_yukicoder-186.test.cpp
+  - icon: ':heavy_check_mark:'
+    path: test/01_Math/02_Combinatorics/01.06.02_yukicoder-186.test.cpp
+    title: test/01_Math/02_Combinatorics/01.06.02_yukicoder-186.test.cpp
+  - icon: ':heavy_check_mark:'
     path: test/01_Math/02_Combinatorics/02.03.01_AOJ-DPL-5-E.test.cpp
     title: test/01_Math/02_Combinatorics/02.03.01_AOJ-DPL-5-E.test.cpp
   - icon: ':heavy_check_mark:'
@@ -260,7 +266,9 @@ data:
   - test/01_Math/02_Combinatorics/02.03.01_AOJ-DPL-5-E.test.cpp
   - test/01_Math/02_Combinatorics/01.04.03_AOJ-DPL-5-E.test.cpp
   - test/01_Math/02_Combinatorics/01.02.01_AOJ-1327.test.cpp
+  - test/01_Math/02_Combinatorics/01.06.01_yukicoder-186.test.cpp
   - test/01_Math/02_Combinatorics/01.02.01_yukicoder-840.test.cpp
+  - test/01_Math/02_Combinatorics/01.06.02_yukicoder-186.test.cpp
 documentation_of: template/template.hpp
 layout: document
 redirect_from:

@@ -28,6 +28,6 @@ Q(x)&=\sum_{j=0}^{2n-2}z^{-(n-1-j)^2/2}x^j
 \end{aligned}
 $$
 
-$P(x)\otimes Q(x)=\sum_{j=0}^{3n-3}y'_j$ とすると、$y_k=z^{k^2/2}y'_{k+n-1}$ となる．
+ここで、$P(x)\otimes Q(x)=\sum_{j=0}^{3n-3}r_j$ とすると、$y_k=z^{k^2/2}r_{k+n-1}$ となる．
 
-$z^{\pm0^2/2},z^{\pm1^2/2},\ldots,z^{\pm(n-1)^2/2}$ は $O(n)$ 時間、$P(x)\otimes Q(x)$ の計算に $O(n\lg{n})$ 時間かかるので、全体で $O(n\lg{n})$ 時間となる．
+$z^{\pm0^2/2},z^{\pm1^2/2},\ldots,z^{\pm(n-1)^2/2}$ は $O(n)$ 時間、$P(x)\otimes Q(x)$ の計算は $O(n\lg{n})$ 時間かかるので、全体で $O(n\lg{n})$ 時間となる．

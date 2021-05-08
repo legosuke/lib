@@ -180,6 +180,9 @@ data:
       path: 01_Math/03_Algebra/01.01.01.03_matrix.bitset.hpp
       title: "\u884C\u5217 (bitset)"
     - icon: ':warning:'
+      path: 01_Math/03_Algebra/01.01.02.01_toeplitz-matrix.hpp
+      title: "Toeplitz \u884C\u5217"
+    - icon: ':warning:'
       path: 01_Math/03_Algebra/01.02.01.01_gaussian-elimination.floating-point.hpp
       title: "\u30AC\u30A6\u30B9\u306E\u6D88\u53BB\u6CD5 (\u5B9F\u6570)"
     - icon: ':warning:'

@@ -5,7 +5,7 @@
 namespace __fft {
     /**
      * @brief チャープ変換
-     * @note O(n⋅log(n))
+     * @note O(n⋅lg(n))
      */
     std::vector<F> chirp_transform(std::vector<F> a, F z) {
         std::uint32_t n = a.size();

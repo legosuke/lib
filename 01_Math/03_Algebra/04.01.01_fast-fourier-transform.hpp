@@ -9,7 +9,7 @@ namespace __fft {
 
     /**
      * @brief 高速フーリエ変換
-     * @note O(n⋅log(n))
+     * @note O(n⋅lg(n))
      */
     std::vector<F> fast_fourier_transform(std::vector<F> a, bool is_inverse) {
         std::uint32_t n = a.size();

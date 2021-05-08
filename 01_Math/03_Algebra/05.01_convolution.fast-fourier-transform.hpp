@@ -5,7 +5,7 @@
 namespace __fft {
     /**
      * @brief 畳み込み (高速フーリエ変換)
-     * @note O(n⋅log(n))
+     * @note O(n⋅lg(n))
      */
     template <typename T>
     std::vector<F> convolution(std::vector<T> _a, std::vector<T> _b) {
@@ -30,6 +30,14 @@ namespace __fft {
         auto c = convolution(a, b);
         std::vector<Integer> res;
         for (auto&& elem : c) res.emplace_back(std::floor(elem.real() + 0.5));
+        return res;
+    }
+
+    template <typename Real>
+    std::vector<Real> real_convolution(std::vector<Real> a, std::vector<Real> b) {
+        auto c = convolution(a, b);
+        std::vector<Real> res;
+        for (auto&& elem : c) res.emplace_back(elem.real());
         return res;
     }
 }

@@ -222,8 +222,16 @@ data:
       title: "\u591A\u9805\u5F0F\u306E\u4E57\u7B97 (\u30AB\u30E9\u30C4\u30D0\u6CD5\
         )"
     - icon: ':warning:'
+      path: 01_Math/03_Algebra/03.02.03_polynomial-multply.fast-fourier-transform.hpp
+      title: "\u591A\u9805\u5F0F\u306E\u4E57\u7B97 (\u9AD8\u901F\u30D5\u30FC\u30EA\
+        \u30A8\u5909\u63DB)"
+    - icon: ':warning:'
       path: 01_Math/03_Algebra/03.03.01_polynomial-expand.karatsuba.hpp
       title: "\u591A\u9805\u5F0F\u5C55\u958B (Karatsuba)"
+    - icon: ':warning:'
+      path: 01_Math/03_Algebra/03.03.03_polynomial-expand.fast-fourier-transform.hpp
+      title: "\u591A\u9805\u5F0F\u5C55\u958B (\u9AD8\u901F\u30D5\u30FC\u30EA\u30A8\
+        \u5909\u63DB)"
     - icon: ':warning:'
       path: 01_Math/03_Algebra/04.01.01_fast-fourier-transform.hpp
       title: "\u9AD8\u901F\u30D5\u30FC\u30EA\u30A8\u5909\u63DB"

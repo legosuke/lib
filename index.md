@@ -236,13 +236,19 @@ data:
       title: "\u591A\u9805\u5F0F\u5C55\u958B (\u9AD8\u901F\u30D5\u30FC\u30EA\u30A8\
         \u5909\u63DB)"
     - icon: ':warning:'
-      path: 01_Math/03_Algebra/04.01.01_fast-fourier-transform.hpp
+      path: 01_Math/03_Algebra/04.01.01.01_fast-fourier-transform.hpp
+      title: "\u9AD8\u901F\u30D5\u30FC\u30EA\u30A8\u5909\u63DB"
+    - icon: ':warning:'
+      path: 01_Math/03_Algebra/04.01.01.02_fast-fourier-transform.arbitrary.hpp
       title: "\u9AD8\u901F\u30D5\u30FC\u30EA\u30A8\u5909\u63DB"
     - icon: ':warning:'
       path: 01_Math/03_Algebra/04.01.02_fast-fourier-transform.chirp-transform.hpp
       title: "\u30C1\u30E3\u30FC\u30D7\u5909\u63DB"
     - icon: ':warning:'
-      path: 01_Math/03_Algebra/05.01_convolution.fast-fourier-transform.hpp
+      path: 01_Math/03_Algebra/04.01.03_fast-fourier-transform.multidimension.hpp
+      title: "\u591A\u6B21\u5143\u9AD8\u901F\u30D5\u30FC\u30EA\u30A8\u5909\u63DB"
+    - icon: ':warning:'
+      path: 01_Math/03_Algebra/05.01.01_convolution.fast-fourier-transform.hpp
       title: "\u7573\u307F\u8FBC\u307F (\u9AD8\u901F\u30D5\u30FC\u30EA\u30A8\u5909\
         \u63DB)"
   - name: 02_DataStructure/01_UnionFind

@@ -5,9 +5,8 @@
 
 namespace __fft {
     /**
-     * @brief 高速フーリエ変換
+     * @brief 高速フーリエ変換 (任意長)
      * @note O(n⋅lg(n))
-     * @warning a の長さは任意長
      */
     std::vector<F> fast_fourier_transform_arbitrary(std::vector<F> a, bool is_inverse) {
         std::uint32_t n = a.size();

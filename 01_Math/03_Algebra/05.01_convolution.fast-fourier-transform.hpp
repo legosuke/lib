@@ -8,7 +8,7 @@ namespace __fft {
      * @note O(n⋅log(n))
      */
     template <typename T>
-    std::vector<T> convolution(std::vector<T> _a, std::vector<T> _b) {
+    std::vector<F> convolution(std::vector<T> _a, std::vector<T> _b) {
         std::uint32_t na = _a.size(), nb = _b.size();
         std::uint32_t nc = __bit_pow2::bit_ceil(na + nb - 1);
         std::vector<F> a, b;
@@ -22,16 +22,14 @@ namespace __fft {
             dftc[i] = dfta[i] * dftb[i];
         }
         auto c = fast_fourier_transform(dftc, true);
-        std::vector<T> _c;
-        for (auto&& elem : c) {
-            if constexpr (std::is_same<T, F>::value) {
-                _c.emplace_back(elem);
-            } else if constexpr (std::is_integral<T>::value) {
-                _c.emplace_back(std::floor(elem.real() + 0.5));
-            } else {
-                _c.emplace_back((T)elem.real());
-            }
-        }
-        return _c;
+        return c;
+    }
+
+    template <typename Integer>
+    std::vector<Integer> integral_convolution(std::vector<Integer> a, std::vector<Integer> b) {
+        auto c = convolution(a, b);
+        std::vector<Integer> res;
+        for (auto&& elem : c) res.emplace_back(std::floor(elem.real() + 0.5));
+        return res;
     }
 }

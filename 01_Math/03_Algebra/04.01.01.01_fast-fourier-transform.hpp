@@ -10,6 +10,7 @@ namespace __fft {
     /**
      * @brief 高速フーリエ変換
      * @note O(n⋅lg(n))
+     * @warning a の長さは 2 の冪乗
      */
     std::vector<F> fast_fourier_transform(std::vector<F> a, bool is_inverse) {
         std::uint32_t n = a.size();

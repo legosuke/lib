@@ -25,18 +25,16 @@ namespace __fft {
         return c;
     }
 
-    template <typename Integer>
-    std::vector<Integer> integral_convolution(std::vector<Integer> a, std::vector<Integer> b) {
+    std::vector<std::int64_t> integral_convolution(std::vector<std::int64_t> a, std::vector<std::int64_t> b) {
         auto c = convolution(a, b);
-        std::vector<Integer> res;
+        std::vector<std::int64_t> res;
         for (auto&& elem : c) res.emplace_back(std::floor(elem.real() + 0.5));
         return res;
     }
 
-    template <typename Real>
-    std::vector<Real> real_convolution(std::vector<Real> a, std::vector<Real> b) {
+    std::vector<std::double_t> real_convolution(std::vector<std::double_t> a, std::vector<std::double_t> b) {
         auto c = convolution(a, b);
-        std::vector<Real> res;
+        std::vector<std::double_t> res;
         for (auto&& elem : c) res.emplace_back(elem.real());
         return res;
     }

@@ -4,8 +4,8 @@
 #include "../../06_Others/03_BitTechnic/06.02_bit-reverse-copy.hpp"
 
 namespace __fft {
-    using F = std::complex<long double>;
-    constexpr long double EPS = 1e-12;
+    using F = std::complex<std::double_t>;
+    constexpr std::double_t EPS = 1e-12;
 
     /**
      * @brief 高速フーリエ変換
@@ -16,7 +16,7 @@ namespace __fft {
         auto A = bit_reverse_copy(a);
         std::vector<F> zeta_pow;
         for (std::uint32_t i = 0; i < n; ++i) {
-            long double theta = M_PI / n * i * (is_inverse ? -1 : 1);
+            std::double_t theta = M_PI / n * i * (is_inverse ? -1 : 1);
             zeta_pow.emplace_back(cos(theta), sin(theta));
         }
         for (std::uint32_t m = 1; m < n; m <<= 1) {
@@ -29,7 +29,7 @@ namespace __fft {
                 }
             }
         }
-        if (is_inverse) for (auto&& elem : A) elem /= (long double)n;
+        if (is_inverse) for (auto&& elem : A) elem /= n;
         return A;
     }
 }

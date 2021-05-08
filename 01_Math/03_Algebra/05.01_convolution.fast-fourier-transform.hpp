@@ -25,7 +25,7 @@ namespace __fft {
         return c;
     }
 
-    std::vector<std::int64_t> integral_convolution(std::vector<std::int64_t> a, std::vector<std::int64_t> b) {
+    std::vector<std::int64_t> integral_convolution(std::vector<std::int_least32_t> a, std::vector<std::int_least32_t> b) {
         auto c = convolution(a, b);
         std::vector<std::int64_t> res;
         for (auto&& elem : c) res.emplace_back(std::floor(elem.real() + 0.5));

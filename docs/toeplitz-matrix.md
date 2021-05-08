@@ -3,8 +3,6 @@ title: Toeplitz 行列
 documentation_of: ../01_Math/03_Algebra/01.01.02.01_toeplitz-matrix.hpp
 ---
 
-## Toeplitz 行列
-
 $n\times n$ 行列 $A=(a_{i,j})$ が任意の $1\le i,j< n$ において、$a_{i,j}=a_{i-1,j-1}$ を満たすとき、Toeplitz 行列であるという．
 
 ### 2 つの Toeplitz 行列の和

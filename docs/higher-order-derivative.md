@@ -1,3 +1,8 @@
+---
+title: 多項式のすべての高階導関数に対するある点での評価
+documentation_of: ../01_Math/03_Algebra/03.05.01_higher-order-derivative.fast-fourier-transform.hpp
+---
+
 次数上界が $n$ の多項式 $A(n)$ に対して、第 $t$ 導関数を
 
 $$

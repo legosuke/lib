@@ -236,6 +236,9 @@ data:
       title: "\u591A\u9805\u5F0F\u5C55\u958B (\u9AD8\u901F\u30D5\u30FC\u30EA\u30A8\
         \u5909\u63DB)"
     - icon: ':warning:'
+      path: 01_Math/03_Algebra/03.05.01_higher-order-derivative.fast-fourier-transform.hpp
+      title: 01_Math/03_Algebra/03.05.01_higher-order-derivative.fast-fourier-transform.hpp
+    - icon: ':warning:'
       path: 01_Math/03_Algebra/04.01.01.01_fast-fourier-transform.hpp
       title: "\u9AD8\u901F\u30D5\u30FC\u30EA\u30A8\u5909\u63DB"
     - icon: ':warning:'

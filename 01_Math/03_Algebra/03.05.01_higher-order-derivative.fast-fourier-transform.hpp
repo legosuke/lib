@@ -2,6 +2,10 @@
 #include "05.01.01_convolution.fast-fourier-transform.hpp"
 
 namespace __fft {
+    /**
+     * @brief 多項式のすべての高階導関数に対するある点での評価
+     * @note O(n⋅lg(n))
+     */
     std::vector<F> higher_order_derivative(std::vector<F> a, F x0) {
         std::uint32_t n = a.size();
         std::vector<F> p(n, 0), q(2 * n - 1, 0), fact(n, 1);

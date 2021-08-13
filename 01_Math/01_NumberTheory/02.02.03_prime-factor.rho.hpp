@@ -2,7 +2,7 @@
 #include <cstdint>
 #include <random>
 #include <vector>
-#include "01.02.01.01_gcd.hpp"
+#include "01.02.01_gcd.hpp"
 #include "02.01.05.02_is-prime.miller-rabin.deterministic.hpp"
 
 /**

@@ -1,7 +1,7 @@
 #pragma once
 #include <cstdint>
 #include <vector>
-#include "../01_NumberTheory/01.02.01.01_gcd.hpp"
+#include "../01_NumberTheory/01.02.01_gcd.hpp"
 
 /**
  * @brief 中国剰余定理の前処理

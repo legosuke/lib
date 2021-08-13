@@ -1,6 +1,6 @@
 #pragma once
 #include <cstdint>
-#include "01.02.01.01_gcd.hpp"
+#include "01.02.01_gcd.hpp"
 #include "../02_Combinatorics/01.03.02_mod-pow.big-mod.hpp"
 #include "../02_Combinatorics/01.07_jacobi-symbol.hpp"
 #include "../../06_Others/04_Random/01_random-number.hpp"

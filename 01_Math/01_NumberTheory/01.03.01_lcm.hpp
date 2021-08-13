@@ -1,10 +1,16 @@
 #pragma once
-#include "01.02.01.01_gcd.hpp"
+#include <bits/stdc++.h>
+using namespace std;
 
 /**
  * @brief 最小公倍数
- * @note O(min(log(a),log(b)))
+ * @note O(log{min(a,b)})
  */
-std::uint64_t lcm(std::uint64_t a, std::uint64_t b) {
-    return a / gcd(a, b) * b;
+template <class... T>
+int64_t lcm(T... args) {
+    int64_t res = 1;
+    for (auto val : initializer_list<int64_t>{args...}) {
+        res = lcm(res, val);
+    }
+    return res;
 }

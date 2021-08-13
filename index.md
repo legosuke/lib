@@ -4,8 +4,8 @@ data:
   - name: 01_Math/01_NumberTheory
     pages:
     - icon: ':heavy_check_mark:'
-      path: 01_Math/01_NumberTheory/01.01.01_divisor.naive.hpp
-      title: "\u7D04\u6570\u5217\u6319 (\u7D20\u6734\u306A\u624B\u6CD5)"
+      path: 01_Math/01_NumberTheory/01.01.01_divisor.trial-division.hpp
+      title: "\u7D04\u6570\u5217\u6319 (\u8A66\u3057\u5272\u308A\u6CD5)"
     - icon: ':heavy_check_mark:'
       path: 01_Math/01_NumberTheory/01.02.01.01_gcd.hpp
       title: "\u6700\u5927\u516C\u7D04\u6570"

@@ -9,7 +9,7 @@ data:
     - icon: ':heavy_check_mark:'
       path: 01_Math/01_NumberTheory/01.02.01_gcd.hpp
       title: "\u6700\u5927\u516C\u7D04\u6570"
-    - icon: ':warning:'
+    - icon: ':heavy_check_mark:'
       path: 01_Math/01_NumberTheory/01.03.01_lcm.hpp
       title: "\u6700\u5C0F\u516C\u500D\u6570"
     - icon: ':heavy_check_mark:'
@@ -431,7 +431,7 @@ data:
     - icon: ':heavy_check_mark:'
       path: test/01_Math/01_NumberTheory/01.02.01_AOJ-ALDS1-1-B.test.cpp
       title: test/01_Math/01_NumberTheory/01.02.01_AOJ-ALDS1-1-B.test.cpp
-    - icon: ':x:'
+    - icon: ':heavy_check_mark:'
       path: test/01_Math/01_NumberTheory/01.03.01_AOJ-NTL-1-C.test.cpp
       title: test/01_Math/01_NumberTheory/01.03.01_AOJ-NTL-1-C.test.cpp
     - icon: ':heavy_check_mark:'

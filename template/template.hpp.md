@@ -10,6 +10,9 @@ data:
     path: test/01_Math/01_NumberTheory/01.02.01_AOJ-ALDS1-1-B.test.cpp
     title: test/01_Math/01_NumberTheory/01.02.01_AOJ-ALDS1-1-B.test.cpp
   - icon: ':heavy_check_mark:'
+    path: test/01_Math/01_NumberTheory/01.03.01_AOJ-NTL-1-C.test.cpp
+    title: test/01_Math/01_NumberTheory/01.03.01_AOJ-NTL-1-C.test.cpp
+  - icon: ':heavy_check_mark:'
     path: test/01_Math/01_NumberTheory/01.04.01_AOJ-NTL-1-E.test.cpp
     title: test/01_Math/01_NumberTheory/01.04.01_AOJ-NTL-1-E.test.cpp
   - icon: ':heavy_check_mark:'
@@ -220,6 +223,7 @@ data:
   - test/02_DataStructure/02_SegmentTree/00.02.03_AOJ-DSL-2-H.test.cpp
   - test/01_Math/01_NumberTheory/02.05.03_LC-couting-primes.test.cpp
   - test/01_Math/01_NumberTheory/03.01.01_AOJ-1276.test.cpp
+  - test/01_Math/01_NumberTheory/01.03.01_AOJ-NTL-1-C.test.cpp
   - test/01_Math/01_NumberTheory/02.01.05.02_AOJ-ALDS1-1-C.test.cpp
   - test/01_Math/01_NumberTheory/02.01.05.01_AOJ-ALDS1-1-C.test.cpp
   - test/01_Math/01_NumberTheory/02.03.01_AOJ-NTL-1-D.test.cpp

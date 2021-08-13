@@ -7,14 +7,8 @@ data:
     path: test/01_Math/01_NumberTheory/01.01.01_AOJ-ITP1-3-D.test.cpp
     title: test/01_Math/01_NumberTheory/01.01.01_AOJ-ITP1-3-D.test.cpp
   - icon: ':heavy_check_mark:'
-    path: test/01_Math/01_NumberTheory/01.02.01.01_AOJ-ALDS1-1-B.test.cpp
-    title: test/01_Math/01_NumberTheory/01.02.01.01_AOJ-ALDS1-1-B.test.cpp
-  - icon: ':heavy_check_mark:'
-    path: test/01_Math/01_NumberTheory/01.02.01.02_AOJ-ALDS1-1-B.test.cpp
-    title: test/01_Math/01_NumberTheory/01.02.01.02_AOJ-ALDS1-1-B.test.cpp
-  - icon: ':heavy_check_mark:'
-    path: test/01_Math/01_NumberTheory/01.03.01_AOJ-NTL-1-C.test.cpp
-    title: test/01_Math/01_NumberTheory/01.03.01_AOJ-NTL-1-C.test.cpp
+    path: test/01_Math/01_NumberTheory/01.02.01_AOJ-ALDS1-1-B.test.cpp
+    title: test/01_Math/01_NumberTheory/01.02.01_AOJ-ALDS1-1-B.test.cpp
   - icon: ':heavy_check_mark:'
     path: test/01_Math/01_NumberTheory/01.04.01_AOJ-NTL-1-E.test.cpp
     title: test/01_Math/01_NumberTheory/01.04.01_AOJ-NTL-1-E.test.cpp
@@ -226,7 +220,6 @@ data:
   - test/02_DataStructure/02_SegmentTree/00.02.03_AOJ-DSL-2-H.test.cpp
   - test/01_Math/01_NumberTheory/02.05.03_LC-couting-primes.test.cpp
   - test/01_Math/01_NumberTheory/03.01.01_AOJ-1276.test.cpp
-  - test/01_Math/01_NumberTheory/01.03.01_AOJ-NTL-1-C.test.cpp
   - test/01_Math/01_NumberTheory/02.01.05.02_AOJ-ALDS1-1-C.test.cpp
   - test/01_Math/01_NumberTheory/02.01.05.01_AOJ-ALDS1-1-C.test.cpp
   - test/01_Math/01_NumberTheory/02.03.01_AOJ-NTL-1-D.test.cpp
@@ -235,10 +228,10 @@ data:
   - test/01_Math/01_NumberTheory/02.01.04_AOJ-ALDS1-1-C.test.cpp
   - test/01_Math/01_NumberTheory/04.01.03_AOJ-ALDS1-10-A.test.cpp
   - test/01_Math/01_NumberTheory/02.01.04_yukicoder-3030.test.cpp
-  - test/01_Math/01_NumberTheory/01.02.01.01_AOJ-ALDS1-1-B.test.cpp
   - test/01_Math/01_NumberTheory/04.01.02_AOJ-ALDS1-10-A.test.cpp
   - test/01_Math/01_NumberTheory/03.01.02_AOJ-1276.test.cpp
   - test/01_Math/01_NumberTheory/01.01.01_AOJ-ITP1-3-D.test.cpp
+  - test/01_Math/01_NumberTheory/01.02.01_AOJ-ALDS1-1-B.test.cpp
   - test/01_Math/01_NumberTheory/02.01.02_AOJ-ALDS1-1-C.test.cpp
   - test/01_Math/01_NumberTheory/02.02.02_yukicoder-0811.test.cpp
   - test/01_Math/01_NumberTheory/02.01.05.01_yukicoder-3030.test.cpp
@@ -248,7 +241,6 @@ data:
   - test/01_Math/01_NumberTheory/02.02.01_AOJ-NTL-1-A.test.cpp
   - test/01_Math/01_NumberTheory/02.01.03_yukicoder-3030.test.cpp
   - test/01_Math/01_NumberTheory/02.07_LC-enumerate-primes.test.cpp
-  - test/01_Math/01_NumberTheory/01.02.01.02_AOJ-ALDS1-1-B.test.cpp
   - test/01_Math/01_NumberTheory/02.01.05.02_yukicoder-3030.test.cpp
   - test/01_Math/01_NumberTheory/02.01.03_AOJ-ALDS1-1-C.test.cpp
   - test/01_Math/03_Algebra/01.01.02.01_yukicoder-194.test.cpp
